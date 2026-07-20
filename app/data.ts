@@ -62,6 +62,47 @@ export const blogPosts = [
     "minutes": 9
   }
 ] as const;
+
+export const blogDetails = {
+  'outsourced-callers-provider-questions': {
+    summary: 'A good caller provider can explain hiring, training, scripts, call review, and replacement rules in plain English. If the answers stay vague, pause before you sign.',
+    takeaways: [
+      'Ask who trains callers, not only who recruits them.',
+      'Confirm how calls, CRM notes, and daily reports are checked.',
+      'Keep approval rules clear for refunds, pricing, discounts, and promises.',
+      'Run a 14-day pilot before adding more call volume.'
+    ],
+    comparison: [
+      { label: 'Screening', weak: '"We have trained callers available."', strong: 'They explain English level, role tests, call samples, and who approves the match.' },
+      { label: 'Script control', weak: '"The caller can use your script."', strong: 'They ask for examples, objection notes, escalation rules, and call outcomes before launch.' },
+      { label: 'QA', weak: '"A manager checks performance."', strong: 'They show what gets reviewed each week: recordings, CRM notes, booked calls, bad-fit leads, and follow-up gaps.' },
+      { label: 'Replacement', weak: '"We can replace poor fit."', strong: 'They give a clear replacement path, notice timing, handoff notes, and what happens to open leads.' }
+    ],
+    script: [
+      'Who listens to the first week of calls, and what scorecard do they use?',
+      'Can you show one sample daily report before we start?',
+      'What decisions should the caller send back to us instead of making alone?',
+      'If the caller is not a fit, how do you keep our leads and notes from getting lost?'
+    ],
+    sections: [
+      { heading: 'Start with the job, not the hourly rate', body: 'Cheap calling help gets expensive when the caller has no list rules, no outcome notes, and no manager. Write down the call type first: appointment setting, reactivation, missed-call follow-up, customer check-ins, or lead qualification. Then ask the provider which caller profile fits that work.' },
+      { heading: 'Ask how training works after the match', body: 'A resume is not training. The provider should talk through product notes, sample calls, objection examples, CRM fields, and the first few days of live review. A caller who books meetings also needs rules for bad-fit leads and promises they cannot make.' },
+      { heading: 'Make reporting boring and clear', body: 'Daily reporting should show calls made, connects, outcomes, follow-ups due, blockers, and examples that need owner review. The point is not a fancy dashboard. You need to know what happened and what needs a decision.' },
+      { heading: 'Protect customer data and owner decisions', body: 'Callers may need CRM, dialer, inbox, or calendar access. Start with the smallest permissions that let them work. Keep refunds, discounts, contract changes, account changes, and sensitive customer issues with the owner or manager.' }
+    ],
+    faqs: [
+      { q: 'Should I hire one caller or a managed team?', a: 'Start with one caller if the task is narrow and you can review quality. Use a managed team when you need backup coverage, training help, or a manager watching call quality.' },
+      { q: 'How long should the first caller pilot run?', a: 'Two weeks is a useful first test. It gives enough time to check scripts, CRM notes, attendance, call quality, and whether the lead list is workable.' },
+      { q: 'What should an outsourced caller never decide alone?', a: 'Keep pricing changes, refunds, promises about availability, legal or medical advice, and account changes with your internal team unless you have a written approval rule.' }
+    ],
+    sources: [
+      { name: 'Federal Trade Commission: Business Guidance on data security', url: 'https://www.ftc.gov/business-guidance/privacy-security/data-security' },
+      { name: 'NIST Cybersecurity Framework 2.0', url: 'https://www.nist.gov/cyberframework' },
+      { name: 'Salesforce: State of Sales research', url: 'https://www.salesforce.com/resources/research-reports/state-of-sales/' }
+    ]
+  }
+} as const;
+
 export const stats = [{label:'Typical savings target',value:'30-60%',note:'depends on role, management, and local hiring plan'},{label:'Best pilot length',value:'14 days',note:'enough time to test quality before scaling'},{label:'Start with',value:'5-10 tasks',note:'clear recurring tasks beat vague job descriptions'}] as const;
 
 export const stealthOffer = {
