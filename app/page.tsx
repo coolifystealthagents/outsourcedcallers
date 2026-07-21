@@ -1,30 +1,213 @@
 import * as data from './data';
-import { Header, Footer, JsonLd } from './components';
-const d=data as any;
-const site=d.site||{};
-const services=(d.services||d.roles||d.industries||[]).slice(0,4);
-const posts=(d.blogPosts||[]).slice(0,3);
-const stats=(d.stats||[]).slice(0,3);
-const offer=d.staffingOffer||{};
-const pretty=(v:any)=>String(v||'virtual assistant support').replace(/\b\w/g,(m)=>m.toUpperCase());
-const title=(x:any)=>typeof x==='string'?x:(x.title||x.name||x.label||x.question||'Assistant role');
-const text=(x:any)=>typeof x==='string'?x:(x.desc||x.excerpt||x.note||x.body||(x.bestFor?`Best for ${x.bestFor.join(', ')}`:'Clear tasks, safe access, and review rules.'));
-const slug=(x:any)=>(x.slug||title(x).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,''));
-const primary=site.primary||site.brand||'virtual assistant support';
-const rolePhrase=String(primary).toLowerCase()
-  .replace(/^best\s+/,'')
-  .replace(/(company|companies|services|service|provider|providers)/g,'')
-  .replace(/(outsource|outsourced|outsourcing|offshore|overseas)/g,'')
-  .replace(/\s+/g,' ')
-  .trim() || 'business support';
-const roleLabel=pretty(rolePhrase.includes('assistant')?rolePhrase:`${rolePhrase} support`).replace(/\bVa\b/g,'VA');
-const domain=site.domain||site.brand||'Staffing Guide';
-const heroImage=site.heroImage||site.serviceImage||'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80';
-const tagline=site.angle||site.audience||'managed hiring support with clear scope, safe access, onboarding, and quality checks';
-export default function Home(){const schema={'@context':'https://schema.org','@type':'WebSite',name:site.brand,url:`https://${domain}`};return <><Header/><main className="belay"><JsonLd data={schema}/>
-<section className="hero"><div className="container hero-grid"><div className="copy"><p className="eyebrow">Premium staffing match</p><h1>Hire managed {roleLabel} without screening alone.</h1><p className="lead">Get clear communicators, business-hour coverage, and a managed launch plan for {tagline}.</p><div className="actions"><a className="btn primary" href="/contact">Request staffing plan</a><a className="btn secondary" href="#tasks">Get task ideas</a></div><p className="risk">No public rate card. Share the role first, then get a practical scope.</p></div><div className="match-card"><div className="portrait-wrap"><img src={heroImage} alt={site.alt||`${site.brand||roleLabel} managed staffing visual`}/><span className="badge">Top-fit match</span></div><div className="task-note note-a"><b>Daily handoff</b><span>clear owner brief</span></div><div className="task-note note-b"><b>Quality checks</b><span>work reviewed weekly</span></div><div className="task-note note-c"><b>21-day launch</b><span>scope → shadow → live QA</span></div></div></div><div className="container proof-bar"><span>Right role before right hire</span>{stats.length?stats.map((s:any,i:number)=><b key={i}>{s.value||s.label}</b>):['Scope first','7-21 days','5-10 tasks'].map((x,i)=><b key={i}>{x}</b>)}</div></section>
-<section className="container section" id="tasks"><div className="split-head"><div><p className="eyebrow">Task ideas</p><h2>Start with work that repeats every week.</h2></div><p>Inspired by premium VA and outsourcing competitors: make the hire feel human, specific, and low risk before the contact form.</p></div><div className="task-grid">{services.map((s:any,i:number)=><a key={i} href={`/services/${slug(s)}`}><span>{String(i+1).padStart(2,'0')}</span><h3>{title(s)}</h3><p>{text(s)}</p><b>See handoff →</b></a>)}</div></section>
-<section className="relationship"><div className="container rel-grid"><div><p className="eyebrow">Managed, not marketplace</p><h2>Your staffing plan should come with backup, onboarding, and quality checks.</h2></div><div className="rel-list">{(offer.included||['role planning call','candidate matching','onboarding guidance','managed support']).slice(0,4).map((x:string,i:number)=><article key={i}><span>✓</span><p>{x}</p></article>)}</div></div></section>
-<section className="container section guide-row"><div><p className="eyebrow">Before you hire</p><h2>Short guides for safer staffing decisions.</h2></div>{posts.map((p:any,i:number)=><a href={`/blog/${p.slug}`} key={i}><span>{p.minutes||7} min</span><strong>{title(p)}</strong><p>{text(p)}</p></a>)}</section>
-<section className="container final"><h2>Request the staffing plan before you interview.</h2><a className="btn primary" href="/contact">Request staffing plan</a></section>
-</main><Footer/></>}
+import { Footer, Header, JsonLd } from './components';
+
+const d = data as any;
+const site = d.site || {};
+const posts = (d.blogPosts || []).slice(0, 3);
+const domain = site.domain || 'OutsourcedCallers.com';
+
+const serviceCards = [
+  {
+    slug: 'operations-support',
+    code: '01',
+    title: 'Outbound follow-up',
+    body: 'Work through lead lists, missed inquiries, reactivation calls, and scheduled callbacks with a clear outcome for every attempt.',
+    tag: 'List rules + outcomes',
+  },
+  {
+    slug: 'customer-support',
+    code: '02',
+    title: 'Customer check-ins',
+    body: 'Handle routine status calls and service follow-up without giving the caller permission to improvise refunds, dates, or account changes.',
+    tag: 'Script + escalation',
+  },
+  {
+    slug: 'admin-support',
+    code: '03',
+    title: 'Appointment setting',
+    body: 'Qualify the basics, book the right calendar, and leave the closer with enough context to walk into the conversation prepared.',
+    tag: 'Fit rules + calendar',
+  },
+  {
+    slug: 'reporting-and-qa',
+    code: '04',
+    title: 'Call review and CRM notes',
+    body: 'Check recordings, clean up outcome labels, flag coaching examples, and keep follow-up dates from disappearing into a spreadsheet.',
+    tag: 'Recordings + review',
+  },
+];
+
+const handoff = [
+  ['Brief', 'Define the list, purpose, approved script, and the decisions that stay with your team.'],
+  ['Calibrate', 'Review sample calls and tighten the language before the caller works through real volume.'],
+  ['Call', 'Log each attempt, result, note, and next action in the system your team already uses.'],
+  ['Review', 'Listen to a useful sample, correct weak notes, and update the brief when the market pushes back.'],
+];
+
+const postTitle = (post: any) => post.title || post.name || 'Calling guide';
+const postText = (post: any) => post.excerpt || post.desc || 'A practical guide for planning outsourced calling work.';
+
+export default function Home() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: site.brand,
+    url: `https://${domain}`,
+  };
+
+  return (
+    <>
+      <Header />
+      <main className="caller-desk" data-design="outbound-ops-2026-07">
+        <JsonLd data={schema} />
+
+        <section className="desk-hero">
+          <div className="signal-grid" aria-hidden="true" />
+          <div className="container desk-hero-grid">
+            <div className="hero-copy">
+              <p className="desk-label"><span /> Outsourced calling, scoped before launch</p>
+              <h1>Put the calls in motion. Keep every promise on record.</h1>
+              <p className="desk-lead">Build a calling desk for follow-up, appointment setting, customer check-ins, or lead qualification. You set the boundaries. The caller works the queue and leaves your team clean notes.</p>
+              <div className="desk-actions">
+                <a className="btn desk-primary" href="/contact">Plan my calling desk <span aria-hidden="true">↗</span></a>
+                <a className="desk-link" href="#handoff">See the handoff <span aria-hidden="true">↓</span></a>
+              </div>
+              <p className="scope-note">No public rate card. The right setup depends on call type, hours, tools, volume, and review needs.</p>
+            </div>
+
+            <div className="caller-visual">
+              <div className="photo-frame">
+                <img src="/call-specialist.jpg" alt="Customer support specialist wearing a headset at her desk" />
+                <div className="photo-caption">
+                  <span>Caller brief</span>
+                  <strong>Approved language. Clear handoff.</strong>
+                </div>
+              </div>
+              <aside className="shift-board" aria-label="Example calling desk handoff">
+                <div className="board-top">
+                  <div><span className="pulse" /> Shift brief</div>
+                  <small>OWNER REVIEW</small>
+                </div>
+                <div className="queue-row"><span>Reached</span><b>Log outcome</b><i className="tone green" /></div>
+                <div className="queue-row"><span>No answer</span><b>Schedule retry</b><i className="tone amber" /></div>
+                <div className="queue-row"><span>Needs approval</span><b>Send to owner</b><i className="tone coral" /></div>
+                <div className="board-foot"><span>CRM note required</span><strong>before next call</strong></div>
+              </aside>
+            </div>
+          </div>
+
+          <div className="container control-strip" aria-label="Calling desk controls">
+            <p>Built around the call work</p>
+            <div><span>01</span> Script ownership</div>
+            <div><span>02</span> Outcome labels</div>
+            <div><span>03</span> Escalation rules</div>
+            <div><span>04</span> Call review</div>
+          </div>
+        </section>
+
+        <section className="container desk-section" id="tasks">
+          <div className="section-intro">
+            <div>
+              <p className="desk-label dark"><span /> Pick the queue</p>
+              <h2>Give the caller a job you can explain.</h2>
+            </div>
+            <p>"Make more calls" is not a useful brief. Start with one queue, one reason for calling, and a short list of outcomes the caller can choose from.</p>
+          </div>
+          <div className="service-console">
+            {serviceCards.map((service) => (
+              <a className="service-module" href={`/services/${service.slug}`} key={service.slug}>
+                <div className="module-code">{service.code}</div>
+                <div>
+                  <span className="module-tag">{service.tag}</span>
+                  <h3>{service.title}</h3>
+                  <p>{service.body}</p>
+                </div>
+                <span className="module-arrow" aria-hidden="true">↗</span>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        <section className="handoff-section" id="handoff">
+          <div className="container">
+            <div className="handoff-head">
+              <p className="desk-label"><span /> The handoff</p>
+              <h2>A call is only useful if the next person knows what happened.</h2>
+            </div>
+            <div className="handoff-track">
+              {handoff.map(([title, body], index) => (
+                <article key={title}>
+                  <span>{String(index + 1).padStart(2, '0')}</span>
+                  <h3>{title}</h3>
+                  <p>{body}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="container desk-section guardrail-section">
+          <div className="guardrail-copy">
+            <p className="desk-label dark"><span /> Guardrails first</p>
+            <h2>Let callers move the conversation. Keep owner decisions with the owner.</h2>
+            <p>Good scripts help, but scripts do not cover every call. Write down what the caller can answer, what needs a callback, and what they must never promise.</p>
+            <a className="desk-link dark-link" href="/blog/outsourced-callers-provider-questions">Read the provider questions <span aria-hidden="true">↗</span></a>
+          </div>
+          <div className="decision-panel">
+            <div className="decision-col go">
+              <span>CALLER CAN HANDLE</span>
+              <ul>
+                <li>Basic qualification questions</li>
+                <li>Approved appointment windows</li>
+                <li>Routine status follow-up</li>
+                <li>Accurate CRM notes</li>
+              </ul>
+            </div>
+            <div className="decision-col stop">
+              <span>SEND BACK TO OWNER</span>
+              <ul>
+                <li>Pricing exceptions or discounts</li>
+                <li>Refunds and account changes</li>
+                <li>Legal or medical questions</li>
+                <li>Promises outside the brief</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="guides-section">
+          <div className="container">
+            <div className="guides-heading">
+              <div>
+                <p className="desk-label dark"><span /> Before the first dial</p>
+                <h2>Short guides for a cleaner launch.</h2>
+              </div>
+              <a href="/blog">Browse all guides <span aria-hidden="true">↗</span></a>
+            </div>
+            <div className="guide-list">
+              {posts.map((post: any, index: number) => (
+                <a href={`/blog/${post.slug}`} key={post.slug}>
+                  <span className="guide-number">0{index + 1}</span>
+                  <div><small>{post.minutes || 7} MIN READ</small><h3>{postTitle(post)}</h3><p>{postText(post)}</p></div>
+                  <span className="guide-arrow" aria-hidden="true">↗</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="container desk-final">
+          <div>
+            <p className="desk-label"><span /> Start with the queue</p>
+            <h2>Tell us what needs to be called and what must come back.</h2>
+          </div>
+          <div>
+            <p>Share the call type, list size, hours, tools, and approval rules. We will help turn that into a staffing scope.</p>
+            <a className="btn desk-primary" href="/contact">Plan my calling desk <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </>
+  );
+}
