@@ -3,37 +3,37 @@ export const site = {
   "slug": "outsourcedcallers",
   "brand": "Outsourced Callers",
   "primary": "outsourced callers",
-  "audience": "sales and service teams needing trained callers for follow-up and appointment setting",
+  "audience": "teams hiring Filipino callers for follow-up and appointment setting",
   "angle": "call scripts, lead lists, objection notes, QA, and daily reporting",
   "style": "Outbound caller pipeline",
   "dark": "#082f49",
   "color": "#0284c7",
   "accent": "#22c55e",
-  "heroImage": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
-  "serviceImage": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
-  "alt": "phone sales assistant making business calls",
-  "badge": "Caller bench"
+  "heroImage": "/filipino-calling-specialist.svg",
+  "serviceImage": "/filipino-calling-specialist.svg",
+  "alt": "illustration of a Filipino calling specialist at a headset desk",
+  "badge": "Filipino caller bench"
 } as const;
 export const services = [
   {
     "slug": "operations-support",
     "title": "Operations Support",
-    "desc": "Operations Support for teams using outsourced callers with clear SOPs, weekly review, and measurable handoffs."
+    "desc": "Filipino callers handle repeat follow-up with your script, outcome labels, and review rules."
   },
   {
     "slug": "customer-support",
     "title": "Customer Support",
-    "desc": "Customer Support for teams using outsourced callers with clear SOPs, weekly review, and measurable handoffs."
+    "desc": "Filipino callers handle routine customer check-ins and send exceptions back to your team."
   },
   {
     "slug": "admin-support",
     "title": "Admin Support",
-    "desc": "Admin Support for teams using outsourced callers with clear SOPs, weekly review, and measurable handoffs."
+    "desc": "Filipino callers qualify the basics, book the right calendar, and leave useful notes."
   },
   {
     "slug": "reporting-and-qa",
     "title": "Reporting and QA",
-    "desc": "Reporting and QA for teams using outsourced callers with clear SOPs, weekly review, and measurable handoffs."
+    "desc": "Review calls, clean up CRM notes, and coach Filipino calling talent against an agreed brief."
   }
 ] as const;
 export const blogPosts = [
@@ -103,43 +103,41 @@ export const blogDetails = {
   }
 } as const;
 
-export const stats = [{label:'Typical savings target',value:'30-60%',note:'depends on role, management, and local hiring plan'},{label:'Best pilot length',value:'14 days',note:'enough time to test quality before scaling'},{label:'Start with',value:'5-10 tasks',note:'clear recurring tasks beat vague job descriptions'}] as const;
-
 export const staffingOffer = {
-  partner: 'our staffing team',
-  promise: 'Get a managed offshore staffing plan built around the work you need removed from your plate.',
+  partner: 'our Philippines staffing team',
+  promise: 'Get a calling role built for Filipino talent around the work you need handled.',
   fit: [
-    'business owners who need reliable remote staff but do not want to screen alone',
-    'teams that want trained support, backup coverage, and a clear manager path',
-    'companies that need help with admin, operations, customer support, calls, bookkeeping, development, or marketing work',
+    'owners who want Filipino calling talent without screening every candidate alone',
+    'teams that need help with training, backup coverage, and a clear manager path',
+    'companies with repeat follow-up, appointment setting, customer check-ins, or lead qualification work',
   ],
   included: [
-    'role planning call to turn your task list into a clear staffing scope',
-    'candidate matching based on skills, schedule, tools, and communication needs',
-    'onboarding guidance for SOPs, scorecards, reporting, and safe tool access',
-    'managed support so quality, attendance, and replacement questions do not sit only on the owner',
+    'a role planning call that turns the call queue into a clear staffing scope',
+    'Filipino candidate matching based on call type, schedule, tools, and communication needs',
+    'onboarding guidance for scripts, CRM notes, review rules, and limited tool access',
+    'managed support for quality, attendance, and replacement questions',
   ],
   proof: [
-    'clear task scope before hiring',
-    'weekly reporting rhythm',
-    'named accountability and escalation path',
-    'simple handoff plan for tools, SOPs, and quality checks',
+    'a clear call brief before hiring',
+    'a weekly review rhythm',
+    'a named escalation path',
+    'a written handoff for tools, scripts, and call notes',
   ],
 } as const;
 
 export const leadQuestions = [
-  'What work do you want off your plate first?',
-  'Which tools, inboxes, phones, CRMs, or systems will the staff member use?',
-  'What hours, time zone, and response time do you need?',
-  'Who checks quality during the first two weeks?',
-  'What should the staff member never decide without approval?',
+  'What needs to be called first?',
+  'Which dialer, CRM, calendar, or inbox will the caller use?',
+  'What hours and time zone should Filipino talent cover?',
+  'Who will listen to calls during the first two weeks?',
+  'What must the caller send back for approval?',
 ] as const;
 
 export const staffingProcess = [
-  { step: '1', title: 'Map the role', body: 'We turn messy tasks into one clear role with outcomes, tools, limits, and a first-week checklist.' },
-  { step: '2', title: 'Match the staff', body: 'our staffing team can help match remote staff to the work, schedule, communication style, and skill level you need.' },
-  { step: '3', title: 'Launch with control', body: 'Start with SOPs, sample work, limited access, daily review, and a simple scorecard so quality is easy to see.' },
-  { step: '4', title: 'Scale what works', body: 'Once the first tasks are stable, add more work, better reporting, and stronger delegation without guessing.' },
+  { step: '1', title: 'Map the role', body: 'Turn the call queue into one clear role with outcomes, tools, limits, and a first-week checklist.' },
+  { step: '2', title: 'Match the caller', body: 'The Philippines staffing team matches Filipino talent to the call work, schedule, tools, and communication style.' },
+  { step: '3', title: 'Start with control', body: 'Use an approved script, sample calls, limited access, daily notes, and a short review routine.' },
+  { step: '4', title: 'Add what works', body: 'Once the first queue is stable, add more call work without losing the notes or review rules.' },
 ] as const;
 
-export const staffingFitNote = 'Every staffing plan depends on role scope, schedule, skills, tools, and management needs. Send the role details and our staffing team can guide the best fit.';
+export const staffingFitNote = 'The plan depends on the call type, schedule, tools, and review needs. Share those details and our Philippines staffing team can map the right Filipino caller profile.';

@@ -65,9 +65,9 @@ export default function Home() {
           <div className="signal-grid" aria-hidden="true" />
           <div className="container desk-hero-grid">
             <div className="hero-copy">
-              <p className="desk-label"><span /> Outsourced calling, scoped before launch</p>
+              <p className="desk-label"><span /> Filipino calling talent, scoped before launch</p>
               <h1>Put the calls in motion. Keep every promise on record.</h1>
-              <p className="desk-lead">Build a calling desk for follow-up, appointment setting, customer check-ins, or lead qualification. You set the boundaries. The caller works the queue and leaves your team clean notes.</p>
+              <p className="desk-lead">Build a calling desk with Filipino talent for follow-up, appointment setting, customer check-ins, or lead qualification. You set the boundaries. The caller works the queue and leaves your team clean notes.</p>
               <div className="desk-actions">
                 <a className="btn desk-primary" href="/contact">Plan my calling desk <span aria-hidden="true">↗</span></a>
                 <a className="desk-link" href="#handoff">See the handoff <span aria-hidden="true">↓</span></a>
@@ -77,7 +77,7 @@ export default function Home() {
 
             <div className="caller-visual">
               <div className="photo-frame">
-                <img src="/call-specialist.jpg" alt="Customer support specialist wearing a headset at her desk" />
+                <img src="/filipino-calling-specialist.svg" alt="Illustration of a Filipino calling specialist wearing a headset beside a call queue" />
                 <div className="photo-caption">
                   <span>Caller brief</span>
                   <strong>Approved language. Clear handoff.</strong>

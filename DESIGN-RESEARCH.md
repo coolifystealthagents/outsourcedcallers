@@ -65,7 +65,8 @@ This is inspiration, not a clone. The implementation does not reuse competitor c
 - Show useful operating controls instead: approved script, escalation rules, outcome labels, review rhythm, and minimum-access tooling.
 - Keep existing service, guide, contact, privacy, terms, cancellation, robots, and sitemap routes intact.
 - Keep the legal disclosure and current copyright behavior in the footer.
-- Use an original phone-wave logo and a licensed Unsplash image stored locally at `public/call-specialist.jpg`.
+- Use an original phone-wave logo and an original editorial illustration of a Filipino calling specialist stored at `public/filipino-calling-specialist.svg`.
+- The first recovered photo asset did not depict a caller, so it was rejected during semantic QA and removed from the page.
 
 ## Humanizer pass
 
