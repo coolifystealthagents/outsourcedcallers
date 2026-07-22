@@ -15,26 +15,18 @@ export const site = {
   "badge": "Filipino caller bench"
 } as const;
 export const services = [
-  {
-    "slug": "operations-support",
-    "title": "Operations Support",
-    "desc": "Filipino callers handle repeat follow-up with your script, outcome labels, and review rules."
-  },
-  {
-    "slug": "customer-support",
-    "title": "Customer Support",
-    "desc": "Filipino callers handle routine customer check-ins and send exceptions back to your team."
-  },
-  {
-    "slug": "admin-support",
-    "title": "Admin Support",
-    "desc": "Filipino callers qualify the basics, book the right calendar, and leave useful notes."
-  },
-  {
-    "slug": "reporting-and-qa",
-    "title": "Reporting and QA",
-    "desc": "Review calls, clean up CRM notes, and coach Filipino calling talent against an agreed brief."
-  }
+  { slug: "outbound-lead-qualification", title: "Outbound Lead Qualification", desc: "Filipino calling specialists can handle outbound lead qualification with documented workflows, approval limits, and owner review." },
+  { slug: "inbound-call-handling", title: "Inbound Call Handling", desc: "Filipino calling specialists can handle inbound call handling with documented workflows, approval limits, and owner review." },
+  { slug: "appointment-setting", title: "Appointment Setting", desc: "Filipino calling specialists can handle appointment setting with documented workflows, approval limits, and owner review." },
+  { slug: "customer-follow-up-calls", title: "Customer Follow-Up Calls", desc: "Filipino calling specialists can handle customer follow-up calls with documented workflows, approval limits, and owner review." },
+  { slug: "event-registration-calls", title: "Event Registration Calls", desc: "Filipino calling specialists can handle event registration calls with documented workflows, approval limits, and owner review." },
+  { slug: "survey-calling", title: "Survey Calling", desc: "Filipino calling specialists can handle survey calling with documented workflows, approval limits, and owner review." },
+  { slug: "win-back-campaign-support", title: "Win-Back Campaign Support", desc: "Filipino calling specialists can handle win-back campaign support with documented workflows, approval limits, and owner review." },
+  { slug: "renewal-reminder-calls", title: "Renewal Reminder Calls", desc: "Filipino calling specialists can handle renewal reminder calls with documented workflows, approval limits, and owner review." },
+  { slug: "order-confirmation-calls", title: "Order Confirmation Calls", desc: "Filipino calling specialists can handle order confirmation calls with documented workflows, approval limits, and owner review." },
+  { slug: "database-verification-calls", title: "Database Verification Calls", desc: "Filipino calling specialists can handle database verification calls with documented workflows, approval limits, and owner review." },
+  { slug: "reception-overflow", title: "Reception Overflow", desc: "Filipino calling specialists can handle reception overflow with documented workflows, approval limits, and owner review." },
+  { slug: "call-quality-review", title: "Call Quality Review", desc: "Filipino calling specialists can handle call quality review with documented workflows, approval limits, and owner review." },
 ] as const;
 export const blogPosts = [
   {
@@ -141,3 +133,6 @@ export const staffingProcess = [
 ] as const;
 
 export const staffingFitNote = 'The plan depends on the call type, schedule, tools, and review needs. Share those details and our Philippines staffing team can map the right Filipino caller profile.';
+
+
+export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[] }> = [];

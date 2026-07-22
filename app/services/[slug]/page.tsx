@@ -1,18 +1,4 @@
-import { Header, Footer, CTA } from '../../components';
-import { services, site } from '../../data';
-
-export function generateStaticParams() {
-  return services.map((service) => ({ slug: service.slug }));
-}
-
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-  const service = services.find((item) => item.slug === slug);
-  return { title: service?.title || 'Service', description: service?.desc };
-}
-
-export default async function Service({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-  const service = services.find((item) => item.slug === slug) || services[0];
-  return <><Header/><main><section className="service-hero"><div className="container two"><div><p className="eyebrow">Filipino calling talent</p><h1>{service.title}</h1><p className="lead">{service.desc}</p><a className="btn" href="/contact">Plan this calling role</a></div><div className="hero-card"><img src={site.serviceImage} alt={`${service.title} with Filipino calling talent`}/></div></div></section><section className="section"><div className="container cards"><div className="card"><h3>Good work to start with</h3><ul><li>Recurring calls with real examples</li><li>Follow-up with a short list of outcomes</li><li>Work with clear approval rules</li></ul></div><div className="card"><h3>How to check the work</h3><ul><li>Notes after each call</li><li>A weekly call sample</li><li>A written escalation list</li></ul></div><div className="card"><h3>First week setup</h3><ul><li>Limited tool access</li><li>Sample calls</li><li>A review with the owner</li></ul></div></div></section><CTA/></main><Footer/></>;
-}
+import type {Metadata} from 'next'; import {notFound} from 'next/navigation'; import {Header,Footer,CTA,JsonLd} from '../../components'; import {services,site} from '../../data';
+const base=`https://${String(site.domain).toLowerCase()}`; export function generateStaticParams(){return services.map(s=>({slug:s.slug}))}
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{const {slug}=await params;const s=services.find(x=>x.slug===slug);if(!s)return {title:'Service not found'};return {title:s.title,description:s.desc,alternates:{canonical:`/services/${s.slug}`}}}
+export default async function Service({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const s=services.find(x=>x.slug===slug);if(!s)notFound();const url=`${base}/services/${s.slug}`;return <><Header/><main><JsonLd data={{'@context':'https://schema.org','@type':'Service',name:s.title,description:s.desc,url,areaServed:'Philippines'}}/><section className="service-hero"><div className="container two"><div><p className="eyebrow">Philippines-based service</p><h1>{s.title}</h1><p className="lead">{s.desc}</p><a className="btn primary" href="/contact">Discuss this role</a></div><div className="support-strip"><h2>Built for a clear handoff</h2><p>Filipino specialists work from your examples, system permissions, and approval rules. Your team keeps ownership of exceptions and final decisions.</p><ul><li>Documented recurring tasks</li><li>Named quality reviewer</li><li>Defined escalation path</li><li>Weekly workload review</li></ul></div></div></section><section className="section"><div className="container cards"><article className="card"><h2>Role scope</h2><p>The Filipino specialist receives a written task list, schedule, and expected outputs.</p></article><article className="card"><h2>Access plan</h2><p>Permissions begin with the systems needed for approved Philippines-based work.</p></article><article className="card"><h2>Review rhythm</h2><p>Samples, open questions, and exceptions stay visible to the role owner.</p></article></div></section><CTA/></main><Footer/></>}
