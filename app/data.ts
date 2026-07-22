@@ -30,6 +30,12 @@ export const services = [
 ] as const;
 export const blogPosts = [
   {
+    "slug": "outbound-call-center-outsourcing-philippines",
+    "title": "Outbound call center outsourcing: a Philippines-only launch plan",
+    "excerpt": "Outbound call center outsourcing works best when the call list, script, handoff rules, and review plan are clear before the first dial. This guide shows how to set up a Filipino calling team without giving away owner decisions.",
+    "minutes": 11
+  },
+  {
     "slug": "outsourced-callers-planning",
     "title": "Outsourced Callers: What does it plan?",
     "excerpt": "A plain-English guide to staffing details, scope, and hidden planning.",
@@ -56,6 +62,127 @@ export const blogPosts = [
 ] as const;
 
 export const blogDetails = {
+  'outbound-call-center-outsourcing-philippines': {
+    published: '2026-07-22',
+    mainKeyword: 'outbound call center outsourcing',
+    summary: 'Outbound call center outsourcing means giving a trained outside team a defined calling queue while your company keeps control of the offer, customer promise, and approval rules. A Philippines-based caller can handle lead qualification, appointment setting, follow-up, and record updates when the handoff is written and reviewed.',
+    takeaways: [
+      'Start with one call goal and one clean list instead of handing over every sales task.',
+      'Give Filipino callers approved words for common questions, then name the issues that must return to an owner.',
+      'Review recordings and CRM notes together because a booked meeting can still be a poor fit.',
+      'Treat legal review, consent rules, list rules, and calling hours as launch requirements.',
+      'Use a short pilot with clear stop rules before raising daily call volume.'
+    ],
+    decisionTable: [
+      { lane: 'Lead qualification', caller: 'Confirm fit questions, note the answer, and set the next step.', owner: 'Define the fit rules and decide exceptions.', measure: 'Complete records and accepted handoffs' },
+      { lane: 'Appointment setting', caller: 'Offer approved times and send the calendar notice.', owner: 'Set meeting capacity, routing, and no-show rules.', measure: 'Held meetings, not raw bookings' },
+      { lane: 'Customer follow-up', caller: 'Use the approved reason for calling and log the outcome.', owner: 'Approve credits, contract changes, and sensitive replies.', measure: 'Resolved follow-ups and clean escalations' },
+      { lane: 'Win-back calls', caller: 'Ask the approved questions and record the reason for leaving.', owner: 'Control discounts, promises, and offer changes.', measure: 'Qualified returns and useful loss notes' }
+    ],
+    planningBands: [
+      { label: 'Pilot length', value: '10 business days', note: 'Example planning target' },
+      { label: 'First review sample', value: '5 calls per caller', note: 'Example QA sample' },
+      { label: 'Manager check', value: '15 minutes daily', note: 'Example owner time' },
+      { label: 'First queue', value: '25-40 records', note: 'Example list size' }
+    ],
+    sections: [
+      {
+        heading: 'What the service should cover',
+        paragraphs: [
+          'A caller should get a narrow job, not a vague order to make more sales. Good first lanes include qualifying a list, setting an approved meeting, confirming an order, calling back a missed inquiry, or asking a past customer one set of questions.',
+          'Write the start and finish of the job in plain words. For example, the caller may start with an approved CRM view and finish when the outcome, next date, and owner question are saved in the right fields.',
+          'Keep offer changes, refunds, contract terms, legal questions, and sensitive account changes with your own team. The caller needs a simple way to pause the conversation and send those decisions back.'
+        ]
+      },
+      {
+        heading: 'Build the call brief before you hire',
+        paragraphs: [
+          'The call brief should name the audience, reason for calling, approved offer, required questions, and end states. It should also show the caller what a good record looks like after the call.',
+          'Give the provider 3 to 5 real call examples with private details removed. Mark the parts that sounded natural, the questions that caused trouble, and the moments when a manager had to step in.',
+          'Add list rules before the first file is shared. Your legal adviser should confirm consent, suppression, calling-hour, recording, and do-not-call duties for every place you plan to contact.'
+        ]
+      },
+      {
+        heading: 'Choose and test Filipino callers',
+        paragraphs: [
+          'A good voice is useful, but the work also needs listening, note taking, and judgment. Ask candidates to read a short brief, handle two sample objections, and enter the result in a mock CRM record.',
+          'Use the same test for every candidate so the comparison stays fair. Score whether the caller followed the question order, heard the real answer, avoided a false promise, and wrote a note another person could use.',
+          'Do not hide a weak list behind caller coaching. If many records have wrong numbers, old contacts, or no clear reason for the call, fix the list before blaming the Filipino caller.'
+        ]
+      },
+      {
+        heading: 'Set the script and the handoff rules',
+        paragraphs: [
+          'A script is a safety rail, not a speech that must sound stiff. Put the required opening and legal wording at the top, then give short answer paths for the questions callers hear most.',
+          'Every path needs an end state such as booked, follow-up due, not a fit, do not call, wrong person, or owner review. Those labels make the next action visible and stop leads from sitting in free-form notes.',
+          'Write one stop rule for each risky issue. A caller should know when to stop, what to say, who gets the alert, and how fast your team plans to respond.'
+        ]
+      },
+      {
+        heading: 'Use a small launch instead of a big promise',
+        paragraphs: [
+          'Start with a 10-business-day pilot and one call lane as a planning example. A first queue of 25 to 40 records is often easier to inspect than a full database, but your safe size depends on call length and review time.',
+          'Listen to a small sample every day during the pilot. Five calls per caller can reveal script gaps, weak notes, or bad list rules without turning the review into an all-day task.',
+          'Raise volume only after the records are clean and the owner handoffs arrive on time. If booked meetings are poor fits, fix the fit questions before asking for more dials.'
+        ]
+      },
+      {
+        heading: 'Measure work that helps the next person',
+        paragraphs: [
+          'Call count alone says little about quality. Review connect outcomes, complete notes, accepted handoffs, held meetings, repeat objections, and records that need another touch.',
+          'Pair each number with a short reason when the result changes. A lower connect rate may come from a stale list, while a lower booking rate may come from weak fit or an offer people do not want.',
+          'Use a 15-minute daily check during the example pilot and a longer weekly review after the lane settles. The daily check clears blockers, while the weekly review changes scripts, list rules, and coaching.'
+        ]
+      },
+      {
+        heading: 'Protect records and calling access',
+        paragraphs: [
+          'Give each caller only the CRM views, dialer seats, inboxes, and calendars needed for the approved queue. NIST Cybersecurity Framework 2.0 gives organizations a common way to think about governing and reducing cyber risk.',
+          'Use named accounts instead of shared logins when the tools allow it. Remove access when a caller changes roles, and keep an owner copy of scripts, list rules, open follow-ups, and account details.',
+          'US outbound campaigns may fall under federal and state rules, and the exact duty depends on the call and contact. The eCFR publishes the Telemarketing Sales Rule and FCC telephone solicitation rules, while the National Do Not Call Registry has a business guidance page.'
+        ]
+      },
+      {
+        heading: 'A realistic first-week scenario',
+        paragraphs: [
+          'A home-services company wants a Filipino caller to follow up with people who asked for a quote but did not book. The owner supplies 30 recent records, an approved reason for the call, four fit questions, available calendar slots, and a rule that price changes must go back to the office.',
+          'On day 1, the caller practices with 5 test records and the manager checks every note. By day 3, the caller can work the approved queue while the manager reviews 5 recordings and any price questions.',
+          'At the end of day 10, the owner checks held appointments, wrong-number rates, note quality, and unresolved handoffs. The next queue grows only if the records are clean and customers received the promised follow-up.'
+        ]
+      }
+    ],
+    scripts: [
+      { title: 'Opening script', text: 'Hi, this is Ana calling for [company]. You asked about [service], and I am following up to see whether you still want help. Is now a good time for two quick questions?' },
+      { title: 'Owner handoff script', text: 'I do not want to guess on that. I will note your question and ask [owner or team] to reply by [approved time]. What is the best way for them to reach you?' },
+      { title: 'Do-not-call close', text: 'Understood. I will mark this number so our team does not call again about this offer. Thank you for telling me.' }
+    ],
+    workflow: [
+      { step: '1', title: 'Prepare', text: 'Clean one list, approve one script, and set the end-state labels.' },
+      { step: '2', title: 'Practice', text: 'Run role plays and test records before live calls begin.' },
+      { step: '3', title: 'Pilot', text: 'Work a small queue and review calls, notes, and handoffs each day.' },
+      { step: '4', title: 'Repair', text: 'Fix the list, script, or rules when the same problem repeats.' },
+      { step: '5', title: 'Expand', text: 'Add records or another lane only after the first lane stays clean.' }
+    ],
+    faqs: [
+      { q: 'What is outbound call center outsourcing?', a: 'It is the use of an outside calling team for a defined outbound queue such as follow-up, qualification, appointment setting, or reminders. Your company should still control the offer, legal review, approval rules, and sensitive decisions.' },
+      { q: 'Can a Filipino caller set appointments?', a: 'Yes, when the caller has approved fit questions, calendar rules, and clear end states. Judge the work by held, suitable meetings and clean notes rather than bookings alone.' },
+      { q: 'How long should a first pilot run?', a: 'Ten business days is a useful planning example, not a fixed rule. The pilot should be long enough to test list quality, scripts, notes, handoffs, and manager response time.' },
+      { q: 'What should stay with the business owner?', a: 'Keep price changes, refunds, contract terms, sensitive account changes, and unapproved promises with an owner or named manager. Put each boundary in writing so the caller does not have to guess.' },
+      { q: 'How should call quality be reviewed?', a: 'Check recordings and CRM notes together because either one can hide a problem. Use the same short scorecard for the opening, questions, listening, promises, end state, and note quality.' }
+    ],
+    related: [
+      { label: 'Outbound lead qualification service', href: '/services/outbound-lead-qualification' },
+      { label: 'Appointment setting service', href: '/services/appointment-setting' },
+      { label: 'Call quality review service', href: '/services/call-quality-review' },
+      { label: 'Questions to ask a caller provider', href: '/blog/outsourced-callers-provider-questions' }
+    ],
+    sources: [
+      { name: 'Electronic Code of Federal Regulations: Telemarketing Sales Rule, 16 CFR Part 310', url: 'https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310' },
+      { name: 'Electronic Code of Federal Regulations: FCC telephone solicitation rules, 47 CFR 64.1200', url: 'https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200' },
+      { name: 'National Do Not Call Registry: business guidance', url: 'https://www.donotcall.gov/faq/faq-business' },
+      { name: 'NIST Cybersecurity Framework 2.0', url: 'https://www.nist.gov/cyberframework' }
+    ]
+  },
   'outsourced-callers-provider-questions': {
     summary: 'A good caller provider can explain hiring, training, scripts, call review, and replacement rules in plain English. If the answers stay vague, pause before you sign.',
     takeaways: [
