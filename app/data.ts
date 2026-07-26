@@ -30,6 +30,12 @@ export const services = [
 ] as const;
 export const blogPosts = [
   {
+    "slug": "philippines-appointment-setting-quality-scorecard",
+    "title": "Philippines appointment setting quality scorecard",
+    "excerpt": "A practical scorecard for reviewing Filipino appointment setters, call notes, handoffs, and held meetings without rewarding empty calendar bookings.",
+    "minutes": 13
+  },
+  {
     "slug": "outbound-call-center-outsourcing-philippines",
     "title": "Outbound call center outsourcing: a Philippines-only launch plan",
     "excerpt": "Outbound call center outsourcing works best when the call list, script, handoff rules, and review plan are clear before the first dial. This guide shows how to set up a Filipino calling team without giving away owner decisions.",
@@ -62,6 +68,156 @@ export const blogPosts = [
 ] as const;
 
 export const blogDetails = {
+  'philippines-appointment-setting-quality-scorecard': {
+    published: '2026-07-25',
+    mainKeyword: 'Philippines appointment setting quality scorecard',
+    metaLabel: 'Philippines appointment setting guide',
+    directAnswerHeading: 'How to score Philippines appointment setting work',
+    takeawaysHeading: 'Five rules for a fair review',
+    tableHeading: 'Score the call, record, and handoff together',
+    tableLabel: 'Quality scorecard',
+    statsHeading: 'Why caller identity and consent checks belong in QA',
+    statsLabel: 'FTC complaint context',
+    scriptsHeading: 'Words for common appointment calls',
+    workflowHeading: 'Run one weekly quality review',
+    faqHeading: 'Philippines appointment setting FAQ',
+    relatedHeading: 'Build the rest of the calling lane',
+    summary: 'A Philippines appointment setting quality scorecard checks whether the caller reached the right person, asked the approved fit questions, made a truthful next-step promise, saved a useful record, and handed owner decisions back to the business. A full calendar means little when the meetings are a poor fit or the notes leave the next person guessing.',
+    takeaways: [
+      'Judge held, suitable meetings instead of raw bookings alone.',
+      'Review the call and CRM record as one piece of work.',
+      'Give Filipino callers clear stop rules for consent, claims, and owner decisions.',
+      'Use the same small call sample for every caller each week.',
+      'Repair the list or script when the same miss appears across several calls.'
+    ],
+    decisionTable: [
+      { lane: 'Opening and identity', caller: 'Names the business, gives the approved reason for calling, and checks that the right person is on the line.', owner: 'Approves the opening and any required notice before live calls begin.', measure: 'Clear identity with no invented connection' },
+      { lane: 'Fit questions', caller: 'Asks the short question set, listens to each answer, and avoids pushing an obvious poor fit.', owner: 'Defines suitable, unsuitable, and owner-review answers.', measure: 'Complete answers and fewer bad-fit meetings' },
+      { lane: 'Calendar handoff', caller: 'Offers approved times, repeats the time zone, and explains what will happen next.', owner: 'Sets capacity, meeting length, routing, and reschedule rules.', measure: 'Held meetings with the right owner' },
+      { lane: 'CRM record', caller: 'Saves the outcome, fit notes, promised follow-up, and open question in the required fields.', owner: 'Chooses the fields and checks whether the next person can act.', measure: 'Records that need no detective work' },
+      { lane: 'Stop and escalate', caller: 'Stops when consent, account, contract, or unapproved claim questions appear.', owner: 'Names the person who answers and the expected reply window.', measure: 'Fast, accurate owner handoffs' }
+    ],
+    planningBands: [
+      { label: 'FY 2021 robocall reports', value: '3.4M+', note: 'FTC, published Nov. 15, 2024' },
+      { label: 'FY 2023 robocall reports', value: '1.2M', note: 'FTC, published Nov. 15, 2024' },
+      { label: 'FY 2024 robocall reports', value: '1.1M', note: 'FTC, published Nov. 15, 2024' },
+      { label: 'Active DNC numbers', value: '253M+', note: 'FTC FY 2024 data book' }
+    ],
+    chart: {
+      title: 'Robocall complaints reported to the FTC',
+      description: 'Three horizontal bars compare more than 3.4 million complaints in fiscal year 2021, 1.2 million in 2023, and 1.1 million in 2024.',
+      methods: 'Method: values are the rounded fiscal-year complaint counts stated in the FTC release dated November 15, 2024. The 2021 value is a lower bound because the source says more than 3.4 million. These complaint totals are context for careful calling; they do not measure human appointment-setter performance.',
+      bars: [
+        { label: 'FY 2021', value: '3.4M+', width: 100 },
+        { label: 'FY 2023', value: '1.2M', width: 35 },
+        { label: 'FY 2024', value: '1.1M', width: 32 }
+      ]
+    },
+    expertQuote: {
+      text: 'Illegal calls remain a scourge, but the FTC’s strategy to pursue upstream players and equip the agency to confront emerging threats is showing clear signs of success',
+      attribution: 'Sam Levine, Director of the FTC Bureau of Consumer Protection, November 15, 2024'
+    },
+    sections: [
+      {
+        heading: 'Start with the meeting your team can actually use',
+        paragraphs: [
+          'Write down what makes a meeting worth holding before a Filipino caller touches the list. Name the right contact, the problem your team can help with, the facts the caller must confirm, and the reasons to stop.',
+          'A booking is not useful when the person has no need, no authority, or no idea why the meeting exists. Count a meeting as accepted only after the next owner can see why it belongs on the calendar.'
+        ]
+      },
+      {
+        heading: 'Build the scorecard from the call path',
+        paragraphs: [
+          'Use five parts: opening, fit questions, listening, next-step promise, and record quality. A simple 0, 1, or 2 mark for each part gives the reviewer enough room to show a miss without pretending that quality is perfectly precise.',
+          'Define each mark in plain words. A 2 means the caller completed the step correctly, a 1 means the step was partly useful, and a 0 means it was missed or created risk.',
+          'Add hard stops beside the score. A false claim, ignored opt-out, invented answer, hidden bad fit, or missing sensitive-data handoff should trigger review even when the rest of the call sounded polished.'
+        ]
+      },
+      {
+        heading: 'Review a small sample the same way every week',
+        paragraphs: [
+          'Choose calls from the full queue rather than asking each caller for their best recordings. Include a booked meeting, a no, a follow-up, and an owner handoff when those outcomes exist in the sample period.',
+          'Listen with the CRM record open beside you. The voice may sound good while the note misses the real objection, or the note may look complete even though the caller promised something the business never approved.'
+        ]
+      },
+      {
+        heading: 'Separate caller misses from list and script problems',
+        paragraphs: [
+          'Repeated confusion often points to the script. Rewrite the weak question in everyday words, test it in role play, and listen to the next few uses before deciding whether the caller understood the change.',
+          'One isolated miss may need direct feedback. The same miss across several Filipino callers usually means the brief, list, tool, or owner rule needs work.'
+        ]
+      },
+      {
+        heading: 'Check consent and identity before persuasion',
+        paragraphs: [
+          'The person receiving the call should know who is calling and why. Give the appointment setter an approved identity line, opt-out response, and record label before the campaign starts.',
+          'The FTC reported more than 4.2 million new Do Not Call sign-ups during fiscal year 2024, bringing active registrations above 253 million. Its FY 2024 data book also says the agency received more than 2 million Do Not Call complaints that year.',
+          'Those figures do not tell you whether one campaign is lawful. They do show why list source, suppression checks, calling time, caller identity, and opt-out handling need an owner and legal review instead of a guess from the caller.'
+        ]
+      },
+      {
+        heading: 'Keep Philippines data handling in the handoff',
+        paragraphs: [
+          'Appointment setters may see names, phone numbers, email addresses, calendar details, and CRM notes. Give each Filipino caller only the fields and tools needed for the approved queue, then use a named account rather than a shared login when the tool allows it.',
+          'The Philippines Data Privacy Act of 2012 sets rules for processing personal information. Your privacy or legal owner should decide the lawful basis, notice, access, storage, deletion, and cross-border steps that apply to the campaign.',
+          'Save the list source and consent notes where the campaign owner can inspect them. Remove access when the work ends, and keep an owner copy of open follow-ups so a staff change does not strand customer records.'
+        ]
+      },
+      {
+        heading: 'Use the Philippines talent base without making shortcuts',
+        paragraphs: [
+          'A 2021 Philippine Department of Trade and Industry article said the IT-BPM sector had 1.32 million workers in 2020 and USD26.7 billion in revenue. The same article described voice services as part of the industry’s growth, but national scale does not prove that any one caller fits your audience.',
+          'Test the actual work. Ask candidates to handle a short opening, two fit answers, one opt-out, one owner question, and a mock CRM entry using the same brief.',
+          'Listen for clear words and careful notes rather than a copied accent. A caller who hears the answer, stays inside the rules, and leaves a useful record is more helpful than someone who sounds smooth but misses the point.'
+        ]
+      },
+      {
+        heading: 'Turn the weekly review into a short repair list',
+        paragraphs: [
+          'End the review with no more than three fixes for the next sample. Name the owner, the exact change, and the call or record that will show whether the fix worked.',
+          'A useful repair might be cleaning one list segment, changing one fit question, adding one CRM choice, or setting a clearer owner reply window. Small changes are easier to test than a full script rewrite after every weak call.'
+        ]
+      }
+    ],
+    scripts: [
+      { title: 'Clear opening', text: 'Hi, this is Ana calling for [company]. I am calling about [specific reason]. Have I reached the person who handles [area]?' },
+      { title: 'Fit check', text: 'Before I suggest a time, may I ask two short questions so I do not book a meeting that will not help you?' },
+      { title: 'Owner handoff', text: 'That needs an answer from [owner or team]. I will save your question and ask them to reply by [approved window].' }
+    ],
+    workflow: [
+      { step: '1', title: 'Sample', text: 'Pick a mixed group of calls without letting the caller choose only the best ones.' },
+      { step: '2', title: 'Listen', text: 'Open each recording beside its CRM record and calendar result.' },
+      { step: '3', title: 'Score', text: 'Mark the five quality parts and record any hard stop.' },
+      { step: '4', title: 'Repair', text: 'Choose the smallest list, script, tool, or coaching fix that matches the evidence.' },
+      { step: '5', title: 'Check', text: 'Use the next mixed sample to see whether the same miss appears again.' }
+    ],
+    banners: [
+      { label: 'Role brief', title: 'Give the caller one clear meeting goal', text: 'Map the fit questions, owner limits, and calendar handoff before interviews begin. The contact brief gives our Philippines staffing team the facts needed to shape the role.', href: '/contact', cta: 'Build the caller brief' },
+      { label: 'Service path', title: 'Need a focused appointment setting lane?', text: 'Review the service scope for Filipino talent, then bring your list, tools, schedule, and owner rules to the planning call.', href: '/services/appointment-setting', cta: 'See appointment setting support' },
+      { label: 'Quality path', title: 'Make call review part of the role', text: 'A caller needs examples and a fair review rule, not surprise feedback. Use the call quality service page to map recordings, notes, and owner checks.', href: '/services/call-quality-review', cta: 'Plan call quality review' }
+    ],
+    faqs: [
+      { q: 'What should a Philippines appointment setting scorecard measure?', a: 'Measure the opening, fit questions, listening, next-step promise, CRM record, and owner handoff. Keep hard stops for false claims, ignored opt-outs, hidden poor fit, and sensitive decisions that should have gone back to your team.' },
+      { q: 'Should booked meetings be the main target?', a: 'No. A raw booking count can reward meetings that are unsuitable or never held. Check accepted meetings, held meetings, useful notes, and correct handoffs together.' },
+      { q: 'How many calls should a manager review?', a: 'Choose a small mixed sample that your manager can review every week without rushing. The mix matters more than a large total because it should include different outcomes, callers, and list segments.' },
+      { q: 'Can a Filipino appointment setter change the offer?', a: 'Only when the business has given a narrow written approval rule. New promises, contract terms, credits, sensitive account changes, and unusual exceptions should return to an owner.' },
+      { q: 'Which calling rules apply to an outsourced campaign?', a: 'That depends on the places called, the list source, the call type, consent, recording, and other facts. Have a qualified adviser apply the FTC, FCC, state, and other relevant rules before launch.' }
+    ],
+    related: [
+      { label: 'Appointment setting service', href: '/services/appointment-setting' },
+      { label: 'Outbound lead qualification service', href: '/services/outbound-lead-qualification' },
+      { label: 'Call quality review service', href: '/services/call-quality-review' },
+      { label: 'Provider questions for outsourced callers', href: '/blog/outsourced-callers-provider-questions' }
+    ],
+    sources: [
+      { name: '1. FTC: Reports of Unwanted Telemarketing Calls Down More Than 50 Percent Since 2021, November 15, 2024', url: 'https://www.ftc.gov/news-events/news/press-releases/2024/11/reports-unwanted-telemarketing-calls-down-more-50-percent-2021' },
+      { name: '2. FTC: National Do Not Call Registry Data Book for Fiscal Year 2024', url: 'https://www.ftc.gov/reports/national-do-not-call-registry-data-book-fiscal-year-2024' },
+      { name: '3. Electronic Code of Federal Regulations: Telemarketing Sales Rule, 16 CFR Part 310', url: 'https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310' },
+      { name: '4. Electronic Code of Federal Regulations: FCC telephone solicitation rule, 47 CFR 64.1200', url: 'https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200' },
+      { name: '5. Philippine Department of Trade and Industry: Philippines invites European investments into IT-BPM sector, October 2021', url: 'https://www.dti.gov.ph/uncategorized/dti-ph-invites-european-investments' },
+      { name: '6. Lawphil: Republic Act No. 10173, Data Privacy Act of 2012', url: 'https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html' }
+    ]
+  },
   'outbound-call-center-outsourcing-philippines': {
     published: '2026-07-22',
     mainKeyword: 'outbound call center outsourcing',
