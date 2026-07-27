@@ -151,7 +151,7 @@ export default function Home() {
             <p className="desk-label dark"><span /> Guardrails first</p>
             <h2>Let callers move the conversation. Keep owner decisions with the owner.</h2>
             <p>Good scripts help, but scripts do not cover every call. Write down what the caller can answer, what needs a callback, and what they must never promise.</p>
-            <a className="desk-link dark-link" href="/blog/outsourced-callers-provider-questions">Read the provider questions <span aria-hidden="true">↗</span></a>
+            <a className="desk-link dark-link" href="/blog">Read the provider questions <span aria-hidden="true">↗</span></a>
           </div>
           <div className="decision-panel">
             <div className="decision-col go">

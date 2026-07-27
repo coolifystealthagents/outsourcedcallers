@@ -40,32 +40,7 @@ export const blogPosts = [
     "title": "Outbound call center outsourcing: a Philippines-only launch plan",
     "excerpt": "Outbound call center outsourcing works best when the call list, script, handoff rules, and review plan are clear before the first dial. This guide shows how to set up a Filipino calling team without giving away owner decisions.",
     "minutes": 11
-  },
-  {
-    "slug": "outsourced-callers-planning",
-    "title": "Outsourced Callers: What does it plan?",
-    "excerpt": "A plain-English guide to staffing details, scope, and hidden planning.",
-    "minutes": 6
-  },
-  {
-    "slug": "outsourced-callers-tasks-to-outsource",
-    "title": "Outsourced Callers: What tasks should you outsource first?",
-    "excerpt": "Start with recurring work that has examples and clear review rules.",
-    "minutes": 7
-  },
-  {
-    "slug": "outsourced-callers-provider-questions",
-    "title": "Outsourced Callers: Questions to ask before hiring",
-    "excerpt": "Use these questions before you sign with a provider or freelancer.",
-    "minutes": 8
-  },
-  {
-    "slug": "outsourced-callers-onboarding-checklist",
-    "title": "Outsourced Callers: First week onboarding checklist",
-    "excerpt": "A simple checklist for tools, SOPs, calls, QA, and reporting.",
-    "minutes": 9
-  }
-] as const;
+  },] as const;
 
 export const blogDetails = {
   'philippines-appointment-setting-quality-scorecard': {
@@ -207,7 +182,7 @@ export const blogDetails = {
       { label: 'Appointment setting service', href: '/services/appointment-setting' },
       { label: 'Outbound lead qualification service', href: '/services/outbound-lead-qualification' },
       { label: 'Call quality review service', href: '/services/call-quality-review' },
-      { label: 'Provider questions for outsourced callers', href: '/blog/outsourced-callers-provider-questions' }
+      { label: 'Provider questions for outsourced callers', href: '/blog' }
     ],
     sources: [
       { name: '1. FTC: Reports of Unwanted Telemarketing Calls Down More Than 50 Percent Since 2021, November 15, 2024', url: 'https://www.ftc.gov/news-events/news/press-releases/2024/11/reports-unwanted-telemarketing-calls-down-more-50-percent-2021' },
@@ -330,7 +305,7 @@ export const blogDetails = {
       { label: 'Outbound lead qualification service', href: '/services/outbound-lead-qualification' },
       { label: 'Appointment setting service', href: '/services/appointment-setting' },
       { label: 'Call quality review service', href: '/services/call-quality-review' },
-      { label: 'Questions to ask a caller provider', href: '/blog/outsourced-callers-provider-questions' }
+      { label: 'Questions to ask a caller provider', href: '/blog' }
     ],
     sources: [
       { name: 'Electronic Code of Federal Regulations: Telemarketing Sales Rule, 16 CFR Part 310', url: 'https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310' },
