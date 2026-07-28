@@ -30,6 +30,12 @@ export const services = [
 ] as const;
 export const blogPosts = [
   {
+    "slug": "philippines-callback-verification-playbook",
+    "title": "Philippines callback verification playbook for customer follow-up calls",
+    "excerpt": "A practical way for Filipino callers to verify callback requests, protect customer records, and send sensitive account decisions back to the business owner.",
+    "minutes": 14
+  },
+  {
     "slug": "philippines-appointment-setting-quality-scorecard",
     "title": "Philippines appointment setting quality scorecard",
     "excerpt": "A practical scorecard for reviewing Filipino appointment setters, call notes, handoffs, and held meetings without rewarding empty calendar bookings.",
@@ -43,6 +49,152 @@ export const blogPosts = [
   },] as const;
 
 export const blogDetails = {
+  'philippines-callback-verification-playbook': {
+    published: '2026-07-28',
+    mainKeyword: 'Philippines callback verification playbook',
+    metaLabel: 'Philippines customer follow-up guide',
+    directAnswerHeading: 'How a Filipino caller should verify a callback',
+    takeawaysHeading: 'Five rules for safer customer callbacks',
+    tableHeading: 'Give each callback step a clear owner',
+    tableLabel: 'Callback control table',
+    statsHeading: 'Why identity checks belong in the call brief',
+    statsLabel: 'FTC fraud report context',
+    scriptsHeading: 'Words for verification and handoff calls',
+    workflowHeading: 'Move a callback from request to closed record',
+    faqHeading: 'Philippines callback verification FAQ',
+    relatedHeading: 'Build the customer calling lane',
+    summary: 'A Philippines callback verification playbook tells a Filipino caller how to confirm the request, use a trusted customer record, limit the questions asked, and return sensitive decisions to an owner. The caller should never treat an incoming phone number, a familiar name, or a confident voice as proof of identity.',
+    takeaways: [
+      'Start from a trusted record instead of trusting the number shown on the phone.',
+      'Ask only the approved questions needed to find the right account and request.',
+      'Keep security codes, account ownership disputes, refunds, and unusual changes with a named owner.',
+      'Record the request, check used, next action, and promised reply in fixed fields.',
+      'Review failed checks and repeat requests so the brief gets better each week.'
+    ],
+    decisionTable: [
+      { lane: 'Request intake', caller: 'Records the name, callback reason, channel, and time without confirming private account details.', owner: 'Defines which requests enter the queue and which need an immediate stop.', measure: 'A complete request with no private detail exposed' },
+      { lane: 'Record lookup', caller: 'Finds the customer through the approved CRM view and checks the saved contact path.', owner: 'Sets access limits and the fields callers may use for a match.', measure: 'Match made from a trusted company record' },
+      { lane: 'Identity check', caller: 'Uses the approved low risk questions and explains why the check is needed.', owner: 'Approves the questions and handles failed or disputed checks.', measure: 'Check result and reason saved clearly' },
+      { lane: 'Routine reply', caller: 'Gives only the status or next step allowed in the written call brief.', owner: 'Controls exceptions, account changes, security issues, and other sensitive decisions.', measure: 'Useful answer without an invented promise' },
+      { lane: 'Close and handoff', caller: 'Repeats the next action, saves the callback note, and routes any open issue.', owner: 'Names the person who will answer and the expected reply window.', measure: 'The next person can act from the record' }
+    ],
+    planningBands: [
+      { label: '2024 Sentinel reports', value: '6.5M', note: 'FTC data book, released March 10, 2025' },
+      { label: '2024 fraud reports', value: '2.6M', note: 'FTC release, March 10, 2025' },
+      { label: 'Reports with loss', value: '38%', note: 'Up from 27% in 2023, FTC' },
+      { label: 'Reported fraud loss', value: '$12.5B+', note: '2024 consumer reports, FTC' }
+    ],
+    chart: {
+      title: 'Consumer reports received by the FTC in 2024',
+      description: 'Three horizontal bars compare 6.5 million total Sentinel reports, 2.6 million fraud reports, and more than 1.1 million identity theft reports received in 2024.',
+      methods: 'Method: values come from the FTC release and Consumer Sentinel Network Data Book published March 10, 2025. Bar widths use 6.5 million total Sentinel reports as the full scale; fraud and identity theft are categories within that total. The figures describe consumer reports, not verified incidents and not the results of any Filipino calling team.',
+      bars: [
+        { label: 'All Sentinel', value: '6.5M', width: 100 },
+        { label: 'Fraud', value: '2.6M', width: 40 },
+        { label: 'Identity theft', value: '1.1M+', width: 17 }
+      ]
+    },
+    expertQuote: {
+      text: 'The data we’re releasing today shows that scammers’ tactics are constantly evolving. The FTC is monitoring those trends closely and working hard to protect the American people from fraud',
+      attribution: 'Christopher Mufarrige, Director of the FTC Bureau of Consumer Protection, March 10, 2025'
+    },
+    sections: [
+      {
+        heading: 'Start with the request, not the caller ID',
+        paragraphs: [
+          'A customer may ask for a return call through voicemail, email, or a web form. Save the source and request before the Filipino caller opens an account record.',
+          'The number shown on the phone does not prove who is speaking. The FCC warns that caller ID can be altered, so use a contact path already held by the business.'
+        ]
+      },
+      {
+        heading: 'Make the first words calm and specific',
+        paragraphs: [
+          'The opening should name the business, caller, and reason for returning the request. Do not read out private account facts before the identity check is complete.',
+          'Tell the customer what the caller can do and what may need an owner. This makes the short check easier to understand.'
+        ]
+      },
+      {
+        heading: 'Use a short check from the trusted record',
+        paragraphs: [
+          'Choose two or three low risk facts that fit the approved account rules. Never ask for a password, one time security code, or full payment number.',
+          'Test the questions with sample records that contain no live customer data. If an answer does not match, stop the account discussion and route the failed check to the owner.'
+        ]
+      },
+      {
+        heading: 'Keep the reply inside a narrow lane',
+        paragraphs: [
+          'After the check passes, the caller can handle routine work listed in the brief. This may include an approved status, an available appointment, or a time for an owner to call.',
+          'A verified identity does not give the caller wider authority. Disputes, security concerns, unusual changes, and promises outside the brief still go back to the business.'
+        ]
+      },
+      {
+        heading: 'Treat fraud figures as a reason for care, not a sales claim',
+        paragraphs: [
+          'The FTC said consumers reported losing more than $12.5 billion to fraud in 2024, a 25 percent increase from 2023. It also received 2.6 million fraud reports, and the share of reports that included a loss rose from 27 percent in 2023 to 38 percent in 2024.',
+          'Phone calls were the second most reported scam contact method in 2024, after email. The figures do not measure a callback queue, but they show why business identity and check steps should be clear.'
+        ]
+      },
+      {
+        heading: 'Limit what a Philippines based caller can see',
+        paragraphs: [
+          'A callback queue may expose contact details, request notes, and account history. Give each Filipino caller a named account and only the tools needed for that queue.',
+          'The Philippines Data Privacy Act of 2012 covers personal information. A privacy or legal owner should set the notice, access, storage, deletion, and cross border steps for the campaign.'
+        ]
+      },
+      {
+        heading: 'Use the Philippines talent base without skipping the work sample',
+        paragraphs: [
+          'An October 2021 Philippine Department of Trade and Industry article said the IT-BPM sector employed 1.32 million people and produced USD26.7 billion in 2020. That scale does not prove one person can handle a careful callback queue.',
+          'Give every candidate the same test with a made up record. Ask for an opening, a failed check response, a security code refusal, and a useful note.'
+        ]
+      },
+      {
+        heading: 'Close the record before starting the next call',
+        paragraphs: [
+          'Every callback needs a final label such as completed, owner reply due, failed check, or wrong contact. Save the request, check result, answer, open question, owner, and reply time.',
+          'Review a small mix of records each week beside the call when recording is allowed. Fix the brief when several callers miss the same step, or coach the individual when the pattern is theirs.'
+        ]
+      }
+    ],
+    scripts: [
+      { title: 'Return call opening', text: 'Hi, this is Ana calling for [company]. We received your request about [general topic]. Before we discuss the account, I need to complete our short identity check.' },
+      { title: 'Failed check', text: 'I cannot open the account details from this call because the check did not match. I will save the request and ask [owner or team] to review it through the approved contact path.' },
+      { title: 'Sensitive request handoff', text: 'That change needs approval from [owner or team]. I can record what you need and ask them to respond by [approved time], but I cannot make the change myself.' }
+    ],
+    workflow: [
+      { step: '1', title: 'Record', text: 'Save the request source, general reason, time, and contact detail without exposing private facts.' },
+      { step: '2', title: 'Look up', text: 'Open the trusted company record and find the approved callback path.' },
+      { step: '3', title: 'Check', text: 'Use the short question set and stop if the identity check fails.' },
+      { step: '4', title: 'Answer', text: 'Handle only the routine reply allowed in the written brief.' },
+      { step: '5', title: 'Close', text: 'Save the result, owner handoff, and promised reply before moving on.' }
+    ],
+    banners: [
+      { label: 'Role brief', title: 'Write the callback rules before interviews', text: 'Map the request sources, trusted records, identity checks, owner decisions, and final labels. The intake gives our Philippines staffing team a clear caller role to match.', href: '/contact', cta: 'Build the callback brief' },
+      { label: 'Service path', title: 'Need a steady customer follow-up queue?', text: 'Review the service scope for Filipino talent, then bring your contact paths, tools, hours, and owner rules to the planning call.', href: '/services/customer-follow-up-calls', cta: 'See follow-up call support' },
+      { label: 'Control path', title: 'Make call review part of the handoff', text: 'Check the recording and CRM note together so failed checks and loose promises do not hide. The call quality page shows how to plan that review.', href: '/services/call-quality-review', cta: 'Plan call quality review' }
+    ],
+    faqs: [
+      { q: 'What should a Filipino caller verify on a customer callback?', a: 'Use the short question set approved for the account and campaign. Start from a trusted company record, avoid passwords and security codes, and stop the account discussion when the check fails.' },
+      { q: 'Is caller ID enough to verify a customer?', a: 'No. Caller ID information can be changed, and a familiar number does not prove who is speaking. Use the approved contact path and identity check in the company record.' },
+      { q: 'What should stay with the business owner?', a: 'Keep failed checks, account ownership disputes, security concerns, unusual changes, and decisions outside the written brief with a named owner. The caller should record the request and give a truthful reply window.' },
+      { q: 'What should the callback note include?', a: 'Save the request source, general reason, check result, reply given, final label, open question, next owner, and promised reply time. Another person should be able to continue without asking the customer to start over.' },
+      { q: 'Which rules apply to a Philippines customer callback team?', a: 'The answer depends on the data, customer location, call type, recording, consent, and other facts. Ask qualified advisers to apply the Philippines Data Privacy Act, US calling rules, state rules, and any other duties that fit the real work.' }
+    ],
+    related: [
+      { label: 'Customer follow-up calls', href: '/services/customer-follow-up-calls' },
+      { label: 'Inbound call handling', href: '/services/inbound-call-handling' },
+      { label: 'Call quality review', href: '/services/call-quality-review' },
+      { label: 'Database verification calls', href: '/services/database-verification-calls' }
+    ],
+    sources: [
+      { name: '1. FTC: New FTC Data Show a Big Jump in Reported Losses to Fraud to $12.5 Billion in 2024, March 10, 2025', url: 'https://www.ftc.gov/news-events/news/press-releases/2025/03/new-ftc-data-show-big-jump-reported-losses-fraud-125-billion-2024' },
+      { name: '2. FTC: Consumer Sentinel Network Data Book 2024, released March 10, 2025', url: 'https://www.ftc.gov/reports/consumer-sentinel-network-data-book-2024' },
+      { name: '3. FCC: Caller ID Spoofing, consumer guide updated July 7, 2025', url: 'https://consumercomplaints.fcc.gov/hc/en-us/articles/115004676063-Caller-ID-Spoofing' },
+      { name: '4. Electronic Code of Federal Regulations: Telemarketing Sales Rule, 16 CFR Part 310', url: 'https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310' },
+      { name: '5. Lawphil: Republic Act No. 10173, Data Privacy Act of 2012', url: 'https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html' },
+      { name: '6. Philippine Department of Trade and Industry: Philippines invites European investments into IT-BPM sector, October 2021', url: 'https://www.dti.gov.ph/uncategorized/dti-ph-invites-european-investments' }
+    ]
+  },
   'philippines-appointment-setting-quality-scorecard': {
     published: '2026-07-25',
     mainKeyword: 'Philippines appointment setting quality scorecard',
