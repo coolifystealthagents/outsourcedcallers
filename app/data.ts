@@ -30,6 +30,12 @@ export const services = [
 ] as const;
 export const blogPosts = [
   {
+    "slug": "philippines-order-confirmation-call-exception-checklist",
+    "title": "Philippines order confirmation call exception checklist",
+    "excerpt": "A practical checklist for Filipino callers who confirm orders, with identity checks, safe change limits, clear stop points, and notes the fulfillment team can use.",
+    "minutes": 14
+  },
+  {
     "slug": "philippines-win-back-call-suppression-checklist",
     "title": "Philippines win-back call suppression checklist",
     "excerpt": "A plain checklist for Filipino callers who contact former customers, with list checks, opt-out handling, owner limits, and notes that keep the next action clear.",
@@ -55,6 +61,159 @@ export const blogPosts = [
   },] as const;
 
 export const blogDetails = {
+  'philippines-order-confirmation-call-exception-checklist': {
+    published: '2026-07-28',
+    mainKeyword: 'Philippines order confirmation call exception checklist',
+    metaLabel: 'Philippines order confirmation guide',
+    directAnswerHeading: 'How a Filipino caller should confirm an order',
+    takeawaysHeading: 'Five rules before an order is released',
+    tableHeading: 'Give each confirmation decision a clear owner',
+    tableLabel: 'Order confirmation control table',
+    statsHeading: 'Why a trusted record matters on a confirmation call',
+    statsLabel: 'FTC fraud report context',
+    scriptsHeading: 'Words for order checks and safe handoffs',
+    workflowHeading: 'Move one order from queue to release',
+    faqHeading: 'Philippines order confirmation FAQ',
+    relatedHeading: 'Build the order calling lane',
+    summary: 'A Philippines order confirmation call should start from a trusted business record, cover only the approved order facts, and stop when the person asks for a sensitive change. The Filipino caller can record the request, while the business keeps control of payment details, account ownership, address overrides, and release decisions.',
+    takeaways: [
+      'Open the order from the approved system instead of trusting the number shown on the phone.',
+      'Confirm only the few facts needed for fulfillment and avoid reading private details aloud.',
+      'Send payment, identity, address, and unusual delivery changes to a named owner.',
+      'Use fixed result labels so the warehouse or service team knows whether to release or hold.',
+      'Review the call beside the order record when a change, failed check, or complaint appears.'
+    ],
+    decisionTable: [
+      { lane: 'Queue entry', caller: 'Works only orders in the approved view and flags a missing source or owner.', owner: 'Defines which orders need a call or hold.', measure: 'Every call starts from a trusted order record' },
+      { lane: 'Identity check', caller: 'Uses the approved check without asking for passwords, security codes, or full payment details.', owner: 'Chooses the check and mismatch rule.', measure: 'The result is saved before details are discussed' },
+      { lane: 'Order facts', caller: 'Confirms the approved item, quantity, date, or service window and records the answer.', owner: 'Sets which facts may be spoken and which stay masked.', measure: 'A complete confirmation with little data exposed' },
+      { lane: 'Change request', caller: 'Pauses release and records the customer words when a sensitive change appears.', owner: 'Reviews payment, account, address, delivery, and dispute exceptions.', measure: 'No risky change is improvised' },
+      { lane: 'Close and release', caller: 'Repeats the next step and applies the result label.', owner: 'Controls release and clears held orders.', measure: 'Fulfillment can act from the record' }
+    ],
+    planningBands: [
+      { label: '2024 Sentinel reports', value: '6.5M', note: 'FTC release, March 10, 2025' },
+      { label: '2024 fraud reports', value: '2.6M', note: 'FTC release, March 10, 2025' },
+      { label: '2024 identity theft reports', value: '1.1M+', note: 'FTC release, March 10, 2025' },
+      { label: 'Reports that included loss', value: '38%', note: 'FTC 2024 data, released March 10, 2025' }
+    ],
+    chart: {
+      title: 'Consumer reports received by the FTC in 2024',
+      description: 'Three horizontal bars compare 6.5 million total Sentinel reports, 2.6 million fraud reports, and more than 1.1 million identity theft reports received in 2024.',
+      methods: 'Method: values come from the FTC release and Consumer Sentinel Network Data Book published March 10, 2025. Bar widths use 6.5 million total Sentinel reports as the full scale; fraud and identity theft are categories within that total. The figures describe consumer reports, not verified incidents, order confirmation calls, or the work of Filipino callers.',
+      bars: [
+        { label: 'All Sentinel', value: '6.5M', width: 100 },
+        { label: 'Fraud', value: '2.6M', width: 40 },
+        { label: 'Identity theft', value: '1.1M+', width: 17 }
+      ]
+    },
+    expertQuote: {
+      text: 'The data we’re releasing today shows that scammers’ tactics are constantly evolving. The FTC is monitoring those trends closely and working hard to protect the American people from fraud',
+      attribution: 'Christopher Mufarrige, Director of the FTC Bureau of Consumer Protection, March 10, 2025'
+    },
+    sections: [
+      {
+        heading: 'Start from the order record, not the incoming number',
+        paragraphs: [
+          'The call queue should come from the system that holds the order. Give each record an order number, customer contact path, reason for confirmation, current hold state, and owner before a Filipino caller starts.',
+          'A familiar caller ID or one known order fact is not enough. The FCC warns that caller ID information can be altered, so the approved record should guide the check.'
+        ]
+      },
+      {
+        heading: 'Keep the opening short and honest',
+        paragraphs: [
+          'Name the business, the caller, and the general reason for contact. Do not read the full address, account history, or order contents before the customer passes the approved check.',
+          'Tell the person what the caller can confirm and what needs another team. That boundary helps when a change falls outside the brief.'
+        ]
+      },
+      {
+        heading: 'Use the smallest useful identity check',
+        paragraphs: [
+          'Choose a short check that fits the real order and the company rules. It may use a low risk fact already held in the approved record, but it should never ask for a password, one time code, or full payment number.',
+          'Test the check with made up orders before live calls begin. If the answers do not match, the caller should stop discussing the order, apply the failed-check label, and route the record to the named owner.'
+        ]
+      },
+      {
+        heading: 'Confirm only what fulfillment needs',
+        paragraphs: [
+          'The brief should list the exact facts the caller may confirm. These might include the approved item name, quantity, service date, delivery window, or whether an adult must be present.',
+          'Avoid a broad request such as "confirm everything." It may expose extra data and leaves the customer unsure which answer matters. A short field set is also easier for the next team to scan.'
+        ]
+      },
+      {
+        heading: 'Read fraud figures as a reason for care',
+        paragraphs: [
+          'The FTC said Consumer Sentinel received 6.5 million reports in 2024. That total included 2.6 million fraud reports and more than 1.1 million identity theft reports, according to the agency’s March 10, 2025 release.',
+          'The same release said 38 percent of fraud reports included a loss in 2024, up from 27 percent in 2023. These numbers do not measure order calls or prove that a customer request is false. They explain why identity checks and exception holds should be written before a caller handles a live record.'
+        ]
+      },
+      {
+        heading: 'Stop sensitive changes instead of solving them live',
+        paragraphs: [
+          'A customer may ask to replace a payment method, switch the account name, move the order to a new address, add an unfamiliar pickup person, cancel part of the order, or rush the release. The caller should record the words used and pause at the exact boundary in the brief.',
+          'Give each exception one owner and reply window. The owner can use a trusted channel and inspect the order history. The Filipino caller should not invent a second check because the customer sounds rushed.'
+        ]
+      },
+      {
+        heading: 'Protect customer data in the Philippines handoff',
+        paragraphs: [
+          'Order records can contain names, phone numbers, addresses, purchase details, access notes, and customer messages. Give each caller a named account and only the fields needed for the approved queue, then remove access when the role or campaign ends.',
+          'The Philippines Data Privacy Act of 2012 covers personal information processing. A qualified privacy or legal owner should set the notice, access, transfer, storage, and deletion rules for the actual order system and the places served.'
+        ]
+      },
+      {
+        heading: 'Test the role with a messy sample order',
+        paragraphs: [
+          'A 2021 Philippine Department of Trade and Industry article said the IT-BPM sector employed 1.32 million people and produced USD26.7 billion in revenue during 2020. That national scale does not show whether one caller can follow a careful confirmation brief.',
+          'Use the same work sample for every candidate. Include a clean confirmation, a failed check, an address change, a request for a security code, and a note the fulfillment owner must act on. Listen for plain words, a firm stop, and a complete record.'
+        ]
+      },
+      {
+        heading: 'Close every call with a usable result',
+        paragraphs: [
+          'Use a short list of final labels such as confirmed, no answer, wrong contact, failed check, owner review, customer cancellation request, or do not contact. The label should control what happens next instead of sitting beside an open text box with no effect.',
+          'Save the check result, confirmed facts, requested change, next owner, and promised reply time. Review held orders beside their calls and records when recording is allowed. If the same exception keeps appearing, repair the brief or order form rather than asking callers to remember another verbal rule.'
+        ]
+      }
+    ],
+    scripts: [
+      { title: 'Confirmation opening', text: 'Hi, this is Ana calling for [company] about an order request. Before I discuss the order, I need to complete our short customer check.' },
+      { title: 'Sensitive change hold', text: 'I can record that request, but I cannot change that detail during this call. I will place the order in owner review and ask [team] to reply through the approved contact path by [time].' },
+      { title: 'Failed check', text: 'I cannot discuss or release the order because the check did not match. I will save the result and ask the account owner to review it through the approved contact path.' }
+    ],
+    workflow: [
+      { step: '1', title: 'Open', text: 'Load the approved order record and check the reason, contact path, hold state, and owner.' },
+      { step: '2', title: 'Check', text: 'Use the short identity check before speaking about order details.' },
+      { step: '3', title: 'Confirm', text: 'Ask only for the few facts listed in the fulfillment brief.' },
+      { step: '4', title: 'Hold', text: 'Pause sensitive changes, failed checks, complaints, and requests outside the caller lane.' },
+      { step: '5', title: 'Close', text: 'Apply the final label and save the next owner and reply time.' }
+    ],
+    banners: [
+      { label: 'Role brief', title: 'Write the confirmation limits before interviews', text: 'Map the order fields, trusted contact path, check, stop points, and final labels. The intake gives our Philippines staffing team a clear caller role to match.', href: '/contact', cta: 'Build the order call brief' },
+      { label: 'Service path', title: 'Need a steady order confirmation queue?', text: 'Review the service scope for Filipino talent, then bring your order system, hours, checks, and owner rules to the planning call.', href: '/services/order-confirmation-calls', cta: 'See order confirmation support' },
+      { label: 'Control path', title: 'Review the call and order record together', text: 'A calm call can still leave a risky change in the system. Use the call quality page to plan checks that cover the spoken call and the final order state.', href: '/services/call-quality-review', cta: 'Plan call quality review' }
+    ],
+    faqs: [
+      { q: 'What should a Filipino caller confirm on an order call?', a: 'Confirm only the approved fields, such as the item, quantity, service date, or delivery window. Complete the identity check first.' },
+      { q: 'Can the caller change an address or payment method?', a: 'Keep sensitive address, payment, account, pickup, and unusual delivery changes with a named owner unless the business has a narrow written rule. The caller can record the request and place the order on hold.' },
+      { q: 'What should happen after a failed customer check?', a: 'Stop the order discussion, apply the failed-check label, record what happened, and route the order through the approved owner path. Do not create a new identity test during the call.' },
+      { q: 'What belongs in the confirmation note?', a: 'Save the check result, confirmed facts, requested change, final label, next owner, and reply time. Fulfillment should be able to act from it.' },
+      { q: 'Which rules apply to order confirmation calls?', a: 'The answer depends on the data, call purpose, customer location, recording, consent, and order type. Ask qualified advisers to apply the Philippines privacy rules, US calling rules, state rules, and other duties that fit the real work.' }
+    ],
+    related: [
+      { label: 'Order confirmation calls', href: '/services/order-confirmation-calls' },
+      { label: 'Database verification calls', href: '/services/database-verification-calls' },
+      { label: 'Customer follow-up calls', href: '/services/customer-follow-up-calls' },
+      { label: 'Call quality review', href: '/services/call-quality-review' }
+    ],
+    sources: [
+      { name: 'FTC: New FTC Data Show a Big Jump in Reported Losses to Fraud to $12.5 Billion in 2024, March 10, 2025', url: 'https://www.ftc.gov/news-events/news/press-releases/2025/03/new-ftc-data-show-big-jump-reported-losses-fraud-125-billion-2024' },
+      { name: 'FTC: Consumer Sentinel Network Data Book 2024, released March 10, 2025', url: 'https://www.ftc.gov/reports/consumer-sentinel-network-data-book-2024' },
+      { name: 'FCC: Caller ID Spoofing, consumer guide updated July 7, 2025', url: 'https://consumercomplaints.fcc.gov/hc/en-us/articles/115004676063-Caller-ID-Spoofing' },
+      { name: 'CISA: Recognize and Report Phishing', url: 'https://www.cisa.gov/secure-our-world/recognize-and-report-phishing' },
+      { name: 'Lawphil: Republic Act No. 10173, Data Privacy Act of 2012', url: 'https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html' },
+      { name: 'Philippine Department of Trade and Industry: Philippines invites European investments into IT-BPM sector, October 2021', url: 'https://www.dti.gov.ph/uncategorized/dti-ph-invites-european-investments' }
+    ]
+  },
   'philippines-win-back-call-suppression-checklist': {
     published: '2026-07-28',
     mainKeyword: 'Philippines win-back call suppression checklist',
