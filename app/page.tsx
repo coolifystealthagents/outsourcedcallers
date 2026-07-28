@@ -58,7 +58,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="caller-desk" data-design="outbound-ops-2026-07">
+      <main className="caller-desk" data-design="outbound-ops-2026-07" data-gi-rollout="two-illustration-packs-one-icon-pack">
         <JsonLd data={schema} />
 
         <section className="desk-hero">
@@ -77,7 +77,7 @@ export default function Home() {
 
             <div className="caller-visual">
               <div className="photo-frame">
-                <img src="/filipino-calling-specialist.svg" alt="Illustration of a Filipino calling specialist wearing a headset beside a call queue" />
+                <img src="/illustrations/getillustrations/communication-illustrations-pack-svg/calling-specialist.webp" alt="Illustration representing a calling specialist handling connected conversations" />
                 <div className="photo-caption">
                   <span>Caller brief</span>
                   <strong>Approved language. Clear handoff.</strong>
@@ -88,9 +88,9 @@ export default function Home() {
                   <div><span className="pulse" /> Shift brief</div>
                   <small>OWNER REVIEW</small>
                 </div>
-                <div className="queue-row"><span>Reached</span><b>Log outcome</b><i className="tone green" /></div>
-                <div className="queue-row"><span>No answer</span><b>Schedule retry</b><i className="tone amber" /></div>
-                <div className="queue-row"><span>Needs approval</span><b>Send to owner</b><i className="tone coral" /></div>
+                <div className="queue-row"><span>Reached</span><b>Log outcome</b><img className="status-icon" src="/icons/getillustrations/blueprint-communication-icons-svg/call.svg" alt=""/></div>
+                <div className="queue-row"><span>No answer</span><b>Schedule retry</b><img className="status-icon" src="/icons/getillustrations/blueprint-communication-icons-svg/outcome-note.svg" alt=""/></div>
+                <div className="queue-row"><span>Needs approval</span><b>Send to owner</b><img className="status-icon" src="/icons/getillustrations/blueprint-communication-icons-svg/handoff.svg" alt=""/></div>
                 <div className="board-foot"><span>CRM note required</span><strong>before next call</strong></div>
               </aside>
             </div>
@@ -173,6 +173,11 @@ export default function Home() {
               </ul>
             </div>
           </div>
+        </section>
+
+        <section className="container gi-proof" aria-label="Calling desk communication flow">
+          <img className="gi-proof-art" src="/illustrations/getillustrations/inkdex-team-illustrations-svg/call-quality-review.svg" alt=""/>
+          <div><p className="desk-label dark"><span/>Every outcome recorded</p><h2>Connect the call to a clean handoff.</h2><div className="gi-icon-row"><span><img src="/icons/getillustrations/blueprint-communication-icons-svg/call.svg" alt=""/>Call</span><span><img src="/icons/getillustrations/blueprint-communication-icons-svg/outcome-note.svg" alt=""/>Outcome note</span><span><img src="/icons/getillustrations/blueprint-communication-icons-svg/handoff.svg" alt=""/>Owner handoff</span></div></div>
         </section>
 
         <section className="guides-section">
