@@ -30,6 +30,12 @@ export const services = [
 ] as const;
 export const blogPosts = [
   {
+    "slug": "philippines-win-back-call-suppression-checklist",
+    "title": "Philippines win-back call suppression checklist",
+    "excerpt": "A plain checklist for Filipino callers who contact former customers, with list checks, opt-out handling, owner limits, and notes that keep the next action clear.",
+    "minutes": 14
+  },
+  {
     "slug": "philippines-callback-verification-playbook",
     "title": "Philippines callback verification playbook for customer follow-up calls",
     "excerpt": "A practical way for Filipino callers to verify callback requests, protect customer records, and send sensitive account decisions back to the business owner.",
@@ -49,6 +55,151 @@ export const blogPosts = [
   },] as const;
 
 export const blogDetails = {
+  'philippines-win-back-call-suppression-checklist': {
+    published: '2026-07-28',
+    mainKeyword: 'Philippines win-back call suppression checklist',
+    metaLabel: 'Philippines win-back calling guide',
+    directAnswerHeading: 'How to control a Philippines win-back call list',
+    takeawaysHeading: 'Five rules before a former customer is called',
+    tableHeading: 'Give every list and call decision an owner',
+    tableLabel: 'Win-back control table',
+    statsHeading: 'Why suppression checks need a fixed place in the brief',
+    statsLabel: 'FTC Do Not Call context',
+    scriptsHeading: 'Words for a careful win-back call',
+    workflowHeading: 'Move one record through the win-back queue',
+    faqHeading: 'Philippines win-back calling FAQ',
+    relatedHeading: 'Build a controlled calling lane',
+    summary: 'A Philippines win-back call suppression checklist tells a Filipino caller which former customers may enter the queue, which records must stay out, and what to do when someone asks for no more calls. The business owner keeps control of list approval, consent questions, offer changes, complaints, and any promise outside the written brief.',
+    takeaways: [
+      'Approve the reason and source for every record before it reaches a caller.',
+      'Check the business suppression list and other required lists before each approved campaign run.',
+      'Give the caller one short opt-out response and a way to stop future contact quickly.',
+      'Keep credits, contract changes, complaints, and unusual promises with a named owner.',
+      'Review call notes beside list changes so a stopped record does not slip back into the queue.'
+    ],
+    decisionTable: [
+      { lane: 'List entry', caller: 'Works only records released in the approved campaign view and flags missing source notes.', owner: 'Defines the valid source, contact purpose, and records that must never enter.', measure: 'Every record has a visible source and reason' },
+      { lane: 'Suppression check', caller: 'Confirms the approved check is complete before the first attempt and pauses uncertain records.', owner: 'Sets the lists, refresh timing, legal review, and evidence the campaign must keep.', measure: 'No call begins from an unchecked record' },
+      { lane: 'Call opening', caller: 'Names the business and gives the approved reason without pretending to know the customer.', owner: 'Approves required identity, notice, and calling-hour language.', measure: 'A clear opening with no invented relationship' },
+      { lane: 'Stop request', caller: 'Acknowledges the request, applies the stop label, ends the offer, and records the time.', owner: 'Makes sure the record is removed from later lists and handles any complaint.', measure: 'The stop reaches every connected system' },
+      { lane: 'Possible return', caller: 'Records the answer and offers only the next step written in the brief.', owner: 'Controls exceptions, offer changes, account issues, and final commitments.', measure: 'A useful handoff without a loose promise' }
+    ],
+    planningBands: [
+      { label: 'New DNC sign-ups in FY 2024', value: '4.2M+', note: 'FTC release, November 15, 2024' },
+      { label: 'Active DNC registrations', value: '253M+', note: 'FTC FY 2024 data book' },
+      { label: 'FY 2024 DNC complaints', value: '2M+', note: 'FTC FY 2024 data book' },
+      { label: 'FY 2024 robocall complaints', value: '1.1M', note: 'FTC release, November 15, 2024' }
+    ],
+    chart: {
+      title: 'Robocall complaints reported to the FTC',
+      description: 'Three horizontal bars compare more than 3.4 million complaints in fiscal year 2021, 1.2 million in fiscal year 2023, and 1.1 million in fiscal year 2024.',
+      methods: 'Method: the values are rounded fiscal-year complaint totals stated in the FTC release dated November 15, 2024. The FY 2021 value is a lower bound because the source says more than 3.4 million. These public complaint totals give context for suppression controls; they do not measure one win-back list or the work of Filipino callers.',
+      bars: [
+        { label: 'FY 2021', value: '3.4M+', width: 100 },
+        { label: 'FY 2023', value: '1.2M', width: 35 },
+        { label: 'FY 2024', value: '1.1M', width: 32 }
+      ]
+    },
+    expertQuote: {
+      text: 'Illegal calls remain a scourge, but the FTC’s strategy to pursue upstream players and equip the agency to confront emerging threats is showing clear signs of success',
+      attribution: 'Sam Levine, Director of the FTC Bureau of Consumer Protection, November 15, 2024'
+    },
+    sections: [
+      {
+        heading: 'Define a win-back record before building the list',
+        paragraphs: [
+          'A former customer is not automatically ready for another call. Write the business reason for contact, the source of the relationship, the approved campaign purpose, and the event that makes the record eligible.',
+          'Mark records that must stay out before a Filipino caller sees the queue. That group may include prior stop requests, open complaints, legal holds, bad numbers, active disputes, and contacts that do not meet the approved campaign rules.'
+        ]
+      },
+      {
+        heading: 'Make suppression a release step, not a caller guess',
+        paragraphs: [
+          'The business should apply the required suppression checks when it prepares each campaign list. A caller should see a release date or other simple proof that the record passed the approved process, not a folder full of rules to interpret during a live call.',
+          'Keep the company stop list close to the system that creates the queue. If lists move between a CRM, dialer, spreadsheet, and provider, name the person who removes blocked records from every copy and checks that the next upload stays clean.'
+        ]
+      },
+      {
+        heading: 'Open the call without inventing familiarity',
+        paragraphs: [
+          'The caller should name the business and give the approved reason in the first few words. A past order or inquiry does not give the caller permission to imply a personal relationship that did not exist.',
+          'Use one direct question to check whether the person wants to continue. If the answer is no, the caller should stop the offer and move to the approved close instead of trying a fresh objection line.'
+        ]
+      },
+      {
+        heading: 'Turn every stop request into a system change',
+        paragraphs: [
+          'A polite script is only the first part of opt-out handling. The caller also needs a clear record label, a time stamp, a short note, and a path that removes the contact from future approved lists.',
+          'Do not ask the customer to explain or defend the request. The caller can confirm that it was recorded, end the campaign talk, and send a complaint or account issue to the named owner when more work is needed.'
+        ]
+      },
+      {
+        heading: 'Read the FTC numbers as context, not campaign proof',
+        paragraphs: [
+          'The FTC said more than 4.2 million people added phone numbers to the National Do Not Call Registry during fiscal year 2024. That brought active registrations above 253 million, compared with 249.5 million at the end of fiscal year 2023.',
+          'The FY 2024 data book says the FTC received more than 2 million Do Not Call complaints, while its November 15, 2024 release reported 1.1 million robocall complaints. These figures do not decide whether one customer may be called, but they show why list checks and stop handling need real owners.'
+        ]
+      },
+      {
+        heading: 'Keep owner decisions out of the caller script',
+        paragraphs: [
+          'A win-back call can uncover a complaint, disputed account, service failure, or request for a new promise. The Filipino caller should capture the facts and give an honest reply window instead of trying to settle an issue that belongs to the business.',
+          'Write the handoff fields in advance: issue, customer words, prior contact, requested outcome, next owner, and reply time. The owner should be able to act from the note without forcing the customer to repeat the full story.'
+        ]
+      },
+      {
+        heading: 'Protect customer records across the Philippines handoff',
+        paragraphs: [
+          'A win-back list may contain names, phone numbers, order history, complaint notes, and contact choices. Give each Filipino caller a named account and only the fields needed for the approved queue, then remove access when the work ends.',
+          'The Philippines Data Privacy Act of 2012 covers personal information processing. A qualified privacy or legal owner should set the notice, access, transfer, storage, and deletion steps that fit the real campaign and the places being called.'
+        ]
+      },
+      {
+        heading: 'Review the list change beside the call note',
+        paragraphs: [
+          'Choose a small mix of completed calls, no answers, stop requests, and owner handoffs for each review. Open the call record beside the source list and final suppression status so the reviewer can see whether the promised action reached the system.',
+          'Fix the process when the same record problem appears across several callers. Coach one person when the brief was clear but their notes, closing words, or stop handling repeatedly missed the agreed step.'
+        ]
+      }
+    ],
+    scripts: [
+      { title: 'Clear opening', text: 'Hi, this is Ana calling for [company]. You worked with us before, and I am calling about [approved reason]. Would you like to hear the short update?' },
+      { title: 'Stop request', text: 'Understood. I will mark this number so it is removed from this calling list. I will end the call now, and our team will handle the record update.' },
+      { title: 'Owner handoff', text: 'I do not want to guess about that issue. I will save what you told me and ask [owner or team] to reply by [approved time].' }
+    ],
+    workflow: [
+      { step: '1', title: 'Approve', text: 'Set the campaign purpose, record source, owner limits, and records that must stay out.' },
+      { step: '2', title: 'Check', text: 'Apply the required suppression process and release only the approved queue.' },
+      { step: '3', title: 'Call', text: 'Use the clear opening, listen for a stop, and stay inside the written offer path.' },
+      { step: '4', title: 'Update', text: 'Save the outcome, stop label, owner question, and promised reply in fixed fields.' },
+      { step: '5', title: 'Review', text: 'Compare the call note, source list, and final record status before the next upload.' }
+    ],
+    banners: [
+      { label: 'Role brief', title: 'Set the win-back rules before interviews', text: 'Map the approved records, stop labels, owner decisions, and final notes. The intake gives our Philippines staffing team a clear caller role to match.', href: '/contact', cta: 'Build the win-back brief' },
+      { label: 'Service path', title: 'Need help with a return campaign?', text: 'Review the service scope for Filipino talent, then bring your list source, tools, hours, and owner rules to the planning call.', href: '/services/win-back-campaign-support', cta: 'See win-back support' },
+      { label: 'Quality path', title: 'Check the call and record together', text: 'A clean close can still leave a bad list entry behind. Use the call quality page to plan reviews that include the spoken call and the final record.', href: '/services/call-quality-review', cta: 'Plan call quality review' }
+    ],
+    faqs: [
+      { q: 'What is a win-back suppression list?', a: 'It is the set of records that must stay out of a return campaign under the business rules and any duties that apply. It can include prior stop requests, invalid contacts, open complaints, disputed accounts, and other blocked records.' },
+      { q: 'Can a Filipino caller decide whether a record may be called?', a: 'The business should approve the rule and release the checked list before live work starts. A caller can pause a record with missing proof, but legal and campaign owners should decide uncertain cases.' },
+      { q: 'What should happen when someone asks for no more calls?', a: 'Acknowledge the request, stop the campaign talk, apply the approved label, save the time and note, and make sure the record is removed from later lists. Route any complaint or account issue to the named owner.' },
+      { q: 'What should stay with the business owner?', a: 'Keep complaints, disputed accounts, credits, contract changes, sensitive data questions, legal decisions, and promises outside the written brief with the owner. The caller should record the facts and give the approved reply window.' },
+      { q: 'Which calling rules apply to a win-back campaign?', a: 'The answer depends on the relationship, list source, call purpose, consent, location, technology, recording, and other facts. Have qualified advisers apply the federal, state, Philippines, and other rules that fit the real campaign.' }
+    ],
+    related: [
+      { label: 'Win-back campaign support', href: '/services/win-back-campaign-support' },
+      { label: 'Call quality review', href: '/services/call-quality-review' },
+      { label: 'Database verification calls', href: '/services/database-verification-calls' },
+      { label: 'Customer follow-up calls', href: '/services/customer-follow-up-calls' }
+    ],
+    sources: [
+      { name: '1. FTC: Reports of Unwanted Telemarketing Calls Down More Than 50 Percent Since 2021, November 15, 2024', url: 'https://www.ftc.gov/news-events/news/press-releases/2024/11/reports-unwanted-telemarketing-calls-down-more-50-percent-2021' },
+      { name: '2. FTC: National Do Not Call Registry Data Book for Fiscal Year 2024, November 15, 2024', url: 'https://www.ftc.gov/reports/national-do-not-call-registry-data-book-fiscal-year-2024' },
+      { name: '3. National Do Not Call Registry: business guidance', url: 'https://www.donotcall.gov/faq/faq-business' },
+      { name: '4. Electronic Code of Federal Regulations: Telemarketing Sales Rule, 16 CFR Part 310', url: 'https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310' },
+      { name: '5. Lawphil: Republic Act No. 10173, Data Privacy Act of 2012', url: 'https://lawphil.net/statutes/repacts/ra2012/ra_10173_2012.html' }
+    ]
+  },
   'philippines-callback-verification-playbook': {
     published: '2026-07-28',
     mainKeyword: 'Philippines callback verification playbook',
