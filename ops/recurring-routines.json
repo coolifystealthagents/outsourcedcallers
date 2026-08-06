@@ -1,0 +1,71 @@
+{
+  "version": "2.4",
+  "site": "OutsourcedCallers.com",
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "branch": "main",
+  "timezone": "UTC",
+  "secretInjection": ["github", "gemini"],
+  "terminalState": "verified_github_push",
+  "routines": [
+    {
+      "id": "daily-blog-publishing",
+      "title": "Daily Blog Publishing",
+      "cron": "0 9 * * 1-5",
+      "concurrency": "skip_if_active",
+      "catchUp": "skip_missed",
+      "priority": "medium",
+      "randomTarget": { "minimum": 20, "maximum": 25 },
+      "workflow": [
+        "select_and_record_random_target",
+        "topic_duplicate_canonical_and_intent_check",
+        "brief_research_and_single_authoritative_external_source",
+        "draft_existing_blog_data_model",
+        "standard_blog_validation",
+        "blader_humanizer_2_9_1_or_later",
+        "post_humanizer_validation",
+        "deterministic_thumbnail_generation_and_validation",
+        "update_indexes_and_sitemap_inputs",
+        "build_and_structured_data_validation",
+        "fetch_rebase_stage_intended_files_commit_push",
+        "record_sha_branch_files_push_and_validation"
+      ],
+      "humanizer": {
+        "source": "https://github.com/blader/humanizer",
+        "minimumVersion": "2.9.1",
+        "required": true
+      },
+      "push": { "repository": "coolifystealthagents/outsourcedcallers", "branch": "main" },
+      "afterPush": "stop"
+    },
+    {
+      "id": "daily-research-publishing",
+      "title": "Daily Research Publishing",
+      "cron": "0 6 * * *",
+      "concurrency": "always_enqueue",
+      "catchUp": "skip_missed",
+      "priority": "high",
+      "randomTarget": { "minimum": 10, "maximum": 15 },
+      "workflow": [
+        "select_and_record_random_target",
+        "cluster_topic_duplicate_canonical_and_intent_check",
+        "headline_statistic_and_minimum_10_real_sources",
+        "brief_research_and_restrained_evidence_first_draft",
+        "research_validation",
+        "blader_humanizer_2_9_1_or_later",
+        "post_humanizer_validation",
+        "deterministic_thumbnail_generation_and_validation",
+        "update_indexes_clusters_related_content_and_sitemap_inputs",
+        "build_and_structured_data_validation",
+        "fetch_rebase_stage_intended_files_commit_push",
+        "record_sha_branch_files_push_and_validation"
+      ],
+      "humanizer": {
+        "source": "https://github.com/blader/humanizer",
+        "minimumVersion": "2.9.1",
+        "required": true
+      },
+      "push": { "repository": "coolifystealthagents/outsourcedcallers", "branch": "main" },
+      "afterPush": "stop"
+    }
+  ]
+}

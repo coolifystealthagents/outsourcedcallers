@@ -1,0 +1,32 @@
+{
+  "version": "2.4",
+  "site": "OutsourcedCallers.com",
+  "niche": "outsourced calling services",
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "productionBranch": "main",
+  "timezone": "UTC",
+  "routines": [
+    {
+      "id": "daily-blog-publishing",
+      "title": "Daily Blog Publishing",
+      "cron": "0 9 * * 1-5",
+      "concurrency": "skip_if_active",
+      "catchUp": "skip_missed",
+      "priority": "medium",
+      "target": { "minimum": 20, "maximum": 25 },
+      "contentDirectory": "app/data.ts",
+      "articleType": "blog"
+    },
+    {
+      "id": "daily-research-publishing",
+      "title": "Daily Research Publishing",
+      "cron": "0 6 * * *",
+      "concurrency": "always_enqueue",
+      "catchUp": "skip_missed",
+      "priority": "high",
+      "target": { "minimum": 10, "maximum": 15 },
+      "contentDirectory": "app/data.ts",
+      "articleType": "research"
+    }
+  ]
+}
