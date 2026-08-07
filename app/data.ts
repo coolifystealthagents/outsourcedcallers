@@ -64,6 +64,12 @@ export const blogPosts = [
     "title": "Outbound call center outsourcing: a Philippines-only launch plan",
     "excerpt": "Outbound call center outsourcing works best when the call list, script, handoff rules, and review plan are clear before the first dial. This guide shows how to set up a Filipino calling team without giving away owner decisions.",
     "minutes": 11
+  },
+  {
+    "slug": "daily-caller-reporting-routine-philippines-team",
+    "title": "Daily caller reporting routine for a Philippines team",
+    "excerpt": "A small daily reporting routine for outsourced callers: record activity, outcomes, follow-ups, blockers, and the decisions that still belong with the owner.",
+    "minutes": 9
   },] as const;
 
 export const blogDetails = {
@@ -970,6 +976,70 @@ export const blogDetails = {
       { name: 'NIST Cybersecurity Framework 2.0', url: 'https://www.nist.gov/cyberframework' },
       { name: 'Salesforce: State of Sales research', url: 'https://www.salesforce.com/resources/research-reports/state-of-sales/' }
     ]
+  },
+  'daily-caller-reporting-routine-philippines-team': {
+    published: '2026-08-07',
+    mainKeyword: 'daily caller reporting routine Philippines team',
+    metaLabel: 'Outsourced caller operations guide',
+    directAnswerHeading: 'What should a caller report every day?',
+    summary: 'A daily caller report should make the work and the exceptions visible: attempts, connects, outcomes, follow-ups, blockers, and owner decisions. Keep the report tied to a released queue and the exact fields the caller is allowed to use.',
+    takeaways: [
+      'Release one named queue with a clear purpose before work begins.',
+      'Record attempts, connects, outcomes, next action, and the owner for exceptions.',
+      'Keep refunds, pricing, account changes, sensitive data, and promises with the owner.',
+      'Review a small sample of notes or recordings every week, not only totals.',
+      'Use recurring exceptions to improve the script and list rules.'
+    ],
+    tableLabel: 'Daily reporting control table',
+    tableHeading: 'Separate routine reporting from owner decisions',
+    decisionTable: [
+      { lane: 'Queue release', caller: 'Works only records with a source, purpose, and approved fields.', owner: 'Defines the list, exclusions, hours, and stop rules.', measure: 'Every record has a reason for contact' },
+      { lane: 'Call result', caller: 'Labels the outcome using the approved result set and writes a concise note.', owner: 'Defines what each label means and samples quality.', measure: 'The note supports the result label' },
+      { lane: 'Follow-up', caller: 'Records the requested next action and due time without inventing a promise.', owner: 'Approves availability, pricing, discounts, and unusual requests.', measure: 'Every open action has an owner' },
+      { lane: 'Exception', caller: 'Stops and routes identity, consent, data, complaint, or account issues.', owner: 'Handles the decision and updates the rule if needed.', measure: 'No sensitive exception is silently closed' }
+    ],
+    planningBands: [
+      { label: 'Daily report', value: '5 fields', note: 'Attempts, connects, outcomes, next actions, blockers' },
+      { label: 'Exception review', value: '15 min', note: 'Example owner check each workday' },
+      { label: 'Quality sample', value: '5 calls', note: 'Example weekly review, adjusted to volume' },
+      { label: 'Pilot window', value: '14 days', note: 'Example period before adding call volume' }
+    ],
+    sections: [
+      { heading: 'Start with the queue, not the dashboard', paragraphs: ['A report is only as reliable as the queue behind it. Name the campaign or follow-up reason, release the records deliberately, and define the fields the Filipino caller may view or update. This makes a missing source or unexpected record a visible exception.', 'Keep the first version plain. A shared table or CRM view can work if every row has a stable record identifier, a result label, a next action, and a note that another person can understand.'] },
+      { heading: 'Make the report show decisions waiting for the owner', paragraphs: ['Totals are useful, but they do not tell the owner what needs attention. Include a short exception section for failed identity checks, opt-outs, complaints, bad-fit leads, unclear instructions, and requests outside the script.', 'The caller should not make a new promise to clear a queue. Route the question to a named owner, record the due time, and keep the customer-facing wording inside the approved handoff.'] },
+      { heading: 'Review quality beside activity', paragraphs: ['A high call count can hide weak notes or poor-fit outcomes. Each week, compare a small sample of recordings or notes with the result label and the next action. Correct the workflow when the same error appears more than once.', 'Use the review to improve the list, script, and training note. Do not turn the report into surveillance theater; its purpose is a clean handoff and a clear decision path.'] },
+      { heading: 'Protect customer information', paragraphs: ['Give the caller only the access needed for the released queue. Mask sensitive fields, prohibit passwords and security codes, and define the stop point for account changes, payment issues, complaints, and deletion requests.', 'This is operational guidance, not legal advice. Calling and data obligations vary by contact, purpose, technology, and jurisdiction. Confirm the rules that apply to the campaign before launch.'] }
+    ],
+    scripts: [
+      { title: 'Daily handoff', text: 'Today I attempted [count] records. [count] connected. The main outcomes were [labels]. These [count] items need an owner decision by [time].' },
+      { title: 'Exception note', text: 'I paused this record because [reason]. I did not change [field]. The owner needed is [name], and the next review time is [time].' },
+      { title: 'Customer follow-up', text: 'I have recorded your request and will send it to the team for review. I do not want to promise a change before the authorized owner confirms it.' }
+    ],
+    workflow: [
+      { step: '1', title: 'Release', text: 'Owner releases a named queue with purpose, fields, and stop rules.' },
+      { step: '2', title: 'Call', text: 'Caller uses the approved script and records the result as work happens.' },
+      { step: '3', title: 'Flag', text: 'Caller routes exceptions instead of making an unapproved decision.' },
+      { step: '4', title: 'Review', text: 'Owner checks the daily exception list and weekly quality sample.' },
+      { step: '5', title: 'Improve', text: 'Team updates the script, list rule, or training note when patterns repeat.' }
+    ],
+    faqs: [
+      { q: 'What are the minimum fields in a daily report?', a: 'Use attempts, connects, outcomes, next actions, and blockers. Add the record identifier and owner for any item that needs follow-up.' },
+      { q: 'Should a caller report hours or results?', a: 'Both can matter, but results and exceptions should lead. Hours without outcomes do not tell the owner whether the queue or script is working.' },
+      { q: 'How often should calls or notes be reviewed?', a: 'Use a short daily exception check and a small weekly sample. Increase the sample during onboarding, after a script change, or when quality falls.' }
+    ],
+    related: [
+      { label: 'Plan customer follow-up calls', href: '/services/customer-follow-up-calls' },
+      { label: 'Read provider questions', href: '/blog/outsourced-callers-provider-questions' },
+      { label: 'Start a calling role brief', href: '/contact' }
+    ],
+    sources: [
+      { name: 'NIST Cybersecurity Framework 2.0', url: 'https://www.nist.gov/cyberframework' },
+      { name: 'FTC business guidance on data security', url: 'https://www.ftc.gov/business-guidance/privacy-security/data-security' },
+      { name: 'FCC telemarketing and TCPA guidance', url: 'https://www.fcc.gov/general/telemarketing-and-telephone-consumer-protection-act' }
+    ],
+    banners: [
+      { label: 'Next step', title: 'Turn the queue into a clear role', text: 'Share the call type, tools, schedule, and review needs so the staffing team can map a controlled Filipino caller role.', href: '/contact', cta: 'Build the role brief' }
+    ]
   }
 } as const;
 
@@ -1013,4 +1083,17 @@ export const staffingProcess = [
 export const staffingFitNote = 'The plan depends on the call type, schedule, tools, and review needs. Share those details and our Philippines staffing team can map the right Filipino caller profile.';
 
 
-export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[] }> = [];
+export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[] }> = [
+  {
+    slug: 'daily-reporting-controls-for-outsourced-callers',
+    title: 'Daily reporting controls for outsourced callers',
+    excerpt: 'A concise evidence note on the fields, review cadence, and access limits that make outsourced calling work easier to supervise.',
+    body: [
+      'A useful daily report should answer five questions: how many records were attempted, which contacts connected, what outcome was recorded, what follow-up is due, and which item needs an owner decision. A larger dashboard is not automatically better if it hides those answers.',
+      'The caller should work from a released queue and record only the approved fields. The owner or manager should control list rules, pricing, refunds, account changes, sensitive data, and any promise that is not already written in the script.',
+      'A practical review loop is a short daily exception check followed by a weekly sample of recordings or notes. Compare the call result with the CRM entry, remove duplicate follow-ups, and update the script when the same question appears repeatedly.',
+      'This note is an operational synthesis, not legal advice. Calling rules depend on the caller, recipient, purpose, technology, and jurisdiction. Review the applicable requirements before launching a campaign.',
+      'Sources: NIST Cybersecurity Framework 2.0 (https://www.nist.gov/cyberframework); Federal Trade Commission business guidance on data security (https://www.ftc.gov/business-guidance/privacy-security/data-security); FCC Telephone Consumer Protection Act guidance (https://www.fcc.gov/general/telemarketing-and-telephone-consumer-protection-act).'
+    ]
+  }
+];
