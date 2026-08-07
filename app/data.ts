@@ -70,7 +70,20 @@ export const blogPosts = [
     "title": "Daily caller reporting routine for a Philippines team",
     "excerpt": "A small daily reporting routine for outsourced callers: record activity, outcomes, follow-ups, blockers, and the decisions that still belong with the owner.",
     "minutes": 9
-  },] as const;
+  },
+  { slug: 'philippines-inbound-call-answering-service-checklist', title: 'Philippines inbound call answering service checklist', excerpt: 'A practical checklist for routing inbound calls to Filipino specialists with clear scripts, escalation rules, and owner review.', minutes: 10, published: '2026-08-07' },
+  { slug: 'philippines-customer-follow-up-call-workflow', title: 'Philippines customer follow-up call workflow', excerpt: 'A repeatable workflow for customer follow-up calls that keeps next steps, consent, and owner decisions visible.', minutes: 10, published: '2026-08-07' },
+  { slug: 'philippines-event-registration-calling-playbook', title: 'Philippines event registration calling playbook', excerpt: 'How to run event registration calls with a controlled list, accurate notes, and a clean handoff to the event team.', minutes: 9, published: '2026-08-07' },
+  { slug: 'philippines-survey-calling-quality-controls', title: 'Philippines survey calling quality controls', excerpt: 'Quality controls for Filipino survey callers, including sample checks, neutral wording, and disposition rules.', minutes: 9, published: '2026-08-07' },
+  { slug: 'philippines-reception-overflow-call-handling', title: 'Philippines reception overflow call handling', excerpt: 'A simple operating model for reception overflow that protects caller context and routes urgent matters to the right owner.', minutes: 9, published: '2026-08-07' },
+  { slug: 'philippines-renewal-reminder-call-process', title: 'Philippines renewal reminder call process', excerpt: 'Build a renewal reminder lane with approved account context, respectful timing, and clear escalation boundaries.', minutes: 10, published: '2026-08-07' },
+  { slug: 'philippines-customer-service-call-note-template', title: 'Philippines customer service call note template', excerpt: 'A concise call note structure Filipino specialists can use to record outcomes without burying the next action.', minutes: 8, published: '2026-08-07' },
+  { slug: 'philippines-lead-qualification-call-questions', title: 'Philippines lead qualification call questions', excerpt: 'Use consistent qualification questions while keeping pricing, commitments, and sensitive decisions with the owner.', minutes: 10, published: '2026-08-07' },
+  { slug: 'philippines-order-confirmation-call-script', title: 'Philippines order confirmation call script', excerpt: 'A controlled order confirmation script for Filipino callers with identity checks, exception labels, and fulfillment handoffs.', minutes: 9, published: '2026-08-07' },
+  { slug: 'philippines-win-back-campaign-call-controls', title: 'Philippines win-back campaign call controls', excerpt: 'Set up a win-back campaign with suppression checks, opt-out handling, and reviewable outcomes.', minutes: 9, published: '2026-08-07' },
+  { slug: 'philippines-database-verification-call-workflow', title: 'Philippines database verification call workflow', excerpt: 'A field-by-field workflow for Filipino callers who verify records while minimizing access and change risk.', minutes: 10, published: '2026-08-07' },
+  { slug: 'philippines-callback-request-verification', title: 'Philippines callback request verification', excerpt: 'Verify callback requests safely with a short identity step, a clear result label, and an accountable handoff.', minutes: 8, published: '2026-08-07' },
+  { slug: 'philippines-call-quality-review-scorecard', title: 'Philippines call quality review scorecard', excerpt: 'A practical scorecard for reviewing Filipino calling work across accuracy, tone, notes, and approved next steps.', minutes: 10, published: '2026-08-07' },] as const;
 
 export const blogDetails = {
   'philippines-database-verification-call-data-minimization-checklist': {
@@ -1083,11 +1096,12 @@ export const staffingProcess = [
 export const staffingFitNote = 'The plan depends on the call type, schedule, tools, and review needs. Share those details and our Philippines staffing team can map the right Filipino caller profile.';
 
 
-export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[] }> = [
+export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string }> = [
   {
     slug: 'daily-reporting-controls-for-outsourced-callers',
     title: 'Daily reporting controls for outsourced callers',
     excerpt: 'A concise evidence note on the fields, review cadence, and access limits that make outsourced calling work easier to supervise.',
+    published: '2026-08-07',
     body: [
       'A useful daily report should answer five questions: how many records were attempted, which contacts connected, what outcome was recorded, what follow-up is due, and which item needs an owner decision. A larger dashboard is not automatically better if it hides those answers.',
       'The caller should work from a released queue and record only the approved fields. The owner or manager should control list rules, pricing, refunds, account changes, sensitive data, and any promise that is not already written in the script.',
@@ -1095,5 +1109,28 @@ export const researchPosts: Array<{ slug: string; title: string; excerpt: string
       'This note is an operational synthesis, not legal advice. Calling rules depend on the caller, recipient, purpose, technology, and jurisdiction. Review the applicable requirements before launching a campaign.',
       'Sources: NIST Cybersecurity Framework 2.0 (https://www.nist.gov/cyberframework); Federal Trade Commission business guidance on data security (https://www.ftc.gov/business-guidance/privacy-security/data-security); FCC Telephone Consumer Protection Act guidance (https://www.fcc.gov/general/telemarketing-and-telephone-consumer-protection-act).'
     ]
-  }
+  },
+  ...[
+    ['inbound-call-routing-controls', 'Inbound call routing controls', 'Evidence note on routing, ownership, and exception handling for inbound calling.'],
+    ['customer-follow-up-cadence-study', 'Customer follow-up cadence study', 'Evidence note on useful follow-up timing, outcome labels, and review discipline.'],
+    ['event-registration-call-data-handling', 'Event registration call data handling', 'Evidence note on collecting only the event details a caller needs to complete a registration.'],
+    ['survey-calling-neutrality-and-sampling', 'Survey calling neutrality and sampling', 'Evidence note on neutral prompts, sample review, and reliable survey dispositions.'],
+    ['reception-overflow-service-levels', 'Reception overflow service levels', 'Evidence note on response targets, escalation paths, and continuity for overflow calls.'],
+    ['renewal-reminder-calls-and-consent', 'Renewal reminder calls and consent', 'Evidence note on permission, respectful reminders, and owner-controlled account changes.'],
+    ['lead-qualification-evidence-controls', 'Lead qualification evidence controls', 'Evidence note on consistent qualification fields and accountable handoffs.'],
+    ['order-confirmation-exception-management', 'Order confirmation exception management', 'Evidence note on identity checks, exception labels, and fulfillment ownership.'],
+    ['call-quality-review-methods', 'Call quality review methods', 'Evidence note on scorecards, calibration, and small samples that improve calling quality.'],
+  ].map(([slug, title, excerpt]) => ({
+    slug,
+    title,
+    excerpt,
+    published: '2026-08-07',
+    body: [
+      `This research note examines ${title.toLowerCase()} as an operating control for an outsourced calling team. The useful question is not whether a caller completed activity, but whether the record shows the approved purpose, result, next action, and owner for any exception.`,
+      'A controlled queue should expose only the fields needed for the call. The Filipino caller can follow the approved script, record a neutral outcome, and identify a follow-up. Pricing, refunds, sensitive data, account changes, legal interpretations, and commitments outside the script remain with the business owner.',
+      'The review method is deliberately small: inspect a daily exception sample, compare notes to the source record, and calibrate the scorecard weekly. Repeated questions should update the script or queue rules instead of becoming informal permissions.',
+      'This note is an operational synthesis, not legal advice. Calling requirements depend on purpose, technology, caller, recipient, and jurisdiction. Apply the relevant rules before launch and keep an auditable approval path.',
+      'Sources: NIST Cybersecurity Framework 2.0 (https://www.nist.gov/cyberframework); Federal Trade Commission business guidance on data security (https://www.ftc.gov/business-guidance/privacy-security/data-security); FCC Telephone Consumer Protection Act guidance (https://www.fcc.gov/general/telemarketing-and-telephone-consumer-protection-act).'
+    ]
+  }))
 ];
