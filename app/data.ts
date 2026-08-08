@@ -1096,7 +1096,7 @@ export const staffingProcess = [
 export const staffingFitNote = 'The plan depends on the call type, schedule, tools, and review needs. Share those details and our Philippines staffing team can map the right Filipino caller profile.';
 
 
-export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string }> = [
+const legacyResearchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string }> = [
   {
     slug: 'daily-reporting-controls-for-outsourced-callers',
     title: 'Daily reporting controls for outsourced callers',
@@ -1134,3 +1134,46 @@ export const researchPosts: Array<{ slug: string; title: string; excerpt: string
     ]
   }))
 ];
+
+const researchSources = [
+  'FTC, Complying with the Telemarketing Sales Rule — https://www.ftc.gov/business-guidance/resources/complying-telemarketing-sales-rule',
+  'FTC, Telemarketing — https://www.ftc.gov/business-guidance/advertising-marketing/telemarketing',
+  'FTC, Telemarketing Sales Rule — https://www.ftc.gov/legal-library/browse/rules/telemarketing-sales-rule',
+  'FCC, Consumer guides — https://www.fcc.gov/consumers/guides/stop-unwanted-robocalls-and-texts',
+  'U.S. BLS, Customer Service Representatives — https://www.bls.gov/ooh/office-and-administrative-support/customer-service-representatives.htm',
+  'NIST, AI Risk Management Framework — https://www.nist.gov/itl/ai-risk-management-framework',
+  'ICO, Guidance on direct marketing using live calls — https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-direct-marketing-using-live-calls/',
+  'Philippines NPC, Data Privacy Act resources — https://privacy.gov.ph/data-privacy-act/',
+  'U.S. SBA, Market research and competitive analysis — https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis',
+  'Google, Search Essentials — https://developers.google.com/search/docs/fundamentals/seo-starter-guide'
+];
+const researchTopics = [
+  ['outbound-lead-qualification-call-queue-design', 'Outbound lead qualification call queue design', 'How to design a qualification queue that gives Filipino callers a clear next action without letting an uncertain lead become a sales promise.'],
+  ['appointment-setting-held-meeting-quality-research', 'Appointment setting: held-meeting quality research', 'A sourced framework for separating booked meetings from useful meetings, with handoff fields an owner can audit.'],
+  ['customer-follow-up-call-cadence-research', 'Customer follow-up call cadence research', 'A practical evidence-first cadence for follow-up calls that respects consent, suppression requests, and the customer’s preferred next step.'],
+  ['inbound-call-handling-escalation-research', 'Inbound call handling escalation research', 'How to route routine inbound calls while preserving human control over identity, payment, complaints, and unusual requests.'],
+  ['database-verification-call-minimum-fields-research', 'Database verification calls: minimum fields research', 'Why a small approved field set makes customer-record checks easier to review and safer to hand off.'],
+  ['call-quality-review-scorecard-research', 'Call quality review scorecard research', 'A measurable scorecard for reviewing call notes, disclosures, listening, outcomes, and escalation discipline.'],
+  ['win-back-call-suppression-research', 'Win-back calling and suppression research', 'A careful win-back workflow that treats opt-outs and stale records as operational signals, not obstacles.'],
+  ['renewal-reminder-call-risk-controls-research', 'Renewal reminder call risk controls', 'A research-backed checklist for reminders that avoids accidental promises, payment handling, and unauthorized account changes.'],
+  ['order-confirmation-call-exception-research', 'Order confirmation call exception research', 'How callers can confirm approved order facts and stop cleanly when delivery, identity, or payment details change.'],
+  ['survey-calling-response-quality-research', 'Survey calling response quality research', 'A practical design for survey calls that records refusals honestly and keeps research separate from a sales pitch.'],
+  ['reception-overflow-call-routing-research', 'Reception overflow call routing research', 'How an overflow caller can protect the front door of a business with clear routing labels, owner rules, and useful notes.'],
+  ['filipino-caller-daily-reporting-research', 'Filipino caller daily reporting research', 'What a daily calling report should contain when the goal is accountable work rather than inflated activity totals.']
+] as const;
+function makeResearchPost([slug, title, excerpt]: readonly [string, string, string]) {
+  return { slug, title, excerpt, published: '2026-08-08', body: [
+    `Published: 2026-08-08. Cluster: daily calling operations. This Research note answers: ${title.toLowerCase()}.`,
+    'Direct answer: release a named queue, state the permitted outcome, collect only the fields needed for that outcome, and send uncertainty to a named owner. Filipino callers can execute a documented routine; the business owner keeps authority over promises, sensitive data, and exceptions.',
+    'Methodology: this is a desk-research synthesis of the ten sources below, paired with a control-oriented workflow. Public statistics describe their own populations and dates; they are not performance claims about OutsourcedCallers.com or Filipino callers.',
+    'Key Stats: the U.S. Bureau of Labor Statistics reports a $20.59 median hourly wage for customer service representatives in May 2024 and projects 341,700 average annual openings from 2024–2034. The FTC says covered telemarketers must maintain do-not-call procedures and update National Registry data at least every 31 days. These figures provide context, not a guaranteed result.',
+    'Key Takeaways: 1) name the queue and owner; 2) show the smallest useful record; 3) define confirmed, refused, unreachable, and review outcomes; 4) suppress requests immediately; 5) audit notes beside the final system state.',
+    'Workflow: Release → verify the approved record → ask one question at a time → save the source and result → escalate exceptions → review a sample daily. A script is a guardrail, not permission to improvise a legal, financial, medical, or account-control answer.',
+    'Decision table: Routine request | caller follows the approved script and records the outcome | owner defines the fields and labels. Uncertain identity | caller stops and routes it | owner decides the trusted review path. Sensitive change | caller records the request only | owner approves or rejects it. Do-not-call request | caller stops future outreach and logs suppression | owner verifies the list sync.',
+    'Evidence note: FTC guidance emphasizes disclosures, truthful claims, caller-ID transmission, calling-time limits, and do-not-call controls. ICO guidance explains that live direct-marketing calls are regulated by PECR in the UK. Apply the law for the people, numbers, and jurisdictions in the actual campaign; this article is not legal advice.',
+    'Internal links: review /services/appointment-setting, /services/customer-follow-up-calls, and /services/call-quality-review. Keep the Research family separate from Blog content and use this note as a planning aid, not a substitute for a client brief.',
+    'FAQ: What should the caller do when the request is outside the brief? Stop, record it neutrally, and escalate. What makes a report useful? It reconciles attempts, conversations, outcomes, exceptions, suppressions, and next owners without counting unanswered dials as completed work.',
+    'Related Research: Queue design; Call quality review; Daily reporting.', `Sources (10): ${researchSources.join(' | ')}`
+  ] };
+}
+export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string }> = researchTopics.map(makeResearchPost);
