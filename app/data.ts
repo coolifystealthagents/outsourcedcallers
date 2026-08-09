@@ -1161,6 +1161,22 @@ const researchTopics = [
   ['reception-overflow-call-routing-research', 'Reception overflow call routing research', 'How an overflow caller can protect the front door of a business with clear routing labels, owner rules, and useful notes.'],
   ['filipino-caller-daily-reporting-research', 'Filipino caller daily reporting research', 'What a daily calling report should contain when the goal is accountable work rather than inflated activity totals.']
 ] as const;
+
+const currentResearchBatchTopics = [
+  ['appointment-setting-no-show-prevention-research', 'Appointment-setting no-show prevention research', 'A sourced workflow for reducing avoidable no-shows with confirmation fields, consent-aware reminders, and accountable handoffs.'],
+  ['outbound-caller-objection-note-taxonomy-research', 'Outbound caller objection note taxonomy research', 'How to label objections consistently so a Filipino caller records evidence and the owner can improve the next approved response.'],
+  ['inbound-call-identity-escalation-research', 'Inbound call identity escalation research', 'A practical evidence-first model for deciding when an inbound call can be routed and when identity or authority needs owner review.'],
+  ['customer-follow-up-suppression-sync-research', 'Customer follow-up suppression sync research', 'Why suppression requests need a visible source, owner, and list-sync check before another follow-up is attempted.'],
+  ['event-registration-attendance-confirmation-research', 'Event registration attendance confirmation research', 'A controlled confirmation lane for event registrants that keeps attendance data accurate and exceptions visible.'],
+  ['survey-caller-refusal-coding-research', 'Survey caller refusal coding research', 'How neutral refusal labels improve survey quality without turning a research call into a sales conversation.'],
+  ['reception-overflow-urgent-call-triage-research', 'Reception overflow urgent call triage research', 'A routing framework for separating routine reception work from urgent matters that require a named business owner.'],
+  ['renewal-reminder-pre-expiry-window-research', 'Renewal reminder pre-expiry window research', 'How to schedule respectful renewal reminders while keeping account changes, payment, and promises with the owner.'],
+  ['order-confirmation-delivery-exception-research', 'Order confirmation delivery exception research', 'A research-backed exception path for delivery changes, missing details, and fulfillment questions during confirmation calls.'],
+  ['database-verification-duplicate-record-research', 'Database verification duplicate-record research', 'A safe workflow for identifying possible duplicate records without letting a caller merge or delete customer data.'],
+  ['call-quality-review-calibration-research', 'Call quality review calibration research', 'How small calibration samples align reviewers on accuracy, tone, notes, outcomes, and escalation discipline.'],
+  ['win-back-opt-out-recording-research', 'Win-back opt-out recording research', 'A suppression-first win-back process that treats opt-outs as final instructions and keeps list ownership clear.'],
+  ['daily-caller-exception-report-research', 'Daily caller exception report research', 'The minimum evidence a daily exception report needs to support owner decisions without rewarding empty activity totals.']
+] as const;
 function makeResearchPost([slug, title, excerpt]: readonly [string, string, string]) {
   return { slug, title, excerpt, published: '2026-08-08', body: [
     `Published: 2026-08-08. Cluster: daily calling operations. This Research note answers: ${title.toLowerCase()}.`,
@@ -1176,4 +1192,4 @@ function makeResearchPost([slug, title, excerpt]: readonly [string, string, stri
     'Related Research: Queue design; Call quality review; Daily reporting.', `Sources (10): ${researchSources.join(' | ')}`
   ] };
 }
-export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string }> = researchTopics.map(makeResearchPost);
+export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string }> = [...researchTopics, ...currentResearchBatchTopics].map(makeResearchPost);
