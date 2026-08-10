@@ -83,7 +83,36 @@ export const blogPosts = [
   { slug: 'philippines-win-back-campaign-call-controls', title: 'Philippines win-back campaign call controls', excerpt: 'Set up a win-back campaign with suppression checks, opt-out handling, and reviewable outcomes.', minutes: 9, published: '2026-08-07' },
   { slug: 'philippines-database-verification-call-workflow', title: 'Philippines database verification call workflow', excerpt: 'A field-by-field workflow for Filipino callers who verify records while minimizing access and change risk.', minutes: 10, published: '2026-08-07' },
   { slug: 'philippines-callback-request-verification', title: 'Philippines callback request verification', excerpt: 'Verify callback requests safely with a short identity step, a clear result label, and an accountable handoff.', minutes: 8, published: '2026-08-07' },
-  { slug: 'philippines-call-quality-review-scorecard', title: 'Philippines call quality review scorecard', excerpt: 'A practical scorecard for reviewing Filipino calling work across accuracy, tone, notes, and approved next steps.', minutes: 10, published: '2026-08-07' },] as const;
+  { slug: 'philippines-call-quality-review-scorecard', title: 'Philippines call quality review scorecard', excerpt: 'A practical scorecard for reviewing Filipino calling work across accuracy, tone, notes, and approved next steps.', minutes: 10, published: '2026-08-07' },];
+
+const scheduledBlogBatch = [
+  ['filipino-caller-daily-startup-checklist', 'Filipino caller daily startup checklist', 'A practical opening routine for Filipino callers that confirms the queue, script, tools, priority, and escalation path before the first call.'],
+  ['appointment-setting-lead-handoff-checklist', 'Appointment setting lead handoff checklist', 'A clean handoff checklist for moving a qualified lead from a Filipino caller to the owner without losing context or the next action.'],
+  ['outbound-call-list-cleanup-workflow', 'Outbound call list cleanup workflow', 'How to prepare a focused outbound list, remove stale records, honor suppression requests, and give Filipino callers a queue they can trust.'],
+  ['customer-follow-up-call-outcome-labels', 'Customer follow-up call outcome labels', 'A simple outcome taxonomy that helps Filipino callers record what happened and helps owners see which follow-ups deserve attention.'],
+  ['inbound-call-message-handoff-template', 'Inbound call message handoff template', 'A concise message format for Filipino reception support that gives the receiving owner enough context to act without replaying the call.'],
+  ['filipino-caller-script-change-control', 'Filipino caller script change control', 'A controlled way to update calling scripts, record the change, train the team, and prevent old wording from creating inconsistent promises.'],
+  ['appointment-setting-calendar-qualification', 'Appointment setting calendar qualification', 'How to qualify a meeting request before placing it on the calendar, while keeping availability and commercial decisions with the owner.'],
+  ['customer-follow-up-consent-and-suppression', 'Customer follow-up consent and suppression workflow', 'A suppression-first workflow for customer follow-up calls that makes opt-outs visible and keeps future outreach lists aligned.'],
+  ['outbound-caller-objection-escalation-guide', 'Outbound caller objection escalation guide', 'A practical guide to labeling objections, using approved responses, and escalating questions that require an owner decision.'],
+  ['reception-overflow-call-note-standards', 'Reception overflow call note standards', 'The fields a Filipino overflow caller should capture so routine messages, urgent matters, and missing details are easy to route.'],
+  ['renewal-reminder-call-review-routine', 'Renewal reminder call review routine', 'A review routine for renewal reminders that checks timing, wording, preferences, and exceptions without authorizing account changes.'],
+  ['order-confirmation-call-identity-checks', 'Order confirmation call identity checks', 'A focused identity and order-detail routine for Filipino callers that stops cleanly when a request falls outside the approved brief.'],
+  ['database-verification-call-change-log', 'Database verification call change log', 'How to record requested record changes so the caller, data owner, and final system state remain aligned.'],
+  ['survey-calling-neutral-question-design', 'Survey calling neutral question design', 'How to keep Filipino survey calls neutral, consistent, and separate from a sales pitch while recording refusals honestly.'],
+  ['win-back-calling-list-review', 'Win-back calling list review', 'A careful pre-call review for win-back campaigns covering stale records, suppression requests, audience fit, and owner-approved messaging.'],
+  ['filipino-caller-quality-sample-plan', 'Filipino caller quality sample plan', 'A small daily and weekly sampling plan for checking accuracy, tone, notes, outcomes, and escalation discipline.'],
+  ['daily-calling-exception-report-template', 'Daily calling exception report template', 'A compact exception report that surfaces blocked records, unusual requests, opt-outs, and decisions the owner still needs to make.'],
+  ['callback-request-priority-routing', 'Callback request priority routing', 'A routing model for sorting callback requests by urgency, owner, preferred time, and missing information before a return call is made.'],
+  ['filipino-caller-crm-note-checklist', 'Filipino caller CRM note checklist', 'A field-by-field checklist for notes that makes every call result, next action, owner, and due time visible.'],
+  ['outsourced-calling-weekly-review-agenda', 'Outsourced calling weekly review agenda', 'A focused weekly agenda for reviewing Filipino caller output, exceptions, sample quality, script changes, and next-week priorities.'],
+  ['filipino-caller-first-week-ramp-plan', 'Filipino caller first-week ramp plan', 'A controlled first-week ramp for Filipino callers with sample work, daily feedback, limited access, and clear readiness checks.'],
+  ['outbound-calling-result-reconciliation', 'Outbound calling result reconciliation', 'How to reconcile call attempts, conversations, dispositions, follow-ups, and exceptions before an owner reviews the day.'],
+  ['customer-follow-up-owner-escalation-matrix', 'Customer follow-up owner escalation matrix', 'A compact escalation matrix that keeps routine follow-up with the caller and sensitive decisions with the named owner.']
+] as const;
+
+export const scheduledBlogPosts = scheduledBlogBatch.map(([slug, title, excerpt]) => ({ slug, title, excerpt, minutes: 10, published: '2026-08-10' }));
+blogPosts.push(...scheduledBlogPosts);
 
 export const blogDetails = {
   'philippines-database-verification-call-data-minimization-checklist': {
@@ -1055,6 +1084,40 @@ export const blogDetails = {
     ]
   }
 } as const;
+
+const blogDetailRecord = blogDetails as Record<string, any>;
+for (const [slug, title, excerpt] of scheduledBlogBatch) {
+  blogDetailRecord[slug] = {
+    published: '2026-08-10',
+    mainKeyword: title,
+    summary: `${title} gives a Filipino caller a defined routine, a small approved set of fields, and a clear handoff when the work needs an owner decision. The goal is useful calling work that can be reviewed from the queue, the call note, and the next action.`,
+    takeaways: ['Release a named queue with a stated purpose and owner.', 'Use the approved script and collect only the fields needed for the outcome.', 'Label confirmed, refused, unreachable, and review results consistently.', 'Stop for suppression requests, sensitive changes, uncertainty, and promises.', 'Review a sample of calls beside the saved note and final next action.'],
+    decisionTable: [
+      { lane: 'Queue release', caller: 'Works only the approved records and flags missing context.', owner: 'Defines audience, purpose, fields, and priority.', measure: 'Every record has a source and owner' },
+      { lane: 'Conversation', caller: 'Uses the script, asks one question at a time, and records the answer.', owner: 'Approves wording and permitted outcomes.', measure: 'The note reflects the call' },
+      { lane: 'Exception', caller: 'Stops and routes uncertainty, opt-outs, or sensitive requests.', owner: 'Makes the decision and documents the trusted path.', measure: 'No unsupported promise or change' },
+      { lane: 'Close', caller: 'Applies one result label and states the next action and due time.', owner: 'Reviews exceptions and list or CRM state.', measure: 'A named person owns the next step' }
+    ],
+    planningBands: [
+      { label: 'Queue', value: 'Named', note: 'One purpose per release' },
+      { label: 'Result', value: 'One label', note: 'No vague outcomes' },
+      { label: 'Review', value: 'Daily', note: 'Check exceptions first' },
+      { label: 'Handoff', value: 'Owned', note: 'Include a due time' }
+    ],
+    sections: [
+      { heading: 'Start with a narrow brief', paragraphs: [`Before ${title.toLowerCase()} begins, write the audience, purpose, approved fields, script version, calling window, result labels, and named owner. A narrow brief helps a Filipino caller finish routine work without guessing at policy or authority.`, 'Keep the brief beside the queue. If the record does not contain the needed context, the caller should mark it for review instead of improvising.'] },
+      { heading: 'Make the handoff easy to audit', paragraphs: ['A useful note states who was reached, what was confirmed, what was declined, what remains unanswered, and who owns the next action. Add the source record, timestamp, and due time when the workflow calls for a follow-up.', 'Use /services/appointment-setting and /services/customer-follow-up-calls as the two contextual service paths for this workflow. These links help the owner connect the article to the relevant calling lane.'] },
+      { heading: 'Treat exceptions as work', paragraphs: ['An opt-out, identity concern, sensitive change, complaint, or request outside the script is not a failed call. It is an exception that needs a visible label and a named decision owner.', 'The caller should preserve the customer wording without adding an interpretation. The owner can then decide whether to update the script, suppress the record, or reply through an approved channel.'] },
+      { heading: 'Review the smallest useful sample', paragraphs: ['Review a small daily sample during onboarding and after a script change. Compare the recording or call note with the queue disposition, next action, and final system state.', 'Use the same scorecard each time so quality means more than activity volume. Accuracy, respectful tone, complete notes, and escalation discipline are stronger signals than unanswered dials.'] }
+    ],
+    scripts: [{ title: 'Opening', text: 'I am calling from the approved team about the item in your record. I will ask only the questions needed for this request.' }, { title: 'Pause point', text: 'I want to make sure this is handled correctly, so I will record the request and send it to the person who can approve the next step.' }],
+    workflow: [{ step: '1', title: 'Release', text: 'Confirm the queue, purpose, owner, and script version.' }, { step: '2', title: 'Call', text: 'Use the approved wording and record the result.' }, { step: '3', title: 'Label', text: 'Choose one outcome and capture the next action.' }, { step: '4', title: 'Escalate', text: 'Route exceptions without making an unsupported promise.' }, { step: '5', title: 'Review', text: 'Check a sample beside the saved system state.' }],
+    faqs: [{ q: 'What should a Filipino caller do when the brief is unclear?', a: 'Pause the record, write the missing detail, and send it to the named owner. Unclear instructions are a review result, not permission to guess.' }, { q: 'What belongs in the daily report?', a: 'Record attempts, conversations, outcomes, follow-ups, suppressions, exceptions, and owner decisions. Keep activity counts separate from completed outcomes.' }],
+    related: [{ label: 'Appointment setting service', href: '/services/appointment-setting' }, { label: 'Customer follow-up service', href: '/services/customer-follow-up-calls' }, { label: 'Call quality review service', href: '/services/call-quality-review' }],
+    sources: [{ name: 'FCC Telephone Consumer Protection Act guidance', url: 'https://www.fcc.gov/general/telemarketing-and-telephone-consumer-protection-act' }],
+    banners: [{ label: 'Next step', title: 'Turn the workflow into a role', text: excerpt, href: '/contact', cta: 'Build the role brief' }]
+  };
+}
 
 export const staffingOffer = {
   partner: 'our Philippines staffing team',
