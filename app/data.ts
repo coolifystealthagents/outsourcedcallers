@@ -1177,6 +1177,18 @@ const currentResearchBatchTopics = [
   ['win-back-opt-out-recording-research', 'Win-back opt-out recording research', 'A suppression-first win-back process that treats opt-outs as final instructions and keeps list ownership clear.'],
   ['daily-caller-exception-report-research', 'Daily caller exception report research', 'The minimum evidence a daily exception report needs to support owner decisions without rewarding empty activity totals.']
 ] as const;
+const scheduledResearchBatchTopics = [
+  ['appointment-setting-calendar-handoff-research', 'Appointment-setting calendar handoff research', 'How to move a qualified appointment from a calling queue into a calendar without losing consent, context, or ownership.'],
+  ['outbound-caller-contact-window-research', 'Outbound caller contact-window research', 'A controlled way to define calling windows, local time zones, and stop rules before an outbound queue is released.'],
+  ['inbound-call-message-accuracy-research', 'Inbound call message accuracy research', 'A practical evidence-first method for capturing inbound messages so the receiving owner can act without replaying the call.'],
+  ['customer-follow-up-next-action-research', 'Customer follow-up next-action research', 'How to separate a real customer next action from a vague callback promise in daily follow-up work.'],
+  ['event-registration-accessibility-request-research', 'Event registration accessibility request research', 'A safe handoff model for accessibility requests that keeps the caller helpful while leaving accommodation decisions with the event owner.'],
+  ['survey-calling-neutral-probe-research', 'Survey calling neutral-probe research', 'How neutral probes improve response quality without leading respondents or turning a survey into a pitch.'],
+  ['reception-overflow-message-priority-research', 'Reception overflow message-priority research', 'A routing and note taxonomy for distinguishing routine messages from urgent matters at the front desk.'],
+  ['renewal-reminder-preference-research', 'Renewal reminder contact-preference research', 'How to record and honor a customer’s preferred reminder channel without making an unauthorized renewal promise.'],
+  ['order-confirmation-address-change-research', 'Order confirmation address-change research', 'A stop-and-escalate workflow for address changes discovered during order confirmation calls.'],
+  ['database-verification-source-of-truth-research', 'Database verification source-of-truth research', 'How to identify the authoritative record before a caller reports a mismatch or requests a customer-data change.']
+] as const;
 function makeResearchPost([slug, title, excerpt]: readonly [string, string, string]) {
   return { slug, title, excerpt, published: '2026-08-08', body: [
     `Published: 2026-08-08. Cluster: daily calling operations. This Research note answers: ${title.toLowerCase()}.`,
@@ -1192,4 +1204,7 @@ function makeResearchPost([slug, title, excerpt]: readonly [string, string, stri
     'Related Research: Queue design; Call quality review; Daily reporting.', `Sources (10): ${researchSources.join(' | ')}`
   ] };
 }
-export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string }> = [...researchTopics, ...currentResearchBatchTopics].map(makeResearchPost);
+export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string }> = [
+  ...[...researchTopics, ...currentResearchBatchTopics].map(makeResearchPost),
+  ...scheduledResearchBatchTopics.map(topic => ({ ...makeResearchPost(topic), published: '2026-08-10' }))
+];
