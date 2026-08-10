@@ -1252,6 +1252,20 @@ const scheduledResearchBatchTopics = [
   ['order-confirmation-address-change-research', 'Order confirmation address-change research', 'A stop-and-escalate workflow for address changes discovered during order confirmation calls.'],
   ['database-verification-source-of-truth-research', 'Database verification source-of-truth research', 'How to identify the authoritative record before a caller reports a mismatch or requests a customer-data change.']
 ] as const;
+const runResearchBatchTopics = [
+  ['appointment-setting-qualification-threshold-research', 'Appointment-setting qualification threshold research', 'How to define a consistent qualification threshold before a caller offers a meeting time or sends a lead to the owner.'],
+  ['outbound-lead-qualification-disposition-research', 'Outbound lead qualification disposition research', 'A disposition model that separates interest, fit, reachability, refusal, and owner review in an outbound queue.'],
+  ['customer-follow-up-callback-window-research', 'Customer follow-up callback-window research', 'How to record preferred callback windows and route missed follow-ups without creating vague promises.'],
+  ['inbound-call-complaint-handoff-research', 'Inbound call complaint handoff research', 'A controlled handoff for complaints that lets a caller capture facts while keeping remedies and commitments with the owner.'],
+  ['event-registration-accessibility-handoff-research', 'Event registration accessibility handoff research', 'How to record accessibility requests accurately and route accommodation decisions to the event owner.'],
+  ['survey-calling-interviewer-training-research', 'Survey calling interviewer training research', 'A small training and calibration model for neutral survey calls, refusal handling, and consistent coding.'],
+  ['reception-overflow-after-hours-routing-research', 'Reception overflow after-hours routing research', 'A routing plan for after-hours messages that distinguishes urgency, missing context, and next-owner responsibility.'],
+  ['renewal-reminder-escalation-research', 'Renewal reminder escalation research', 'How to separate routine reminder outcomes from payment, cancellation, dispute, and account-change exceptions.'],
+  ['order-confirmation-return-request-research', 'Order confirmation return-request research', 'A stop-and-escalate workflow for return requests discovered during order confirmation calls.'],
+  ['database-verification-contact-preference-research', 'Database verification contact-preference research', 'How to verify contact preferences with a minimal field set and keep consent and suppression changes auditable.'],
+  ['call-quality-review-note-accuracy-research', 'Call quality review note-accuracy research', 'A review method for comparing call notes with source records, outcomes, and the next action actually assigned.'],
+  ['win-back-campaign-recontact-window-research', 'Win-back campaign recontact-window research', 'How to define a respectful recontact window while honoring suppression requests and owner-approved campaign rules.']
+] as const;
 function makeResearchPost([slug, title, excerpt]: readonly [string, string, string]) {
   return { slug, title, excerpt, published: '2026-08-08', body: [
     `Published: 2026-08-08. Cluster: daily calling operations. This Research note answers: ${title.toLowerCase()}.`,
@@ -1269,5 +1283,6 @@ function makeResearchPost([slug, title, excerpt]: readonly [string, string, stri
 }
 export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string }> = [
   ...[...researchTopics, ...currentResearchBatchTopics].map(makeResearchPost),
-  ...scheduledResearchBatchTopics.map(topic => ({ ...makeResearchPost(topic), published: '2026-08-10' }))
+  ...scheduledResearchBatchTopics.map(topic => ({ ...makeResearchPost(topic), published: '2026-08-10' })),
+  ...runResearchBatchTopics.map(topic => ({ ...makeResearchPost(topic), published: '2026-08-10' }))
 ];
