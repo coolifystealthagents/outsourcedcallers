@@ -1,3 +1,5 @@
+import { aug11BlogPosts, makeAug11Detail } from './aug11-blog';
+
 export const site = {
   "domain": "OutsourcedCallers.com",
   "slug": "outsourcedcallers",
@@ -161,6 +163,7 @@ const aug10BlogDateBySlug: Record<string, string> = {
 };
 export const scheduledBlogPosts = scheduledBlogBatch.map(([slug, title, excerpt]) => ({ slug, title, excerpt, minutes: 10, published: aug10BlogDateBySlug[slug] ?? '2026-08-07' }));
 blogPosts.push(...scheduledBlogPosts);
+blogPosts.push(...aug11BlogPosts);
 blogPosts.sort((a, b) => (('published' in b ? (b.published ?? '2026-07-28') : '2026-07-28').localeCompare('published' in a ? (a.published ?? '2026-07-28') : '2026-07-28')) || a.slug.localeCompare(b.slug));
 
 export const blogDetails = {
@@ -1166,6 +1169,9 @@ for (const [slug, title, excerpt] of scheduledBlogBatch) {
     sources: [{ name: 'FCC Telephone Consumer Protection Act guidance', url: 'https://www.fcc.gov/general/telemarketing-and-telephone-consumer-protection-act' }],
     banners: [{ label: 'Next step', title: 'Turn the workflow into a role', text: excerpt, href: '/contact', cta: 'Build the role brief' }]
   };
+}
+for (const post of aug11BlogPosts) {
+  blogDetailRecord[post.slug] = makeAug11Detail(post);
 }
 
 export const staffingOffer = {
