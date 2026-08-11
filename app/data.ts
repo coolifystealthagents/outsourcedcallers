@@ -1307,5 +1307,8 @@ function makeResearchPost([slug, title, excerpt]: readonly [string, string, stri
 export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string }> = [
   ...[...researchTopics, ...currentResearchBatchTopics].map(makeResearchPost),
   ...scheduledResearchBatchTopics.map(topic => ({ ...makeResearchPost(topic), published: '2026-08-10' })),
-  ...runResearchBatchTopics.map(topic => ({ ...makeResearchPost(topic), published: '2026-08-10' }))
-];
+  ...runResearchBatchTopics.map(topic => {
+    const post = makeResearchPost(topic);
+    return { ...post, published: '2026-08-10', body: [`Published: 2026-08-10. Cluster: daily calling operations. This Research note answers: ${topic[1].toLowerCase()}.`, ...post.body.slice(1)] };
+  })
+].sort((a, b) => b.published.localeCompare(a.published) || a.slug.localeCompare(b.slug));
