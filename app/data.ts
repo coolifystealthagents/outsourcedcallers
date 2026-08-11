@@ -134,8 +134,32 @@ const scheduledBlogBatch = [
   ['outsourced-calling-monthly-process-review', 'Outsourced calling monthly process review', 'A practical monthly review for checking queue design, scripts, access, quality samples, exceptions, and the next process improvement.']
 ] as const;
 
-const aug10BlogSlugs = new Set(scheduledBlogBatch.slice(0, 23).map(([slug]) => slug));
-export const scheduledBlogPosts = scheduledBlogBatch.map(([slug, title, excerpt]) => ({ slug, title, excerpt, minutes: 10, published: aug10BlogSlugs.has(slug) ? '2026-08-10' : '2026-08-07' }));
+const aug10BlogDateBySlug: Record<string, string> = {
+  'appointment-setting-calendar-qualification': '2026-08-10',
+  'appointment-setting-lead-handoff-checklist': '2026-08-10',
+  'callback-request-priority-routing': '2026-08-10',
+  'customer-follow-up-call-outcome-labels': '2026-08-10',
+  'customer-follow-up-consent-and-suppression': '2026-08-10',
+  'customer-follow-up-owner-escalation-matrix': '2026-08-10',
+  'daily-calling-exception-report-template': '2026-08-10',
+  'database-verification-call-change-log': '2026-08-10',
+  'filipino-caller-crm-note-checklist': '2026-08-10',
+  'filipino-caller-daily-startup-checklist': '2026-08-10',
+  'filipino-caller-first-week-ramp-plan': '2026-08-10',
+  'filipino-caller-quality-sample-plan': '2026-08-10',
+  'filipino-caller-script-change-control': '2026-08-10',
+  'inbound-call-message-handoff-template': '2026-08-10',
+  'order-confirmation-call-identity-checks': '2026-08-10',
+  'outbound-call-list-cleanup-workflow': '2026-08-10',
+  'outbound-caller-objection-escalation-guide': '2026-08-10',
+  'outbound-calling-result-reconciliation': '2026-08-10',
+  'outsourced-calling-weekly-review-agenda': '2026-08-10',
+  'reception-overflow-call-note-standards': '2026-08-10',
+  'renewal-reminder-call-review-routine': '2026-08-10',
+  'survey-calling-neutral-question-design': '2026-08-10',
+  'win-back-calling-list-review': '2026-08-10',
+};
+export const scheduledBlogPosts = scheduledBlogBatch.map(([slug, title, excerpt]) => ({ slug, title, excerpt, minutes: 10, published: aug10BlogDateBySlug[slug] ?? '2026-08-07' }));
 blogPosts.push(...scheduledBlogPosts);
 blogPosts.sort((a, b) => (('published' in b ? (b.published ?? '2026-07-28') : '2026-07-28').localeCompare('published' in a ? (a.published ?? '2026-07-28') : '2026-07-28')) || a.slug.localeCompare(b.slug));
 
