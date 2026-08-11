@@ -10,6 +10,9 @@
   "priorRunId": "a61b8529-d8bd-4daa-a2d7-ca11902674a5",
   "priorIssueId": "54ea13b2-c085-427f-8f59-e99884678f85",
   "validationCommands": [
+    "git fetch origin main",
+    "git rev-parse HEAD",
+    "git rev-parse origin/main",
     "node scripts/validate-aug10-research.mjs",
     "npm run validate:routines",
     "npm run build",
