@@ -1315,6 +1315,21 @@ const runResearchBatchTopics = [
   ['call-quality-review-note-accuracy-research', 'Call quality review note-accuracy research', 'A review method for comparing call notes with source records, outcomes, and the next action actually assigned.'],
   ['win-back-campaign-recontact-window-research', 'Win-back campaign recontact-window research', 'How to define a respectful recontact window while honoring suppression requests and owner-approved campaign rules.']
 ] as const;
+const originalAug10ResearchDateBySlug: Record<string, string> = {
+  'appointment-setting-qualification-threshold-research': '2026-08-10',
+  'outbound-lead-qualification-disposition-research': '2026-08-10',
+  'customer-follow-up-callback-window-research': '2026-08-10',
+  'inbound-call-complaint-handoff-research': '2026-08-10',
+  'event-registration-accessibility-handoff-research': '2026-08-10',
+  'survey-calling-interviewer-training-research': '2026-08-10',
+  'reception-overflow-after-hours-routing-research': '2026-08-10',
+  'renewal-reminder-escalation-research': '2026-08-10',
+  'order-confirmation-return-request-research': '2026-08-10',
+  'database-verification-contact-preference-research': '2026-08-10',
+  'call-quality-review-note-accuracy-research': '2026-08-10',
+  'win-back-campaign-recontact-window-research': '2026-08-10'
+};
+const originalAug10ResearchOrder = new Map(Object.keys(originalAug10ResearchDateBySlug).map((slug, index) => [slug, index]));
 function makeResearchPost([slug, title, excerpt]: readonly [string, string, string]) {
   return { slug, title, excerpt, published: '2026-08-08', body: [
     `Published: 2026-08-08. Cluster: daily calling operations. This Research note answers: ${title.toLowerCase()}.`,
@@ -1335,6 +1350,7 @@ export const researchPosts: Array<{ slug: string; title: string; excerpt: string
   ...scheduledResearchBatchTopics.map(topic => ({ ...makeResearchPost(topic), published: '2026-08-10' })),
   ...runResearchBatchTopics.map(topic => {
     const post = makeResearchPost(topic);
-    return { ...post, published: '2026-08-10', body: [`Published: 2026-08-10. Cluster: daily calling operations. This Research note answers: ${topic[1].toLowerCase()}.`, ...post.body.slice(1)] };
+    const published = originalAug10ResearchDateBySlug[topic[0]];
+    return { ...post, published, body: [`Published: ${published}. Cluster: daily calling operations. This Research note answers: ${topic[1].toLowerCase()}.`, ...post.body.slice(1)] };
   })
-].sort((a, b) => b.published.localeCompare(a.published) || a.slug.localeCompare(b.slug));
+].sort((a, b) => b.published.localeCompare(a.published) || (originalAug10ResearchOrder.get(a.slug) ?? Number.MAX_SAFE_INTEGER) - (originalAug10ResearchOrder.get(b.slug) ?? Number.MAX_SAFE_INTEGER) || a.slug.localeCompare(b.slug));
