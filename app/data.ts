@@ -1336,6 +1336,148 @@ const originalAug10ResearchDateBySlug: Record<string, string> = {
   'win-back-campaign-recontact-window-research': '2026-08-10'
 };
 const originalAug10ResearchOrder = new Map(Object.keys(originalAug10ResearchDateBySlug).map((slug, index) => [slug, index]));
+const aug11ResearchPosts: Array<{ slug: string; title: string; excerpt: string; published: string; body: string[] }> = [
+  {
+    slug: 'appointment-setting-meeting-context-research',
+    title: 'Appointment-setting meeting context research',
+    excerpt: 'What meeting context should travel with a qualified appointment so the recipient can decide quickly and the prospect is not asked to repeat the conversation.',
+    published: '2026-08-11',
+    body: [
+      'A booked time is not the same as a useful appointment. Research on customer experience consistently treats continuity and effort as part of service quality, so the handoff should preserve the reason for the meeting, the person’s stated need, the agreed timing, and any unanswered question.',
+      'For an appointment-setting service, the caller can capture the business-approved qualification facts and the prospect’s own wording. The receiving owner should retain authority over fit, commitments, technical promises, and any question that needs specialist judgment.',
+      'The useful research question is whether the next person can act without replaying the call. Compare the appointment record with the conversation: purpose, contact preference, time zone, requested attendees, constraints, and the exact next action should agree. Missing context is a handoff defect, not a reason to invent detail.',
+      'A small sample of completed handoffs can reveal whether meetings are being booked from clear evidence or from optimistic interpretation. Review the record against the approved qualification definition and separate a reschedule, refusal, unclear fit, and confirmed meeting rather than collapsing them into one success label.',
+      'This is an operating analysis, not a promise of meeting quality or a legal conclusion. The business should set its own qualification standard and review applicable calling and privacy rules for the people and jurisdictions involved.',
+      'Sources: Harvard Business Review, The Truth About Customer Experience (https://hbr.org/2017/06/the-truth-about-customer-experience); U.S. BLS, Customer Service Representatives (https://www.bls.gov/ooh/office-and-administrative-support/customer-service-representatives.htm); FTC, Telemarketing (https://www.ftc.gov/business-guidance/advertising-marketing/telemarketing).'
+    ]
+  },
+  {
+    slug: 'customer-follow-up-request-resolution-research',
+    title: 'Customer follow-up request-resolution research',
+    excerpt: 'How follow-up calls can distinguish a resolved request from a promised callback, an open question, and a matter that needs the owner.',
+    published: '2026-08-11',
+    body: [
+      'A follow-up record should describe the customer’s request and the state of the answer, not merely the fact that a call happened. This distinction matters because unresolved effort can increase customer friction even when contact activity looks complete.',
+      'The caller may confirm the approved status, capture the customer’s preferred next step, and record what remains unanswered. Refunds, disputes, account changes, exceptions, and commitments outside the approved information should move to the named business owner.',
+      'A useful analysis separates four outcomes: resolved from approved information, customer action still pending, owner action pending, and no contact or refusal. Each outcome has a different next action. Treating all four as “followed up” makes the queue less informative.',
+      'Compare a sample of notes with the source request and the eventual owner decision. Look for mismatched dates, vague callback promises, missing preference information, and language that implies authority the caller did not have. The purpose is to improve the handoff, not to reward longer notes.',
+      'The evidence supports reducing avoidable customer effort while keeping sensitive decisions with the accountable owner. It does not establish a universal callback interval; timing depends on request type, consent, urgency, and the organization’s service commitment.',
+      'Sources: CFI Group, Customer Effort Score (https://www.cfigroup.com/customer-effort-score/); FTC, Complying with the Telemarketing Sales Rule (https://www.ftc.gov/business-guidance/resources/complying-telemarketing-sales-rule); ICO, Direct marketing using live calls (https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-direct-marketing-using-live-calls/).'
+    ]
+  },
+  {
+    slug: 'inbound-call-information-quality-research',
+    title: 'Inbound call information-quality research',
+    excerpt: 'A research-led way to judge whether an inbound message contains enough accurate context for the receiving owner to act.',
+    published: '2026-08-11',
+    body: [
+      'An inbound message is useful when it lets the recipient understand who called, why they called, what they need next, and how urgently the matter should be handled. A short accurate message can be more valuable than a long narrative that mixes fact with interpretation.',
+      'The caller can confirm the preferred callback detail, capture the caller’s stated purpose, and mark uncertainty. They should not guess at identity, diagnose a complaint, disclose restricted information, or promise a remedy. Those decisions belong to the receiving owner.',
+      'Information quality has two dimensions: correctness and fitness for the next decision. A message can be factually accurate yet still omit the requested callback window or the specific order, event, or service involved. The review should therefore ask whether the owner could take the next authorized action.',
+      'A small audit can compare recorded messages with the call source and the owner’s eventual disposition. Useful findings include missing urgency, duplicated messages, altered customer wording, and unsupported assumptions. These findings help refine field definitions without turning the caller into the decision-maker.',
+      'The right message fields vary by business. Use the smallest set that supports the receiving owner and preserve a clear route for identity concerns, complaints, emergencies, and other exceptions.',
+      'Sources: NIST, Privacy Framework (https://www.nist.gov/privacy-framework); U.S. BLS, Customer Service Representatives (https://www.bls.gov/ooh/office-and-administrative-support/customer-service-representatives.htm); FTC, Data Security (https://www.ftc.gov/business-guidance/privacy-security/data-security).'
+    ]
+  },
+  {
+    slug: 'event-registration-attendee-confirmation-research',
+    title: 'Event registration attendee-confirmation research',
+    excerpt: 'How confirmation calls can improve registration accuracy while separating attendance facts from accommodation, payment, and policy decisions.',
+    published: '2026-08-11',
+    body: [
+      'An event confirmation call should verify the registration facts that the event team actually needs. It should not become an invitation to collect unrelated personal information or an improvised promise about access, seating, refunds, or accommodations.',
+      'The caller can confirm attendance intent, the approved contact detail, the registration reference, and the attendee’s stated question. Accessibility requests, dietary or safety matters, payment issues, and policy exceptions should be captured accurately and routed to the event owner.',
+      'The analytical test is whether the final registration record matches what the attendee said. Separate confirmed attendance, uncertain attendance, declined attendance, unreachable, and owner review. A single yes/no field hides the difference between a refusal and a missing answer.',
+      'Review the source record and the call note together. Look for altered names, assumed attendance, unrecorded requests, and contact preferences that were not honored. A confirmation lane should make exceptions more visible, not make them disappear into a completion count.',
+      'Event operators should define their own retention, accessibility, and consent requirements. This note offers a service-quality lens and does not decide eligibility or accommodation policy.',
+      'Sources: U.S. DOJ, ADA Requirements: Effective Communication (https://www.ada.gov/resources/effective-communication/); ICO, Data protection and direct marketing (https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/); FTC, Protecting Personal Information (https://www.ftc.gov/business-guidance/small-businesses/cybersecurity/protecting-personal-information).'
+    ]
+  },
+  {
+    slug: 'survey-calling-interviewer-neutrality-research',
+    title: 'Survey calling interviewer neutrality research',
+    excerpt: 'Why neutral wording, honest refusals, and consistent response coding are central to credible survey calls.',
+    published: '2026-08-11',
+    body: [
+      'Survey calling is a measurement activity, so the interviewer’s manner can affect the data. A caller should ask the approved question as written, use only permitted neutral clarification, and record a refusal or “don’t know” instead of pushing for a preferred answer.',
+      'The key distinction from a sales call is purpose. The caller is collecting a response, not steering the respondent toward a service, appointment, or commitment. Any request to change the purpose should be treated as a new brief requiring owner review.',
+      'A defensible survey record preserves the question version, response, refusal, incomplete interview, and any approved disposition. Do not convert silence, a vague answer, or a failed connection into a substantive response. That creates false precision.',
+      'Calibration should use a small set of examples and ask whether different interviewers would code the same response alike. Discuss wording drift, leading probes, and inconsistent refusal labels. The goal is measurement consistency, not a higher response number at any cost.',
+      'Sampling, weighting, consent, and reporting decisions remain with the research owner. This article focuses on interviewer behavior and cannot establish the validity of a survey design by itself.',
+      'Sources: AAPOR, Best Practices for Survey Research (https://aapor.org/standards-and-ethics/best-practices/); Pew Research Center, Writing Survey Questions (https://www.pewresearch.org/writing-survey-questions/); U.S. Census Bureau, Measuring America (https://www.census.gov/programs-surveys/sis/resources.html).'
+    ]
+  },
+  {
+    slug: 'reception-overflow-message-completeness-research',
+    title: 'Reception overflow message-completeness research',
+    excerpt: 'What makes an overflow message actionable when a front desk cannot transfer the caller immediately.',
+    published: '2026-08-11',
+    body: [
+      'Overflow support succeeds when it preserves the front door’s context under pressure. The receiving person needs the caller’s stated purpose, a reliable return route, any requested timing, and a clear indication of urgency without a receptionist or caller inventing a priority.',
+      'A Filipino caller can collect the approved message fields and repeat them back for accuracy. They should not interpret a complaint, disclose internal information, or promise that an owner will respond by a time the business has not committed to.',
+      'Completeness is not the same as length. An actionable message is one that supports the next authorized decision. Review whether the recipient can identify the correct owner, understand the request, and see what remains unknown. If not, mark the gap rather than filling it with assumption.',
+      'A sample review can examine missed transfers, duplicate messages, unclear callback details, and urgency labels that do not match the caller’s words. These patterns can reveal where reception coverage needs a clearer owner map or a narrower field set.',
+      'Urgent or safety-related calls need a business-defined route. A general overflow service cannot substitute for emergency guidance or an owner’s responsibility for sensitive matters.',
+      'Sources: NIST, Privacy Framework (https://www.nist.gov/privacy-framework); U.S. BLS, Customer Service Representatives (https://www.bls.gov/ooh/office-and-administrative-support/customer-service-representatives.htm); FTC, Protecting Personal Information (https://www.ftc.gov/business-guidance/small-businesses/cybersecurity/protecting-personal-information).'
+    ]
+  },
+  {
+    slug: 'renewal-reminder-customer-choice-research',
+    title: 'Renewal reminder customer-choice research',
+    excerpt: 'How renewal reminders can preserve customer choice while keeping payment, cancellation, and account decisions with the owner.',
+    published: '2026-08-11',
+    body: [
+      'A renewal reminder should help a customer understand that a decision is approaching without implying that renewal is automatic or already agreed. The call’s value is clarity: what the approved notice says, what the customer wants, and what question needs an accountable answer.',
+      'The caller may confirm receipt, record a preferred contact route, and pass along approved dates or instructions. They should not take payment details, authorize a cancellation, change account ownership, or make a promise about terms that are not in the approved information.',
+      'Separate “reminded,” “wants to renew,” “wants to discuss,” “does not want contact,” and “needs owner review.” These outcomes have different implications for customer choice and future contact. A single completed label can create an inaccurate account history.',
+      'Review a sample against the source account and the owner’s final action. Watch for pressure language, unapproved urgency, stale contact preferences, and requests that were recorded but not routed. The review should protect the customer’s stated choice as well as the business record.',
+      'Renewal law and consent rules vary by jurisdiction and product. This research note is not legal advice and does not replace a business’s approved notice or cancellation process.',
+      'Sources: FTC, Telemarketing Sales Rule (https://www.ftc.gov/legal-library/browse/rules/telemarketing-sales-rule); ICO, Direct marketing using live calls (https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-direct-marketing-using-live-calls/); FTC, Consumer Information (https://consumer.ftc.gov/).'
+    ]
+  },
+  {
+    slug: 'order-confirmation-customer-intent-research',
+    title: 'Order confirmation customer-intent research',
+    excerpt: 'Why order confirmation calls should distinguish verified order facts from a new customer request that needs fulfillment review.',
+    published: '2026-08-11',
+    body: [
+      'An order confirmation call has a narrow purpose: check the approved order facts and surface anything the fulfillment owner must decide. When a customer introduces a return, address change, delivery concern, or product question, the call has crossed from confirmation into exception handling.',
+      'The caller can repeat the approved item, delivery detail, and contact information as permitted by the business. They should stop before changing the order, accepting payment data, promising a delivery outcome, or deciding whether a return is eligible.',
+      'The research distinction is between confirmation evidence and customer intent. “The order details are correct” is different from “the customer wants to change the order.” Record both separately so the next owner can see what was verified and what was requested.',
+      'A useful quality sample compares the call note with the order record and the eventual fulfillment decision. Look for silent changes, missing exception details, or confirmation labels applied after the customer raised a new issue.',
+      'Order, payment, privacy, and consumer-protection requirements depend on the market and product. Businesses should define a safe stop path before calls begin.',
+      'Sources: FTC, Mail, Internet, or Telephone Order Merchandise Rule (https://www.ftc.gov/legal-library/browse/rules/mail-internet-or-telephone-order-merchandise-rule); PCI Security Standards Council, Protecting Account Data (https://www.pcisecuritystandards.org/merchants/); NIST, Privacy Framework (https://www.nist.gov/privacy-framework).'
+    ]
+  },
+  {
+    slug: 'database-verification-contact-consent-research',
+    title: 'Database verification contact-consent research',
+    excerpt: 'How record verification can preserve contact preferences and suppression requests without turning a caller into a data administrator.',
+    published: '2026-08-11',
+    body: [
+      'Contact data is not just a set of fields; it also carries a person’s stated preference about how and whether the business should reach them. A verification call should treat that preference as a material result, not as an incidental note.',
+      'The caller can verify the approved contact detail and capture a clear request to continue, change channel, or stop contact. They should not merge records, delete history, infer consent from silence, or broaden the purpose of the call beyond the released field set.',
+      'The useful analysis separates data accuracy from permission status. A phone number can be correct while the person does not want calls. A requested change can be genuine while the identity match remains uncertain. Each condition needs its own label and owner path.',
+      'Compare the call note with the source record and the final suppression or preference state. Audit whether the request was timestamped, attributed, routed, and reflected in the next approved contact decision. A verbal request that never reaches the authoritative list is not a completed control.',
+      'Privacy obligations differ across jurisdictions and purposes. Apply the organization’s retention, access, suppression, and lawful-contact rules to the actual campaign.',
+      'Sources: ICO, Direct marketing using live calls (https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-direct-marketing-using-live-calls/); Philippines NPC, Data Privacy Act resources (https://privacy.gov.ph/data-privacy-act/); FTC, Protecting Personal Information (https://www.ftc.gov/business-guidance/small-businesses/cybersecurity/protecting-personal-information).'
+    ]
+  },
+  {
+    slug: 'call-quality-review-evidence-consistency-research',
+    title: 'Call quality review evidence-consistency research',
+    excerpt: 'A research view of quality review that compares spoken evidence, written notes, and the decision the business ultimately made.',
+    published: '2026-08-11',
+    body: [
+      'A call-quality review is strongest when it checks whether three records agree: what was said, what was written, and what action followed. Tone matters, but a pleasant call with an inaccurate outcome still creates operational risk.',
+      'The reviewer should assess the approved purpose, factual accuracy, respectful wording, customer choice, result label, and escalation boundary. The caller should not be judged against an authority they were never given; the business must define which decisions belong to the caller and which belong to the owner.',
+      'Consistency is more useful than a large scorecard. Select a small set of criteria tied to the service promise, then compare the same sample across reviewers. If two reviewers disagree, identify the missing definition rather than hiding disagreement inside an average score.',
+      'Review notes against the source record and final disposition. Common evidence gaps include a missing customer request, a guessed reason for refusal, a callback time that was never agreed, and a resolution label applied before the owner acted.',
+      'Quality findings should improve coaching and service design while protecting personal information. Store only what the review requires and restrict access according to the business’s policy.',
+      'Sources: NIST, Privacy Framework (https://www.nist.gov/privacy-framework); U.S. BLS, Customer Service Representatives (https://www.bls.gov/ooh/office-and-administrative-support/customer-service-representatives.htm); AAPOR, Best Practices for Survey Research (https://aapor.org/standards-and-ethics/best-practices/).'
+    ]
+  },
+];
 function makeResearchPost([slug, title, excerpt]: readonly [string, string, string]) {
   return { slug, title, excerpt, published: '2026-08-08', body: [
     `Published: 2026-08-08. Cluster: daily calling operations. This Research note answers: ${title.toLowerCase()}.`,
@@ -1352,6 +1494,7 @@ function makeResearchPost([slug, title, excerpt]: readonly [string, string, stri
   ] };
 }
 export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string }> = [
+  ...aug11ResearchPosts,
   ...[...researchTopics, ...currentResearchBatchTopics].map(makeResearchPost),
   ...scheduledResearchBatchTopics.map(topic => ({ ...makeResearchPost(topic), published: '2026-08-10' })),
   ...runResearchBatchTopics.map(topic => {
