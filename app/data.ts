@@ -134,8 +134,10 @@ const scheduledBlogBatch = [
   ['outsourced-calling-monthly-process-review', 'Outsourced calling monthly process review', 'A practical monthly review for checking queue design, scripts, access, quality samples, exceptions, and the next process improvement.']
 ] as const;
 
-export const scheduledBlogPosts = scheduledBlogBatch.map(([slug, title, excerpt]) => ({ slug, title, excerpt, minutes: 10, published: '2026-08-10' }));
+const aug10BlogSlugs = new Set(scheduledBlogBatch.slice(0, 23).map(([slug]) => slug));
+export const scheduledBlogPosts = scheduledBlogBatch.map(([slug, title, excerpt]) => ({ slug, title, excerpt, minutes: 10, published: aug10BlogSlugs.has(slug) ? '2026-08-10' : '2026-08-07' }));
 blogPosts.push(...scheduledBlogPosts);
+blogPosts.sort((a, b) => (('published' in b ? (b.published ?? '2026-07-28') : '2026-07-28').localeCompare('published' in a ? (a.published ?? '2026-07-28') : '2026-07-28')) || a.slug.localeCompare(b.slug));
 
 export const blogDetails = {
   'philippines-database-verification-call-data-minimization-checklist': {

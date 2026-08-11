@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "contract": "sites3-aug10-public-date-v6",
+  "targetDate": "2026-08-10",
+  "family": "blog",
+  "domain": "outsourcedcallers.com",
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "branch": "main",
+  "minimum": 22,
+  "priorRunId": "3c425364-06c0-4167-9258-6e47077fe0cd",
+  "priorIssueId": "f7f09c65-eb04-4a02-932b-8acc2f304f98",
+  "validationCommands": [
+    "npm run build",
+    "node scripts/validate-aug10-blog-repair.mjs",
+    "npm run validate:routines"
+  ],
+  "cleanBuildPassed": true,
+  "existingCompliancePassed": true,
+  "indexNewestFirstPassed": true,
+  "entries": [
+    {
+      "slug": "appointment-setting-calendar-qualification",
+      "route": "/blog/appointment-setting-calendar-qualification",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "appointment-setting-lead-handoff-checklist",
+      "route": "/blog/appointment-setting-lead-handoff-checklist",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "callback-request-priority-routing",
+      "route": "/blog/callback-request-priority-routing",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "customer-follow-up-call-outcome-labels",
+      "route": "/blog/customer-follow-up-call-outcome-labels",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "customer-follow-up-consent-and-suppression",
+      "route": "/blog/customer-follow-up-consent-and-suppression",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "customer-follow-up-owner-escalation-matrix",
+      "route": "/blog/customer-follow-up-owner-escalation-matrix",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "daily-calling-exception-report-template",
+      "route": "/blog/daily-calling-exception-report-template",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "database-verification-call-change-log",
+      "route": "/blog/database-verification-call-change-log",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "filipino-caller-crm-note-checklist",
+      "route": "/blog/filipino-caller-crm-note-checklist",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "filipino-caller-daily-startup-checklist",
+      "route": "/blog/filipino-caller-daily-startup-checklist",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "filipino-caller-first-week-ramp-plan",
+      "route": "/blog/filipino-caller-first-week-ramp-plan",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "filipino-caller-quality-sample-plan",
+      "route": "/blog/filipino-caller-quality-sample-plan",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "filipino-caller-script-change-control",
+      "route": "/blog/filipino-caller-script-change-control",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "inbound-call-message-handoff-template",
+      "route": "/blog/inbound-call-message-handoff-template",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "order-confirmation-call-identity-checks",
+      "route": "/blog/order-confirmation-call-identity-checks",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outbound-call-list-cleanup-workflow",
+      "route": "/blog/outbound-call-list-cleanup-workflow",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outbound-caller-objection-escalation-guide",
+      "route": "/blog/outbound-caller-objection-escalation-guide",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outbound-calling-result-reconciliation",
+      "route": "/blog/outbound-calling-result-reconciliation",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "outsourced-calling-weekly-review-agenda",
+      "route": "/blog/outsourced-calling-weekly-review-agenda",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "reception-overflow-call-note-standards",
+      "route": "/blog/reception-overflow-call-note-standards",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "renewal-reminder-call-review-routine",
+      "route": "/blog/renewal-reminder-call-review-routine",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "survey-calling-neutral-question-design",
+      "route": "/blog/survey-calling-neutral-question-design",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    },
+    {
+      "slug": "win-back-calling-list-review",
+      "route": "/blog/win-back-calling-list-review",
+      "sourcePath": "app/data.ts",
+      "provenance": "original-aug10-batch",
+      "introducedByCommit": "bcc9446e1be8114da1b978efdedfccdc0f9cba8c",
+      "sourceDateField": "scheduledBlogPosts[].published",
+      "sourceDate": "2026-08-10",
+      "renderedDateFields": [
+        "datePublished",
+        "time[datetime]"
+      ],
+      "renderedDate": "2026-08-10"
+    }
+  ]
+}
