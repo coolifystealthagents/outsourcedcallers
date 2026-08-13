@@ -1341,7 +1341,7 @@ const aug11ResearchPosts: Array<{ slug: string; title: string; excerpt: string; 
     slug: 'appointment-setting-meeting-context-research',
     title: 'Appointment-setting meeting context research',
     excerpt: 'What meeting context should travel with a qualified appointment so the recipient can decide quickly and the prospect is not asked to repeat the conversation.',
-    published: '2026-08-11',
+    published: '2026-08-12',
     body: [
       'A booked time is not the same as a useful appointment. Research on customer experience consistently treats continuity and effort as part of service quality, so the handoff should preserve the reason for the meeting, the person’s stated need, the agreed timing, and any unanswered question.',
       'For an appointment-setting service, the caller can capture the business-approved qualification facts and the prospect’s own wording. The receiving owner should retain authority over fit, commitments, technical promises, and any question that needs specialist judgment.',
@@ -1355,7 +1355,7 @@ const aug11ResearchPosts: Array<{ slug: string; title: string; excerpt: string; 
     slug: 'customer-follow-up-request-resolution-research',
     title: 'Customer follow-up request-resolution research',
     excerpt: 'How follow-up calls can distinguish a resolved request from a promised callback, an open question, and a matter that needs the owner.',
-    published: '2026-08-11',
+    published: '2026-08-12',
     body: [
       'A follow-up record should describe the customer’s request and the state of the answer, not merely the fact that a call happened. This distinction matters because unresolved effort can increase customer friction even when contact activity looks complete.',
       'The caller may confirm the approved status, capture the customer’s preferred next step, and record what remains unanswered. Refunds, disputes, account changes, exceptions, and commitments outside the approved information should move to the named business owner.',
@@ -1369,7 +1369,7 @@ const aug11ResearchPosts: Array<{ slug: string; title: string; excerpt: string; 
     slug: 'inbound-call-information-quality-research',
     title: 'Inbound call information-quality research',
     excerpt: 'A research-led way to judge whether an inbound message contains enough accurate context for the receiving owner to act.',
-    published: '2026-08-11',
+    published: '2026-08-12',
     body: [
       'An inbound message is useful when it lets the recipient understand who called, why they called, what they need next, and how urgently the matter should be handled. A short accurate message can be more valuable than a long narrative that mixes fact with interpretation.',
       'The caller can confirm the preferred callback detail, capture the caller’s stated purpose, and mark uncertainty. They should not guess at identity, diagnose a complaint, disclose restricted information, or promise a remedy. Those decisions belong to the receiving owner.',
@@ -1383,7 +1383,7 @@ const aug11ResearchPosts: Array<{ slug: string; title: string; excerpt: string; 
     slug: 'event-registration-attendee-confirmation-research',
     title: 'Event registration attendee-confirmation research',
     excerpt: 'How confirmation calls can improve registration accuracy while separating attendance facts from accommodation, payment, and policy decisions.',
-    published: '2026-08-11',
+    published: '2026-08-12',
     body: [
       'An event confirmation call should verify the registration facts that the event team actually needs. It should not become an invitation to collect unrelated personal information or an improvised promise about access, seating, refunds, or accommodations.',
       'The caller can confirm attendance intent, the approved contact detail, the registration reference, and the attendee’s stated question. Accessibility requests, dietary or safety matters, payment issues, and policy exceptions should be captured accurately and routed to the event owner.',
@@ -1397,7 +1397,7 @@ const aug11ResearchPosts: Array<{ slug: string; title: string; excerpt: string; 
     slug: 'survey-calling-interviewer-neutrality-research',
     title: 'Survey calling interviewer neutrality research',
     excerpt: 'Why neutral wording, honest refusals, and consistent response coding are central to credible survey calls.',
-    published: '2026-08-11',
+    published: '2026-08-12',
     body: [
       'Survey calling is a measurement activity, so the interviewer’s manner can affect the data. A caller should ask the approved question as written, use only permitted neutral clarification, and record a refusal or “don’t know” instead of pushing for a preferred answer.',
       'The key distinction from a sales call is purpose. The caller is collecting a response, not steering the respondent toward a service, appointment, or commitment. Any request to change the purpose should be treated as a new brief requiring owner review.',
@@ -1411,7 +1411,7 @@ const aug11ResearchPosts: Array<{ slug: string; title: string; excerpt: string; 
     slug: 'reception-overflow-message-completeness-research',
     title: 'Reception overflow message-completeness research',
     excerpt: 'What makes an overflow message actionable when a front desk cannot transfer the caller immediately.',
-    published: '2026-08-11',
+    published: '2026-08-12',
     body: [
       'Overflow support succeeds when it preserves the front door’s context under pressure. The receiving person needs the caller’s stated purpose, a reliable return route, any requested timing, and a clear indication of urgency without a receptionist or caller inventing a priority.',
       'A Filipino caller can collect the approved message fields and repeat them back for accuracy. They should not interpret a complaint, disclose internal information, or promise that an owner will respond by a time the business has not committed to.',
@@ -1425,7 +1425,7 @@ const aug11ResearchPosts: Array<{ slug: string; title: string; excerpt: string; 
     slug: 'renewal-reminder-customer-choice-research',
     title: 'Renewal reminder customer-choice research',
     excerpt: 'How renewal reminders can preserve customer choice while keeping payment, cancellation, and account decisions with the owner.',
-    published: '2026-08-11',
+    published: '2026-08-12',
     body: [
       'A renewal reminder should help a customer understand that a decision is approaching without implying that renewal is automatic or already agreed. The call’s value is clarity: what the approved notice says, what the customer wants, and what question needs an accountable answer.',
       'The caller may confirm receipt, record a preferred contact route, and pass along approved dates or instructions. They should not take payment details, authorize a cancellation, change account ownership, or make a promise about terms that are not in the approved information.',
@@ -1439,7 +1439,7 @@ const aug11ResearchPosts: Array<{ slug: string; title: string; excerpt: string; 
     slug: 'order-confirmation-customer-intent-research',
     title: 'Order confirmation customer-intent research',
     excerpt: 'Why order confirmation calls should distinguish verified order facts from a new customer request that needs fulfillment review.',
-    published: '2026-08-11',
+    published: '2026-08-12',
     body: [
       'An order confirmation call has a narrow purpose: check the approved order facts and surface anything the fulfillment owner must decide. When a customer introduces a return, address change, delivery concern, or product question, the call has crossed from confirmation into exception handling.',
       'The caller can repeat the approved item, delivery detail, and contact information as permitted by the business. They should stop before changing the order, accepting payment data, promising a delivery outcome, or deciding whether a return is eligible.',
@@ -1453,7 +1453,7 @@ const aug11ResearchPosts: Array<{ slug: string; title: string; excerpt: string; 
     slug: 'database-verification-contact-consent-research',
     title: 'Database verification contact-consent research',
     excerpt: 'How record verification can preserve contact preferences and suppression requests without turning a caller into a data administrator.',
-    published: '2026-08-11',
+    published: '2026-08-12',
     body: [
       'Contact data is not just a set of fields; it also carries a person’s stated preference about how and whether the business should reach them. A verification call should treat that preference as a material result, not as an incidental note.',
       'The caller can verify the approved contact detail and capture a clear request to continue, change channel, or stop contact. They should not merge records, delete history, infer consent from silence, or broaden the purpose of the call beyond the released field set.',
@@ -1467,7 +1467,7 @@ const aug11ResearchPosts: Array<{ slug: string; title: string; excerpt: string; 
     slug: 'call-quality-review-evidence-consistency-research',
     title: 'Call quality review evidence-consistency research',
     excerpt: 'A research view of quality review that compares spoken evidence, written notes, and the decision the business ultimately made.',
-    published: '2026-08-11',
+    published: '2026-08-12',
     body: [
       'A call-quality review is strongest when it checks whether three records agree: what was said, what was written, and what action followed. Tone matters, but a pleasant call with an inaccurate outcome still creates operational risk.',
       'The reviewer should assess the approved purpose, factual accuracy, respectful wording, customer choice, result label, and escalation boundary. The caller should not be judged against an authority they were never given; the business must define which decisions belong to the caller and which belong to the owner.',
