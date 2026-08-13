@@ -25,7 +25,7 @@ export const aug11BlogPosts = [
 
 export function makeAug11Detail(post: typeof aug11BlogPosts[number]) {
   return {
-    published: '2026-08-11',
+    published: post.published,
     mainKeyword: post.title,
     summary: `${post.title} helps a Filipino caller keep the conversation focused, capture the customer’s answer accurately, and make the next decision easy for the business owner to review.`,
     takeaways: ['Begin with the reason for contact and the approved record context.', 'Ask only the questions needed for the stated outcome.', 'Write the customer’s answer in plain language and label uncertainty.', 'Pause for identity concerns, sensitive requests, complaints, or unapproved commitments.', 'End with one clear next action, owner, and due point.'],
