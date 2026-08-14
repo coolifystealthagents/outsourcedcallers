@@ -1,5 +1,6 @@
 import { aug11BlogPosts, makeAug11Detail } from './aug11-blog';
 import { aug13BlogPosts, makeAug13Detail } from './aug13-blog';
+import { aug14BlogPosts, makeAug14Detail } from './aug14-blog';
 import { aug13ResearchPosts } from './aug13-research';
 
 export const site = {
@@ -167,6 +168,7 @@ export const scheduledBlogPosts = scheduledBlogBatch.map(([slug, title, excerpt]
 blogPosts.push(...scheduledBlogPosts);
 blogPosts.push(...aug11BlogPosts);
 blogPosts.push(...aug13BlogPosts.map((post) => ({ ...post, minutes: 10 })));
+blogPosts.push(...aug14BlogPosts.map((post) => ({ ...post, minutes: 10 })));
 blogPosts.sort((a, b) => (('published' in b ? (b.published ?? '2026-07-28') : '2026-07-28').localeCompare('published' in a ? (a.published ?? '2026-07-28') : '2026-07-28')) || a.slug.localeCompare(b.slug));
 
 export const blogDetails = {
@@ -1178,6 +1180,9 @@ for (const post of aug11BlogPosts) {
 }
 for (const post of aug13BlogPosts) {
   blogDetailRecord[post.slug] = makeAug13Detail(post);
+}
+for (const post of aug14BlogPosts) {
+  blogDetailRecord[post.slug] = makeAug14Detail(post);
 }
 
 export const staffingOffer = {
