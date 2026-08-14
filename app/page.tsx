@@ -88,9 +88,9 @@ export default function Home() {
                   <div><span className="pulse" /> Shift brief</div>
                   <small>OWNER REVIEW</small>
                 </div>
-                <div className="queue-row"><span>Reached</span><b>Log outcome</b><img className="status-icon" src="/icons/getillustrations/blueprint-communication-icons-svg/call.svg" alt=""/></div>
-                <div className="queue-row"><span>No answer</span><b>Schedule retry</b><img className="status-icon" src="/icons/getillustrations/blueprint-communication-icons-svg/outcome-note.svg" alt=""/></div>
-                <div className="queue-row"><span>Needs approval</span><b>Send to owner</b><img className="status-icon" src="/icons/getillustrations/blueprint-communication-icons-svg/handoff.svg" alt=""/></div>
+                <div className="queue-row"><span>Reached</span><b>Log outcome</b><img className="status-icon" src="/icons/getillustrations/blueprint-communication-icons-svg/call.svg" alt="Call outcome icon"/></div>
+                <div className="queue-row"><span>No answer</span><b>Schedule retry</b><img className="status-icon" src="/icons/getillustrations/blueprint-communication-icons-svg/outcome-note.svg" alt="Outcome note icon"/></div>
+                <div className="queue-row"><span>Needs approval</span><b>Send to owner</b><img className="status-icon" src="/icons/getillustrations/blueprint-communication-icons-svg/handoff.svg" alt="Owner handoff icon"/></div>
                 <div className="board-foot"><span>CRM note required</span><strong>before next call</strong></div>
               </aside>
             </div>
@@ -115,7 +115,7 @@ export default function Home() {
           </div>
           <div className="service-console">
             {serviceCards.map((service) => (
-              <a className="service-module" href={`/services/${service.slug}`} key={service.slug}>
+              <a className="service-module" href="/services" key={service.slug}>
                 <div className="module-code">{service.code}</div>
                 <div>
                   <span className="module-tag">{service.tag}</span>
@@ -176,8 +176,8 @@ export default function Home() {
         </section>
 
         <section className="container gi-proof" aria-label="Calling desk communication flow">
-          <img className="gi-proof-art" src="/illustrations/getillustrations/inkdex-team-illustrations-svg/call-quality-review.svg" alt=""/>
-          <div><p className="desk-label dark"><span/>Every outcome recorded</p><h2>Connect the call to a clean handoff.</h2><div className="gi-icon-row"><span><img src="/icons/getillustrations/blueprint-communication-icons-svg/call.svg" alt=""/>Call</span><span><img src="/icons/getillustrations/blueprint-communication-icons-svg/outcome-note.svg" alt=""/>Outcome note</span><span><img src="/icons/getillustrations/blueprint-communication-icons-svg/handoff.svg" alt=""/>Owner handoff</span></div></div>
+          <img className="gi-proof-art" src="/illustrations/getillustrations/inkdex-team-illustrations-svg/call-quality-review.svg" alt="Call quality review workflow"/>
+          <div><p className="desk-label dark"><span/>Every outcome recorded</p><h2>Connect the call to a clean handoff.</h2><div className="gi-icon-row"><span><img src="/icons/getillustrations/blueprint-communication-icons-svg/call.svg" alt="Call outcome icon"/>Call</span><span><img src="/icons/getillustrations/blueprint-communication-icons-svg/outcome-note.svg" alt="Outcome note icon"/>Outcome note</span><span><img src="/icons/getillustrations/blueprint-communication-icons-svg/handoff.svg" alt="Owner handoff icon"/>Owner handoff</span></div></div>
         </section>
 
         <section className="guides-section">
