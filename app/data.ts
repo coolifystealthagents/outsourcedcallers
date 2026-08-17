@@ -4,6 +4,7 @@ import { aug14BlogPosts, makeAug14Detail } from './aug14-blog';
 import { aug17BlogPosts, makeAug17Detail } from './aug17-blog';
 import { aug13ResearchPosts } from './aug13-research';
 import { aug14ResearchPosts } from './aug14-research';
+import { aug17ResearchPosts } from './aug17-research';
 
 export const site = {
   "domain": "OutsourcedCallers.com",
@@ -1511,6 +1512,7 @@ function makeResearchPost([slug, title, excerpt]: readonly [string, string, stri
   ] };
 }
 export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string }> = [
+  ...aug17ResearchPosts,
   ...aug14ResearchPosts,
   ...aug13ResearchPosts,
   ...aug11ResearchPosts,
