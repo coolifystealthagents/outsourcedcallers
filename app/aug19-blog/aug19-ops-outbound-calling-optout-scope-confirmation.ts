@@ -1,9 +1,9 @@
 import type { RoutePost } from '../aug19-blog-route-types';
 import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
-// Route identity: outbound-calling-optout-scope-confirmation; publication date: 2026-08-19; source body: 16 substantive paragraphs.
+// Route identity: aug19-ops-outbound-calling-optout-scope-confirmation; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'outbound-calling-optout-scope-confirmation',
+  slug: 'aug19-ops-outbound-calling-optout-scope-confirmation',
   title: 'Outbound calling opt-out scope confirmation',
   excerpt: 'How to record the scope of an opt-out clearly so later callers do not reopen a suppressed conversation.',
   minutes: 14,
@@ -33,3 +33,4 @@ export const post: RoutePost = {
 };
 
 export const detail = makeAug19RouteDetail(post);
+

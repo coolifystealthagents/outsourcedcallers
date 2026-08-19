@@ -1,9 +1,9 @@
 import type { RoutePost } from '../aug19-blog-route-types';
 import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
-// Route identity: filipino-caller-queue-release-notes; publication date: 2026-08-19; source body: 16 substantive paragraphs.
+// Route identity: aug19-ops-filipino-caller-queue-release-notes; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'filipino-caller-queue-release-notes',
+  slug: 'aug19-ops-filipino-caller-queue-release-notes',
   title: 'Filipino caller queue release notes',
   excerpt: 'How to release a calling queue with enough context for accurate work and a visible owner for exceptions.',
   minutes: 14,
@@ -33,3 +33,4 @@ export const post: RoutePost = {
 };
 
 export const detail = makeAug19RouteDetail(post);
+

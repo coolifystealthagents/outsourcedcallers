@@ -1,9 +1,9 @@
 import type { RoutePost } from '../aug19-blog-route-types';
 import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
-// Route identity: inbound-call-language-support-handoff; publication date: 2026-08-19; source body: 16 substantive paragraphs.
+// Route identity: aug19-ops-inbound-call-language-support-handoff; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'inbound-call-language-support-handoff',
+  slug: 'aug19-ops-inbound-call-language-support-handoff',
   title: 'Inbound call language support handoff',
   excerpt: 'How to route an inbound caller’s language preference while preserving the reason for the call and the next owner.',
   minutes: 14,
@@ -33,3 +33,4 @@ export const post: RoutePost = {
 };
 
 export const detail = makeAug19RouteDetail(post);
+

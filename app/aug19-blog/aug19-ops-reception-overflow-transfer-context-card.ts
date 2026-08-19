@@ -1,9 +1,9 @@
 import type { RoutePost } from '../aug19-blog-route-types';
 import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
-// Route identity: reception-overflow-transfer-context-card; publication date: 2026-08-19; source body: 16 substantive paragraphs.
+// Route identity: aug19-ops-reception-overflow-transfer-context-card; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'reception-overflow-transfer-context-card',
+  slug: 'aug19-ops-reception-overflow-transfer-context-card',
   title: 'Reception overflow transfer context card',
   excerpt: 'How reception overflow callers can pass a concise context card to the person taking the next step.',
   minutes: 14,
@@ -33,3 +33,4 @@ export const post: RoutePost = {
 };
 
 export const detail = makeAug19RouteDetail(post);
+

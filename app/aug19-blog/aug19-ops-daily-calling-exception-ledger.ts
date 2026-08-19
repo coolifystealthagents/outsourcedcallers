@@ -1,9 +1,9 @@
 import type { RoutePost } from '../aug19-blog-route-types';
 import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
-// Route identity: daily-calling-exception-ledger; publication date: 2026-08-19; source body: 16 substantive paragraphs.
+// Route identity: aug19-ops-daily-calling-exception-ledger; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'daily-calling-exception-ledger',
+  slug: 'aug19-ops-daily-calling-exception-ledger',
   title: 'Daily calling exception ledger',
   excerpt: 'A daily ledger for exceptions that keeps unresolved calling decisions visible without confusing them with failed activity.',
   minutes: 14,
@@ -33,3 +33,4 @@ export const post: RoutePost = {
 };
 
 export const detail = makeAug19RouteDetail(post);
+

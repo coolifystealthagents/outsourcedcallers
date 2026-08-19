@@ -3,135 +3,135 @@
   "family": "blog",
   "entries": [
     {
-      "route": "/blog/filipino-caller-queue-release-notes",
+      "route": "/blog/aug19-ops-filipino-caller-queue-release-notes",
       "sourcePaths": [
-        "app/aug19-blog/filipino-caller-queue-release-notes.ts"
+        "app/aug19-blog/aug19-ops-filipino-caller-queue-release-notes.ts"
       ]
     },
     {
-      "route": "/blog/appointment-setting-precall-research-boundary",
+      "route": "/blog/aug19-ops-appointment-setting-precall-research-boundary",
       "sourcePaths": [
-        "app/aug19-blog/appointment-setting-precall-research-boundary.ts"
+        "app/aug19-blog/aug19-ops-appointment-setting-precall-research-boundary.ts"
       ]
     },
     {
-      "route": "/blog/lead-qualification-problem-statement-capture",
+      "route": "/blog/aug19-ops-lead-qualification-problem-statement-capture",
       "sourcePaths": [
-        "app/aug19-blog/lead-qualification-problem-statement-capture.ts"
+        "app/aug19-blog/aug19-ops-lead-qualification-problem-statement-capture.ts"
       ]
     },
     {
-      "route": "/blog/inbound-call-message-completeness-check",
+      "route": "/blog/aug19-ops-inbound-call-message-completeness-check",
       "sourcePaths": [
-        "app/aug19-blog/inbound-call-message-completeness-check.ts"
+        "app/aug19-blog/aug19-ops-inbound-call-message-completeness-check.ts"
       ]
     },
     {
-      "route": "/blog/customer-follow-up-next-action-ownership",
+      "route": "/blog/aug19-ops-customer-follow-up-next-action-ownership",
       "sourcePaths": [
-        "app/aug19-blog/customer-follow-up-next-action-ownership.ts"
+        "app/aug19-blog/aug19-ops-customer-follow-up-next-action-ownership.ts"
       ]
     },
     {
-      "route": "/blog/outbound-calling-list-hygiene-before-retry",
+      "route": "/blog/aug19-ops-outbound-calling-list-hygiene-before-retry",
       "sourcePaths": [
-        "app/aug19-blog/outbound-calling-list-hygiene-before-retry.ts"
+        "app/aug19-blog/aug19-ops-outbound-calling-list-hygiene-before-retry.ts"
       ]
     },
     {
-      "route": "/blog/filipino-caller-brief-change-handoff",
+      "route": "/blog/aug19-ops-filipino-caller-brief-change-handoff",
       "sourcePaths": [
-        "app/aug19-blog/filipino-caller-brief-change-handoff.ts"
+        "app/aug19-blog/aug19-ops-filipino-caller-brief-change-handoff.ts"
       ]
     },
     {
-      "route": "/blog/appointment-setting-calendar-context-note",
+      "route": "/blog/aug19-ops-appointment-setting-calendar-context-note",
       "sourcePaths": [
-        "app/aug19-blog/appointment-setting-calendar-context-note.ts"
+        "app/aug19-blog/aug19-ops-appointment-setting-calendar-context-note.ts"
       ]
     },
     {
-      "route": "/blog/customer-follow-up-preferred-channel-record",
+      "route": "/blog/aug19-ops-customer-follow-up-preferred-channel-record",
       "sourcePaths": [
-        "app/aug19-blog/customer-follow-up-preferred-channel-record.ts"
+        "app/aug19-blog/aug19-ops-customer-follow-up-preferred-channel-record.ts"
       ]
     },
     {
-      "route": "/blog/order-confirmation-item-quantity-readback",
+      "route": "/blog/aug19-ops-order-confirmation-item-quantity-readback",
       "sourcePaths": [
-        "app/aug19-blog/order-confirmation-item-quantity-readback.ts"
+        "app/aug19-blog/aug19-ops-order-confirmation-item-quantity-readback.ts"
       ]
     },
     {
-      "route": "/blog/database-verification-field-source-trace",
+      "route": "/blog/aug19-ops-database-verification-field-source-trace",
       "sourcePaths": [
-        "app/aug19-blog/database-verification-field-source-trace.ts"
+        "app/aug19-blog/aug19-ops-database-verification-field-source-trace.ts"
       ]
     },
     {
-      "route": "/blog/renewal-reminder-contact-window-note",
+      "route": "/blog/aug19-ops-renewal-reminder-contact-window-note",
       "sourcePaths": [
-        "app/aug19-blog/renewal-reminder-contact-window-note.ts"
+        "app/aug19-blog/aug19-ops-renewal-reminder-contact-window-note.ts"
       ]
     },
     {
-      "route": "/blog/win-back-call-reason-categorization",
+      "route": "/blog/aug19-ops-win-back-call-reason-categorization",
       "sourcePaths": [
-        "app/aug19-blog/win-back-call-reason-categorization.ts"
+        "app/aug19-blog/aug19-ops-win-back-call-reason-categorization.ts"
       ]
     },
     {
-      "route": "/blog/survey-caller-neutral-probe-sequence",
+      "route": "/blog/aug19-ops-survey-caller-neutral-probe-sequence",
       "sourcePaths": [
-        "app/aug19-blog/survey-caller-neutral-probe-sequence.ts"
+        "app/aug19-blog/aug19-ops-survey-caller-neutral-probe-sequence.ts"
       ]
     },
     {
-      "route": "/blog/reception-overflow-transfer-context-card",
+      "route": "/blog/aug19-ops-reception-overflow-transfer-context-card",
       "sourcePaths": [
-        "app/aug19-blog/reception-overflow-transfer-context-card.ts"
+        "app/aug19-blog/aug19-ops-reception-overflow-transfer-context-card.ts"
       ]
     },
     {
-      "route": "/blog/outbound-calling-optout-scope-confirmation",
+      "route": "/blog/aug19-ops-outbound-calling-optout-scope-confirmation",
       "sourcePaths": [
-        "app/aug19-blog/outbound-calling-optout-scope-confirmation.ts"
+        "app/aug19-blog/aug19-ops-outbound-calling-optout-scope-confirmation.ts"
       ]
     },
     {
-      "route": "/blog/filipino-caller-stale-record-pause",
+      "route": "/blog/aug19-ops-filipino-caller-stale-record-pause",
       "sourcePaths": [
-        "app/aug19-blog/filipino-caller-stale-record-pause.ts"
+        "app/aug19-blog/aug19-ops-filipino-caller-stale-record-pause.ts"
       ]
     },
     {
-      "route": "/blog/appointment-setting-reschedule-constraint-note",
+      "route": "/blog/aug19-ops-appointment-setting-reschedule-constraint-note",
       "sourcePaths": [
-        "app/aug19-blog/appointment-setting-reschedule-constraint-note.ts"
+        "app/aug19-blog/aug19-ops-appointment-setting-reschedule-constraint-note.ts"
       ]
     },
     {
-      "route": "/blog/inbound-call-language-support-handoff",
+      "route": "/blog/aug19-ops-inbound-call-language-support-handoff",
       "sourcePaths": [
-        "app/aug19-blog/inbound-call-language-support-handoff.ts"
+        "app/aug19-blog/aug19-ops-inbound-call-language-support-handoff.ts"
       ]
     },
     {
-      "route": "/blog/call-quality-evidence-linked-score",
+      "route": "/blog/aug19-ops-call-quality-evidence-linked-score",
       "sourcePaths": [
-        "app/aug19-blog/call-quality-evidence-linked-score.ts"
+        "app/aug19-blog/aug19-ops-call-quality-evidence-linked-score.ts"
       ]
     },
     {
-      "route": "/blog/daily-calling-exception-ledger",
+      "route": "/blog/aug19-ops-daily-calling-exception-ledger",
       "sourcePaths": [
-        "app/aug19-blog/daily-calling-exception-ledger.ts"
+        "app/aug19-blog/aug19-ops-daily-calling-exception-ledger.ts"
       ]
     },
     {
-      "route": "/blog/outsourced-caller-escalation-ladder",
+      "route": "/blog/aug19-ops-outsourced-caller-escalation-ladder",
       "sourcePaths": [
-        "app/aug19-blog/outsourced-caller-escalation-ladder.ts"
+        "app/aug19-blog/aug19-ops-outsourced-caller-escalation-ladder.ts"
       ]
     }
   ]
