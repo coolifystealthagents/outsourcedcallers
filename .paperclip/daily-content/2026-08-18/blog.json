@@ -1,0 +1,28 @@
+{
+  "campaignDate": "2026-08-18",
+  "family": "blog",
+  "entries": [
+    {"route":"/blog/filipino-caller-daily-capacity-board","sourcePaths":["app/aug19-blog.ts"]},
+    {"route":"/blog/appointment-setting-meeting-purpose-confirmation","sourcePaths":["app/aug19-blog.ts"]},
+    {"route":"/blog/lead-qualification-timing-signal","sourcePaths":["app/aug19-blog.ts"]},
+    {"route":"/blog/inbound-call-safe-callback-number","sourcePaths":["app/aug19-blog.ts"]},
+    {"route":"/blog/customer-follow-up-open-loop-register","sourcePaths":["app/aug19-blog.ts"]},
+    {"route":"/blog/outbound-calling-attempt-limit-review","sourcePaths":["app/aug19-blog.ts"]},
+    {"route":"/blog/filipino-caller-script-version-check","sourcePaths":["app/aug19-blog.ts"]},
+    {"route":"/blog/appointment-setting-attendee-role-capture","sourcePaths":["app/aug19-blog.ts"]},
+    {"route":"/blog/customer-follow-up-callback-window-record","sourcePaths":["app/aug19-blog.ts"]},
+    {"route":"/blog/order-confirmation-address-change-request","sourcePaths":["app/aug19-blog.ts"]},
+    {"route":"/blog/database-verification-duplicate-email-check","sourcePaths":["app/aug19-blog.ts"]},
+    {"route":"/blog/renewal-reminder-preference-change-capture","sourcePaths":["app/aug19-blog.ts"]},
+    {"route":"/blog/win-back-feedback-vs-permission","sourcePaths":["app/aug19-blog.ts"]},
+    {"route":"/blog/survey-calling-clarification-limit","sourcePaths":["app/aug19-blog.ts"]},
+    {"route":"/blog/reception-overflow-message-deadline","sourcePaths":["app/aug19-blog.ts"]},
+    {"route":"/blog/outbound-calling-opt-out-source-note","sourcePaths":["app/aug19-blog.ts"]},
+    {"route":"/blog/filipino-caller-record-lock-escalation","sourcePaths":["app/aug19-blog.ts"]},
+    {"route":"/blog/appointment-setting-reschedule-reason-note","sourcePaths":["app/aug19-blog.ts"]},
+    {"route":"/blog/inbound-call-language-preference-route","sourcePaths":["app/aug19-blog.ts"]},
+    {"route":"/blog/call-quality-silence-interpretation-check","sourcePaths":["app/aug19-blog.ts"]},
+    {"route":"/blog/daily-calling-end-of-day-reconciliation","sourcePaths":["app/aug19-blog.ts"]},
+    {"route":"/blog/outsourced-calling-approval-boundary-map","sourcePaths":["app/aug19-blog.ts"]}
+  ]
+}
