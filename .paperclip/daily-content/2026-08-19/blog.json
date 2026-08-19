@@ -2,27 +2,137 @@
   "campaignDate": "2026-08-19",
   "family": "blog",
   "entries": [
-    {"route":"/blog/filipino-caller-queue-release-notes","sourcePaths":["app/aug19-blog-repair.ts"]},
-    {"route":"/blog/appointment-setting-precall-research-boundary","sourcePaths":["app/aug19-blog-repair.ts"]},
-    {"route":"/blog/lead-qualification-problem-statement-capture","sourcePaths":["app/aug19-blog-repair.ts"]},
-    {"route":"/blog/inbound-call-message-completeness-check","sourcePaths":["app/aug19-blog-repair.ts"]},
-    {"route":"/blog/customer-follow-up-next-action-ownership","sourcePaths":["app/aug19-blog-repair.ts"]},
-    {"route":"/blog/outbound-calling-list-hygiene-before-retry","sourcePaths":["app/aug19-blog-repair.ts"]},
-    {"route":"/blog/filipino-caller-brief-change-handoff","sourcePaths":["app/aug19-blog-repair.ts"]},
-    {"route":"/blog/appointment-setting-calendar-context-note","sourcePaths":["app/aug19-blog-repair.ts"]},
-    {"route":"/blog/customer-follow-up-preferred-channel-record","sourcePaths":["app/aug19-blog-repair.ts"]},
-    {"route":"/blog/order-confirmation-item-quantity-readback","sourcePaths":["app/aug19-blog-repair.ts"]},
-    {"route":"/blog/database-verification-field-source-trace","sourcePaths":["app/aug19-blog-repair.ts"]},
-    {"route":"/blog/renewal-reminder-contact-window-note","sourcePaths":["app/aug19-blog-repair.ts"]},
-    {"route":"/blog/win-back-call-reason-categorization","sourcePaths":["app/aug19-blog-repair.ts"]},
-    {"route":"/blog/survey-caller-neutral-probe-sequence","sourcePaths":["app/aug19-blog-repair.ts"]},
-    {"route":"/blog/reception-overflow-transfer-context-card","sourcePaths":["app/aug19-blog-repair.ts"]},
-    {"route":"/blog/outbound-calling-optout-scope-confirmation","sourcePaths":["app/aug19-blog-repair.ts"]},
-    {"route":"/blog/filipino-caller-stale-record-pause","sourcePaths":["app/aug19-blog-repair.ts"]},
-    {"route":"/blog/appointment-setting-reschedule-constraint-note","sourcePaths":["app/aug19-blog-repair.ts"]},
-    {"route":"/blog/inbound-call-language-support-handoff","sourcePaths":["app/aug19-blog-repair.ts"]},
-    {"route":"/blog/call-quality-evidence-linked-score","sourcePaths":["app/aug19-blog-repair.ts"]},
-    {"route":"/blog/daily-calling-exception-ledger","sourcePaths":["app/aug19-blog-repair.ts"]},
-    {"route":"/blog/outsourced-caller-escalation-ladder","sourcePaths":["app/aug19-blog-repair.ts"]}
+    {
+      "route": "/blog/aug19-ops-filipino-caller-queue-release-notes",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    },
+    {
+      "route": "/blog/aug19-ops-appointment-setting-precall-research-boundary",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    },
+    {
+      "route": "/blog/aug19-ops-lead-qualification-problem-statement-capture",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    },
+    {
+      "route": "/blog/aug19-ops-inbound-call-message-completeness-check",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    },
+    {
+      "route": "/blog/aug19-ops-customer-follow-up-next-action-ownership",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    },
+    {
+      "route": "/blog/aug19-ops-outbound-calling-list-hygiene-before-retry",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    },
+    {
+      "route": "/blog/aug19-ops-filipino-caller-brief-change-handoff",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    },
+    {
+      "route": "/blog/aug19-ops-appointment-setting-calendar-context-note",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    },
+    {
+      "route": "/blog/aug19-ops-customer-follow-up-preferred-channel-record",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    },
+    {
+      "route": "/blog/aug19-ops-order-confirmation-item-quantity-readback",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    },
+    {
+      "route": "/blog/aug19-ops-database-verification-field-source-trace",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    },
+    {
+      "route": "/blog/aug19-ops-renewal-reminder-contact-window-note",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    },
+    {
+      "route": "/blog/aug19-ops-win-back-call-reason-categorization",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    },
+    {
+      "route": "/blog/aug19-ops-survey-caller-neutral-probe-sequence",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    },
+    {
+      "route": "/blog/aug19-ops-reception-overflow-transfer-context-card",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    },
+    {
+      "route": "/blog/aug19-ops-outbound-calling-optout-scope-confirmation",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    },
+    {
+      "route": "/blog/aug19-ops-filipino-caller-stale-record-pause",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    },
+    {
+      "route": "/blog/aug19-ops-appointment-setting-reschedule-constraint-note",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    },
+    {
+      "route": "/blog/aug19-ops-inbound-call-language-support-handoff",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    },
+    {
+      "route": "/blog/aug19-ops-call-quality-evidence-linked-score",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    },
+    {
+      "route": "/blog/aug19-ops-daily-calling-exception-ledger",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    },
+    {
+      "route": "/blog/aug19-ops-outsourced-caller-escalation-ladder",
+      "sourcePaths": [
+        "app/aug19-blog-source-repair-3.ts"
+      ]
+    }
   ]
 }

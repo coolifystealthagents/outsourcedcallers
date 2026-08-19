@@ -2,7 +2,7 @@ import { aug11BlogPosts, makeAug11Detail } from './aug11-blog';
 import { aug13BlogPosts, makeAug13Detail } from './aug13-blog';
 import { aug14BlogPosts, makeAug14Detail } from './aug14-blog';
 import { aug17BlogPosts, makeAug17Detail } from './aug17-blog';
-import { aug19RepairBlogPosts, makeAug19RepairDetail } from './aug19-blog-repair';
+import { aug19SourceRepair3BlogPosts, makeAug19SourceRepair3Detail } from './aug19-blog-source-repair-3';
 import { aug13ResearchPosts } from './aug13-research';
 import { aug14ResearchPosts } from './aug14-research';
 import { aug17ResearchPosts } from './aug17-research';
@@ -175,7 +175,7 @@ blogPosts.push(...aug11BlogPosts);
 blogPosts.push(...aug13BlogPosts.map((post) => ({ ...post, minutes: 10 })));
 blogPosts.push(...aug14BlogPosts.map((post) => ({ ...post, minutes: 10 })));
 blogPosts.push(...aug17BlogPosts);
-  blogPosts.push(...aug19RepairBlogPosts);
+  blogPosts.push(...aug19SourceRepair3BlogPosts);
 blogPosts.sort((a, b) => (('published' in b ? (b.published ?? '2026-07-28') : '2026-07-28').localeCompare('published' in a ? (a.published ?? '2026-07-28') : '2026-07-28')) || a.slug.localeCompare(b.slug));
 
 export const blogDetails = {
@@ -1194,8 +1194,8 @@ for (const post of aug14BlogPosts) {
 for (const post of aug17BlogPosts) {
   blogDetailRecord[post.slug] = makeAug17Detail(post);
 }
-for (const post of aug19RepairBlogPosts) {
-  blogDetailRecord[post.slug] = makeAug19RepairDetail(post);
+for (const post of aug19SourceRepair3BlogPosts) {
+  blogDetailRecord[post.slug] = makeAug19SourceRepair3Detail(post);
 }
 
 export const staffingOffer = {
