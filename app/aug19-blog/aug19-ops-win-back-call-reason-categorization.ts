@@ -1,9 +1,9 @@
 import type { RoutePost } from '../aug19-blog-route-types';
 import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
-// Route identity: aug19-ops-win-back-call-reason-categorization; publication date: 2026-08-19; source body: 16 substantive paragraphs.
+// Route identity: win-back-call-reason-categorization; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'aug19-ops-win-back-call-reason-categorization',
+  slug: 'win-back-call-reason-categorization',
   title: 'Win-back call reason categorization',
   excerpt: 'How to categorize a win-back conversation by customer-stated reason while keeping persuasion within approved limits.',
   minutes: 14,
@@ -33,4 +33,3 @@ export const post: RoutePost = {
 };
 
 export const detail = makeAug19RouteDetail(post);
-

@@ -1,9 +1,9 @@
 import type { RoutePost } from '../aug19-blog-route-types';
 import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
-// Route identity: aug19-ops-outbound-calling-list-hygiene-before-retry; publication date: 2026-08-19; source body: 16 substantive paragraphs.
+// Route identity: outbound-calling-list-hygiene-before-retry; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'aug19-ops-outbound-calling-list-hygiene-before-retry',
+  slug: 'outbound-calling-list-hygiene-before-retry',
   title: 'Outbound calling list hygiene before retry',
   excerpt: 'A pre-retry review for outbound calling lists that protects caller time and customer preference.',
   minutes: 14,
@@ -33,4 +33,3 @@ export const post: RoutePost = {
 };
 
 export const detail = makeAug19RouteDetail(post);
-

@@ -1,9 +1,9 @@
 import type { RoutePost } from '../aug19-blog-route-types';
 import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
-// Route identity: aug19-ops-appointment-setting-precall-research-boundary; publication date: 2026-08-19; source body: 16 substantive paragraphs.
+// Route identity: appointment-setting-precall-research-boundary; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'aug19-ops-appointment-setting-precall-research-boundary',
+  slug: 'appointment-setting-precall-research-boundary',
   title: 'Appointment setting pre-call research boundary',
   excerpt: 'A practical boundary for preparing appointment-setting calls without turning research into unsupported assumptions.',
   minutes: 14,
@@ -33,4 +33,3 @@ export const post: RoutePost = {
 };
 
 export const detail = makeAug19RouteDetail(post);
-

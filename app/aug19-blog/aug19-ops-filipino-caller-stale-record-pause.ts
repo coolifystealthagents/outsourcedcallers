@@ -1,9 +1,9 @@
 import type { RoutePost } from '../aug19-blog-route-types';
 import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
-// Route identity: aug19-ops-filipino-caller-stale-record-pause; publication date: 2026-08-19; source body: 16 substantive paragraphs.
+// Route identity: filipino-caller-record-lock-escalation; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'aug19-ops-filipino-caller-stale-record-pause',
+  slug: 'filipino-caller-record-lock-escalation',
   title: 'Filipino caller stale record pause',
   excerpt: 'A pause rule for Filipino callers when a record is too old or contradictory to support a safe call.',
   minutes: 14,
@@ -33,4 +33,3 @@ export const post: RoutePost = {
 };
 
 export const detail = makeAug19RouteDetail(post);
-

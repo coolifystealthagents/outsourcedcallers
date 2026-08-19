@@ -1,9 +1,9 @@
 import type { RoutePost } from '../aug19-blog-route-types';
 import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
-// Route identity: aug19-ops-appointment-setting-reschedule-constraint-note; publication date: 2026-08-19; source body: 16 substantive paragraphs.
+// Route identity: appointment-setting-reschedule-reason-note; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'aug19-ops-appointment-setting-reschedule-constraint-note',
+  slug: 'appointment-setting-reschedule-reason-note',
   title: 'Appointment setting reschedule constraint note',
   excerpt: 'What to capture when an appointment must be moved and the reason affects the next available option.',
   minutes: 14,
@@ -33,4 +33,3 @@ export const post: RoutePost = {
 };
 
 export const detail = makeAug19RouteDetail(post);
-

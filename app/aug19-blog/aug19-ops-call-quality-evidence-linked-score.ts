@@ -1,9 +1,9 @@
 import type { RoutePost } from '../aug19-blog-route-types';
 import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
-// Route identity: aug19-ops-call-quality-evidence-linked-score; publication date: 2026-08-19; source body: 16 substantive paragraphs.
+// Route identity: call-quality-silence-interpretation-check; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'aug19-ops-call-quality-evidence-linked-score',
+  slug: 'call-quality-silence-interpretation-check',
   title: 'Call quality evidence-linked score',
   excerpt: 'How a call-quality reviewer can connect each score to observable evidence instead of a vague impression.',
   minutes: 14,
@@ -33,4 +33,3 @@ export const post: RoutePost = {
 };
 
 export const detail = makeAug19RouteDetail(post);
-

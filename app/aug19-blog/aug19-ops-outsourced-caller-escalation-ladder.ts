@@ -1,9 +1,9 @@
 import type { RoutePost } from '../aug19-blog-route-types';
 import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
-// Route identity: aug19-ops-outsourced-caller-escalation-ladder; publication date: 2026-08-19; source body: 16 substantive paragraphs.
+// Route identity: outsourced-calling-approval-boundary-map; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'aug19-ops-outsourced-caller-escalation-ladder',
+  slug: 'outsourced-calling-approval-boundary-map',
   title: 'Outsourced caller escalation ladder',
   excerpt: 'A practical ladder for deciding when an outsourced caller should continue, pause, or escalate a business decision.',
   minutes: 14,
@@ -33,4 +33,3 @@ export const post: RoutePost = {
 };
 
 export const detail = makeAug19RouteDetail(post);
-

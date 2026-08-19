@@ -1,9 +1,9 @@
 import type { RoutePost } from '../aug19-blog-route-types';
 import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
-// Route identity: aug19-ops-filipino-caller-brief-change-handoff; publication date: 2026-08-19; source body: 16 substantive paragraphs.
+// Route identity: filipino-caller-brief-change-handoff; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'aug19-ops-filipino-caller-brief-change-handoff',
+  slug: 'filipino-caller-brief-change-handoff',
   title: 'Filipino caller brief change handoff',
   excerpt: 'How to hand a script or queue change to Filipino callers without leaving old instructions in circulation.',
   minutes: 14,
@@ -33,4 +33,3 @@ export const post: RoutePost = {
 };
 
 export const detail = makeAug19RouteDetail(post);
-
