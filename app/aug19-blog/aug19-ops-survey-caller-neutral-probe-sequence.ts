@@ -3,7 +3,7 @@ import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
 // Route identity: survey-caller-neutral-probe-sequence; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'survey-caller-neutral-probe-sequence',
+  slug: 'survey-calling-clarification-limit',
   title: 'Survey caller neutral probe sequence',
   excerpt: 'A neutral sequence for survey callers who need clarification without steering the respondent.',
   minutes: 14,

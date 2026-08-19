@@ -3,7 +3,7 @@ import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
 // Route identity: lead-qualification-problem-statement-capture; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'lead-qualification-problem-statement-capture',
+  slug: 'lead-qualification-timing-signal',
   title: 'Lead qualification problem statement capture',
   excerpt: 'How Filipino callers can capture the business problem behind an inquiry without promising an outcome they cannot approve.',
   minutes: 14,

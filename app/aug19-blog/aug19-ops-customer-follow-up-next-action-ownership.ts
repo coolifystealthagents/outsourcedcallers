@@ -3,7 +3,7 @@ import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
 // Route identity: customer-follow-up-next-action-ownership; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'customer-follow-up-next-action-ownership',
+  slug: 'customer-follow-up-open-loop-register',
   title: 'Customer follow-up next-action ownership',
   excerpt: 'How to turn a customer follow-up conversation into one clear next action with an accountable owner.',
   minutes: 14,

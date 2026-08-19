@@ -3,7 +3,7 @@ import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
 // Route identity: customer-follow-up-preferred-channel-record; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'customer-follow-up-preferred-channel-record',
+  slug: 'customer-follow-up-callback-window-record',
   title: 'Customer follow-up preferred channel record',
   excerpt: 'How to capture a customer’s preferred follow-up channel without treating a preference as unlimited permission.',
   minutes: 14,

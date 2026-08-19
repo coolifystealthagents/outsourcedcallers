@@ -3,7 +3,7 @@ import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
 // Route identity: renewal-reminder-contact-window-note; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'renewal-reminder-contact-window-note',
+  slug: 'renewal-reminder-preference-change-capture',
   title: 'Renewal reminder contact window note',
   excerpt: 'A renewal reminder routine for recording a useful contact window without making a renewal promise.',
   minutes: 14,

@@ -3,7 +3,7 @@ import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
 // Route identity: win-back-call-reason-categorization; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'win-back-call-reason-categorization',
+  slug: 'win-back-feedback-vs-permission',
   title: 'Win-back call reason categorization',
   excerpt: 'How to categorize a win-back conversation by customer-stated reason while keeping persuasion within approved limits.',
   minutes: 14,

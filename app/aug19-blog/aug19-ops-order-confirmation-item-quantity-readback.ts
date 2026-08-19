@@ -3,7 +3,7 @@ import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
 // Route identity: order-confirmation-item-quantity-readback; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'order-confirmation-item-quantity-readback',
+  slug: 'order-confirmation-address-change-request',
   title: 'Order confirmation item quantity readback',
   excerpt: 'A careful readback method for order confirmation calls when item, quantity, or delivery details may be unclear.',
   minutes: 14,

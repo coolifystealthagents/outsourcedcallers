@@ -3,7 +3,7 @@ import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
 // Route identity: appointment-setting-calendar-context-note; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'appointment-setting-calendar-context-note',
+  slug: 'appointment-setting-attendee-role-capture',
   title: 'Appointment setting calendar context note',
   excerpt: 'What a caller should record when an appointment depends on purpose, participants, and practical calendar context.',
   minutes: 14,

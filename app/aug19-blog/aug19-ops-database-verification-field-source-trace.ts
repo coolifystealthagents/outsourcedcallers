@@ -3,7 +3,7 @@ import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
 // Route identity: database-verification-field-source-trace; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'database-verification-field-source-trace',
+  slug: 'database-verification-duplicate-email-check',
   title: 'Database verification field source trace',
   excerpt: 'How to trace each verified database field to a source and a safe caller action.',
   minutes: 14,

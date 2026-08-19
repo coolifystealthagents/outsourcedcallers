@@ -3,7 +3,7 @@ import { makeAug19RouteDetail } from '../aug19-blog-source-repair-shared';
 
 // Route identity: appointment-setting-precall-research-boundary; publication date: 2026-08-19; source body: 16 substantive paragraphs.
 export const post: RoutePost = {
-  slug: 'appointment-setting-precall-research-boundary',
+  slug: 'appointment-setting-meeting-purpose-confirmation',
   title: 'Appointment setting pre-call research boundary',
   excerpt: 'A practical boundary for preparing appointment-setting calls without turning research into unsupported assumptions.',
   minutes: 14,
