@@ -1,17 +1,25 @@
 {
-  "campaignDate": "2026-08-19",
-  "family": "research",
-  "repository": "coolifystealthagents/outsourcedcallers",
-  "entries": [
-    {"route":"/research/filipino-appointment-setting-show-rate-evidence-study","sourcePath":"app/aug19-research.ts"},
-    {"route":"/research/outbound-calling-list-decay-research","sourcePath":"app/aug19-research.ts"},
-    {"route":"/research/customer-follow-up-resolution-proof-research","sourcePath":"app/aug19-research.ts"},
-    {"route":"/research/inbound-reception-message-completeness-research","sourcePath":"app/aug19-research.ts"},
-    {"route":"/research/filipino-caller-neutrality-survey-response-quality","sourcePath":"app/aug19-research.ts"},
-    {"route":"/research/win-back-call-refusal-suppression-evidence","sourcePath":"app/aug19-research.ts"},
-    {"route":"/research/order-confirmation-address-change-control-study","sourcePath":"app/aug19-research.ts"},
-    {"route":"/research/database-verification-correction-authority-research","sourcePath":"app/aug19-research.ts"},
-    {"route":"/research/outbound-call-answer-rate-denominator-research","sourcePath":"app/aug19-research.ts"},
-    {"route":"/research/reception-overflow-transfer-context-research","sourcePath":"app/aug19-research.ts"}
+  "date": "2026-08-19",
+  "articles": [
+    {
+      "route": "/research/outbound-calling-source-quality-evidence-research",
+      "source": "content/research/outbound-calling-source-quality-evidence-research.md"
+    },
+    {
+      "route": "/research/outbound-calling-exception-aging-patterns-research",
+      "source": "content/research/outbound-calling-exception-aging-patterns-research.md"
+    },
+    {
+      "route": "/research/outbound-calling-review-consistency-research",
+      "source": "content/research/outbound-calling-review-consistency-research.md"
+    },
+    {
+      "route": "/research/outbound-calling-access-governance-research",
+      "source": "content/research/outbound-calling-access-governance-research.md"
+    },
+    {
+      "route": "/research/outbound-calling-handoff-reliability-research",
+      "source": "content/research/outbound-calling-handoff-reliability-research.md"
+    }
   ]
 }

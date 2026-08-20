@@ -1,29 +1,53 @@
 {
-  "campaignDate": "2026-08-19",
-  "family": "blog",
-  "repository": "coolifystealthagents/outsourcedcallers",
-  "entries": [
-    {"route":"/blog/filipino-caller-queue-entry-evidence","sourcePaths":["app/aug19-blog-repair-9/filipino-caller-queue-entry-evidence.ts"]},
-    {"route":"/blog/appointment-setting-agenda-readback","sourcePaths":["app/aug19-blog-repair-9/appointment-setting-agenda-readback.ts"]},
-    {"route":"/blog/lead-qualification-disqualifier-handoff","sourcePaths":["app/aug19-blog-repair-9/lead-qualification-disqualifier-handoff.ts"]},
-    {"route":"/blog/inbound-call-message-priority-note","sourcePaths":["app/aug19-blog-repair-9/inbound-call-message-priority-note.ts"]},
-    {"route":"/blog/customer-follow-up-commitment-check","sourcePaths":["app/aug19-blog-repair-9/customer-follow-up-commitment-check.ts"]},
-    {"route":"/blog/outbound-calling-list-reason-code","sourcePaths":["app/aug19-blog-repair-9/outbound-calling-list-reason-code.ts"]},
-    {"route":"/blog/filipino-caller-brief-acknowledgment","sourcePaths":["app/aug19-blog-repair-9/filipino-caller-brief-acknowledgment.ts"]},
-    {"route":"/blog/appointment-setting-timezone-confirmation","sourcePaths":["app/aug19-blog-repair-9/appointment-setting-timezone-confirmation.ts"]},
-    {"route":"/blog/customer-follow-up-response-gap-review","sourcePaths":["app/aug19-blog-repair-9/customer-follow-up-response-gap-review.ts"]},
-    {"route":"/blog/order-confirmation-fulfillment-handoff","sourcePaths":["app/aug19-blog-repair-9/order-confirmation-fulfillment-handoff.ts"]},
-    {"route":"/blog/database-verification-merge-escalation","sourcePaths":["app/aug19-blog-repair-9/database-verification-merge-escalation.ts"]},
-    {"route":"/blog/renewal-reminder-objection-note","sourcePaths":["app/aug19-blog-repair-9/renewal-reminder-objection-note.ts"]},
-    {"route":"/blog/win-back-caller-permission-check","sourcePaths":["app/aug19-blog-repair-9/win-back-caller-permission-check.ts"]},
-    {"route":"/blog/survey-calling-refusal-boundary","sourcePaths":["app/aug19-blog-repair-9/survey-calling-refusal-boundary.ts"]},
-    {"route":"/blog/reception-overflow-message-urgency","sourcePaths":["app/aug19-blog-repair-9/reception-overflow-message-urgency.ts"]},
-    {"route":"/blog/outbound-calling-voicemail-next-step","sourcePaths":["app/aug19-blog-repair-9/outbound-calling-voicemail-next-step.ts"]},
-    {"route":"/blog/filipino-caller-coaching-evidence-loop","sourcePaths":["app/aug19-blog-repair-9/filipino-caller-coaching-evidence-loop.ts"]},
-    {"route":"/blog/appointment-setting-no-show-context","sourcePaths":["app/aug19-blog-repair-9/appointment-setting-no-show-context.ts"]},
-    {"route":"/blog/inbound-call-language-preference-note","sourcePaths":["app/aug19-blog-repair-9/inbound-call-language-preference-note.ts"]},
-    {"route":"/blog/call-quality-listening-calibration","sourcePaths":["app/aug19-blog-repair-9/call-quality-listening-calibration.ts"]},
-    {"route":"/blog/daily-calling-owner-decision-log","sourcePaths":["app/aug19-blog-repair-9/daily-calling-owner-decision-log.ts"]},
-    {"route":"/blog/outsourced-caller-access-review","sourcePaths":["app/aug19-blog-repair-9/outsourced-caller-access-review.ts"]}
+  "date": "2026-08-19",
+  "articles": [
+    {
+      "route": "/blog/outbound-calling-intake-source-register",
+      "source": "content/blog/outbound-calling-intake-source-register.md"
+    },
+    {
+      "route": "/blog/outbound-calling-approval-evidence-matrix",
+      "source": "content/blog/outbound-calling-approval-evidence-matrix.md"
+    },
+    {
+      "route": "/blog/outbound-calling-exception-queue-triage",
+      "source": "content/blog/outbound-calling-exception-queue-triage.md"
+    },
+    {
+      "route": "/blog/outbound-calling-quality-review-cadence",
+      "source": "content/blog/outbound-calling-quality-review-cadence.md"
+    },
+    {
+      "route": "/blog/outbound-calling-handoff-acceptance-log",
+      "source": "content/blog/outbound-calling-handoff-acceptance-log.md"
+    },
+    {
+      "route": "/blog/outbound-calling-access-recertification-review",
+      "source": "content/blog/outbound-calling-access-recertification-review.md"
+    },
+    {
+      "route": "/blog/outbound-calling-weekly-decision-brief",
+      "source": "content/blog/outbound-calling-weekly-decision-brief.md"
+    },
+    {
+      "route": "/blog/outbound-calling-source-of-truth-map",
+      "source": "content/blog/outbound-calling-source-of-truth-map.md"
+    },
+    {
+      "route": "/blog/outbound-calling-change-control-record",
+      "source": "content/blog/outbound-calling-change-control-record.md"
+    },
+    {
+      "route": "/blog/outbound-calling-work-queue-ownership",
+      "source": "content/blog/outbound-calling-work-queue-ownership.md"
+    },
+    {
+      "route": "/blog/outbound-calling-escalation-path-design",
+      "source": "content/blog/outbound-calling-escalation-path-design.md"
+    },
+    {
+      "route": "/blog/outbound-calling-launch-readiness-review",
+      "source": "content/blog/outbound-calling-launch-readiness-review.md"
+    }
   ]
 }
