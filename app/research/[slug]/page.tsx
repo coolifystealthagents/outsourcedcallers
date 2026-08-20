@@ -84,6 +84,13 @@ export default async function ResearchPost({
                 )}
               </p>
             ))}
+            {p.handoff && (
+              <aside className="support-strip">
+                <h2>Put the finding into practice</h2>
+                <p>{p.handoff.text}</p>
+                <a href={p.handoff.href}>{p.handoff.label}</a>
+              </aside>
+            )}
             <p>
               <a href="/contact">
                 Discuss a controlled Philippines calling workflow →
