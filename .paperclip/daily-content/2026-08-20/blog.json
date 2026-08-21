@@ -4,17 +4,77 @@
   "repository": "coolifystealthagents/outsourcedcallers",
   "branch": "main",
   "entries": [
-    {"route":"/blog/filipino-caller-precall-record-review","sourcePaths":["app/aug20-blog.ts"]},
-    {"route":"/blog/appointment-setting-held-meeting-context-packet","sourcePaths":["app/aug20-blog.ts"]},
-    {"route":"/blog/lead-qualification-authority-signal","sourcePaths":["app/aug20-blog.ts"]},
-    {"route":"/blog/inbound-call-message-completeness-check","sourcePaths":["app/aug20-blog.ts"]},
-    {"route":"/blog/customer-follow-up-next-action-proof","sourcePaths":["app/aug20-blog.ts"]},
-    {"route":"/blog/outbound-calling-attempt-outcome-reconciliation","sourcePaths":["app/aug20-blog.ts"]},
-    {"route":"/blog/filipino-caller-training-readiness-check","sourcePaths":["app/aug20-blog.ts"]},
-    {"route":"/blog/appointment-setting-attendee-readiness-note","sourcePaths":["app/aug20-blog.ts"]},
-    {"route":"/blog/customer-follow-up-unreachable-close-rule","sourcePaths":["app/aug20-blog.ts"]},
-    {"route":"/blog/order-confirmation-quantity-discrepancy-handoff","sourcePaths":["app/aug20-blog.ts"]},
-    {"route":"/blog/database-verification-field-change-evidence","sourcePaths":["app/aug20-blog.ts"]},
-    {"route":"/blog/renewal-reminder-contact-window-exception","sourcePaths":["app/aug20-blog.ts"]}
+    {
+      "route": "/blog/filipino-caller-queue-entry-evidence",
+      "sourcePaths": [
+        "app/aug20-blog-repair/filipino-caller-queue-entry-evidence.ts"
+      ]
+    },
+    {
+      "route": "/blog/appointment-setting-calendar-purpose-brief",
+      "sourcePaths": [
+        "app/aug20-blog-repair/appointment-setting-calendar-purpose-brief.ts"
+      ]
+    },
+    {
+      "route": "/blog/lead-qualification-influence-context-note",
+      "sourcePaths": [
+        "app/aug20-blog-repair/lead-qualification-influence-context-note.ts"
+      ]
+    },
+    {
+      "route": "/blog/inbound-call-callback-route-record",
+      "sourcePaths": [
+        "app/aug20-blog-repair/inbound-call-callback-route-record.ts"
+      ]
+    },
+    {
+      "route": "/blog/customer-follow-up-commitment-source-log",
+      "sourcePaths": [
+        "app/aug20-blog-repair/customer-follow-up-commitment-source-log.ts"
+      ]
+    },
+    {
+      "route": "/blog/outbound-calling-disposition-ledger",
+      "sourcePaths": [
+        "app/aug20-blog-repair/outbound-calling-disposition-ledger.ts"
+      ]
+    },
+    {
+      "route": "/blog/filipino-caller-coaching-evidence-card",
+      "sourcePaths": [
+        "app/aug20-blog-repair/filipino-caller-coaching-evidence-card.ts"
+      ]
+    },
+    {
+      "route": "/blog/appointment-setting-participant-context-note",
+      "sourcePaths": [
+        "app/aug20-blog-repair/appointment-setting-participant-context-note.ts"
+      ]
+    },
+    {
+      "route": "/blog/customer-follow-up-sequence-stop-record",
+      "sourcePaths": [
+        "app/aug20-blog-repair/customer-follow-up-sequence-stop-record.ts"
+      ]
+    },
+    {
+      "route": "/blog/order-confirmation-quantity-readback-record",
+      "sourcePaths": [
+        "app/aug20-blog-repair/order-confirmation-quantity-readback-record.ts"
+      ]
+    },
+    {
+      "route": "/blog/database-verification-source-change-request",
+      "sourcePaths": [
+        "app/aug20-blog-repair/database-verification-source-change-request.ts"
+      ]
+    },
+    {
+      "route": "/blog/renewal-reminder-timing-exception-note",
+      "sourcePaths": [
+        "app/aug20-blog-repair/renewal-reminder-timing-exception-note.ts"
+      ]
+    }
   ]
 }

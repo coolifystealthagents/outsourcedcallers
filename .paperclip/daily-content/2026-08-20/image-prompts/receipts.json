@@ -1,17 +1,65 @@
 {
   "generator": "built-in image_gen (Gemini-generated hero batch receipt)",
   "assets": [
-    {"route":"/blog/filipino-caller-precall-record-review","image":"/blog-heroes/filipino-caller-precall-record-review.png","prompt":"Editorial illustration of a Filipino caller preparing a clean outbound queue on a laptop, abstract record cards and a first-call checklist; wide, no readable text, logos, or watermark."},
-    {"route":"/blog/appointment-setting-held-meeting-context-packet","image":"/blog-heroes/appointment-setting-held-meeting-context-packet.png","prompt":"Editorial illustration of a Filipino appointment setter reading back a meeting agenda with a calendar and phone; wide, no readable text, logos, or watermark."},
-    {"route":"/blog/lead-qualification-authority-signal","image":"/blog-heroes/lead-qualification-authority-signal.png","prompt":"Editorial illustration of a lead qualification handoff with a caller passing an evidence card to a business owner; wide, no readable text, logos, or watermark."},
-    {"route":"/blog/inbound-call-message-completeness-check","image":"/blog-heroes/inbound-call-message-completeness-check.png","prompt":"Editorial illustration of an inbound call message sorted by urgency into calm lanes, Filipino caller at headset; wide, no readable text, logos, or watermark."},
-    {"route":"/blog/customer-follow-up-next-action-proof","image":"/blog-heroes/customer-follow-up-next-action-proof.png","prompt":"Editorial illustration of customer follow-up commitments captured on a desk with a phone, notes and next-action marker; wide, no readable text, logos, or watermark."},
-    {"route":"/blog/outbound-calling-attempt-outcome-reconciliation","image":"/blog-heroes/outbound-calling-attempt-outcome-reconciliation.png","prompt":"Editorial illustration of an outbound calling list with reason-coded cards and a suppression shield, Filipino caller at a desk; wide, no readable text, logos, or watermark."},
-    {"route":"/blog/filipino-caller-training-readiness-check","image":"/blog-heroes/filipino-caller-training-readiness-check.png","prompt":"Editorial illustration of a Filipino caller and manager reviewing a script and approval boundary; wide, no readable text, logos, or watermark."},
-    {"route":"/blog/appointment-setting-attendee-readiness-note","image":"/blog-heroes/appointment-setting-attendee-readiness-note.png","prompt":"Editorial illustration of appointment scheduling across time zones with phone, clocks and calendar blocks, Filipino caller at headset; wide, no readable text, logos, or watermark."},
-    {"route":"/blog/customer-follow-up-unreachable-close-rule","image":"/blog-heroes/customer-follow-up-unreachable-close-rule.png","prompt":"Editorial illustration of customer follow-up response gaps with unanswered message bubbles and a review board, Filipino caller; wide, no readable text, logos, or watermark."},
-    {"route":"/blog/order-confirmation-quantity-discrepancy-handoff","image":"/blog-heroes/order-confirmation-quantity-discrepancy-handoff.png","prompt":"Editorial illustration of order confirmation fulfillment handoff with package, checklist and phone conversation; wide, no readable text, logos, or watermark."},
-    {"route":"/blog/database-verification-field-change-evidence","image":"/blog-heroes/database-verification-field-change-evidence.png","prompt":"Editorial illustration of duplicate database records safely escalated to an owner with layered cards and pause symbol; wide, no readable text, logos, or watermark."},
-    {"route":"/blog/renewal-reminder-contact-window-exception","image":"/blog-heroes/renewal-reminder-contact-window-exception.png","prompt":"Editorial illustration of a renewal reminder objection captured neutrally by a Filipino caller with owner review card; wide, no readable text, logos, or watermark."}
+    {
+      "route": "/blog/filipino-caller-queue-entry-evidence",
+      "image": "/blog-heroes/filipino-caller-queue-entry-evidence.png",
+      "prompt": "Editorial illustration for filipino caller queue entry evidence in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/appointment-setting-calendar-purpose-brief",
+      "image": "/blog-heroes/appointment-setting-calendar-purpose-brief.png",
+      "prompt": "Editorial illustration for appointment setting calendar purpose brief in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/lead-qualification-influence-context-note",
+      "image": "/blog-heroes/lead-qualification-influence-context-note.png",
+      "prompt": "Editorial illustration for lead qualification influence context note in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/inbound-call-callback-route-record",
+      "image": "/blog-heroes/inbound-call-callback-route-record.png",
+      "prompt": "Editorial illustration for inbound call callback route record in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/customer-follow-up-commitment-source-log",
+      "image": "/blog-heroes/customer-follow-up-commitment-source-log.png",
+      "prompt": "Editorial illustration for customer follow up commitment source log in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/outbound-calling-disposition-ledger",
+      "image": "/blog-heroes/outbound-calling-disposition-ledger.png",
+      "prompt": "Editorial illustration for outbound calling disposition ledger in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/filipino-caller-coaching-evidence-card",
+      "image": "/blog-heroes/filipino-caller-coaching-evidence-card.png",
+      "prompt": "Editorial illustration for filipino caller coaching evidence card in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/appointment-setting-participant-context-note",
+      "image": "/blog-heroes/appointment-setting-participant-context-note.png",
+      "prompt": "Editorial illustration for appointment setting participant context note in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/customer-follow-up-sequence-stop-record",
+      "image": "/blog-heroes/customer-follow-up-sequence-stop-record.png",
+      "prompt": "Editorial illustration for customer follow up sequence stop record in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/order-confirmation-quantity-readback-record",
+      "image": "/blog-heroes/order-confirmation-quantity-readback-record.png",
+      "prompt": "Editorial illustration for order confirmation quantity readback record in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/database-verification-source-change-request",
+      "image": "/blog-heroes/database-verification-source-change-request.png",
+      "prompt": "Editorial illustration for database verification source change request in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/renewal-reminder-timing-exception-note",
+      "image": "/blog-heroes/renewal-reminder-timing-exception-note.png",
+      "prompt": "Editorial illustration for renewal reminder timing exception note in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    }
   ]
 }
