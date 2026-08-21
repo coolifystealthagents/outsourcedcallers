@@ -2,64 +2,64 @@
   "generator": "built-in image_gen (Gemini-generated hero batch receipt)",
   "assets": [
     {
-      "route": "/blog/filipino-caller-queue-entry-evidence",
-      "image": "/blog-heroes/filipino-caller-queue-entry-evidence.png",
-      "prompt": "Editorial illustration for filipino caller queue entry evidence in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+      "route": "/blog/filipino-caller-queue-release-gate",
+      "image": "/blog-heroes/filipino-caller-queue-release-gate.png",
+      "prompt": "Editorial illustration for filipino caller queue release gate in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
     },
     {
-      "route": "/blog/appointment-setting-calendar-purpose-brief",
-      "image": "/blog-heroes/appointment-setting-calendar-purpose-brief.png",
-      "prompt": "Editorial illustration for appointment setting calendar purpose brief in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+      "route": "/blog/appointment-setting-calendar-intent-brief",
+      "image": "/blog-heroes/appointment-setting-calendar-intent-brief.png",
+      "prompt": "Editorial illustration for appointment setting calendar intent brief in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
     },
     {
-      "route": "/blog/lead-qualification-influence-context-note",
-      "image": "/blog-heroes/lead-qualification-influence-context-note.png",
-      "prompt": "Editorial illustration for lead qualification influence context note in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+      "route": "/blog/lead-qualification-problem-statement-context",
+      "image": "/blog-heroes/lead-qualification-problem-statement-context.png",
+      "prompt": "Editorial illustration for lead qualification problem statement context in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
     },
     {
-      "route": "/blog/inbound-call-callback-route-record",
-      "image": "/blog-heroes/inbound-call-callback-route-record.png",
-      "prompt": "Editorial illustration for inbound call callback route record in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+      "route": "/blog/inbound-call-callback-availability-note",
+      "image": "/blog-heroes/inbound-call-callback-availability-note.png",
+      "prompt": "Editorial illustration for inbound call callback availability note in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
     },
     {
-      "route": "/blog/customer-follow-up-commitment-source-log",
-      "image": "/blog-heroes/customer-follow-up-commitment-source-log.png",
-      "prompt": "Editorial illustration for customer follow up commitment source log in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+      "route": "/blog/customer-follow-up-commitment-decision-log",
+      "image": "/blog-heroes/customer-follow-up-commitment-decision-log.png",
+      "prompt": "Editorial illustration for customer follow up commitment decision log in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
     },
     {
-      "route": "/blog/outbound-calling-disposition-ledger",
-      "image": "/blog-heroes/outbound-calling-disposition-ledger.png",
-      "prompt": "Editorial illustration for outbound calling disposition ledger in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+      "route": "/blog/outbound-calling-outcome-state-ledger",
+      "image": "/blog-heroes/outbound-calling-outcome-state-ledger.png",
+      "prompt": "Editorial illustration for outbound calling outcome state ledger in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
     },
     {
-      "route": "/blog/filipino-caller-coaching-evidence-card",
-      "image": "/blog-heroes/filipino-caller-coaching-evidence-card.png",
-      "prompt": "Editorial illustration for filipino caller coaching evidence card in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+      "route": "/blog/filipino-caller-coaching-correction-loop",
+      "image": "/blog-heroes/filipino-caller-coaching-correction-loop.png",
+      "prompt": "Editorial illustration for filipino caller coaching correction loop in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
     },
     {
-      "route": "/blog/appointment-setting-participant-context-note",
-      "image": "/blog-heroes/appointment-setting-participant-context-note.png",
-      "prompt": "Editorial illustration for appointment setting participant context note in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+      "route": "/blog/appointment-setting-participant-constraint-note",
+      "image": "/blog-heroes/appointment-setting-participant-constraint-note.png",
+      "prompt": "Editorial illustration for appointment setting participant constraint note in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
     },
     {
-      "route": "/blog/customer-follow-up-sequence-stop-record",
-      "image": "/blog-heroes/customer-follow-up-sequence-stop-record.png",
-      "prompt": "Editorial illustration for customer follow up sequence stop record in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+      "route": "/blog/customer-follow-up-sequence-exit-criteria",
+      "image": "/blog-heroes/customer-follow-up-sequence-exit-criteria.png",
+      "prompt": "Editorial illustration for customer follow up sequence exit criteria in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
     },
     {
-      "route": "/blog/order-confirmation-quantity-readback-record",
-      "image": "/blog-heroes/order-confirmation-quantity-readback-record.png",
-      "prompt": "Editorial illustration for order confirmation quantity readback record in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+      "route": "/blog/order-confirmation-item-count-reconciliation",
+      "image": "/blog-heroes/order-confirmation-item-count-reconciliation.png",
+      "prompt": "Editorial illustration for order confirmation item count reconciliation in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
     },
     {
-      "route": "/blog/database-verification-source-change-request",
-      "image": "/blog-heroes/database-verification-source-change-request.png",
-      "prompt": "Editorial illustration for database verification source change request in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+      "route": "/blog/database-verification-source-lineage-note",
+      "image": "/blog-heroes/database-verification-source-lineage-note.png",
+      "prompt": "Editorial illustration for database verification source lineage note in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
     },
     {
-      "route": "/blog/renewal-reminder-timing-exception-note",
-      "image": "/blog-heroes/renewal-reminder-timing-exception-note.png",
-      "prompt": "Editorial illustration for renewal reminder timing exception note in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+      "route": "/blog/renewal-reminder-contact-window-exception",
+      "image": "/blog-heroes/renewal-reminder-contact-window-exception.png",
+      "prompt": "Editorial illustration for renewal reminder contact window exception in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
     }
   ]
 }
