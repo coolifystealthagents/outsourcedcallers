@@ -1,0 +1,20 @@
+{
+  "campaignDate": "2026-08-20",
+  "family": "blog",
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "branch": "main",
+  "entries": [
+    {"route":"/blog/filipino-caller-precall-record-review","sourcePaths":["app/aug20-blog.ts"]},
+    {"route":"/blog/appointment-setting-held-meeting-context-packet","sourcePaths":["app/aug20-blog.ts"]},
+    {"route":"/blog/lead-qualification-authority-signal","sourcePaths":["app/aug20-blog.ts"]},
+    {"route":"/blog/inbound-call-message-completeness-check","sourcePaths":["app/aug20-blog.ts"]},
+    {"route":"/blog/customer-follow-up-next-action-proof","sourcePaths":["app/aug20-blog.ts"]},
+    {"route":"/blog/outbound-calling-attempt-outcome-reconciliation","sourcePaths":["app/aug20-blog.ts"]},
+    {"route":"/blog/filipino-caller-training-readiness-check","sourcePaths":["app/aug20-blog.ts"]},
+    {"route":"/blog/appointment-setting-attendee-readiness-note","sourcePaths":["app/aug20-blog.ts"]},
+    {"route":"/blog/customer-follow-up-unreachable-close-rule","sourcePaths":["app/aug20-blog.ts"]},
+    {"route":"/blog/order-confirmation-quantity-discrepancy-handoff","sourcePaths":["app/aug20-blog.ts"]},
+    {"route":"/blog/database-verification-field-change-evidence","sourcePaths":["app/aug20-blog.ts"]},
+    {"route":"/blog/renewal-reminder-contact-window-exception","sourcePaths":["app/aug20-blog.ts"]}
+  ]
+}

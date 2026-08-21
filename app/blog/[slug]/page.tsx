@@ -38,6 +38,7 @@ type RichDetail = {
   chart?: { title: string; description: string; methods: string; bars: Array<{ label: string; value: string; width: number }> };
   expertQuote?: { text: string; attribution: string };
   banners?: Array<{ label: string; title: string; text: string; href: string; cta: string }>;
+  image?: string;
 };
 
 function ArticleBanner({ banner, slot }: { banner: NonNullable<RichDetail['banners']>[number]; slot: number }) {
@@ -98,6 +99,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
         articleSection: detail.sections.map((section) => section.heading),
         citation: detail.sources.map((source) => source.url),
         mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+        image: detail.image ? `https://${String(site.domain).toLowerCase()}${detail.image}` : undefined,
       },
       {
         '@type': 'FAQPage',
@@ -125,7 +127,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
       <div className="article-meta"><span>{post.minutes} minute read</span><span>Published <time dateTime={detail.published}>{publishedLabel}</time></span><span>Philippines-only talent</span></div>
     </header>
 
-    <section className="answer-box" aria-labelledby="direct-answer"><p className="module-label">Direct answer</p><h2 id="direct-answer">{detail.directAnswerHeading ?? 'What outbound call center outsourcing means'}</h2><p>{detail.summary}</p></section>
+    <section className="answer-box" aria-labelledby="direct-answer">{detail.image && <img className="sa-booking-image" src={detail.image} alt={`${post.title} editorial illustration`} width="1200" height="675" />}<p className="module-label">Direct answer</p><h2 id="direct-answer">{detail.directAnswerHeading ?? 'What outbound call center outsourcing means'}</h2><p>{detail.summary}</p></section>
     <section className="article-section takeaways" aria-labelledby="takeaways"><h2 id="takeaways">{detail.takeawaysHeading ?? 'What to get right first'}</h2><ul>{detail.takeaways.map((item) => <li key={item}>{item}</li>)}</ul></section>
 
     <section className="article-section" aria-labelledby="work-split"><p className="module-label">{detail.tableLabel ?? 'Control map'}</p><h2 id="work-split">{detail.tableHeading ?? 'Split caller work from owner decisions'}</h2><p className="scroll-cue">Swipe or scroll sideways to see every scorecard column.</p><div className="table-scroll" tabIndex={0}><table><thead><tr><th>Call lane</th><th>Filipino caller</th><th>Owner or manager</th><th>Useful check</th></tr></thead><tbody>{detail.decisionTable.map((row) => <tr key={row.lane}><th scope="row">{row.lane}</th><td>{row.caller}</td><td>{row.owner}</td><td>{row.measure}</td></tr>)}</tbody></table></div></section>
