@@ -9,6 +9,7 @@ import { aug17ResearchPosts } from './aug17-research';
 import { aug19ResearchPosts } from './aug19-research';
 import { aug20BlogPosts, aug20BlogDetails } from './aug20-blog';
 import { aug20ResearchPosts } from './aug20-research';
+import { aug21BlogPosts, aug21BlogDetails } from './aug21-blog';
 
 export const site = {
   "domain": "OutsourcedCallers.com",
@@ -179,6 +180,7 @@ blogPosts.push(...aug14BlogPosts.map((post) => ({ ...post, minutes: 10 })));
 blogPosts.push(...aug17BlogPosts);
 blogPosts.push(...aug19SourceRepair9BlogPosts);
 blogPosts.push(...aug20BlogPosts);
+blogPosts.push(...aug21BlogPosts);
 blogPosts.sort((a, b) => (('published' in b ? (b.published ?? '2026-07-28') : '2026-07-28').localeCompare('published' in a ? (a.published ?? '2026-07-28') : '2026-07-28')) || a.slug.localeCompare(b.slug));
 
 export const blogDetails = {
@@ -1202,6 +1204,9 @@ for (const post of aug19SourceRepair9BlogPosts) {
 }
 for (const post of aug20BlogPosts) {
   blogDetailRecord[post.slug] = (aug20BlogDetails as Record<string, unknown>)[post.slug] as never;
+}
+for (const post of aug21BlogPosts) {
+  blogDetailRecord[post.slug] = (aug21BlogDetails as Record<string, unknown>)[post.slug] as never;
 }
 
 export const staffingOffer = {
