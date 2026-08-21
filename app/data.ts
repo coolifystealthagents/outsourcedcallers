@@ -8,6 +8,7 @@ import { aug14ResearchPosts } from './aug14-research';
 import { aug17ResearchPosts } from './aug17-research';
 import { aug19ResearchPosts } from './aug19-research';
 import { aug20BlogPosts, aug20BlogDetails } from './aug20-blog';
+import { aug20ResearchPosts } from './aug20-research';
 
 export const site = {
   "domain": "OutsourcedCallers.com",
@@ -1522,7 +1523,8 @@ function makeResearchPost([slug, title, excerpt]: readonly [string, string, stri
     'Related Research: Queue design; Call quality review; Daily reporting.', `Sources (10): ${researchSources.join(' | ')}`
   ] };
 }
-export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; handoff?: { href: string; label: string; text: string } }> = [
+export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; image?: string; handoff?: { href: string; label: string; text: string } }> = [
+  ...aug20ResearchPosts,
   ...aug19ResearchPosts,
   ...aug17ResearchPosts,
   ...aug14ResearchPosts,

@@ -1,0 +1,11 @@
+{
+  "campaignDate": "2026-08-20",
+  "family": "research",
+  "entries": [
+    { "route": "/research/voicemail-callback-evidence-research", "sourcePaths": ["app/aug20-research.ts"], "imagePath": "public/research-heroes/voicemail-callback-evidence-research.png", "promptReceipt": ".paperclip/daily-content/2026-08-20/image-prompts/voicemail-callback-evidence-research.txt" },
+    { "route": "/research/appointment-reschedule-feasibility-research", "sourcePaths": ["app/aug20-research.ts"], "imagePath": "public/research-heroes/appointment-reschedule-feasibility-research.png", "promptReceipt": ".paperclip/daily-content/2026-08-20/image-prompts/appointment-reschedule-feasibility-research.txt" },
+    { "route": "/research/customer-complaint-triage-boundary-research", "sourcePaths": ["app/aug20-research.ts"], "imagePath": "public/research-heroes/customer-complaint-triage-boundary-research.png", "promptReceipt": ".paperclip/daily-content/2026-08-20/image-prompts/customer-complaint-triage-boundary-research.txt" },
+    { "route": "/research/multilingual-call-clarification-quality-research", "sourcePaths": ["app/aug20-research.ts"], "imagePath": "public/research-heroes/multilingual-call-clarification-quality-research.png", "promptReceipt": ".paperclip/daily-content/2026-08-20/image-prompts/multilingual-call-clarification-quality-research.txt" },
+    { "route": "/research/survey-refusal-bias-interpretation-research", "sourcePaths": ["app/aug20-research.ts"], "imagePath": "public/research-heroes/survey-refusal-bias-interpretation-research.png", "promptReceipt": ".paperclip/daily-content/2026-08-20/image-prompts/survey-refusal-bias-interpretation-research.txt" }
+  ]
+}

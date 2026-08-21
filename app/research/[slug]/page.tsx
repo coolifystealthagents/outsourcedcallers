@@ -66,7 +66,7 @@ export default async function ResearchPost({
           </p>
           <img
             className="sa-booking-image"
-            src="/thank-you-hero.png"
+            src={p.image ?? "/thank-you-hero.png"}
             alt="Outsourced callers research workflow"
             width="619"
             height="402"
