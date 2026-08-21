@@ -1,16 +1,16 @@
+import { article as a11 } from './aug20-blog-repair/renewal-reminder-contact-window-exception';
+import { article as a10 } from './aug20-blog-repair/database-verification-source-lineage-note';
+import { article as a9 } from './aug20-blog-repair/order-confirmation-item-count-reconciliation';
+import { article as a8 } from './aug20-blog-repair/customer-follow-up-sequence-exit-criteria';
+import { article as a7 } from './aug20-blog-repair/appointment-setting-participant-constraint-note';
+import { article as a6 } from './aug20-blog-repair/filipino-caller-coaching-correction-loop';
+import { article as a5 } from './aug20-blog-repair/outbound-calling-outcome-state-ledger';
+import { article as a4 } from './aug20-blog-repair/customer-follow-up-commitment-decision-log';
+import { article as a3 } from './aug20-blog-repair/inbound-call-callback-availability-note';
+import { article as a2 } from './aug20-blog-repair/lead-qualification-problem-statement-context';
+import { article as a1 } from './aug20-blog-repair/appointment-setting-calendar-intent-brief';
+import { article as a0 } from './aug20-blog-repair/filipino-caller-queue-release-gate';
 export type Aug20Post = { slug:string; title:string; excerpt:string; minutes:number; published:string; focus:string; owner:string; image:string; body:string };
-import { article as a0 } from './aug20-blog-repair/filipino-caller-queue-entry-evidence';
-import { article as a1 } from './aug20-blog-repair/appointment-setting-calendar-purpose-brief';
-import { article as a2 } from './aug20-blog-repair/lead-qualification-influence-context-note';
-import { article as a3 } from './aug20-blog-repair/inbound-call-callback-route-record';
-import { article as a4 } from './aug20-blog-repair/customer-follow-up-commitment-source-log';
-import { article as a5 } from './aug20-blog-repair/outbound-calling-disposition-ledger';
-import { article as a6 } from './aug20-blog-repair/filipino-caller-coaching-evidence-card';
-import { article as a7 } from './aug20-blog-repair/appointment-setting-participant-context-note';
-import { article as a8 } from './aug20-blog-repair/customer-follow-up-sequence-stop-record';
-import { article as a9 } from './aug20-blog-repair/order-confirmation-quantity-readback-record';
-import { article as a10 } from './aug20-blog-repair/database-verification-source-change-request';
-import { article as a11 } from './aug20-blog-repair/renewal-reminder-timing-exception-note';
 
 const articles: Aug20Post[] = [a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11];
 export const aug20BlogPosts = articles.map(({body,focus,owner,image,...post})=>post);

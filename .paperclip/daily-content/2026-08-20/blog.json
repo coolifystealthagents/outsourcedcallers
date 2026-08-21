@@ -5,75 +5,75 @@
   "branch": "main",
   "entries": [
     {
-      "route": "/blog/filipino-caller-queue-entry-evidence",
+      "route": "/blog/filipino-caller-queue-release-gate",
       "sourcePaths": [
-        "app/aug20-blog-repair/filipino-caller-queue-entry-evidence.ts"
+        "app/aug20-blog-repair/filipino-caller-queue-release-gate.ts"
       ]
     },
     {
-      "route": "/blog/appointment-setting-calendar-purpose-brief",
+      "route": "/blog/appointment-setting-calendar-intent-brief",
       "sourcePaths": [
-        "app/aug20-blog-repair/appointment-setting-calendar-purpose-brief.ts"
+        "app/aug20-blog-repair/appointment-setting-calendar-intent-brief.ts"
       ]
     },
     {
-      "route": "/blog/lead-qualification-influence-context-note",
+      "route": "/blog/lead-qualification-problem-statement-context",
       "sourcePaths": [
-        "app/aug20-blog-repair/lead-qualification-influence-context-note.ts"
+        "app/aug20-blog-repair/lead-qualification-problem-statement-context.ts"
       ]
     },
     {
-      "route": "/blog/inbound-call-callback-route-record",
+      "route": "/blog/inbound-call-callback-availability-note",
       "sourcePaths": [
-        "app/aug20-blog-repair/inbound-call-callback-route-record.ts"
+        "app/aug20-blog-repair/inbound-call-callback-availability-note.ts"
       ]
     },
     {
-      "route": "/blog/customer-follow-up-commitment-source-log",
+      "route": "/blog/customer-follow-up-commitment-decision-log",
       "sourcePaths": [
-        "app/aug20-blog-repair/customer-follow-up-commitment-source-log.ts"
+        "app/aug20-blog-repair/customer-follow-up-commitment-decision-log.ts"
       ]
     },
     {
-      "route": "/blog/outbound-calling-disposition-ledger",
+      "route": "/blog/outbound-calling-outcome-state-ledger",
       "sourcePaths": [
-        "app/aug20-blog-repair/outbound-calling-disposition-ledger.ts"
+        "app/aug20-blog-repair/outbound-calling-outcome-state-ledger.ts"
       ]
     },
     {
-      "route": "/blog/filipino-caller-coaching-evidence-card",
+      "route": "/blog/filipino-caller-coaching-correction-loop",
       "sourcePaths": [
-        "app/aug20-blog-repair/filipino-caller-coaching-evidence-card.ts"
+        "app/aug20-blog-repair/filipino-caller-coaching-correction-loop.ts"
       ]
     },
     {
-      "route": "/blog/appointment-setting-participant-context-note",
+      "route": "/blog/appointment-setting-participant-constraint-note",
       "sourcePaths": [
-        "app/aug20-blog-repair/appointment-setting-participant-context-note.ts"
+        "app/aug20-blog-repair/appointment-setting-participant-constraint-note.ts"
       ]
     },
     {
-      "route": "/blog/customer-follow-up-sequence-stop-record",
+      "route": "/blog/customer-follow-up-sequence-exit-criteria",
       "sourcePaths": [
-        "app/aug20-blog-repair/customer-follow-up-sequence-stop-record.ts"
+        "app/aug20-blog-repair/customer-follow-up-sequence-exit-criteria.ts"
       ]
     },
     {
-      "route": "/blog/order-confirmation-quantity-readback-record",
+      "route": "/blog/order-confirmation-item-count-reconciliation",
       "sourcePaths": [
-        "app/aug20-blog-repair/order-confirmation-quantity-readback-record.ts"
+        "app/aug20-blog-repair/order-confirmation-item-count-reconciliation.ts"
       ]
     },
     {
-      "route": "/blog/database-verification-source-change-request",
+      "route": "/blog/database-verification-source-lineage-note",
       "sourcePaths": [
-        "app/aug20-blog-repair/database-verification-source-change-request.ts"
+        "app/aug20-blog-repair/database-verification-source-lineage-note.ts"
       ]
     },
     {
-      "route": "/blog/renewal-reminder-timing-exception-note",
+      "route": "/blog/renewal-reminder-contact-window-exception",
       "sourcePaths": [
-        "app/aug20-blog-repair/renewal-reminder-timing-exception-note.ts"
+        "app/aug20-blog-repair/renewal-reminder-contact-window-exception.ts"
       ]
     }
   ]
