@@ -1,3 +1,5 @@
+import { august23Research } from './aug23-research';
+
 export const site = {
   "domain": "OutsourcedCallers.com",
   "slug": "outsourcedcallers",
@@ -1096,7 +1098,7 @@ export const staffingProcess = [
 export const staffingFitNote = 'The plan depends on the call type, schedule, tools, and review needs. Share those details and our Philippines staffing team can map the right Filipino caller profile.';
 
 
-export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string }> = [
+export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; datePublished?: string; canonical?: string; sources?: Array<{ name: string; url: string }> }> = [
   {
     slug: 'daily-reporting-controls-for-outsourced-callers',
     title: 'Daily reporting controls for outsourced callers',
@@ -1133,4 +1135,6 @@ export const researchPosts: Array<{ slug: string; title: string; excerpt: string
       'Sources: NIST Cybersecurity Framework 2.0 (https://www.nist.gov/cyberframework); Federal Trade Commission business guidance on data security (https://www.ftc.gov/business-guidance/privacy-security/data-security); FCC Telephone Consumer Protection Act guidance (https://www.fcc.gov/general/telemarketing-and-telephone-consumer-protection-act).'
     ]
   }))
-];
+] as Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; datePublished?: string; canonical?: string; sources?: Array<{ name: string; url: string }> }>;
+
+researchPosts.push(...august23Research);
