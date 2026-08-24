@@ -1,0 +1,19 @@
+{
+  "campaignDate": "2026-08-23",
+  "family": "blog",
+  "imageStatus": "Gemini unavailable in execution workspace; text-complete fallback, no stock imagery used",
+  "entries": [
+    {"route":"/blog/outsourced-calling-queue-entry-criteria","sourcePaths":["app/aug23-blog.ts"]},
+    {"route":"/blog/filipino-caller-call-note-evidence-chain","sourcePaths":["app/aug23-blog.ts"]},
+    {"route":"/blog/appointment-setting-calendar-hold-rules","sourcePaths":["app/aug23-blog.ts"]},
+    {"route":"/blog/customer-follow-up-commitment-aging","sourcePaths":["app/aug23-blog.ts"]},
+    {"route":"/blog/outbound-calling-suppression-before-retry","sourcePaths":["app/aug23-blog.ts"]},
+    {"route":"/blog/inbound-reception-message-urgency-test","sourcePaths":["app/aug23-blog.ts"]},
+    {"route":"/blog/lead-qualification-disqualifier-evidence","sourcePaths":["app/aug23-blog.ts"]},
+    {"route":"/blog/database-verification-field-conflict-routing","sourcePaths":["app/aug23-blog.ts"]},
+    {"route":"/blog/renewal-reminder-objection-owner-routing","sourcePaths":["app/aug23-blog.ts"]},
+    {"route":"/blog/order-confirmation-quantity-discrepancy-route","sourcePaths":["app/aug23-blog.ts"]},
+    {"route":"/blog/survey-calling-refusal-context","sourcePaths":["app/aug23-blog.ts"]},
+    {"route":"/blog/win-back-call-exit-criteria","sourcePaths":["app/aug23-blog.ts"]}
+  ]
+}
