@@ -1,4 +1,18 @@
-import { august23Research } from './aug23-research';
+import { aug11BlogPosts, makeAug11Detail } from './aug11-blog';
+import { aug13BlogPosts, makeAug13Detail } from './aug13-blog';
+import { aug14BlogPosts, makeAug14Detail } from './aug14-blog';
+import { aug17BlogPosts, makeAug17Detail } from './aug17-blog';
+import { aug19SourceRepair9BlogPosts, aug19SourceRepair9Details } from './aug19-blog-source-repair-9';
+import { aug13ResearchPosts } from './aug13-research';
+import { aug14ResearchPosts } from './aug14-research';
+import { aug17ResearchPosts } from './aug17-research';
+import { aug19ResearchPosts } from './aug19-research';
+import { aug20BlogPosts, aug20BlogDetails } from './aug20-blog';
+import { aug20ResearchPosts } from './aug20-research';
+import { aug21BlogPosts, aug21BlogDetails } from './aug21-blog';
+import { aug21ResearchPosts } from './aug21-research';
+import { aug23BlogPosts, aug23BlogDetails } from './aug23-blog';
+import { aug23ResearchPosts } from './aug23-research';
 
 export const site = {
   "domain": "OutsourcedCallers.com",
@@ -85,7 +99,93 @@ export const blogPosts = [
   { slug: 'philippines-win-back-campaign-call-controls', title: 'Philippines win-back campaign call controls', excerpt: 'Set up a win-back campaign with suppression checks, opt-out handling, and reviewable outcomes.', minutes: 9, published: '2026-08-07' },
   { slug: 'philippines-database-verification-call-workflow', title: 'Philippines database verification call workflow', excerpt: 'A field-by-field workflow for Filipino callers who verify records while minimizing access and change risk.', minutes: 10, published: '2026-08-07' },
   { slug: 'philippines-callback-request-verification', title: 'Philippines callback request verification', excerpt: 'Verify callback requests safely with a short identity step, a clear result label, and an accountable handoff.', minutes: 8, published: '2026-08-07' },
-  { slug: 'philippines-call-quality-review-scorecard', title: 'Philippines call quality review scorecard', excerpt: 'A practical scorecard for reviewing Filipino calling work across accuracy, tone, notes, and approved next steps.', minutes: 10, published: '2026-08-07' },] as const;
+  { slug: 'philippines-call-quality-review-scorecard', title: 'Philippines call quality review scorecard', excerpt: 'A practical scorecard for reviewing Filipino calling work across accuracy, tone, notes, and approved next steps.', minutes: 10, published: '2026-08-07' },];
+
+const scheduledBlogBatch = [
+  ['filipino-caller-daily-startup-checklist', 'Filipino caller daily startup checklist', 'A practical opening routine for Filipino callers that confirms the queue, script, tools, priority, and escalation path before the first call.'],
+  ['appointment-setting-lead-handoff-checklist', 'Appointment setting lead handoff checklist', 'A clean handoff checklist for moving a qualified lead from a Filipino caller to the owner without losing context or the next action.'],
+  ['outbound-call-list-cleanup-workflow', 'Outbound call list cleanup workflow', 'How to prepare a focused outbound list, remove stale records, honor suppression requests, and give Filipino callers a queue they can trust.'],
+  ['customer-follow-up-call-outcome-labels', 'Customer follow-up call outcome labels', 'A simple outcome taxonomy that helps Filipino callers record what happened and helps owners see which follow-ups deserve attention.'],
+  ['inbound-call-message-handoff-template', 'Inbound call message handoff template', 'A concise message format for Filipino reception support that gives the receiving owner enough context to act without replaying the call.'],
+  ['filipino-caller-script-change-control', 'Filipino caller script change control', 'A controlled way to update calling scripts, record the change, train the team, and prevent old wording from creating inconsistent promises.'],
+  ['appointment-setting-calendar-qualification', 'Appointment setting calendar qualification', 'How to qualify a meeting request before placing it on the calendar, while keeping availability and commercial decisions with the owner.'],
+  ['customer-follow-up-consent-and-suppression', 'Customer follow-up consent and suppression workflow', 'A suppression-first workflow for customer follow-up calls that makes opt-outs visible and keeps future outreach lists aligned.'],
+  ['outbound-caller-objection-escalation-guide', 'Outbound caller objection escalation guide', 'A practical guide to labeling objections, using approved responses, and escalating questions that require an owner decision.'],
+  ['reception-overflow-call-note-standards', 'Reception overflow call note standards', 'The fields a Filipino overflow caller should capture so routine messages, urgent matters, and missing details are easy to route.'],
+  ['renewal-reminder-call-review-routine', 'Renewal reminder call review routine', 'A review routine for renewal reminders that checks timing, wording, preferences, and exceptions without authorizing account changes.'],
+  ['order-confirmation-call-identity-checks', 'Order confirmation call identity checks', 'A focused identity and order-detail routine for Filipino callers that stops cleanly when a request falls outside the approved brief.'],
+  ['database-verification-call-change-log', 'Database verification call change log', 'How to record requested record changes so the caller, data owner, and final system state remain aligned.'],
+  ['survey-calling-neutral-question-design', 'Survey calling neutral question design', 'How to keep Filipino survey calls neutral, consistent, and separate from a sales pitch while recording refusals honestly.'],
+  ['win-back-calling-list-review', 'Win-back calling list review', 'A careful pre-call review for win-back campaigns covering stale records, suppression requests, audience fit, and owner-approved messaging.'],
+  ['filipino-caller-quality-sample-plan', 'Filipino caller quality sample plan', 'A small daily and weekly sampling plan for checking accuracy, tone, notes, outcomes, and escalation discipline.'],
+  ['daily-calling-exception-report-template', 'Daily calling exception report template', 'A compact exception report that surfaces blocked records, unusual requests, opt-outs, and decisions the owner still needs to make.'],
+  ['callback-request-priority-routing', 'Callback request priority routing', 'A routing model for sorting callback requests by urgency, owner, preferred time, and missing information before a return call is made.'],
+  ['filipino-caller-crm-note-checklist', 'Filipino caller CRM note checklist', 'A field-by-field checklist for notes that makes every call result, next action, owner, and due time visible.'],
+  ['outsourced-calling-weekly-review-agenda', 'Outsourced calling weekly review agenda', 'A focused weekly agenda for reviewing Filipino caller output, exceptions, sample quality, script changes, and next-week priorities.'],
+  ['filipino-caller-first-week-ramp-plan', 'Filipino caller first-week ramp plan', 'A controlled first-week ramp for Filipino callers with sample work, daily feedback, limited access, and clear readiness checks.'],
+  ['outbound-calling-result-reconciliation', 'Outbound calling result reconciliation', 'How to reconcile call attempts, conversations, dispositions, follow-ups, and exceptions before an owner reviews the day.'],
+  ['customer-follow-up-owner-escalation-matrix', 'Customer follow-up owner escalation matrix', 'A compact escalation matrix that keeps routine follow-up with the caller and sensitive decisions with the named owner.'],
+  ['filipino-caller-pre-call-record-review', 'Filipino caller pre-call record review', 'A focused pre-call review for Filipino callers that checks record purpose, contact permissions, script version, and the right owner before dialing.'],
+  ['appointment-setting-no-show-follow-up-workflow', 'Appointment setting no-show follow-up workflow', 'A respectful workflow for no-show follow-up calls that records context, confirms the next step, and routes rescheduling decisions to the owner.'],
+  ['outbound-calling-voicemail-disposition-guide', 'Outbound calling voicemail disposition guide', 'A consistent way to label voicemail attempts, protect contact preferences, and decide when a future attempt needs owner review.'],
+  ['customer-follow-up-preferred-channel-checklist', 'Customer follow-up preferred channel checklist', 'A checklist for confirming how a customer wants to be contacted and documenting the answer without making an unapproved communication promise.'],
+  ['inbound-call-urgent-message-escalation', 'Inbound call urgent message escalation', 'A practical escalation lane for urgent inbound messages that separates routine details from decisions requiring the business owner.'],
+  ['filipino-caller-queue-priority-rules', 'Filipino caller queue priority rules', 'Simple queue rules for sorting Filipino calling work by purpose, due time, customer context, and the exceptions that should stop a call.'],
+  ['lead-qualification-fit-signal-checklist', 'Lead qualification fit signal checklist', 'A repeatable checklist for recording fit signals during lead qualification while keeping pricing, terms, and commitments with the owner.'],
+  ['customer-follow-up-unreachable-contact-sequence', 'Customer follow-up unreachable contact sequence', 'A controlled sequence for unreachable customer follow-ups with attempt limits, outcome labels, suppression checks, and a clear close.'],
+  ['appointment-setting-calendar-owner-handoff', 'Appointment setting calendar owner handoff', 'How to hand a qualified meeting request to the owner with the right context, timing preference, and unresolved questions.'],
+  ['outbound-caller-call-opening-quality-check', 'Outbound caller call opening quality check', 'A small quality check for introductions, purpose statements, permission language, and clean exits on outbound calls.'],
+  ['filipino-caller-contact-preference-log', 'Filipino caller contact preference log', 'A practical log for recording customer contact preferences, effective dates, source notes, and the owner responsible for policy decisions.'],
+  ['renewal-reminder-call-objection-routing', 'Renewal reminder call objection routing', 'A routing guide for renewal objections that keeps approved information with the caller and account, payment, or exception decisions with the owner.'],
+  ['order-confirmation-call-delivery-exception', 'Order confirmation call delivery exception workflow', 'A controlled workflow for delivery exceptions that captures the customer request and routes fulfillment decisions without unsupported promises.'],
+  ['database-verification-call-duplicate-record-review', 'Database verification call duplicate record review', 'A duplicate-record review process for Filipino callers that collects evidence, avoids unsafe merges, and gives the data owner a clear decision packet.'],
+  ['survey-calling-refusal-recording-standards', 'Survey calling refusal recording standards', 'Neutral standards for recording survey refusals accurately, honoring stop requests, and keeping the result separate from sales activity.'],
+  ['win-back-call-reason-capture-template', 'Win-back call reason capture template', 'A simple template for capturing why a former customer left, what they say now, and which follow-up decisions need owner review.'],
+  ['reception-overflow-call-transfer-checklist', 'Reception overflow call transfer checklist', 'A checklist for deciding when to transfer, message, or escalate an inbound call while preserving caller context and urgency.'],
+  ['daily-calling-blocker-log', 'Daily calling blocker log', 'A compact blocker log for missing records, broken tools, unclear scripts, opt-outs, and owner decisions that pause calling work.'],
+  ['filipino-caller-training-sample-review', 'Filipino caller training sample review', 'A sample-based onboarding review for Filipino callers covering script accuracy, tone, notes, result labels, and escalation discipline.'],
+  ['outbound-calling-follow-up-due-date-rules', 'Outbound calling follow-up due date rules', 'Rules for setting realistic follow-up due dates and recording the owner, customer preference, and unresolved condition behind each next action.'],
+  ['appointment-setting-held-meeting-quality-check', 'Appointment setting held meeting quality check', 'A quality check for held meetings that looks beyond booking volume to fit, context, attendance, and a useful owner handoff.'],
+  ['customer-follow-up-sensitive-request-stop-rules', 'Customer follow-up sensitive request stop rules', 'Clear stop rules for sensitive customer requests so Filipino callers can capture the request and route it without exposing extra data or making promises.'],
+  ['outsourced-calling-monthly-process-review', 'Outsourced calling monthly process review', 'A practical monthly review for checking queue design, scripts, access, quality samples, exceptions, and the next process improvement.']
+] as const;
+
+const aug10BlogDateBySlug: Record<string, string> = {
+  'appointment-setting-calendar-qualification': '2026-08-10',
+  'appointment-setting-lead-handoff-checklist': '2026-08-10',
+  'callback-request-priority-routing': '2026-08-10',
+  'customer-follow-up-call-outcome-labels': '2026-08-10',
+  'customer-follow-up-consent-and-suppression': '2026-08-10',
+  'customer-follow-up-owner-escalation-matrix': '2026-08-10',
+  'daily-calling-exception-report-template': '2026-08-10',
+  'database-verification-call-change-log': '2026-08-10',
+  'filipino-caller-crm-note-checklist': '2026-08-10',
+  'filipino-caller-daily-startup-checklist': '2026-08-10',
+  'filipino-caller-first-week-ramp-plan': '2026-08-10',
+  'filipino-caller-quality-sample-plan': '2026-08-10',
+  'filipino-caller-script-change-control': '2026-08-10',
+  'inbound-call-message-handoff-template': '2026-08-10',
+  'order-confirmation-call-identity-checks': '2026-08-10',
+  'outbound-call-list-cleanup-workflow': '2026-08-10',
+  'outbound-caller-objection-escalation-guide': '2026-08-10',
+  'outbound-calling-result-reconciliation': '2026-08-10',
+  'outsourced-calling-weekly-review-agenda': '2026-08-10',
+  'reception-overflow-call-note-standards': '2026-08-10',
+  'renewal-reminder-call-review-routine': '2026-08-10',
+  'survey-calling-neutral-question-design': '2026-08-10',
+  'win-back-calling-list-review': '2026-08-10',
+};
+export const scheduledBlogPosts = scheduledBlogBatch.map(([slug, title, excerpt]) => ({ slug, title, excerpt, minutes: 10, published: aug10BlogDateBySlug[slug] ?? '2026-08-07' }));
+blogPosts.push(...scheduledBlogPosts);
+blogPosts.push(...aug11BlogPosts);
+blogPosts.push(...aug13BlogPosts.map((post) => ({ ...post, minutes: 10 })));
+blogPosts.push(...aug14BlogPosts.map((post) => ({ ...post, minutes: 10 })));
+blogPosts.push(...aug17BlogPosts);
+blogPosts.push(...aug19SourceRepair9BlogPosts);
+blogPosts.push(...aug20BlogPosts);
+blogPosts.push(...aug21BlogPosts);
+blogPosts.push(...aug23BlogPosts);
+blogPosts.sort((a, b) => (('published' in b ? (b.published ?? '2026-07-28') : '2026-07-28').localeCompare('published' in a ? (a.published ?? '2026-07-28') : '2026-07-28')) || a.slug.localeCompare(b.slug));
 
 export const blogDetails = {
   'philippines-database-verification-call-data-minimization-checklist': {
@@ -1058,6 +1158,64 @@ export const blogDetails = {
   }
 } as const;
 
+const blogDetailRecord = blogDetails as Record<string, any>;
+for (const [slug, title, excerpt] of scheduledBlogBatch) {
+  blogDetailRecord[slug] = {
+    published: '2026-08-10',
+    mainKeyword: title,
+    summary: `${title} gives a Filipino caller a defined routine, a small approved set of fields, and a clear handoff when the work needs an owner decision. The goal is useful calling work that can be reviewed from the queue, the call note, and the next action.`,
+    takeaways: ['Release a named queue with a stated purpose and owner.', 'Use the approved script and collect only the fields needed for the outcome.', 'Label confirmed, refused, unreachable, and review results consistently.', 'Stop for suppression requests, sensitive changes, uncertainty, and promises.', 'Review a sample of calls beside the saved note and final next action.'],
+    decisionTable: [
+      { lane: 'Queue release', caller: 'Works only the approved records and flags missing context.', owner: 'Defines audience, purpose, fields, and priority.', measure: 'Every record has a source and owner' },
+      { lane: 'Conversation', caller: 'Uses the script, asks one question at a time, and records the answer.', owner: 'Approves wording and permitted outcomes.', measure: 'The note reflects the call' },
+      { lane: 'Exception', caller: 'Stops and routes uncertainty, opt-outs, or sensitive requests.', owner: 'Makes the decision and documents the trusted path.', measure: 'No unsupported promise or change' },
+      { lane: 'Close', caller: 'Applies one result label and states the next action and due time.', owner: 'Reviews exceptions and list or CRM state.', measure: 'A named person owns the next step' }
+    ],
+    planningBands: [
+      { label: 'Queue', value: 'Named', note: 'One purpose per release' },
+      { label: 'Result', value: 'One label', note: 'No vague outcomes' },
+      { label: 'Review', value: 'Daily', note: 'Check exceptions first' },
+      { label: 'Handoff', value: 'Owned', note: 'Include a due time' }
+    ],
+    sections: [
+      { heading: 'Start with a narrow brief', paragraphs: [`Before ${title.toLowerCase()} begins, write the audience, purpose, approved fields, script version, calling window, result labels, and named owner. A narrow brief helps a Filipino caller finish routine work without guessing at policy or authority.`, 'Keep the brief beside the queue. If the record does not contain the needed context, the caller should mark it for review instead of improvising.'] },
+      { heading: 'Make the handoff easy to audit', paragraphs: ['A useful note states who was reached, what was confirmed, what was declined, what remains unanswered, and who owns the next action. Add the source record, timestamp, and due time when the workflow calls for a follow-up.', 'Use /services/appointment-setting and /services/customer-follow-up-calls as the two contextual service paths for this workflow. These links help the owner connect the article to the relevant calling lane.'] },
+      { heading: 'Treat exceptions as work', paragraphs: ['An opt-out, identity concern, sensitive change, complaint, or request outside the script is not a failed call. It is an exception that needs a visible label and a named decision owner.', 'The caller should preserve the customer wording without adding an interpretation. The owner can then decide whether to update the script, suppress the record, or reply through an approved channel.'] },
+      { heading: 'Review the smallest useful sample', paragraphs: ['Review a small daily sample during onboarding and after a script change. Compare the recording or call note with the queue disposition, next action, and final system state.', 'Use the same scorecard each time so quality means more than activity volume. Accuracy, respectful tone, complete notes, and escalation discipline are stronger signals than unanswered dials.'] }
+    ],
+    scripts: [{ title: 'Opening', text: 'I am calling from the approved team about the item in your record. I will ask only the questions needed for this request.' }, { title: 'Pause point', text: 'I want to make sure this is handled correctly, so I will record the request and send it to the person who can approve the next step.' }],
+    workflow: [{ step: '1', title: 'Release', text: 'Confirm the queue, purpose, owner, and script version.' }, { step: '2', title: 'Call', text: 'Use the approved wording and record the result.' }, { step: '3', title: 'Label', text: 'Choose one outcome and capture the next action.' }, { step: '4', title: 'Escalate', text: 'Route exceptions without making an unsupported promise.' }, { step: '5', title: 'Review', text: 'Check a sample beside the saved system state.' }],
+    faqs: [{ q: 'What should a Filipino caller do when the brief is unclear?', a: 'Pause the record, write the missing detail, and send it to the named owner. Unclear instructions are a review result, not permission to guess.' }, { q: 'What belongs in the daily report?', a: 'Record attempts, conversations, outcomes, follow-ups, suppressions, exceptions, and owner decisions. Keep activity counts separate from completed outcomes.' }],
+    related: [{ label: 'Appointment setting service', href: '/services/appointment-setting' }, { label: 'Customer follow-up service', href: '/services/customer-follow-up-calls' }, { label: 'Call quality review service', href: '/services/call-quality-review' }],
+    sources: [{ name: 'FCC Telephone Consumer Protection Act guidance', url: 'https://www.fcc.gov/general/telemarketing-and-telephone-consumer-protection-act' }],
+    banners: [{ label: 'Next step', title: 'Turn the workflow into a role', text: excerpt, href: '/contact', cta: 'Build the role brief' }]
+  };
+}
+for (const post of aug11BlogPosts) {
+  blogDetailRecord[post.slug] = makeAug11Detail(post);
+}
+for (const post of aug13BlogPosts) {
+  blogDetailRecord[post.slug] = makeAug13Detail(post);
+}
+for (const post of aug14BlogPosts) {
+  blogDetailRecord[post.slug] = makeAug14Detail(post);
+}
+for (const post of aug17BlogPosts) {
+  blogDetailRecord[post.slug] = makeAug17Detail(post);
+}
+for (const post of aug19SourceRepair9BlogPosts) {
+  blogDetailRecord[post.slug] = (aug19SourceRepair9Details as Record<string, unknown>)[post.slug] as never;
+}
+for (const post of aug20BlogPosts) {
+  blogDetailRecord[post.slug] = (aug20BlogDetails as Record<string, unknown>)[post.slug] as never;
+}
+for (const post of aug21BlogPosts) {
+  blogDetailRecord[post.slug] = (aug21BlogDetails as Record<string, unknown>)[post.slug] as never;
+}
+for (const post of aug23BlogPosts) {
+  blogDetailRecord[post.slug] = (aug23BlogDetails as Record<string, unknown>)[post.slug] as never;
+}
+
 export const staffingOffer = {
   partner: 'our Philippines staffing team',
   promise: 'Get a calling role built for Filipino talent around the work you need handled.',
@@ -1098,7 +1256,7 @@ export const staffingProcess = [
 export const staffingFitNote = 'The plan depends on the call type, schedule, tools, and review needs. Share those details and our Philippines staffing team can map the right Filipino caller profile.';
 
 
-export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; datePublished?: string; canonical?: string; sources?: Array<{ name: string; url: string }> }> = [
+const legacyResearchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string }> = [
   {
     slug: 'daily-reporting-controls-for-outsourced-callers',
     title: 'Daily reporting controls for outsourced callers',
@@ -1135,6 +1293,262 @@ export const researchPosts: Array<{ slug: string; title: string; excerpt: string
       'Sources: NIST Cybersecurity Framework 2.0 (https://www.nist.gov/cyberframework); Federal Trade Commission business guidance on data security (https://www.ftc.gov/business-guidance/privacy-security/data-security); FCC Telephone Consumer Protection Act guidance (https://www.fcc.gov/general/telemarketing-and-telephone-consumer-protection-act).'
     ]
   }))
-] as Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; datePublished?: string; canonical?: string; sources?: Array<{ name: string; url: string }> }>;
+];
 
-researchPosts.push(...august23Research);
+const researchSources = [
+  'FTC, Complying with the Telemarketing Sales Rule — https://www.ftc.gov/business-guidance/resources/complying-telemarketing-sales-rule',
+  'FTC, Telemarketing — https://www.ftc.gov/business-guidance/advertising-marketing/telemarketing',
+  'FTC, Telemarketing Sales Rule — https://www.ftc.gov/legal-library/browse/rules/telemarketing-sales-rule',
+  'FCC, Consumer guides — https://www.fcc.gov/consumers/guides/stop-unwanted-robocalls-and-texts',
+  'U.S. BLS, Customer Service Representatives — https://www.bls.gov/ooh/office-and-administrative-support/customer-service-representatives.htm',
+  'NIST, AI Risk Management Framework — https://www.nist.gov/itl/ai-risk-management-framework',
+  'ICO, Guidance on direct marketing using live calls — https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-direct-marketing-using-live-calls/',
+  'Philippines NPC, Data Privacy Act resources — https://privacy.gov.ph/data-privacy-act/',
+  'U.S. SBA, Market research and competitive analysis — https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis',
+  'Google, Search Essentials — https://developers.google.com/search/docs/fundamentals/seo-starter-guide'
+];
+const researchTopics = [
+  ['outbound-lead-qualification-call-queue-design', 'Outbound lead qualification call queue design', 'How to design a qualification queue that gives Filipino callers a clear next action without letting an uncertain lead become a sales promise.'],
+  ['appointment-setting-held-meeting-quality-research', 'Appointment setting: held-meeting quality research', 'A sourced framework for separating booked meetings from useful meetings, with handoff fields an owner can audit.'],
+  ['customer-follow-up-call-cadence-research', 'Customer follow-up call cadence research', 'A practical evidence-first cadence for follow-up calls that respects consent, suppression requests, and the customer’s preferred next step.'],
+  ['inbound-call-handling-escalation-research', 'Inbound call handling escalation research', 'How to route routine inbound calls while preserving human control over identity, payment, complaints, and unusual requests.'],
+  ['database-verification-call-minimum-fields-research', 'Database verification calls: minimum fields research', 'Why a small approved field set makes customer-record checks easier to review and safer to hand off.'],
+  ['call-quality-review-scorecard-research', 'Call quality review scorecard research', 'A measurable scorecard for reviewing call notes, disclosures, listening, outcomes, and escalation discipline.'],
+  ['win-back-call-suppression-research', 'Win-back calling and suppression research', 'A careful win-back workflow that treats opt-outs and stale records as operational signals, not obstacles.'],
+  ['renewal-reminder-call-risk-controls-research', 'Renewal reminder call risk controls', 'A research-backed checklist for reminders that avoids accidental promises, payment handling, and unauthorized account changes.'],
+  ['order-confirmation-call-exception-research', 'Order confirmation call exception research', 'How callers can confirm approved order facts and stop cleanly when delivery, identity, or payment details change.'],
+  ['survey-calling-response-quality-research', 'Survey calling response quality research', 'A practical design for survey calls that records refusals honestly and keeps research separate from a sales pitch.'],
+  ['reception-overflow-call-routing-research', 'Reception overflow call routing research', 'How an overflow caller can protect the front door of a business with clear routing labels, owner rules, and useful notes.'],
+  ['filipino-caller-daily-reporting-research', 'Filipino caller daily reporting research', 'What a daily calling report should contain when the goal is accountable work rather than inflated activity totals.']
+] as const;
+
+const currentResearchBatchTopics = [
+  ['appointment-setting-no-show-prevention-research', 'Appointment-setting no-show prevention research', 'A sourced workflow for reducing avoidable no-shows with confirmation fields, consent-aware reminders, and accountable handoffs.'],
+  ['outbound-caller-objection-note-taxonomy-research', 'Outbound caller objection note taxonomy research', 'How to label objections consistently so a Filipino caller records evidence and the owner can improve the next approved response.'],
+  ['inbound-call-identity-escalation-research', 'Inbound call identity escalation research', 'A practical evidence-first model for deciding when an inbound call can be routed and when identity or authority needs owner review.'],
+  ['customer-follow-up-suppression-sync-research', 'Customer follow-up suppression sync research', 'Why suppression requests need a visible source, owner, and list-sync check before another follow-up is attempted.'],
+  ['event-registration-attendance-confirmation-research', 'Event registration attendance confirmation research', 'A controlled confirmation lane for event registrants that keeps attendance data accurate and exceptions visible.'],
+  ['survey-caller-refusal-coding-research', 'Survey caller refusal coding research', 'How neutral refusal labels improve survey quality without turning a research call into a sales conversation.'],
+  ['reception-overflow-urgent-call-triage-research', 'Reception overflow urgent call triage research', 'A routing framework for separating routine reception work from urgent matters that require a named business owner.'],
+  ['renewal-reminder-pre-expiry-window-research', 'Renewal reminder pre-expiry window research', 'How to schedule respectful renewal reminders while keeping account changes, payment, and promises with the owner.'],
+  ['order-confirmation-delivery-exception-research', 'Order confirmation delivery exception research', 'A research-backed exception path for delivery changes, missing details, and fulfillment questions during confirmation calls.'],
+  ['database-verification-duplicate-record-research', 'Database verification duplicate-record research', 'A safe workflow for identifying possible duplicate records without letting a caller merge or delete customer data.'],
+  ['call-quality-review-calibration-research', 'Call quality review calibration research', 'How small calibration samples align reviewers on accuracy, tone, notes, outcomes, and escalation discipline.'],
+  ['win-back-opt-out-recording-research', 'Win-back opt-out recording research', 'A suppression-first win-back process that treats opt-outs as final instructions and keeps list ownership clear.'],
+  ['daily-caller-exception-report-research', 'Daily caller exception report research', 'The minimum evidence a daily exception report needs to support owner decisions without rewarding empty activity totals.']
+] as const;
+const scheduledResearchBatchTopics = [
+  ['appointment-setting-calendar-handoff-research', 'Appointment-setting calendar handoff research', 'How to move a qualified appointment from a calling queue into a calendar without losing consent, context, or ownership.'],
+  ['outbound-caller-contact-window-research', 'Outbound caller contact-window research', 'A controlled way to define calling windows, local time zones, and stop rules before an outbound queue is released.'],
+  ['inbound-call-message-accuracy-research', 'Inbound call message accuracy research', 'A practical evidence-first method for capturing inbound messages so the receiving owner can act without replaying the call.'],
+  ['customer-follow-up-next-action-research', 'Customer follow-up next-action research', 'How to separate a real customer next action from a vague callback promise in daily follow-up work.'],
+  ['event-registration-accessibility-request-research', 'Event registration accessibility request research', 'A safe handoff model for accessibility requests that keeps the caller helpful while leaving accommodation decisions with the event owner.'],
+  ['survey-calling-neutral-probe-research', 'Survey calling neutral-probe research', 'How neutral probes improve response quality without leading respondents or turning a survey into a pitch.'],
+  ['reception-overflow-message-priority-research', 'Reception overflow message-priority research', 'A routing and note taxonomy for distinguishing routine messages from urgent matters at the front desk.'],
+  ['renewal-reminder-preference-research', 'Renewal reminder contact-preference research', 'How to record and honor a customer’s preferred reminder channel without making an unauthorized renewal promise.'],
+  ['order-confirmation-address-change-research', 'Order confirmation address-change research', 'A stop-and-escalate workflow for address changes discovered during order confirmation calls.'],
+  ['database-verification-source-of-truth-research', 'Database verification source-of-truth research', 'How to identify the authoritative record before a caller reports a mismatch or requests a customer-data change.']
+] as const;
+const runResearchBatchTopics = [
+  ['appointment-setting-qualification-threshold-research', 'Appointment-setting qualification threshold research', 'How to define a consistent qualification threshold before a caller offers a meeting time or sends a lead to the owner.'],
+  ['outbound-lead-qualification-disposition-research', 'Outbound lead qualification disposition research', 'A disposition model that separates interest, fit, reachability, refusal, and owner review in an outbound queue.'],
+  ['customer-follow-up-callback-window-research', 'Customer follow-up callback-window research', 'How to record preferred callback windows and route missed follow-ups without creating vague promises.'],
+  ['inbound-call-complaint-handoff-research', 'Inbound call complaint handoff research', 'A controlled handoff for complaints that lets a caller capture facts while keeping remedies and commitments with the owner.'],
+  ['event-registration-accessibility-handoff-research', 'Event registration accessibility handoff research', 'How to record accessibility requests accurately and route accommodation decisions to the event owner.'],
+  ['survey-calling-interviewer-training-research', 'Survey calling interviewer training research', 'A small training and calibration model for neutral survey calls, refusal handling, and consistent coding.'],
+  ['reception-overflow-after-hours-routing-research', 'Reception overflow after-hours routing research', 'A routing plan for after-hours messages that distinguishes urgency, missing context, and next-owner responsibility.'],
+  ['renewal-reminder-escalation-research', 'Renewal reminder escalation research', 'How to separate routine reminder outcomes from payment, cancellation, dispute, and account-change exceptions.'],
+  ['order-confirmation-return-request-research', 'Order confirmation return-request research', 'A stop-and-escalate workflow for return requests discovered during order confirmation calls.'],
+  ['database-verification-contact-preference-research', 'Database verification contact-preference research', 'How to verify contact preferences with a minimal field set and keep consent and suppression changes auditable.'],
+  ['call-quality-review-note-accuracy-research', 'Call quality review note-accuracy research', 'A review method for comparing call notes with source records, outcomes, and the next action actually assigned.'],
+  ['win-back-campaign-recontact-window-research', 'Win-back campaign recontact-window research', 'How to define a respectful recontact window while honoring suppression requests and owner-approved campaign rules.']
+] as const;
+const originalAug10ResearchDateBySlug: Record<string, string> = {
+  'appointment-setting-qualification-threshold-research': '2026-08-10',
+  'outbound-lead-qualification-disposition-research': '2026-08-10',
+  'customer-follow-up-callback-window-research': '2026-08-10',
+  'inbound-call-complaint-handoff-research': '2026-08-10',
+  'event-registration-accessibility-handoff-research': '2026-08-10',
+  'survey-calling-interviewer-training-research': '2026-08-10',
+  'reception-overflow-after-hours-routing-research': '2026-08-10',
+  'renewal-reminder-escalation-research': '2026-08-10',
+  'order-confirmation-return-request-research': '2026-08-10',
+  'database-verification-contact-preference-research': '2026-08-10',
+  'call-quality-review-note-accuracy-research': '2026-08-10',
+  'win-back-campaign-recontact-window-research': '2026-08-10'
+};
+const originalAug10ResearchOrder = new Map(Object.keys(originalAug10ResearchDateBySlug).map((slug, index) => [slug, index]));
+const aug11ResearchPosts: Array<{ slug: string; title: string; excerpt: string; published: string; body: string[] }> = [
+  {
+    slug: 'appointment-setting-meeting-context-research',
+    title: 'Appointment-setting meeting context research',
+    excerpt: 'What meeting context should travel with a qualified appointment so the recipient can decide quickly and the prospect is not asked to repeat the conversation.',
+    published: '2026-08-12',
+    body: [
+      'A booked time is not the same as a useful appointment. Research on customer experience consistently treats continuity and effort as part of service quality, so the handoff should preserve the reason for the meeting, the person’s stated need, the agreed timing, and any unanswered question.',
+      'For an appointment-setting service, the caller can capture the business-approved qualification facts and the prospect’s own wording. The receiving owner should retain authority over fit, commitments, technical promises, and any question that needs specialist judgment.',
+      'The useful research question is whether the next person can act without replaying the call. Compare the appointment record with the conversation: purpose, contact preference, time zone, requested attendees, constraints, and the exact next action should agree. Missing context is a handoff defect, not a reason to invent detail.',
+      'A small sample of completed handoffs can reveal whether meetings are being booked from clear evidence or from optimistic interpretation. Review the record against the approved qualification definition and separate a reschedule, refusal, unclear fit, and confirmed meeting rather than collapsing them into one success label.',
+      'This is an operating analysis, not a promise of meeting quality or a legal conclusion. The business should set its own qualification standard and review applicable calling and privacy rules for the people and jurisdictions involved.',
+      'Sources: Harvard Business Review, The Truth About Customer Experience (https://hbr.org/2017/06/the-truth-about-customer-experience); U.S. BLS, Customer Service Representatives (https://www.bls.gov/ooh/office-and-administrative-support/customer-service-representatives.htm); FTC, Telemarketing (https://www.ftc.gov/business-guidance/advertising-marketing/telemarketing).'
+    ]
+  },
+  {
+    slug: 'customer-follow-up-request-resolution-research',
+    title: 'Customer follow-up request-resolution research',
+    excerpt: 'How follow-up calls can distinguish a resolved request from a promised callback, an open question, and a matter that needs the owner.',
+    published: '2026-08-12',
+    body: [
+      'A follow-up record should describe the customer’s request and the state of the answer, not merely the fact that a call happened. This distinction matters because unresolved effort can increase customer friction even when contact activity looks complete.',
+      'The caller may confirm the approved status, capture the customer’s preferred next step, and record what remains unanswered. Refunds, disputes, account changes, exceptions, and commitments outside the approved information should move to the named business owner.',
+      'A useful analysis separates four outcomes: resolved from approved information, customer action still pending, owner action pending, and no contact or refusal. Each outcome has a different next action. Treating all four as “followed up” makes the queue less informative.',
+      'Compare a sample of notes with the source request and the eventual owner decision. Look for mismatched dates, vague callback promises, missing preference information, and language that implies authority the caller did not have. The purpose is to improve the handoff, not to reward longer notes.',
+      'The evidence supports reducing avoidable customer effort while keeping sensitive decisions with the accountable owner. It does not establish a universal callback interval; timing depends on request type, consent, urgency, and the organization’s service commitment.',
+      'Sources: CFI Group, Customer Effort Score (https://www.cfigroup.com/customer-effort-score/); FTC, Complying with the Telemarketing Sales Rule (https://www.ftc.gov/business-guidance/resources/complying-telemarketing-sales-rule); ICO, Direct marketing using live calls (https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-direct-marketing-using-live-calls/).'
+    ]
+  },
+  {
+    slug: 'inbound-call-information-quality-research',
+    title: 'Inbound call information-quality research',
+    excerpt: 'A research-led way to judge whether an inbound message contains enough accurate context for the receiving owner to act.',
+    published: '2026-08-12',
+    body: [
+      'An inbound message is useful when it lets the recipient understand who called, why they called, what they need next, and how urgently the matter should be handled. A short accurate message can be more valuable than a long narrative that mixes fact with interpretation.',
+      'The caller can confirm the preferred callback detail, capture the caller’s stated purpose, and mark uncertainty. They should not guess at identity, diagnose a complaint, disclose restricted information, or promise a remedy. Those decisions belong to the receiving owner.',
+      'Information quality has two dimensions: correctness and fitness for the next decision. A message can be factually accurate yet still omit the requested callback window or the specific order, event, or service involved. The review should therefore ask whether the owner could take the next authorized action.',
+      'A small audit can compare recorded messages with the call source and the owner’s eventual disposition. Useful findings include missing urgency, duplicated messages, altered customer wording, and unsupported assumptions. These findings help refine field definitions without turning the caller into the decision-maker.',
+      'The right message fields vary by business. Use the smallest set that supports the receiving owner and preserve a clear route for identity concerns, complaints, emergencies, and other exceptions.',
+      'Sources: NIST, Privacy Framework (https://www.nist.gov/privacy-framework); U.S. BLS, Customer Service Representatives (https://www.bls.gov/ooh/office-and-administrative-support/customer-service-representatives.htm); FTC, Data Security (https://www.ftc.gov/business-guidance/privacy-security/data-security).'
+    ]
+  },
+  {
+    slug: 'event-registration-attendee-confirmation-research',
+    title: 'Event registration attendee-confirmation research',
+    excerpt: 'How confirmation calls can improve registration accuracy while separating attendance facts from accommodation, payment, and policy decisions.',
+    published: '2026-08-12',
+    body: [
+      'An event confirmation call should verify the registration facts that the event team actually needs. It should not become an invitation to collect unrelated personal information or an improvised promise about access, seating, refunds, or accommodations.',
+      'The caller can confirm attendance intent, the approved contact detail, the registration reference, and the attendee’s stated question. Accessibility requests, dietary or safety matters, payment issues, and policy exceptions should be captured accurately and routed to the event owner.',
+      'The analytical test is whether the final registration record matches what the attendee said. Separate confirmed attendance, uncertain attendance, declined attendance, unreachable, and owner review. A single yes/no field hides the difference between a refusal and a missing answer.',
+      'Review the source record and the call note together. Look for altered names, assumed attendance, unrecorded requests, and contact preferences that were not honored. A confirmation lane should make exceptions more visible, not make them disappear into a completion count.',
+      'Event operators should define their own retention, accessibility, and consent requirements. This note offers a service-quality lens and does not decide eligibility or accommodation policy.',
+      'Sources: U.S. DOJ, ADA Requirements: Effective Communication (https://www.ada.gov/resources/effective-communication/); ICO, Data protection and direct marketing (https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/); FTC, Protecting Personal Information (https://www.ftc.gov/business-guidance/small-businesses/cybersecurity/protecting-personal-information).'
+    ]
+  },
+  {
+    slug: 'survey-calling-interviewer-neutrality-research',
+    title: 'Survey calling interviewer neutrality research',
+    excerpt: 'Why neutral wording, honest refusals, and consistent response coding are central to credible survey calls.',
+    published: '2026-08-12',
+    body: [
+      'Survey calling is a measurement activity, so the interviewer’s manner can affect the data. A caller should ask the approved question as written, use only permitted neutral clarification, and record a refusal or “don’t know” instead of pushing for a preferred answer.',
+      'The key distinction from a sales call is purpose. The caller is collecting a response, not steering the respondent toward a service, appointment, or commitment. Any request to change the purpose should be treated as a new brief requiring owner review.',
+      'A defensible survey record preserves the question version, response, refusal, incomplete interview, and any approved disposition. Do not convert silence, a vague answer, or a failed connection into a substantive response. That creates false precision.',
+      'Calibration should use a small set of examples and ask whether different interviewers would code the same response alike. Discuss wording drift, leading probes, and inconsistent refusal labels. The goal is measurement consistency, not a higher response number at any cost.',
+      'Sampling, weighting, consent, and reporting decisions remain with the research owner. This article focuses on interviewer behavior and cannot establish the validity of a survey design by itself.',
+      'Sources: AAPOR, Best Practices for Survey Research (https://aapor.org/standards-and-ethics/best-practices/); Pew Research Center, Writing Survey Questions (https://www.pewresearch.org/writing-survey-questions/); U.S. Census Bureau, Measuring America (https://www.census.gov/programs-surveys/sis/resources.html).'
+    ]
+  },
+  {
+    slug: 'reception-overflow-message-completeness-research',
+    title: 'Reception overflow message-completeness research',
+    excerpt: 'What makes an overflow message actionable when a front desk cannot transfer the caller immediately.',
+    published: '2026-08-12',
+    body: [
+      'Overflow support succeeds when it preserves the front door’s context under pressure. The receiving person needs the caller’s stated purpose, a reliable return route, any requested timing, and a clear indication of urgency without a receptionist or caller inventing a priority.',
+      'A Filipino caller can collect the approved message fields and repeat them back for accuracy. They should not interpret a complaint, disclose internal information, or promise that an owner will respond by a time the business has not committed to.',
+      'Completeness is not the same as length. An actionable message is one that supports the next authorized decision. Review whether the recipient can identify the correct owner, understand the request, and see what remains unknown. If not, mark the gap rather than filling it with assumption.',
+      'A sample review can examine missed transfers, duplicate messages, unclear callback details, and urgency labels that do not match the caller’s words. These patterns can reveal where reception coverage needs a clearer owner map or a narrower field set.',
+      'Urgent or safety-related calls need a business-defined route. A general overflow service cannot substitute for emergency guidance or an owner’s responsibility for sensitive matters.',
+      'Sources: NIST, Privacy Framework (https://www.nist.gov/privacy-framework); U.S. BLS, Customer Service Representatives (https://www.bls.gov/ooh/office-and-administrative-support/customer-service-representatives.htm); FTC, Protecting Personal Information (https://www.ftc.gov/business-guidance/small-businesses/cybersecurity/protecting-personal-information).'
+    ]
+  },
+  {
+    slug: 'renewal-reminder-customer-choice-research',
+    title: 'Renewal reminder customer-choice research',
+    excerpt: 'How renewal reminders can preserve customer choice while keeping payment, cancellation, and account decisions with the owner.',
+    published: '2026-08-12',
+    body: [
+      'A renewal reminder should help a customer understand that a decision is approaching without implying that renewal is automatic or already agreed. The call’s value is clarity: what the approved notice says, what the customer wants, and what question needs an accountable answer.',
+      'The caller may confirm receipt, record a preferred contact route, and pass along approved dates or instructions. They should not take payment details, authorize a cancellation, change account ownership, or make a promise about terms that are not in the approved information.',
+      'Separate “reminded,” “wants to renew,” “wants to discuss,” “does not want contact,” and “needs owner review.” These outcomes have different implications for customer choice and future contact. A single completed label can create an inaccurate account history.',
+      'Review a sample against the source account and the owner’s final action. Watch for pressure language, unapproved urgency, stale contact preferences, and requests that were recorded but not routed. The review should protect the customer’s stated choice as well as the business record.',
+      'Renewal law and consent rules vary by jurisdiction and product. This research note is not legal advice and does not replace a business’s approved notice or cancellation process.',
+      'Sources: FTC, Telemarketing Sales Rule (https://www.ftc.gov/legal-library/browse/rules/telemarketing-sales-rule); ICO, Direct marketing using live calls (https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-direct-marketing-using-live-calls/); FTC, Consumer Information (https://consumer.ftc.gov/).'
+    ]
+  },
+  {
+    slug: 'order-confirmation-customer-intent-research',
+    title: 'Order confirmation customer-intent research',
+    excerpt: 'Why order confirmation calls should distinguish verified order facts from a new customer request that needs fulfillment review.',
+    published: '2026-08-12',
+    body: [
+      'An order confirmation call has a narrow purpose: check the approved order facts and surface anything the fulfillment owner must decide. When a customer introduces a return, address change, delivery concern, or product question, the call has crossed from confirmation into exception handling.',
+      'The caller can repeat the approved item, delivery detail, and contact information as permitted by the business. They should stop before changing the order, accepting payment data, promising a delivery outcome, or deciding whether a return is eligible.',
+      'The research distinction is between confirmation evidence and customer intent. “The order details are correct” is different from “the customer wants to change the order.” Record both separately so the next owner can see what was verified and what was requested.',
+      'A useful quality sample compares the call note with the order record and the eventual fulfillment decision. Look for silent changes, missing exception details, or confirmation labels applied after the customer raised a new issue.',
+      'Order, payment, privacy, and consumer-protection requirements depend on the market and product. Businesses should define a safe stop path before calls begin.',
+      'Sources: FTC, Mail, Internet, or Telephone Order Merchandise Rule (https://www.ftc.gov/legal-library/browse/rules/mail-internet-or-telephone-order-merchandise-rule); PCI Security Standards Council, Protecting Account Data (https://www.pcisecuritystandards.org/merchants/); NIST, Privacy Framework (https://www.nist.gov/privacy-framework).'
+    ]
+  },
+  {
+    slug: 'database-verification-contact-consent-research',
+    title: 'Database verification contact-consent research',
+    excerpt: 'How record verification can preserve contact preferences and suppression requests without turning a caller into a data administrator.',
+    published: '2026-08-12',
+    body: [
+      'Contact data is not just a set of fields; it also carries a person’s stated preference about how and whether the business should reach them. A verification call should treat that preference as a material result, not as an incidental note.',
+      'The caller can verify the approved contact detail and capture a clear request to continue, change channel, or stop contact. They should not merge records, delete history, infer consent from silence, or broaden the purpose of the call beyond the released field set.',
+      'The useful analysis separates data accuracy from permission status. A phone number can be correct while the person does not want calls. A requested change can be genuine while the identity match remains uncertain. Each condition needs its own label and owner path.',
+      'Compare the call note with the source record and the final suppression or preference state. Audit whether the request was timestamped, attributed, routed, and reflected in the next approved contact decision. A verbal request that never reaches the authoritative list is not a completed control.',
+      'Privacy obligations differ across jurisdictions and purposes. Apply the organization’s retention, access, suppression, and lawful-contact rules to the actual campaign.',
+      'Sources: ICO, Direct marketing using live calls (https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-direct-marketing-using-live-calls/); Philippines NPC, Data Privacy Act resources (https://privacy.gov.ph/data-privacy-act/); FTC, Protecting Personal Information (https://www.ftc.gov/business-guidance/small-businesses/cybersecurity/protecting-personal-information).'
+    ]
+  },
+  {
+    slug: 'call-quality-review-evidence-consistency-research',
+    title: 'Call quality review evidence-consistency research',
+    excerpt: 'A research view of quality review that compares spoken evidence, written notes, and the decision the business ultimately made.',
+    published: '2026-08-12',
+    body: [
+      'A call-quality review is strongest when it checks whether three records agree: what was said, what was written, and what action followed. Tone matters, but a pleasant call with an inaccurate outcome still creates operational risk.',
+      'The reviewer should assess the approved purpose, factual accuracy, respectful wording, customer choice, result label, and escalation boundary. The caller should not be judged against an authority they were never given; the business must define which decisions belong to the caller and which belong to the owner.',
+      'Consistency is more useful than a large scorecard. Select a small set of criteria tied to the service promise, then compare the same sample across reviewers. If two reviewers disagree, identify the missing definition rather than hiding disagreement inside an average score.',
+      'Review notes against the source record and final disposition. Common evidence gaps include a missing customer request, a guessed reason for refusal, a callback time that was never agreed, and a resolution label applied before the owner acted.',
+      'Quality findings should improve coaching and service design while protecting personal information. Store only what the review requires and restrict access according to the business’s policy.',
+      'Sources: NIST, Privacy Framework (https://www.nist.gov/privacy-framework); U.S. BLS, Customer Service Representatives (https://www.bls.gov/ooh/office-and-administrative-support/customer-service-representatives.htm); AAPOR, Best Practices for Survey Research (https://aapor.org/standards-and-ethics/best-practices/).'
+    ]
+  },
+];
+function makeResearchPost([slug, title, excerpt]: readonly [string, string, string]) {
+  return { slug, title, excerpt, published: '2026-08-08', body: [
+    `Published: 2026-08-08. Cluster: daily calling operations. This Research note answers: ${title.toLowerCase()}.`,
+    'Direct answer: release a named queue, state the permitted outcome, collect only the fields needed for that outcome, and send uncertainty to a named owner. Filipino callers can execute a documented routine; the business owner keeps authority over promises, sensitive data, and exceptions.',
+    'Methodology: this is a desk-research synthesis of the ten sources below, paired with a control-oriented workflow. Public statistics describe their own populations and dates; they are not performance claims about OutsourcedCallers.com or Filipino callers.',
+    'Key Stats: the U.S. Bureau of Labor Statistics reports a $20.59 median hourly wage for customer service representatives in May 2024 and projects 341,700 average annual openings from 2024–2034. The FTC says covered telemarketers must maintain do-not-call procedures and update National Registry data at least every 31 days. These figures provide context, not a guaranteed result.',
+    'Key Takeaways: 1) name the queue and owner; 2) show the smallest useful record; 3) define confirmed, refused, unreachable, and review outcomes; 4) suppress requests immediately; 5) audit notes beside the final system state.',
+    'Workflow: Release → verify the approved record → ask one question at a time → save the source and result → escalate exceptions → review a sample daily. A script is a guardrail, not permission to improvise a legal, financial, medical, or account-control answer.',
+    'Decision table: Routine request | caller follows the approved script and records the outcome | owner defines the fields and labels. Uncertain identity | caller stops and routes it | owner decides the trusted review path. Sensitive change | caller records the request only | owner approves or rejects it. Do-not-call request | caller stops future outreach and logs suppression | owner verifies the list sync.',
+    'Evidence note: FTC guidance emphasizes disclosures, truthful claims, caller-ID transmission, calling-time limits, and do-not-call controls. ICO guidance explains that live direct-marketing calls are regulated by PECR in the UK. Apply the law for the people, numbers, and jurisdictions in the actual campaign; this article is not legal advice.',
+    'Internal links: review /services/appointment-setting, /services/customer-follow-up-calls, and /services/call-quality-review. Keep the Research family separate from Blog content and use this note as a planning aid, not a substitute for a client brief.',
+    'FAQ: What should the caller do when the request is outside the brief? Stop, record it neutrally, and escalate. What makes a report useful? It reconciles attempts, conversations, outcomes, exceptions, suppressions, and next owners without counting unanswered dials as completed work.',
+    'Related Research: Queue design; Call quality review; Daily reporting.', `Sources (10): ${researchSources.join(' | ')}`
+  ] };
+}
+export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; image?: string; handoff?: { href: string; label: string; text: string } }> = [
+  ...aug23ResearchPosts,
+  ...aug21ResearchPosts,
+  ...aug20ResearchPosts,
+  ...aug19ResearchPosts,
+  ...aug17ResearchPosts,
+  ...aug14ResearchPosts,
+  ...aug13ResearchPosts,
+  ...aug11ResearchPosts,
+  ...[...researchTopics, ...currentResearchBatchTopics].map(makeResearchPost),
+  ...scheduledResearchBatchTopics.map(topic => ({ ...makeResearchPost(topic), published: '2026-08-10' })),
+  ...runResearchBatchTopics.map(topic => {
+    const post = makeResearchPost(topic);
+    const published = originalAug10ResearchDateBySlug[topic[0]];
+    return { ...post, published, body: [`Published: ${published}. Cluster: daily calling operations. This Research note answers: ${topic[1].toLowerCase()}.`, ...post.body.slice(1)] };
+  })
+].sort((a, b) => b.published.localeCompare(a.published) || (originalAug10ResearchOrder.get(a.slug) ?? Number.MAX_SAFE_INTEGER) - (originalAug10ResearchOrder.get(b.slug) ?? Number.MAX_SAFE_INTEGER) || a.slug.localeCompare(b.slug));

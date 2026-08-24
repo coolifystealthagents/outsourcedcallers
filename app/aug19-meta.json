@@ -1,0 +1,104 @@
+{
+  "outbound-calling-intake-source-register": {
+    "family": "blog",
+    "title": "Outbound Calling Operations: Intake Source Register",
+    "description": "Outbound Calling Operations: Intake Source Register: evidence-led guidance for Outsourced Callers.",
+    "hero": "/aug19-heroes/outbound-calling-intake-source-register.webp"
+  },
+  "outbound-calling-approval-evidence-matrix": {
+    "family": "blog",
+    "title": "Outbound Calling Operations: Approval Evidence Matrix",
+    "description": "Outbound Calling Operations: Approval Evidence Matrix: evidence-led guidance for Outsourced Callers.",
+    "hero": "/aug19-heroes/outbound-calling-approval-evidence-matrix.webp"
+  },
+  "outbound-calling-exception-queue-triage": {
+    "family": "blog",
+    "title": "Outbound Calling Operations: Exception Queue Triage",
+    "description": "Outbound Calling Operations: Exception Queue Triage: evidence-led guidance for Outsourced Callers.",
+    "hero": "/aug19-heroes/outbound-calling-exception-queue-triage.webp"
+  },
+  "outbound-calling-quality-review-cadence": {
+    "family": "blog",
+    "title": "Outbound Calling Operations: Quality Review Cadence",
+    "description": "Outbound Calling Operations: Quality Review Cadence: evidence-led guidance for Outsourced Callers.",
+    "hero": "/aug19-heroes/outbound-calling-quality-review-cadence.webp"
+  },
+  "outbound-calling-handoff-acceptance-log": {
+    "family": "blog",
+    "title": "Outbound Calling Operations: Handoff Acceptance Log",
+    "description": "Outbound Calling Operations: Handoff Acceptance Log: evidence-led guidance for Outsourced Callers.",
+    "hero": "/aug19-heroes/outbound-calling-handoff-acceptance-log.webp"
+  },
+  "outbound-calling-access-recertification-review": {
+    "family": "blog",
+    "title": "Outbound Calling Operations: Access Recertification Review",
+    "description": "Outbound Calling Operations: Access Recertification Review: evidence-led guidance for Outsourced Callers.",
+    "hero": "/aug19-heroes/outbound-calling-access-recertification-review.webp"
+  },
+  "outbound-calling-weekly-decision-brief": {
+    "family": "blog",
+    "title": "Outbound Calling Operations: Weekly Decision Brief",
+    "description": "Outbound Calling Operations: Weekly Decision Brief: evidence-led guidance for Outsourced Callers.",
+    "hero": "/aug19-heroes/outbound-calling-weekly-decision-brief.webp"
+  },
+  "outbound-calling-source-of-truth-map": {
+    "family": "blog",
+    "title": "Outbound Calling Operations: Source of Truth Map",
+    "description": "Outbound Calling Operations: Source of Truth Map: evidence-led guidance for Outsourced Callers.",
+    "hero": "/aug19-heroes/outbound-calling-source-of-truth-map.webp"
+  },
+  "outbound-calling-change-control-record": {
+    "family": "blog",
+    "title": "Outbound Calling Operations: Change Control Record",
+    "description": "Outbound Calling Operations: Change Control Record: evidence-led guidance for Outsourced Callers.",
+    "hero": "/aug19-heroes/outbound-calling-change-control-record.webp"
+  },
+  "outbound-calling-work-queue-ownership": {
+    "family": "blog",
+    "title": "Outbound Calling Operations: Work Queue Ownership",
+    "description": "Outbound Calling Operations: Work Queue Ownership: evidence-led guidance for Outsourced Callers.",
+    "hero": "/aug19-heroes/outbound-calling-work-queue-ownership.webp"
+  },
+  "outbound-calling-escalation-path-design": {
+    "family": "blog",
+    "title": "Outbound Calling Operations: Escalation Path Design",
+    "description": "Outbound Calling Operations: Escalation Path Design: evidence-led guidance for Outsourced Callers.",
+    "hero": "/aug19-heroes/outbound-calling-escalation-path-design.webp"
+  },
+  "outbound-calling-launch-readiness-review": {
+    "family": "blog",
+    "title": "Outbound Calling Operations: Launch Readiness Review",
+    "description": "Outbound Calling Operations: Launch Readiness Review: evidence-led guidance for Outsourced Callers.",
+    "hero": "/aug19-heroes/outbound-calling-launch-readiness-review.webp"
+  },
+  "outbound-calling-source-quality-evidence-research": {
+    "family": "research",
+    "title": "Research Brief: Outbound Calling Operations Source Quality Evidence",
+    "description": "Research Brief: Outbound Calling Operations Source Quality Evidence: evidence-led guidance for Outsourced Callers.",
+    "hero": "/aug19-heroes/outbound-calling-source-quality-evidence-research.webp"
+  },
+  "outbound-calling-exception-aging-patterns-research": {
+    "family": "research",
+    "title": "Research Brief: Outbound Calling Operations Exception Aging Patterns",
+    "description": "Research Brief: Outbound Calling Operations Exception Aging Patterns: evidence-led guidance for Outsourced Callers.",
+    "hero": "/aug19-heroes/outbound-calling-exception-aging-patterns-research.webp"
+  },
+  "outbound-calling-review-consistency-research": {
+    "family": "research",
+    "title": "Research Brief: Outbound Calling Operations Review Consistency",
+    "description": "Research Brief: Outbound Calling Operations Review Consistency: evidence-led guidance for Outsourced Callers.",
+    "hero": "/aug19-heroes/outbound-calling-review-consistency-research.webp"
+  },
+  "outbound-calling-access-governance-research": {
+    "family": "research",
+    "title": "Research Brief: Outbound Calling Operations Access Governance",
+    "description": "Research Brief: Outbound Calling Operations Access Governance: evidence-led guidance for Outsourced Callers.",
+    "hero": "/aug19-heroes/outbound-calling-access-governance-research.webp"
+  },
+  "outbound-calling-handoff-reliability-research": {
+    "family": "research",
+    "title": "Research Brief: Outbound Calling Operations Handoff Reliability",
+    "description": "Research Brief: Outbound Calling Operations Handoff Reliability: evidence-led guidance for Outsourced Callers.",
+    "hero": "/aug19-heroes/outbound-calling-handoff-reliability-research.webp"
+  }
+}

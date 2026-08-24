@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-19",
+  "articles": [
+    {
+      "route": "/blog/outbound-calling-intake-source-register",
+      "source": "content/blog/outbound-calling-intake-source-register.md"
+    },
+    {
+      "route": "/blog/outbound-calling-approval-evidence-matrix",
+      "source": "content/blog/outbound-calling-approval-evidence-matrix.md"
+    },
+    {
+      "route": "/blog/outbound-calling-exception-queue-triage",
+      "source": "content/blog/outbound-calling-exception-queue-triage.md"
+    },
+    {
+      "route": "/blog/outbound-calling-quality-review-cadence",
+      "source": "content/blog/outbound-calling-quality-review-cadence.md"
+    },
+    {
+      "route": "/blog/outbound-calling-handoff-acceptance-log",
+      "source": "content/blog/outbound-calling-handoff-acceptance-log.md"
+    },
+    {
+      "route": "/blog/outbound-calling-access-recertification-review",
+      "source": "content/blog/outbound-calling-access-recertification-review.md"
+    },
+    {
+      "route": "/blog/outbound-calling-weekly-decision-brief",
+      "source": "content/blog/outbound-calling-weekly-decision-brief.md"
+    },
+    {
+      "route": "/blog/outbound-calling-source-of-truth-map",
+      "source": "content/blog/outbound-calling-source-of-truth-map.md"
+    },
+    {
+      "route": "/blog/outbound-calling-change-control-record",
+      "source": "content/blog/outbound-calling-change-control-record.md"
+    },
+    {
+      "route": "/blog/outbound-calling-work-queue-ownership",
+      "source": "content/blog/outbound-calling-work-queue-ownership.md"
+    },
+    {
+      "route": "/blog/outbound-calling-escalation-path-design",
+      "source": "content/blog/outbound-calling-escalation-path-design.md"
+    },
+    {
+      "route": "/blog/outbound-calling-launch-readiness-review",
+      "source": "content/blog/outbound-calling-launch-readiness-review.md"
+    }
+  ]
+}

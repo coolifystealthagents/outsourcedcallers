@@ -1,0 +1,25 @@
+import { post as p0, detail as d0 } from './aug19-blog-repair-9/filipino-caller-queue-entry-evidence';
+import { post as p1, detail as d1 } from './aug19-blog-repair-9/appointment-setting-agenda-readback';
+import { post as p2, detail as d2 } from './aug19-blog-repair-9/lead-qualification-disqualifier-handoff';
+import { post as p3, detail as d3 } from './aug19-blog-repair-9/inbound-call-message-priority-note';
+import { post as p4, detail as d4 } from './aug19-blog-repair-9/customer-follow-up-commitment-check';
+import { post as p5, detail as d5 } from './aug19-blog-repair-9/outbound-calling-list-reason-code';
+import { post as p6, detail as d6 } from './aug19-blog-repair-9/filipino-caller-brief-acknowledgment';
+import { post as p7, detail as d7 } from './aug19-blog-repair-9/appointment-setting-timezone-confirmation';
+import { post as p8, detail as d8 } from './aug19-blog-repair-9/customer-follow-up-response-gap-review';
+import { post as p9, detail as d9 } from './aug19-blog-repair-9/order-confirmation-fulfillment-handoff';
+import { post as p10, detail as d10 } from './aug19-blog-repair-9/database-verification-merge-escalation';
+import { post as p11, detail as d11 } from './aug19-blog-repair-9/renewal-reminder-objection-note';
+import { post as p12, detail as d12 } from './aug19-blog-repair-9/win-back-caller-permission-check';
+import { post as p13, detail as d13 } from './aug19-blog-repair-9/survey-calling-refusal-boundary';
+import { post as p14, detail as d14 } from './aug19-blog-repair-9/reception-overflow-message-urgency';
+import { post as p15, detail as d15 } from './aug19-blog-repair-9/outbound-calling-voicemail-next-step';
+import { post as p16, detail as d16 } from './aug19-blog-repair-9/filipino-caller-coaching-evidence-loop';
+import { post as p17, detail as d17 } from './aug19-blog-repair-9/appointment-setting-no-show-context';
+import { post as p18, detail as d18 } from './aug19-blog-repair-9/inbound-call-language-preference-note';
+import { post as p19, detail as d19 } from './aug19-blog-repair-9/call-quality-listening-calibration';
+import { post as p20, detail as d20 } from './aug19-blog-repair-9/daily-calling-owner-decision-log';
+import { post as p21, detail as d21 } from './aug19-blog-repair-9/outsourced-caller-access-review';
+
+export const aug19SourceRepair9BlogPosts = [p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21] as const;
+export const aug19SourceRepair9Details = {'filipino-caller-queue-entry-evidence': d0, 'appointment-setting-agenda-readback': d1, 'lead-qualification-disqualifier-handoff': d2, 'inbound-call-message-priority-note': d3, 'customer-follow-up-commitment-check': d4, 'outbound-calling-list-reason-code': d5, 'filipino-caller-brief-acknowledgment': d6, 'appointment-setting-timezone-confirmation': d7, 'customer-follow-up-response-gap-review': d8, 'order-confirmation-fulfillment-handoff': d9, 'database-verification-merge-escalation': d10, 'renewal-reminder-objection-note': d11, 'win-back-caller-permission-check': d12, 'survey-calling-refusal-boundary': d13, 'reception-overflow-message-urgency': d14, 'outbound-calling-voicemail-next-step': d15, 'filipino-caller-coaching-evidence-loop': d16, 'appointment-setting-no-show-context': d17, 'inbound-call-language-preference-note': d18, 'call-quality-listening-calibration': d19, 'daily-calling-owner-decision-log': d20, 'outsourced-caller-access-review': d21} as const;

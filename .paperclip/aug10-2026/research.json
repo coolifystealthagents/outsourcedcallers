@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "contract": "sites3-aug10-public-date-v6",
+  "targetDate": "2026-08-10",
+  "family": "research",
+  "domain": "outsourcedcallers.com",
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "branch": "main",
+  "minimum": 10,
+  "priorRunId": "a61b8529-d8bd-4daa-a2d7-ca11902674a5",
+  "priorIssueId": "54ea13b2-c085-427f-8f59-e99884678f85",
+  "validationCommands": [
+    "git fetch origin main",
+    "git rev-parse HEAD",
+    "git rev-parse origin/main",
+    "node scripts/validate-aug10-research.mjs",
+    "npm run validate:routines",
+    "npm run build",
+    "git diff --check"
+  ],
+  "cleanBuildPassed": true,
+  "existingCompliancePassed": true,
+  "indexNewestFirstPassed": true,
+  "entries": [
+    {"slug":"appointment-setting-qualification-threshold-research","route":"/research/appointment-setting-qualification-threshold-research","sourcePath":"app/data.ts","provenance":"original-aug10-batch","introducedByCommit":"b29b18ff83b8717945da9c24f680971adcb1b652","sourceDateField":"originalAug10ResearchDateBySlug[slug]","sourceDate":"2026-08-10","renderedDateFields":["datePublished","time[datetime]"],"renderedDate":"2026-08-10"},
+    {"slug":"outbound-lead-qualification-disposition-research","route":"/research/outbound-lead-qualification-disposition-research","sourcePath":"app/data.ts","provenance":"original-aug10-batch","introducedByCommit":"b29b18ff83b8717945da9c24f680971adcb1b652","sourceDateField":"researchPosts[].published","sourceDate":"2026-08-10","renderedDateFields":["datePublished","time[datetime]"],"renderedDate":"2026-08-10"},
+    {"slug":"customer-follow-up-callback-window-research","route":"/research/customer-follow-up-callback-window-research","sourcePath":"app/data.ts","provenance":"original-aug10-batch","introducedByCommit":"b29b18ff83b8717945da9c24f680971adcb1b652","sourceDateField":"researchPosts[].published","sourceDate":"2026-08-10","renderedDateFields":["datePublished","time[datetime]"],"renderedDate":"2026-08-10"},
+    {"slug":"inbound-call-complaint-handoff-research","route":"/research/inbound-call-complaint-handoff-research","sourcePath":"app/data.ts","provenance":"original-aug10-batch","introducedByCommit":"b29b18ff83b8717945da9c24f680971adcb1b652","sourceDateField":"researchPosts[].published","sourceDate":"2026-08-10","renderedDateFields":["datePublished","time[datetime]"],"renderedDate":"2026-08-10"},
+    {"slug":"event-registration-accessibility-handoff-research","route":"/research/event-registration-accessibility-handoff-research","sourcePath":"app/data.ts","provenance":"original-aug10-batch","introducedByCommit":"b29b18ff83b8717945da9c24f680971adcb1b652","sourceDateField":"researchPosts[].published","sourceDate":"2026-08-10","renderedDateFields":["datePublished","time[datetime]"],"renderedDate":"2026-08-10"},
+    {"slug":"survey-calling-interviewer-training-research","route":"/research/survey-calling-interviewer-training-research","sourcePath":"app/data.ts","provenance":"original-aug10-batch","introducedByCommit":"b29b18ff83b8717945da9c24f680971adcb1b652","sourceDateField":"researchPosts[].published","sourceDate":"2026-08-10","renderedDateFields":["datePublished","time[datetime]"],"renderedDate":"2026-08-10"},
+    {"slug":"reception-overflow-after-hours-routing-research","route":"/research/reception-overflow-after-hours-routing-research","sourcePath":"app/data.ts","provenance":"original-aug10-batch","introducedByCommit":"b29b18ff83b8717945da9c24f680971adcb1b652","sourceDateField":"researchPosts[].published","sourceDate":"2026-08-10","renderedDateFields":["datePublished","time[datetime]"],"renderedDate":"2026-08-10"},
+    {"slug":"renewal-reminder-escalation-research","route":"/research/renewal-reminder-escalation-research","sourcePath":"app/data.ts","provenance":"original-aug10-batch","introducedByCommit":"b29b18ff83b8717945da9c24f680971adcb1b652","sourceDateField":"researchPosts[].published","sourceDate":"2026-08-10","renderedDateFields":["datePublished","time[datetime]"],"renderedDate":"2026-08-10"},
+    {"slug":"order-confirmation-return-request-research","route":"/research/order-confirmation-return-request-research","sourcePath":"app/data.ts","provenance":"original-aug10-batch","introducedByCommit":"b29b18ff83b8717945da9c24f680971adcb1b652","sourceDateField":"researchPosts[].published","sourceDate":"2026-08-10","renderedDateFields":["datePublished","time[datetime]"],"renderedDate":"2026-08-10"},
+    {"slug":"database-verification-contact-preference-research","route":"/research/database-verification-contact-preference-research","sourcePath":"app/data.ts","provenance":"original-aug10-batch","introducedByCommit":"b29b18ff83b8717945da9c24f680971adcb1b652","sourceDateField":"researchPosts[].published","sourceDate":"2026-08-10","renderedDateFields":["datePublished","time[datetime]"],"renderedDate":"2026-08-10"},
+    {"slug":"call-quality-review-note-accuracy-research","route":"/research/call-quality-review-note-accuracy-research","sourcePath":"app/data.ts","provenance":"original-aug10-batch","introducedByCommit":"b29b18ff83b8717945da9c24f680971adcb1b652","sourceDateField":"researchPosts[].published","sourceDate":"2026-08-10","renderedDateFields":["datePublished","time[datetime]"],"renderedDate":"2026-08-10"},
+    {"slug":"win-back-campaign-recontact-window-research","route":"/research/win-back-campaign-recontact-window-research","sourcePath":"app/data.ts","provenance":"original-aug10-batch","introducedByCommit":"b29b18ff83b8717945da9c24f680971adcb1b652","sourceDateField":"researchPosts[].published","sourceDate":"2026-08-10","renderedDateFields":["datePublished","time[datetime]"],"renderedDate":"2026-08-10"}
+  ]
+}

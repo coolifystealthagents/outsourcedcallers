@@ -1,0 +1,25 @@
+{
+  "date": "2026-08-19",
+  "articles": [
+    {
+      "route": "/research/outbound-calling-source-quality-evidence-research",
+      "source": "content/research/outbound-calling-source-quality-evidence-research.md"
+    },
+    {
+      "route": "/research/outbound-calling-exception-aging-patterns-research",
+      "source": "content/research/outbound-calling-exception-aging-patterns-research.md"
+    },
+    {
+      "route": "/research/outbound-calling-review-consistency-research",
+      "source": "content/research/outbound-calling-review-consistency-research.md"
+    },
+    {
+      "route": "/research/outbound-calling-access-governance-research",
+      "source": "content/research/outbound-calling-access-governance-research.md"
+    },
+    {
+      "route": "/research/outbound-calling-handoff-reliability-research",
+      "source": "content/research/outbound-calling-handoff-reliability-research.md"
+    }
+  ]
+}

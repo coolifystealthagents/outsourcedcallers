@@ -1,0 +1,65 @@
+{
+  "generator": "built-in image_gen (Gemini-generated hero batch receipt)",
+  "assets": [
+    {
+      "route": "/blog/filipino-caller-queue-release-gate",
+      "image": "/blog-heroes/filipino-caller-queue-release-gate.png",
+      "prompt": "Editorial illustration for filipino caller queue release gate in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/appointment-setting-calendar-intent-brief",
+      "image": "/blog-heroes/appointment-setting-calendar-intent-brief.png",
+      "prompt": "Editorial illustration for appointment setting calendar intent brief in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/lead-qualification-problem-statement-context",
+      "image": "/blog-heroes/lead-qualification-problem-statement-context.png",
+      "prompt": "Editorial illustration for lead qualification problem statement context in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/inbound-call-callback-availability-note",
+      "image": "/blog-heroes/inbound-call-callback-availability-note.png",
+      "prompt": "Editorial illustration for inbound call callback availability note in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/customer-follow-up-commitment-decision-log",
+      "image": "/blog-heroes/customer-follow-up-commitment-decision-log.png",
+      "prompt": "Editorial illustration for customer follow up commitment decision log in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/outbound-calling-outcome-state-ledger",
+      "image": "/blog-heroes/outbound-calling-outcome-state-ledger.png",
+      "prompt": "Editorial illustration for outbound calling outcome state ledger in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/filipino-caller-coaching-correction-loop",
+      "image": "/blog-heroes/filipino-caller-coaching-correction-loop.png",
+      "prompt": "Editorial illustration for filipino caller coaching correction loop in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/appointment-setting-participant-constraint-note",
+      "image": "/blog-heroes/appointment-setting-participant-constraint-note.png",
+      "prompt": "Editorial illustration for appointment setting participant constraint note in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/customer-follow-up-sequence-exit-criteria",
+      "image": "/blog-heroes/customer-follow-up-sequence-exit-criteria.png",
+      "prompt": "Editorial illustration for customer follow up sequence exit criteria in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/order-confirmation-item-count-reconciliation",
+      "image": "/blog-heroes/order-confirmation-item-count-reconciliation.png",
+      "prompt": "Editorial illustration for order confirmation item count reconciliation in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/database-verification-source-lineage-note",
+      "image": "/blog-heroes/database-verification-source-lineage-note.png",
+      "prompt": "Editorial illustration for database verification source lineage note in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    },
+    {
+      "route": "/blog/renewal-reminder-contact-window-exception",
+      "image": "/blog-heroes/renewal-reminder-contact-window-exception.png",
+      "prompt": "Editorial illustration for renewal reminder contact window exception in a controlled Filipino calling workflow, wide composition, no readable text, logos, or watermark."
+    }
+  ]
+}

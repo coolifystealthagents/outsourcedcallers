@@ -1,0 +1,7 @@
+[
+  {"route":"/research/outbound-calling-queue-sample-reliability-research","sourcePaths":["app/aug21-research.ts"]},
+  {"route":"/research/appointment-setting-meeting-readiness-evidence-research","sourcePaths":["app/aug21-research.ts"]},
+  {"route":"/research/outsourced-caller-handoff-evidence-clarity-research","sourcePaths":["app/aug21-research.ts"]},
+  {"route":"/research/survey-calling-response-process-evidence-research","sourcePaths":["app/aug21-research.ts"]},
+  {"route":"/research/multilingual-call-clarification-fidelity-research","sourcePaths":["app/aug21-research.ts"]}
+]

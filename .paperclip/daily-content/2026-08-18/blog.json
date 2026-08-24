@@ -1,0 +1,28 @@
+{
+  "campaignDate": "2026-08-18",
+  "family": "blog",
+  "entries": [
+    {"route":"/blog/filipino-caller-daily-capacity-board","sourcePaths":["app/aug19-blog/aug19-ops-filipino-caller-queue-release-notes.ts"]},
+    {"route":"/blog/appointment-setting-meeting-purpose-confirmation","sourcePaths":["app/aug19-blog/aug19-ops-appointment-setting-precall-research-boundary.ts"]},
+    {"route":"/blog/lead-qualification-timing-signal","sourcePaths":["app/aug19-blog/aug19-ops-lead-qualification-problem-statement-capture.ts"]},
+    {"route":"/blog/inbound-call-safe-callback-number","sourcePaths":["app/aug19-blog/aug19-ops-inbound-call-message-completeness-check.ts"]},
+    {"route":"/blog/customer-follow-up-open-loop-register","sourcePaths":["app/aug19-blog/aug19-ops-customer-follow-up-next-action-ownership.ts"]},
+    {"route":"/blog/outbound-calling-attempt-limit-review","sourcePaths":["app/aug19-blog/aug19-ops-outbound-calling-list-hygiene-before-retry.ts"]},
+    {"route":"/blog/filipino-caller-script-version-check","sourcePaths":["app/aug19-blog/aug19-ops-filipino-caller-brief-change-handoff.ts"]},
+    {"route":"/blog/appointment-setting-attendee-role-capture","sourcePaths":["app/aug19-blog/aug19-ops-appointment-setting-calendar-context-note.ts"]},
+    {"route":"/blog/customer-follow-up-callback-window-record","sourcePaths":["app/aug19-blog/aug19-ops-customer-follow-up-preferred-channel-record.ts"]},
+    {"route":"/blog/order-confirmation-address-change-request","sourcePaths":["app/aug19-blog/aug19-ops-order-confirmation-item-quantity-readback.ts"]},
+    {"route":"/blog/database-verification-duplicate-email-check","sourcePaths":["app/aug19-blog/aug19-ops-database-verification-field-source-trace.ts"]},
+    {"route":"/blog/renewal-reminder-preference-change-capture","sourcePaths":["app/aug19-blog/aug19-ops-renewal-reminder-contact-window-note.ts"]},
+    {"route":"/blog/win-back-feedback-vs-permission","sourcePaths":["app/aug19-blog/aug19-ops-win-back-call-reason-categorization.ts"]},
+    {"route":"/blog/survey-calling-clarification-limit","sourcePaths":["app/aug19-blog/aug19-ops-survey-caller-neutral-probe-sequence.ts"]},
+    {"route":"/blog/reception-overflow-message-deadline","sourcePaths":["app/aug19-blog/aug19-ops-reception-overflow-transfer-context-card.ts"]},
+    {"route":"/blog/outbound-calling-opt-out-source-note","sourcePaths":["app/aug19-blog/aug19-ops-outbound-calling-optout-scope-confirmation.ts"]},
+    {"route":"/blog/filipino-caller-record-lock-escalation","sourcePaths":["app/aug19-blog/aug19-ops-filipino-caller-stale-record-pause.ts"]},
+    {"route":"/blog/appointment-setting-reschedule-reason-note","sourcePaths":["app/aug19-blog/aug19-ops-appointment-setting-reschedule-constraint-note.ts"]},
+    {"route":"/blog/inbound-call-language-preference-route","sourcePaths":["app/aug19-blog/aug19-ops-inbound-call-language-support-handoff.ts"]},
+    {"route":"/blog/call-quality-silence-interpretation-check","sourcePaths":["app/aug19-blog/aug19-ops-call-quality-evidence-linked-score.ts"]},
+    {"route":"/blog/daily-calling-end-of-day-reconciliation","sourcePaths":["app/aug19-blog/aug19-ops-daily-calling-exception-ledger.ts"]},
+    {"route":"/blog/outsourced-calling-approval-boundary-map","sourcePaths":["app/aug19-blog/aug19-ops-outsourced-caller-escalation-ladder.ts"]}
+  ]
+}

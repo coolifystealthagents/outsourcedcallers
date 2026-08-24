@@ -1,0 +1,1 @@
+Hero image prompt receipts for the August 21, 2026 Blog batch. Each route uses a distinct editorial illustration brief centered on Filipino calling operations, with no stock imagery, people-identifying detail, text overlays, or reused composition.

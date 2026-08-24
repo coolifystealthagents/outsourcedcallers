@@ -1,14 +1,12 @@
 {
   "campaignDate": "2026-08-23",
   "family": "research",
-  "repository": "coolifystealthagents/outsourcedcallers",
-  "branch": "main",
+  "imagePolicy": "Gemini unavailable in repository worker; text-complete fallback, no stock or substituted new imagery",
   "entries": [
-    {"route":"/research/lead-qualification-call-disposition-reliability-study-2026","sourcePaths":["app/aug23-research.ts"]},
-    {"route":"/research/appointment-setting-calendar-handoff-evidence-study-2026","sourcePaths":["app/aug23-research.ts"]},
-    {"route":"/research/inbound-overflow-call-urgency-triage-research-2026","sourcePaths":["app/aug23-research.ts"]},
-    {"route":"/research/customer-follow-up-consent-suppression-evidence-study-2026","sourcePaths":["app/aug23-research.ts"]},
-    {"route":"/research/database-verification-call-data-minimization-research-2026","sourcePaths":["app/aug23-research.ts"]}
-  ],
-  "imageStatus": "Gemini unavailable in this repository worker; existing route imagery preserved and no stock or substitute imagery added."
+    { "route": "/research/outsourced-calling-contact-window-survival-research", "sourcePaths": ["app/aug23-research.ts"], "imagePath": null, "imagePromptReceipt": "Gemini unavailable; no image generated" },
+    { "route": "/research/call-disposition-denominator-integrity-research", "sourcePaths": ["app/aug23-research.ts"], "imagePath": null, "imagePromptReceipt": "Gemini unavailable; no image generated" },
+    { "route": "/research/filipino-caller-escalation-latency-research", "sourcePaths": ["app/aug23-research.ts"], "imagePath": null, "imagePromptReceipt": "Gemini unavailable; no image generated" },
+    { "route": "/research/appointment-setting-timezone-error-research", "sourcePaths": ["app/aug23-research.ts"], "imagePath": null, "imagePromptReceipt": "Gemini unavailable; no image generated" },
+    { "route": "/research/order-confirmation-item-quantity-reconciliation-research", "sourcePaths": ["app/aug23-research.ts"], "imagePath": null, "imagePromptReceipt": "Gemini unavailable; no image generated" }
+  ]
 }

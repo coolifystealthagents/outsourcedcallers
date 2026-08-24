@@ -1,19 +1,106 @@
-import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
-import { Header, Footer, CTA, JsonLd } from '../../components';
-import { researchPosts, site } from '../../data';
-
-export function generateStaticParams() { return researchPosts.map((p) => ({ slug: p.slug })); }
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-  const { slug } = await params; const p = researchPosts.find((x) => x.slug === slug); if (!p) return {};
-  const url = p.canonical ?? `https://${String(site.domain).toLowerCase()}/research/${p.slug}`;
-  return { title: p.title, description: p.excerpt, alternates: { canonical: url }, openGraph: { title: p.title, description: p.excerpt, url, type: 'article' } };
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import { Header, Footer, CTA } from "../../components";
+import { researchPosts, site } from "../../data";
+const formatPublicDate = (date?: string) =>
+  !date || !/^\d{4}-\d{2}-\d{2}$/.test(date)
+    ? (date ?? "")
+    : new Intl.DateTimeFormat("en-US", {
+        month: "long",
+        day: "numeric",
+        year: "numeric",
+        timeZone: "UTC",
+      }).format(new Date(`${date}T00:00:00Z`));
+export function generateStaticParams() {
+  return researchPosts.map((p) => ({ slug: p.slug }));
 }
-export default async function ResearchPost({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params; const p = researchPosts.find((x) => x.slug === slug); if (!p) notFound();
-  const url = p.canonical ?? `https://${String(site.domain).toLowerCase()}/research/${p.slug}`;
-  const published = p.datePublished ?? p.published;
-  const schema = { '@context': 'https://schema.org', '@type': 'Article', headline: p.title, description: p.excerpt, datePublished: published, dateModified: published, mainEntityOfPage: url, url, citation: (p.sources ?? []).map((s) => s.url), author: { '@type': 'Organization', name: site.brand, url: `https://${String(site.domain).toLowerCase()}` } };
-  const label = new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }).format(new Date(`${published}T00:00:00Z`));
-  return <><Header /><main className="section"><JsonLd data={schema} /><article className="container guide-article"><p className="eyebrow">Philippines staffing research</p><h1>{p.title}</h1><p className="lead">{p.excerpt}</p><p className="article-meta">Published {label} · Evidence-first research</p><img className="sa-booking-image" src="/thank-you-hero.png" alt="Outsourced callers research workflow" width="619" height="402" /><div className="card">{p.body.map((x) => <p key={x}>{x}</p>)}<h2>Sources</h2><ul>{(p.sources ?? []).map((s) => <li key={s.url}><a href={s.url} rel="noopener noreferrer" target="_blank">{s.name}</a></li>)}</ul><p><a href="/contact">Discuss a controlled Philippines calling workflow →</a></p></div></article><CTA /></main><Footer /></>;
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const p = researchPosts.find((x) => x.slug === slug);
+  if (!p) return {};
+  return {
+    title: p.title,
+    description: p.excerpt,
+    alternates: {
+      canonical: `https://${site.domain.toLowerCase()}/research/${p.slug}`,
+    },
+  };
+}
+export default async function ResearchPost({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const p = researchPosts.find((x) => x.slug === slug);
+  if (!p) notFound();
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: p.title,
+    datePublished: p.published,
+    dateModified: p.published,
+    mainEntityOfPage: `https://${site.domain.toLowerCase()}/research/${p.slug}`,
+  };
+  return (
+    <>
+      <Header />
+      <main className="section">
+        <article className="container guide-article">
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+          />
+          <p className="eyebrow">Philippines staffing research</p>
+          <h1>{p.title}</h1>
+          <p className="lead">{p.excerpt}</p>
+          <p className="article-meta">
+            <time dateTime={p.published}>
+              Published {formatPublicDate(p.published)}
+            </time>{" "}
+            · Evidence-first research
+          </p>
+          <img
+            className="sa-booking-image"
+            src={p.image ?? "/thank-you-hero.png"}
+            alt="Outsourced callers research workflow"
+            width="619"
+            height="402"
+          />
+          <div className="card">
+            {p.body.map((x) => (
+              <p key={x}>
+                {x.startsWith("Sources:") ? (
+                  <>
+                    <strong>Sources:</strong>{" "}
+                    {x.slice("Sources:".length).trim()}
+                  </>
+                ) : (
+                  x
+                )}
+              </p>
+            ))}
+            {p.handoff && (
+              <aside className="support-strip">
+                <h2>Put the finding into practice</h2>
+                <p>{p.handoff.text}</p>
+                <a href={p.handoff.href}>{p.handoff.label}</a>
+              </aside>
+            )}
+            <p>
+              <a href="/contact">
+                Discuss a controlled Philippines calling workflow →
+              </a>
+            </p>
+          </div>
+        </article>
+        <CTA />
+      </main>
+      <Footer />
+    </>
+  );
 }

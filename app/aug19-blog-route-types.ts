@@ -1,0 +1,1 @@
+export type RoutePost = { slug: string; title: string; excerpt: string; minutes: number; published: '2026-08-19'; focus: string; question: string; owner: string; angles: readonly string[]; sourceBody: string };
