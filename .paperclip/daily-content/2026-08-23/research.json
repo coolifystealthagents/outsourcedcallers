@@ -1,0 +1,12 @@
+{
+  "campaignDate": "2026-08-23",
+  "family": "research",
+  "imagePolicy": "Gemini unavailable in repository worker; text-complete fallback, no stock or substituted new imagery",
+  "entries": [
+    { "route": "/research/outsourced-calling-contact-window-survival-research", "sourcePaths": ["app/aug23-research.ts"], "imagePath": null, "imagePromptReceipt": "Gemini unavailable; no image generated" },
+    { "route": "/research/call-disposition-denominator-integrity-research", "sourcePaths": ["app/aug23-research.ts"], "imagePath": null, "imagePromptReceipt": "Gemini unavailable; no image generated" },
+    { "route": "/research/filipino-caller-escalation-latency-research", "sourcePaths": ["app/aug23-research.ts"], "imagePath": null, "imagePromptReceipt": "Gemini unavailable; no image generated" },
+    { "route": "/research/appointment-setting-timezone-error-research", "sourcePaths": ["app/aug23-research.ts"], "imagePath": null, "imagePromptReceipt": "Gemini unavailable; no image generated" },
+    { "route": "/research/order-confirmation-item-quantity-reconciliation-research", "sourcePaths": ["app/aug23-research.ts"], "imagePath": null, "imagePromptReceipt": "Gemini unavailable; no image generated" }
+  ]
+}
