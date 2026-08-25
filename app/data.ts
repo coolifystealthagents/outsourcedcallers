@@ -1535,7 +1535,7 @@ function makeResearchPost([slug, title, excerpt]: readonly [string, string, stri
     'Related Research: Queue design; Call quality review; Daily reporting.', `Sources (10): ${researchSources.join(' | ')}`
   ] };
 }
-export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; image?: string; handoff?: { href: string; label: string; text: string } }> = [
+export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; updated?: string; image?: string; handoff?: { href: string; label: string; text: string } }> = [
   ...aug23ResearchPosts,
   ...aug21ResearchPosts,
   ...aug20ResearchPosts,

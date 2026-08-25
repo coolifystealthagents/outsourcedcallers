@@ -43,7 +43,7 @@ export default async function ResearchPost({
     "@type": "Article",
     headline: p.title,
     datePublished: p.published,
-    dateModified: p.published,
+    dateModified: p.updated ?? p.published,
     mainEntityOfPage: `https://${site.domain.toLowerCase()}/research/${p.slug}`,
   };
   return (
@@ -62,7 +62,7 @@ export default async function ResearchPost({
             <time dateTime={p.published}>
               Published {formatPublicDate(p.published)}
             </time>{" "}
-            · Evidence-first research
+            {p.updated && <> · Updated <time dateTime={p.updated}>{formatPublicDate(p.updated)}</time></>} · Evidence-first research
           </p>
           <img
             className="sa-booking-image"
