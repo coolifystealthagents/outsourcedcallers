@@ -1,0 +1,14 @@
+{
+  "campaignDate": "2026-08-31",
+  "family": "research",
+  "count": 5,
+  "humanizer": "humanizer 2.9.1 embedded-mode editorial pass",
+  "imagePolicy": "Existing editorial fallback image; no substituted stock imagery",
+  "entries": [
+    {"route":"/research/callback-window-reconfirmation-research","sourcePaths":["app/aug31-research.ts"]},
+    {"route":"/research/warm-transfer-completion-evidence-research","sourcePaths":["app/aug31-research.ts"]},
+    {"route":"/research/lead-qualification-unknown-field-research","sourcePaths":["app/aug31-research.ts"]},
+    {"route":"/research/suppression-list-sync-lag-research","sourcePaths":["app/aug31-research.ts"]},
+    {"route":"/research/call-note-correction-provenance-research","sourcePaths":["app/aug31-research.ts"]}
+  ]
+}

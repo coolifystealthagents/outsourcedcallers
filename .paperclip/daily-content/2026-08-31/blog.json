@@ -1,0 +1,21 @@
+{
+  "campaignDate": "2026-08-31",
+  "family": "blog",
+  "count": 12,
+  "humanizer": "humanizer 2.9.1 embedded-mode editorial pass",
+  "imagePolicy": "Existing editorial fallback image; no substituted stock imagery",
+  "entries": [
+    {"route":"/blog/appointment-setting-no-show-recovery-brief","sourcePaths":["app/aug31-blog.ts"]},
+    {"route":"/blog/customer-follow-up-owner-response-window","sourcePaths":["app/aug31-blog.ts"]},
+    {"route":"/blog/inbound-call-warm-transfer-fallback","sourcePaths":["app/aug31-blog.ts"]},
+    {"route":"/blog/outbound-calling-list-expiry-review","sourcePaths":["app/aug31-blog.ts"]},
+    {"route":"/blog/lead-qualification-budget-language-boundary","sourcePaths":["app/aug31-blog.ts"]},
+    {"route":"/blog/database-verification-duplicate-record-hold","sourcePaths":["app/aug31-blog.ts"]},
+    {"route":"/blog/renewal-reminder-cancellation-request-route","sourcePaths":["app/aug31-blog.ts"]},
+    {"route":"/blog/order-confirmation-address-change-hold","sourcePaths":["app/aug31-blog.ts"]},
+    {"route":"/blog/survey-calling-partial-completion-code","sourcePaths":["app/aug31-blog.ts"]},
+    {"route":"/blog/win-back-call-prior-complaint-route","sourcePaths":["app/aug31-blog.ts"]},
+    {"route":"/blog/filipino-caller-script-exception-note","sourcePaths":["app/aug31-blog.ts"]},
+    {"route":"/blog/call-quality-review-coaching-closure","sourcePaths":["app/aug31-blog.ts"]}
+  ]
+}
