@@ -1,0 +1,21 @@
+{
+  "campaignDate": "2026-09-01",
+  "family": "blog",
+  "count": 12,
+  "humanizer": "humanizer 2.9.1 editorial pass",
+  "imagePolicy": "Existing editorial fallback image; no new image assets",
+  "entries": [
+    {"route":"/blog/appointment-setting-agenda-change-confirmation","sourcePaths":["app/sep01-blog.ts"]},
+    {"route":"/blog/customer-follow-up-unresolved-answer-handoff","sourcePaths":["app/sep01-blog.ts"]},
+    {"route":"/blog/inbound-call-caller-identity-uncertainty-note","sourcePaths":["app/sep01-blog.ts"]},
+    {"route":"/blog/outbound-calling-wrong-number-suppression-route","sourcePaths":["app/sep01-blog.ts"]},
+    {"route":"/blog/lead-qualification-decision-timeline-note","sourcePaths":["app/sep01-blog.ts"]},
+    {"route":"/blog/database-verification-source-conflict-escalation","sourcePaths":["app/sep01-blog.ts"]},
+    {"route":"/blog/renewal-reminder-invoice-question-handoff","sourcePaths":["app/sep01-blog.ts"]},
+    {"route":"/blog/order-confirmation-item-substitution-request","sourcePaths":["app/sep01-blog.ts"]},
+    {"route":"/blog/survey-calling-answer-correction-log","sourcePaths":["app/sep01-blog.ts"]},
+    {"route":"/blog/win-back-call-offer-eligibility-boundary","sourcePaths":["app/sep01-blog.ts"]},
+    {"route":"/blog/reception-overflow-sensitive-message-minimization","sourcePaths":["app/sep01-blog.ts"]},
+    {"route":"/blog/call-quality-review-disputed-score-note","sourcePaths":["app/sep01-blog.ts"]}
+  ]
+}

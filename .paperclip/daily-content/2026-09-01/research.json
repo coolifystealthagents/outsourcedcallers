@@ -1,0 +1,14 @@
+{
+  "campaignDate": "2026-09-01",
+  "family": "research",
+  "count": 5,
+  "humanizer": "humanizer 2.9.1 editorial pass",
+  "imagePolicy": "Existing editorial fallback image; no new image assets",
+  "entries": [
+    {"route":"/research/outbound-call-retry-consent-state-research","sourcePaths":["app/sep01-research.ts"]},
+    {"route":"/research/appointment-setting-held-meeting-attribution-research","sourcePaths":["app/sep01-research.ts"]},
+    {"route":"/research/customer-follow-up-resolution-time-clock-research","sourcePaths":["app/sep01-research.ts"]},
+    {"route":"/research/call-quality-rater-disagreement-research","sourcePaths":["app/sep01-research.ts"]},
+    {"route":"/research/inbound-message-urgency-label-validity-research","sourcePaths":["app/sep01-research.ts"]}
+  ]
+}
