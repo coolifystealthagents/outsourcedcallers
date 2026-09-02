@@ -1,0 +1,14 @@
+{
+  "campaignDate": "2026-09-02",
+  "family": "research",
+  "count": 5,
+  "humanizer": "humanizer 2.9.1 editorial pass",
+  "imagePolicy": "Existing approved site assets only; no new image assets",
+  "entries": [
+    {"route":"/research/appointment-setting-time-zone-error-rate-research","sourcePaths":["app/sep02-research.ts"]},
+    {"route":"/research/outbound-wrong-party-suppression-latency-research","sourcePaths":["app/sep02-research.ts"]},
+    {"route":"/research/customer-follow-up-reopened-case-measurement-research","sourcePaths":["app/sep02-research.ts"]},
+    {"route":"/research/survey-partial-completion-bias-review","sourcePaths":["app/sep02-research.ts"]},
+    {"route":"/research/call-recording-gap-score-impact-research","sourcePaths":["app/sep02-research.ts"]}
+  ]
+}

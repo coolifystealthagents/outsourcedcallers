@@ -1,0 +1,21 @@
+{
+  "campaignDate": "2026-09-02",
+  "family": "blog",
+  "count": 12,
+  "humanizer": "humanizer 2.9.1 editorial pass",
+  "imagePolicy": "Existing approved site assets only; no new image assets",
+  "entries": [
+    {"route":"/blog/appointment-setting-time-zone-readback-routine","sourcePaths":["app/sep02-blog.ts"]},
+    {"route":"/blog/outbound-call-voicemail-name-mismatch-stop","sourcePaths":["app/sep02-blog.ts"]},
+    {"route":"/blog/customer-follow-up-promised-callback-missed-route","sourcePaths":["app/sep02-blog.ts"]},
+    {"route":"/blog/inbound-call-transfer-returned-to-queue","sourcePaths":["app/sep02-blog.ts"]},
+    {"route":"/blog/lead-qualification-budget-refusal-note","sourcePaths":["app/sep02-blog.ts"]},
+    {"route":"/blog/database-verification-former-employee-contact","sourcePaths":["app/sep02-blog.ts"]},
+    {"route":"/blog/renewal-reminder-contract-owner-changed","sourcePaths":["app/sep02-blog.ts"]},
+    {"route":"/blog/order-confirmation-address-correction-boundary","sourcePaths":["app/sep02-blog.ts"]},
+    {"route":"/blog/survey-call-partial-completion-close","sourcePaths":["app/sep02-blog.ts"]},
+    {"route":"/blog/win-back-call-current-customer-discovery","sourcePaths":["app/sep02-blog.ts"]},
+    {"route":"/blog/reception-overflow-repeat-caller-linking","sourcePaths":["app/sep02-blog.ts"]},
+    {"route":"/blog/call-quality-review-audio-gap-disposition","sourcePaths":["app/sep02-blog.ts"]}
+  ]
+}

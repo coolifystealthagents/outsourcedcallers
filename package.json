@@ -7,7 +7,8 @@
     "start": "next start -H 0.0.0.0 -p 3000",
     "lint": "tsc --noEmit",
     "validate:routines": "node scripts/validate-routine-manifest.mjs",
-    "validate:sep01": "node scripts/validate-sep01-content.mjs"
+    "validate:sep01": "node scripts/validate-sep01-content.mjs",
+    "validate:sep02": "node scripts/validate-sep02-content.mjs"
   },
   "dependencies": {
     "@next/third-parties": "^15.1.6",
