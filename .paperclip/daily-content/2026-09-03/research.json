@@ -1,0 +1,6 @@
+{"campaignDate":"2026-09-03","family":"research","imagePolicy":"Gemini unavailable; text-complete fallback, no stock imagery","entries":[
+{"route":"/research/inbound-repeat-contact-linkage-research","sourcePaths":["app/sep03-research.ts"],"imagePath":null,"imagePromptReceipt":"Gemini unavailable"},
+{"route":"/research/outbound-script-disclosure-order-recall-research","sourcePaths":["app/sep03-research.ts"],"imagePath":null,"imagePromptReceipt":"Gemini unavailable"},
+{"route":"/research/customer-followup-promised-action-ownership-research","sourcePaths":["app/sep03-research.ts"],"imagePath":null,"imagePromptReceipt":"Gemini unavailable"},
+{"route":"/research/survey-breakoff-position-bias-research","sourcePaths":["app/sep03-research.ts"],"imagePath":null,"imagePromptReceipt":"Gemini unavailable"},
+{"route":"/research/event-registration-waitlist-authority-research","sourcePaths":["app/sep03-research.ts"],"imagePath":null,"imagePromptReceipt":"Gemini unavailable"}]}

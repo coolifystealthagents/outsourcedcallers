@@ -20,6 +20,7 @@ import { sep01BlogPosts, sep01BlogDetails } from './sep01-blog';
 import { sep01ResearchPosts } from './sep01-research';
 import { sep02BlogPosts, sep02BlogDetails } from './sep02-blog';
 import { sep02ResearchPosts } from './sep02-research';
+import { sep03ResearchPosts } from './sep03-research';
 
 export const site = {
   "domain": "OutsourcedCallers.com",
@@ -1559,6 +1560,7 @@ function makeResearchPost([slug, title, excerpt]: readonly [string, string, stri
   ] };
 }
 export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; updated?: string; image?: string; handoff?: { href: string; label: string; text: string } }> = [
+  ...sep03ResearchPosts,
   ...sep02ResearchPosts,
   ...sep01ResearchPosts,
   ...aug31ResearchPosts,
