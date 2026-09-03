@@ -1,0 +1,3 @@
+Campaign: 2026-09-03 blog
+Checked during repository authoring on 2026-09-03 UTC.
+Gemini image generation was not available in the execution workspace. The explicit text-complete fallback applies. No stock, template, retained, or uncertain image was assigned to any of the 12 new routes, and no unrelated image was modified.

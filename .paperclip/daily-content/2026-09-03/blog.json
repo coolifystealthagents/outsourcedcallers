@@ -1,0 +1,21 @@
+{
+  "campaignDate": "2026-09-03",
+  "family": "blog",
+  "count": 12,
+  "humanizer": "humanizer 2.9.1 editorial pass",
+  "imageStatus": "Gemini unavailable in execution workspace; text-complete fallback, no stock imagery used",
+  "entries": [
+    {"route":"/blog/filipino-caller-local-holiday-coverage-release","sourcePaths":["app/sep03-blog.ts"]},
+    {"route":"/blog/appointment-invitation-bounce-recovery","sourcePaths":["app/sep03-blog.ts"]},
+    {"route":"/blog/outbound-gatekeeper-callback-permission","sourcePaths":["app/sep03-blog.ts"]},
+    {"route":"/blog/customer-follow-up-multiple-owner-deadlock","sourcePaths":["app/sep03-blog.ts"]},
+    {"route":"/blog/inbound-after-hours-safety-boundary","sourcePaths":["app/sep03-blog.ts"]},
+    {"route":"/blog/lead-qualification-job-title-ambiguity","sourcePaths":["app/sep03-blog.ts"]},
+    {"route":"/blog/database-verification-shared-phone-line","sourcePaths":["app/sep03-blog.ts"]},
+    {"route":"/blog/event-registration-capacity-waitlist-handoff","sourcePaths":["app/sep03-blog.ts"]},
+    {"route":"/blog/renewal-reminder-legal-name-mismatch","sourcePaths":["app/sep03-blog.ts"]},
+    {"route":"/blog/order-confirmation-duplicate-order-concern","sourcePaths":["app/sep03-blog.ts"]},
+    {"route":"/blog/survey-language-switch-record","sourcePaths":["app/sep03-blog.ts"]},
+    {"route":"/blog/call-quality-background-noise-attribution","sourcePaths":["app/sep03-blog.ts"]}
+  ]
+}
