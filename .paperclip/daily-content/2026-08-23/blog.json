@@ -1,0 +1,21 @@
+{
+  "campaignDate": "2026-08-23",
+  "family": "blog",
+  "count": 12,
+  "humanizer": "humanizer 2.9.1 editorial pass",
+  "imageStatus": "Gemini unavailable in execution workspace; text-complete fallback, no stock imagery used",
+  "entries": [
+    {"route":"/blog/filipino-caller-shift-overlap-handoff-ledger","sourcePaths":["app/aug23-v8-blog.ts"]},
+    {"route":"/blog/live-call-escalation-wait-choice","sourcePaths":["app/aug23-v8-blog.ts"]},
+    {"route":"/blog/appointment-attendee-email-correction-check","sourcePaths":["app/aug23-v8-blog.ts"]},
+    {"route":"/blog/inbound-duplicate-message-linking-rule","sourcePaths":["app/aug23-v8-blog.ts"]},
+    {"route":"/blog/lead-qualification-competitor-mention-note","sourcePaths":["app/aug23-v8-blog.ts"]},
+    {"route":"/blog/database-verification-deceased-contact-hold","sourcePaths":["app/aug23-v8-blog.ts"]},
+    {"route":"/blog/event-registration-accessibility-request-route","sourcePaths":["app/aug23-v8-blog.ts"]},
+    {"route":"/blog/win-back-active-dispute-exclusion","sourcePaths":["app/aug23-v8-blog.ts"]},
+    {"route":"/blog/renewal-reminder-autopay-uncertainty-route","sourcePaths":["app/aug23-v8-blog.ts"]},
+    {"route":"/blog/order-confirmation-gift-recipient-privacy","sourcePaths":["app/aug23-v8-blog.ts"]},
+    {"route":"/blog/survey-proxy-respondent-boundary","sourcePaths":["app/aug23-v8-blog.ts"]},
+    {"route":"/blog/call-quality-silence-and-hold-scoring","sourcePaths":["app/aug23-v8-blog.ts"]}
+  ]
+}

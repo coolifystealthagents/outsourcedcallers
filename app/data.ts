@@ -12,6 +12,7 @@ import { aug20ResearchPosts } from './aug20-research';
 import { aug21BlogPosts, aug21BlogDetails } from './aug21-blog';
 import { aug21ResearchPosts } from './aug21-research';
 import { aug23BlogPosts, aug23BlogDetails } from './aug23-blog';
+import { aug23V8BlogPosts, aug23V8BlogDetails } from './aug23-v8-blog';
 import { aug23ResearchPosts } from './aug23-research';
 import { aug31BlogPosts, aug31BlogDetails } from './aug31-blog';
 import { aug31ResearchPosts } from './aug31-research';
@@ -191,6 +192,7 @@ blogPosts.push(...aug19SourceRepair9BlogPosts);
 blogPosts.push(...aug20BlogPosts);
 blogPosts.push(...aug21BlogPosts);
 blogPosts.push(...aug23BlogPosts);
+blogPosts.push(...aug23V8BlogPosts);
 blogPosts.push(...aug31BlogPosts);
 blogPosts.push(...sep01BlogPosts);
 blogPosts.push(...sep02BlogPosts);
@@ -1223,6 +1225,9 @@ for (const post of aug21BlogPosts) {
 }
 for (const post of aug23BlogPosts) {
   blogDetailRecord[post.slug] = (aug23BlogDetails as Record<string, unknown>)[post.slug] as never;
+}
+for (const post of aug23V8BlogPosts) {
+  blogDetailRecord[post.slug] = (aug23V8BlogDetails as Record<string, unknown>)[post.slug] as never;
 }
 for (const post of aug31BlogPosts) {
   blogDetailRecord[post.slug] = (aug31BlogDetails as Record<string, unknown>)[post.slug] as never;
