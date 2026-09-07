@@ -24,6 +24,8 @@ import { sep03ResearchPosts } from './sep03-research';
 import { sep03BlogPosts, sep03BlogDetails } from './sep03-blog';
 import { sep04BlogPosts, sep04BlogDetails } from './sep04-blog';
 import { sep04ResearchPosts } from './sep04-research';
+import { sep07BlogPosts, sep07BlogDetails } from './sep07-blog';
+import { sep07ResearchPosts } from './sep07-research';
 
 export const site = {
   "domain": "OutsourcedCallers.com",
@@ -202,6 +204,7 @@ blogPosts.push(...sep01BlogPosts);
 blogPosts.push(...sep02BlogPosts);
 blogPosts.push(...sep03BlogPosts);
 blogPosts.push(...sep04BlogPosts);
+blogPosts.push(...sep07BlogPosts);
 blogPosts.sort((a, b) => (('published' in b ? (b.published ?? '2026-07-28') : '2026-07-28').localeCompare('published' in a ? (a.published ?? '2026-07-28') : '2026-07-28')) || a.slug.localeCompare(b.slug));
 
 export const blogDetails = {
@@ -1250,6 +1253,9 @@ for (const post of sep03BlogPosts) {
 for (const post of sep04BlogPosts) {
   blogDetailRecord[post.slug] = (sep04BlogDetails as Record<string, unknown>)[post.slug] as never;
 }
+for (const post of sep07BlogPosts) {
+  blogDetailRecord[post.slug] = (sep07BlogDetails as Record<string, unknown>)[post.slug] as never;
+}
 
 export const staffingOffer = {
   partner: 'our Philippines staffing team',
@@ -1571,6 +1577,7 @@ function makeResearchPost([slug, title, excerpt]: readonly [string, string, stri
   ] };
 }
 export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; updated?: string; image?: string; handoff?: { href: string; label: string; text: string } }> = [
+  ...sep07ResearchPosts,
   ...sep03ResearchPosts,
   ...sep02ResearchPosts,
   ...sep04ResearchPosts,
