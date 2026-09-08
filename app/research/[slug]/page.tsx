@@ -28,6 +28,7 @@ export async function generateMetadata({
     alternates: {
       canonical: `https://${site.domain.toLowerCase()}/research/${p.slug}`,
     },
+    openGraph: { title: p.title, description: p.excerpt, type: 'article', url: 'https://' + site.domain.toLowerCase() + '/research/' + p.slug, images: [{ url: 'https://' + site.domain.toLowerCase() + (p.image ?? '/thank-you-hero.png') }] },
   };
 }
 export default async function ResearchPost({
