@@ -11,7 +11,8 @@
     "validate:sep02": "node scripts/validate-sep02-content.mjs",
     "validate:sep04": "node scripts/validate-sep04-content.mjs",
     "validate:sep07": "node scripts/validate-sep07-content.mjs",
-    "validate:sep09": "node scripts/validate-sep09-content.mjs"
+    "validate:sep09": "node scripts/validate-sep09-content.mjs",
+    "validate:sep10": "node scripts/validate-sep10-content.mjs"
   },
   "dependencies": {
     "@next/third-parties": "^15.1.6",
