@@ -61,7 +61,7 @@ export default async function ResearchPost({
           <p className="lead">{p.excerpt}</p>
           <p className="article-meta">
             <time dateTime={p.published}>
-              Published {formatPublicDate(p.published)}
+              Published: {formatPublicDate(p.published)}
             </time>{" "}
             {p.updated && <> · Updated <time dateTime={p.updated}>{formatPublicDate(p.updated)}</time></>} · Evidence-first research
           </p>
