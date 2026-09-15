@@ -16,9 +16,9 @@ The current typed service inventory contains these twelve pillars: Outbound Lead
 
 | Priority | Source research route | Existing service route | One reader question | Safe boundary | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | `/research/customer-follow-up-resolution-time-clock-research` | `/services/customer-follow-up-calls` | Which follow-up clock events should the team review before changing its workflow? | The customer operations owner defines starts, pauses, closure, and any exception policy. | Absent from the route-local handoff; review next. |
-| 2 | `/research/call-quality-rater-disagreement-research` | `/services/call-quality-review` | How can the team turn reviewer disagreement into a clearer call-quality rubric? | The quality assurance owner decides coaching, score use, and rubric changes. | Absent from the route-local handoff; hold until the first candidate is complete. |
-| 3 | `/research/inbound-message-urgency-label-validity-research` | `/services/inbound-call-handling` | What evidence should an inbound team keep before it relies on an urgency label? | The reception operations owner defines escalation rules and final routing decisions. | Absent from the route-local handoff; hold until a separate review. |
+| 1 | `/research/customer-follow-up-resolution-time-clock-research` | `/services/customer-follow-up-calls` | Which follow-up clock events should the team review before changing its workflow? | The customer operations owner defines starts, pauses, closure, and any exception policy. | Delivered locally by rendered-source commit `29d399b2d7f8537091cc32f1758912d7b0866562`; do not add a second CTA. |
+| 1 | `/research/call-quality-rater-disagreement-research` | `/services/call-quality-review` | How can the team turn reviewer disagreement into a clearer call-quality rubric? | The quality assurance owner decides coaching, score use, and rubric changes. | Verified absent from the route-local handoff in the 2026-09-15 production build; review next. |
+| 2 | `/research/inbound-message-urgency-label-validity-research` | `/services/inbound-call-handling` | What evidence should an inbound team keep before it relies on an urgency label? | The reception operations owner defines escalation rules and final routing decisions. | Verified absent from the route-local handoff in the 2026-09-15 production build; hold until the first candidate is complete. |
 
 ## Execution rule
 
