@@ -1,5 +1,5 @@
 {
-  "version": "2.4",
+  "version": "3.0",
   "site": "OutsourcedCallers.com",
   "repository": "coolifystealthagents/outsourcedcallers",
   "branch": "main",
@@ -14,9 +14,9 @@
       "concurrency": "skip_if_active",
       "catchUp": "skip_missed",
       "priority": "medium",
-      "randomTarget": { "minimum": 20, "maximum": 25 },
+      "randomTarget": { "minimum": 12, "maximum": 12 },
       "workflow": [
-        "select_and_record_random_target",
+        "confirm_exact_target_of_12",
         "topic_duplicate_canonical_and_intent_check",
         "brief_research_and_single_authoritative_external_source",
         "draft_existing_blog_data_model",
