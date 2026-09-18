@@ -1,0 +1,17 @@
+{
+  "publicationDate": "2026-09-18",
+  "family": "Research",
+  "runId": "OUTAAAAA-60",
+  "required": 5,
+  "timezone": "UTC",
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "branch": "main",
+  "sourcePath": "app/sep18-run2-research.ts",
+  "entries": [
+    { "topic": "Budget evidence in lead qualification", "slug": "lead-qualification-budget-evidence-research", "route": "/research/lead-qualification-budget-evidence-research", "service": "/services/outbound-lead-qualification", "wordCount": 1557, "contentHash": "3b237e30bf776d7de6d4f6a061e03bba753cf5e0110e6f9228424cc3139d71b9" },
+    { "topic": "After-hours reception data minimization", "slug": "reception-overflow-after-hours-privacy-research", "route": "/research/reception-overflow-after-hours-privacy-research", "service": "/services/reception-overflow", "wordCount": 1550, "contentHash": "554cadd088c5aa03ab6135e14153645ab9baf601e3477abda09564e383a97103" },
+    { "topic": "Appointment cancellation ownership", "slug": "appointment-cancellation-ownership-research", "route": "/research/appointment-cancellation-ownership-research", "service": "/services/appointment-setting", "wordCount": 1560, "contentHash": "d792805da0bc683f48d90c0f797204df9462cc4747fda919659bfd34cfe0c225" },
+    { "topic": "Customer promise reconciliation", "slug": "customer-follow-up-promise-reconciliation-research", "route": "/research/customer-follow-up-promise-reconciliation-research", "service": "/services/customer-follow-up-calls", "wordCount": 1561, "contentHash": "749982dd7ea5368f5a649231063ec5e7f7cc1f145a5f2e33237c769b30bb4a34" },
+    { "topic": "Outbound local contact-time controls", "slug": "outbound-calling-local-time-control-research", "route": "/research/outbound-calling-local-time-control-research", "service": "/services/outbound-lead-qualification", "wordCount": 1548, "contentHash": "15d1cad18d6bfef7e79f46c507d0fdb069ec6ab4deea3d48b01c6980adc56469" }
+  ]
+}
