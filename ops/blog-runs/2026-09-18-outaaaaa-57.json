@@ -7,7 +7,7 @@
   "repository": "coolifystealthagents/outsourcedcallers",
   "productionBranch": "main",
   "baseRemoteSha": "2caa8868a08eda668c1345b03d23c679a7373dc0",
-  "contentCommitSha": null,
+  "contentCommitSha": "6355bdf17fda89991fa4237cff63aa1b4bd17961",
   "deployment": { "resource": "Coolify3 application", "status": "pending", "evidence": null },
   "sources": [
     "https://privacy.gov.ph/data-privacy-act/",
