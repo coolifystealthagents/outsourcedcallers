@@ -93,7 +93,6 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
         description: post.excerpt,
         url,
         datePublished: detail.published,
-        dateModified: detail.published,
         author: { '@type': 'Organization', name: site.brand, url: `https://${String(site.domain).toLowerCase()}` },
         publisher: { '@type': 'Organization', name: site.brand, url: `https://${String(site.domain).toLowerCase()}` },
         articleSection: detail.sections.map((section) => section.heading),

@@ -1,4 +1,4 @@
-type Topic = {
+export type Topic = {
   slug: string; title: string; excerpt: string; question: string; buyer: string;
   queue: string; owner: string; evidence: string; boundary: string; example: string;
   metric: string; failure: string; service: string;
@@ -28,7 +28,7 @@ const sources = [
   {name:'FTC guidance for complying with the Telemarketing Sales Rule',url:'https://www.ftc.gov/business-guidance/resources/complying-telemarketing-sales-rule'}
 ];
 
-function detail(t: Topic) {
+export function makeBuyerGuideDetail(t: Topic, publicationDate = published) {
   const sections = [
     {heading:'Start with the decision, not the vendor pitch',paragraphs:[
       `${t.question} Start by writing down the decision the business needs to make and the queue that decision affects. For ${t.buyer}, the working unit should be ${t.queue}. That is more useful than a broad request for "calling support" because a provider can see the work, the limits, and the handoff that must happen after each conversation.`,
@@ -64,7 +64,7 @@ function detail(t: Topic) {
     ]}
   ];
   return {
-    published, mainKeyword:t.title, metaLabel:'Outsourced calling buyer guide',
+    published: publicationDate, mainKeyword:t.title, metaLabel:'Outsourced calling buyer guide',
     directAnswerHeading:t.question,
     summary:`Define ${t.queue}, keep the ${t.owner} accountable, test the workflow with real examples, and judge the provider on ${t.metric}. Expand only after the records, calls, notes, and handoffs agree.`,
     takeaways:[`Scope ${t.queue}.`,`Require ${t.evidence}.`,`Keep decisions with ${t.owner}.`,`Measure ${t.metric}.`],
@@ -95,4 +95,4 @@ function detail(t: Topic) {
 }
 
 export const sep18BlogPosts = topics.map(t => ({slug:t.slug,title:t.title,excerpt:t.excerpt,minutes:12,published,image:'/thank-you-hero.png'}));
-export const sep18BlogDetails = Object.fromEntries(topics.map(t => [t.slug,detail(t)]));
+export const sep18BlogDetails = Object.fromEntries(topics.map(t => [t.slug,makeBuyerGuideDetail(t)]));
