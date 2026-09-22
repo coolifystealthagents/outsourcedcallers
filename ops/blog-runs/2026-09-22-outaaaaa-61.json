@@ -1,0 +1,43 @@
+{
+  "runId": "OUTAAAAA-61",
+  "family": "Blog",
+  "requiredCount": 12,
+  "verifiedCount": 0,
+  "publicationTimezone": "UTC",
+  "publicationDate": null,
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "productionBranch": "main",
+  "baseRemoteSha": "3e94322da8635562773e4e20bf513d2eff428ef9",
+  "contentCommitSha": "ec41da754364e6b79df378344f307d3b231669e7",
+  "validation": {
+    "content": "PASS: 12 unique new topics, 900+ substantive words each, date and public-copy gates",
+    "typescript": "PASS",
+    "productionBuild": "PASS with pre-existing CSS autoprefixer warning"
+  },
+  "deployment": {
+    "resource": "Coolify3 application s535e0bdro67gjswf330t59e",
+    "status": "blocked",
+    "evidence": "Three authenticated deploy attempts returned HTTP 429: Deployment queue is full. Public transition checks remained 404.",
+    "recoveryAction": "Retry the existing application deployment after Coolify's shared queue drains, then verify all 12 URLs and replace this partial record with final evidence."
+  },
+  "sources": [
+    "https://privacy.gov.ph/data-privacy-act/",
+    "https://www.nist.gov/privacy-framework",
+    "https://www.nist.gov/cyberframework",
+    "https://www.ftc.gov/business-guidance/resources/complying-telemarketing-sales-rule"
+  ],
+  "articles": [
+    {"topic":"Appointment-setting pilot design","slug":"outsourced-appointment-setting-pilot-design","contentHash":"1180dfb989488a19b9961cdafc0bf1284c25a44df51fbfaa90e7553caaf2c17d","liveUrl":null,"verificationTime":null},
+    {"topic":"Inbound answering versus reception overflow","slug":"inbound-call-answering-vs-reception-overflow","contentHash":"ceff3039187e1982b06bfdb860919ab483edae33fb7aac28fb53e3058cf81b7d","liveUrl":null,"verificationTime":null},
+    {"topic":"Cold calling versus warm follow-up","slug":"cold-calling-vs-warm-follow-up-outsourcing","contentHash":"442784e6a700606c2b002b5fa21831c065f34479a997c5555ca2ea2133f39fe4","liveUrl":null,"verificationTime":null},
+    {"topic":"B2B lead qualification criteria","slug":"b2b-lead-qualification-criteria-framework","contentHash":"bcd5023f9dce566e3926f790213b2d850c27457286b0f23d2a6284677e2c03bf","liveUrl":null,"verificationTime":null},
+    {"topic":"Call center versus dedicated virtual caller","slug":"call-center-vs-dedicated-virtual-caller","contentHash":"fe6a4920639f855476dda91707ce4a647968c58a3d7a2f05f346919250b2f817","liveUrl":null,"verificationTime":null},
+    {"topic":"Philippines time-zone coverage","slug":"philippines-outsourced-caller-time-zone-coverage","contentHash":"998fd0515d6f02a25648661f4cc852e6f95cc8d9d23c9625b09593f7e8b318be","liveUrl":null,"verificationTime":null},
+    {"topic":"Calling KPI dashboard","slug":"outsourced-calling-kpi-dashboard","contentHash":"ff0e250b32a733348156c9e239a2d0de9794fee155970cd51241cb391f2f84c1","liveUrl":null,"verificationTime":null},
+    {"topic":"Caller background checks and due diligence","slug":"outsourced-caller-background-check-due-diligence","contentHash":"977d0fff147ba39212fe1a3ed60b19a26896e621779d0dfd4aceb6f0eb79486b","liveUrl":null,"verificationTime":null},
+    {"topic":"Calling script approval workflow","slug":"outsourced-calling-script-approval-workflow","contentHash":"147c019863a3dc69245f271f2b0c7bc7af01894d41c745d117b595a6337b450b","liveUrl":null,"verificationTime":null},
+    {"topic":"Calling data-processing checklist","slug":"outsourced-calling-data-processing-checklist","contentHash":"5d45328fef38a5d12b186d87d242bd244ebd081653931944c2097c1442f0b0bd","liveUrl":null,"verificationTime":null},
+    {"topic":"Calling escalation matrix","slug":"outsourced-calling-escalation-matrix","contentHash":"f00ad8cdcff2d2be22cdf1b455165bea9b2974d9f251d9959372078a8cc09706","liveUrl":null,"verificationTime":null},
+    {"topic":"Calling contract renewal decision","slug":"outsourced-calling-renewal-decision-checklist","contentHash":"eb3db14a1b6e1986f95ac040443cd145e2726a3928f7f881ec03075adf82e0f2","liveUrl":null,"verificationTime":null}
+  ]
+}
