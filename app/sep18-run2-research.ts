@@ -1,5 +1,5 @@
-type Source = { title: string; publisher: string; url: string; checked: string };
-type Study = { slug: string; title: string; excerpt: string; service: string; decision: string; unit: string; scenario: string; failure: string; owner: string; link: string; sources: Source[] };
+export type Source = { title: string; publisher: string; url: string; checked: string };
+export type Study = { slug: string; title: string; excerpt: string; service: string; decision: string; unit: string; scenario: string; failure: string; owner: string; link: string; sources: Source[] };
 
 const checked = '2026-09-18';
 const privacy: Source = { title: 'NIST Privacy Framework', publisher: 'National Institute of Standards and Technology', url: 'https://www.nist.gov/privacy-framework', checked };
@@ -17,7 +17,7 @@ const studies: Study[] = [
   { slug: 'outbound-calling-local-time-control-research', title: 'How should an outbound calling queue control local contact time?', excerpt: 'A queue-governance study for using contact location, timezone confidence, campaign rules, and suppression state before an outbound attempt.', service: 'outbound calling', decision: 'whether a record is eligible to dial now, needs timezone review, or must remain suppressed under the client’s approved contact-window policy', unit: 'one released contact record, its location source, derived timezone and confidence, campaign window, dial event, correction, suppression state, and owner disposition', scenario: 'A business record has a headquarters address in one timezone, a mobile number associated with another area, and a note that the contact travels. The queue cannot establish the person’s current location from those clues alone.', failure: 'a derived timezone is treated as known current location, daylight-saving changes are missed, or uncertain records are dialed because the queue lacks a review state between eligible and suppressed', owner: 'campaign or compliance owner', link: '/services/outbound-lead-qualification', sources: [tsr, calls, privacy, security, dpa] },
 ];
 
-function body(s: Study): string[] {
+export function buildResearchBody(s: Study): string[] {
   const sourceNames = s.sources.map((x) => `${x.title} — ${x.publisher}`).join('; ');
   return [
     `Research question and decision context. This study asks: ${s.title} For a business evaluating Filipino callers for ${s.service}, the operational decision is ${s.decision}. The question is intentionally narrower than whether calls are productive. A decision-grade answer must preserve what the released record showed, what the contact actually said, what the approved workflow allowed, and what a named client owner later decided. Familiarity, confidence, a clean disposition, or a plausible interpretation is not a substitute for evidence.`,
@@ -41,4 +41,4 @@ function body(s: Study): string[] {
   ];
 }
 
-export const sep18Run2ResearchPosts = studies.map((study) => ({ slug: study.slug, title: study.title, excerpt: study.excerpt, published: '2026-09-18' as const, image: '/thank-you-hero.png', body: body(study), handoff: { href: study.link, label: `Review ${study.service}`, text: `Use this protocol to define the evidence, decision boundaries, and owner handoff before planning ${study.service} with a Philippines-based team.` } }));
+export const sep18Run2ResearchPosts = studies.map((study) => ({ slug: study.slug, title: study.title, excerpt: study.excerpt, published: '2026-09-18' as const, image: '/thank-you-hero.png', body: buildResearchBody(study), handoff: { href: study.link, label: `Review ${study.service}`, text: `Use this protocol to define the evidence, decision boundaries, and owner handoff before planning ${study.service} with a Philippines-based team.` } }));

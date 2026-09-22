@@ -1,0 +1,17 @@
+{
+  "publicationDate": "2026-09-22",
+  "family": "Research",
+  "runId": "OUTAAAAA-62",
+  "required": 5,
+  "timezone": "UTC",
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "branch": "main",
+  "sourcePath": "app/sep22-research.ts",
+  "entries": [
+    { "topic": "Accessibility-request handoffs for event registration", "slug": "event-registration-accommodation-handoff-research", "route": "/research/event-registration-accommodation-handoff-research", "service": "/services/event-registration-calls", "wordCount": 1569, "contentHash": "7a21da7192619c4680fcc5b32375824922334dc1c74e0fe41fd9677d92be8173" },
+    { "topic": "Calibration drift in call quality review", "slug": "call-quality-calibration-drift-research", "route": "/research/call-quality-calibration-drift-research", "service": "/services/call-quality-review", "wordCount": 1560, "contentHash": "933cdadcd70282cf7bc0a027f4bd5d4955f26fcefb8077aedbc7354e69d59c84" },
+    { "topic": "Account-status freshness for renewal reminders", "slug": "renewal-reminder-status-freshness-research", "route": "/research/renewal-reminder-status-freshness-research", "service": "/services/renewal-reminder-calls", "wordCount": 1591, "contentHash": "252d50f3752cd96487a112d2699cf8310827fcc272ffd620c2b945ecaeaa790a" },
+    { "topic": "Decision evidence for order substitutions", "slug": "order-confirmation-substitution-boundary-research", "route": "/research/order-confirmation-substitution-boundary-research", "service": "/services/order-confirmation-calls", "wordCount": 1558, "contentHash": "1efd925b9db41e3130b4af8fd47d0c01919f90cebe0d5740b63f5796e3dfa019" },
+    { "topic": "Conflicting identity evidence in database verification", "slug": "database-verification-conflicting-identity-research", "route": "/research/database-verification-conflicting-identity-research", "service": "/services/database-verification-calls", "wordCount": 1575, "contentHash": "d804651f38294a8ed9f85df6f72c4926935b0da39778e7d0d056e9e684f2af88" }
+  ]
+}
