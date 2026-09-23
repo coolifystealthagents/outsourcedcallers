@@ -1,0 +1,17 @@
+{
+  "publicationDate": "2026-09-23",
+  "family": "Research",
+  "runId": "OUTAAAAA-64",
+  "required": 5,
+  "timezone": "UTC",
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "branch": "main",
+  "sourcePath": "app/sep23-research.ts",
+  "entries": [
+    { "topic": "Lead source recency before qualification calls", "slug": "lead-qualification-source-recency-research", "route": "/research/lead-qualification-source-recency-research", "service": "/services/outbound-lead-qualification", "wordCount": 1596, "contentHash": "90147405d702925438ea69e6234da0e404c7dc9d6c51bfc8527ed217e220a83d" },
+    { "topic": "Recovery after a failed reception transfer", "slug": "reception-failed-transfer-recovery-research", "route": "/research/reception-failed-transfer-recovery-research", "service": "/services/reception-overflow", "wordCount": 1557, "contentHash": "26627926f7d2c75468c4a51c4a1e42e0462bd0882244b6963744a38bfdbf9f74" },
+    { "topic": "Participant time-zone confirmation for appointments", "slug": "appointment-participant-timezone-confirmation-research", "route": "/research/appointment-participant-timezone-confirmation-research", "service": "/services/appointment-setting", "wordCount": 1560, "contentHash": "998cd8c1e2d4ebea9845894903891b8bccaa48edfd1b4645a898873317695b82" },
+    { "topic": "Customer follow-up continuity after owner changes", "slug": "customer-follow-up-owner-change-research", "route": "/research/customer-follow-up-owner-change-research", "service": "/services/customer-follow-up-calls", "wordCount": 1564, "contentHash": "5dbe4efdadc0525ad4eb58de1f75f1465440b0e4375ee9a6891c8f2f1a683f9b" },
+    { "topic": "Continuing partial telephone survey interviews", "slug": "survey-partial-interview-continuation-research", "route": "/research/survey-partial-interview-continuation-research", "service": "/services/survey-calling", "wordCount": 1561, "contentHash": "5c2cccf4f875f7b38098e3d6598e498dc01d683c14016fb3152eb36e4a41bc2b" }
+  ]
+}
