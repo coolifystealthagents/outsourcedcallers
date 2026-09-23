@@ -2,13 +2,13 @@
   "runId": "OUTAAAAA-64",
   "family": "Research",
   "requiredCount": 5,
-  "verifiedCount": 0,
+  "verifiedCount": 5,
   "publicationTimezone": "UTC",
-  "publicationDate": null,
+  "publicationDate": "2026-09-23",
   "repository": "coolifystealthagents/outsourcedcallers",
   "productionBranch": "main",
   "contentCommitSha": "758064e11dc0f52cc2e317a80330a31592e7c4e1",
-  "remoteSha": "a79ce0560c563cfbd967851aa5186465f93e747f",
+  "remoteSha": "9b400a64ee8d318addbc9981fa07151e6da9e532",
   "validation": {
     "content": "PASS: 5 unique new topics; 1,557-1,596 substantive words each; canonical, date, structured data, index, sitemap, service handoff, media, source, methodology, limitations, and public-copy gates",
     "typescript": "PASS",
@@ -17,16 +17,16 @@
   "deployment": {
     "resource": "Coolify3 application s535e0bdro67gjswf330t59e",
     "deploymentUuid": "zdy3y7jn1ciy9ybovahxq0js",
-    "status": "queued",
+    "status": "finished",
     "targetCommit": "a79ce0560c563cfbd967851aa5186465f93e747f",
-    "evidence": "The application commit pin was repaired from 3e94322da8635562773e4e20bf513d2eff428ef9 to the latest main SHA. The replacement deployment was accepted at 2026-09-23T16:42:11Z but remained queued with no build logs during bounded checks; public article URLs returned HTTP 404.",
-    "recoveryAction": "Coolify3 platform owner must drain the shared deployment queue. Resume by verifying deployment zdy3y7jn1ciy9ybovahxq0js finishes at the target commit, then verify every URL and add the five final entries to ops/research-topic-ledger.jsonl."
+    "finishedAt": "2026-09-23T17:57:20Z",
+    "evidence": "The application commit pin was repaired from 3e94322da8635562773e4e20bf513d2eff428ef9. Coolify finished the preserved batch deployment at the target commit, and production validation passed 5/5 at 2026-09-23T19:05:39Z."
   },
   "articles": [
-    {"topic":"Lead source recency before qualification calls","slug":"lead-qualification-source-recency-research","contentHash":"90147405d702925438ea69e6234da0e404c7dc9d6c51bfc8527ed217e220a83d","liveUrl":null,"verificationTime":null},
-    {"topic":"Recovery after a failed reception transfer","slug":"reception-failed-transfer-recovery-research","contentHash":"26627926f7d2c75468c4a51c4a1e42e0462bd0882244b6963744a38bfdbf9f74","liveUrl":null,"verificationTime":null},
-    {"topic":"Participant time-zone confirmation for appointments","slug":"appointment-participant-timezone-confirmation-research","contentHash":"998cd8c1e2d4ebea9845894903891b8bccaa48edfd1b4645a898873317695b82","liveUrl":null,"verificationTime":null},
-    {"topic":"Customer follow-up continuity after owner changes","slug":"customer-follow-up-owner-change-research","contentHash":"5dbe4efdadc0525ad4eb58de1f75f1465440b0e4375ee9a6891c8f2f1a683f9b","liveUrl":null,"verificationTime":null},
-    {"topic":"Continuing partial telephone survey interviews","slug":"survey-partial-interview-continuation-research","contentHash":"5c2cccf4f875f7b38098e3d6598e498dc01d683c14016fb3152eb36e4a41bc2b","liveUrl":null,"verificationTime":null}
+    {"topic":"Lead source recency before qualification calls","slug":"lead-qualification-source-recency-research","contentHash":"90147405d702925438ea69e6234da0e404c7dc9d6c51bfc8527ed217e220a83d","liveUrl":"https://outsourcedcallers.com/research/lead-qualification-source-recency-research","verificationTime":"2026-09-23T19:05:39Z"},
+    {"topic":"Recovery after a failed reception transfer","slug":"reception-failed-transfer-recovery-research","contentHash":"26627926f7d2c75468c4a51c4a1e42e0462bd0882244b6963744a38bfdbf9f74","liveUrl":"https://outsourcedcallers.com/research/reception-failed-transfer-recovery-research","verificationTime":"2026-09-23T19:05:39Z"},
+    {"topic":"Participant time-zone confirmation for appointments","slug":"appointment-participant-timezone-confirmation-research","contentHash":"998cd8c1e2d4ebea9845894903891b8bccaa48edfd1b4645a898873317695b82","liveUrl":"https://outsourcedcallers.com/research/appointment-participant-timezone-confirmation-research","verificationTime":"2026-09-23T19:05:39Z"},
+    {"topic":"Customer follow-up continuity after owner changes","slug":"customer-follow-up-owner-change-research","contentHash":"5dbe4efdadc0525ad4eb58de1f75f1465440b0e4375ee9a6891c8f2f1a683f9b","liveUrl":"https://outsourcedcallers.com/research/customer-follow-up-owner-change-research","verificationTime":"2026-09-23T19:05:39Z"},
+    {"topic":"Continuing partial telephone survey interviews","slug":"survey-partial-interview-continuation-research","contentHash":"5c2cccf4f875f7b38098e3d6598e498dc01d683c14016fb3152eb36e4a41bc2b","liveUrl":"https://outsourcedcallers.com/research/survey-partial-interview-continuation-research","verificationTime":"2026-09-23T19:05:39Z"}
   ]
 }

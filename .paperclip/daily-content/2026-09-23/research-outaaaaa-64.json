@@ -8,14 +8,14 @@
   "branch": "main",
   "sourcePath": "app/sep23-research.ts",
   "contentCommitSha": "758064e11dc0f52cc2e317a80330a31592e7c4e1",
-  "remoteSha": "a79ce0560c563cfbd967851aa5186465f93e747f",
-  "verifiedCount": 0,
+  "remoteSha": "9b400a64ee8d318addbc9981fa07151e6da9e532",
+  "verifiedCount": 5,
   "deployment": {
     "resource": "Coolify3 application s535e0bdro67gjswf330t59e",
     "deploymentUuid": "zdy3y7jn1ciy9ybovahxq0js",
-    "status": "queued",
-    "evidence": "Authenticated deployment targets a79ce0560c563cfbd967851aa5186465f93e747f but remained queued with zero build logs during bounded checks on 2026-09-23. All five public article routes remained unavailable and therefore count as unverified.",
-    "recoveryAction": "Coolify3 platform owner must drain the shared deployment queue. Resume by confirming deployment zdy3y7jn1ciy9ybovahxq0js finishes at a79ce0560c563cfbd967851aa5186465f93e747f, then live-verify all five routes and append final ledger entries."
+    "status": "finished",
+    "finishedAt": "2026-09-23T17:57:20Z",
+    "evidence": "Authenticated Coolify deployment finished at a79ce0560c563cfbd967851aa5186465f93e747f. Production validation at 2026-09-23T19:05:39Z verified all five routes, titles, unique content, canonicals, visible and structured publication dates, images, Research index entries, sitemap entries, sources, methodology, limitations, and service handoffs."
   },
   "entries": [
     { "topic": "Lead source recency before qualification calls", "slug": "lead-qualification-source-recency-research", "route": "/research/lead-qualification-source-recency-research", "service": "/services/outbound-lead-qualification", "wordCount": 1596, "contentHash": "90147405d702925438ea69e6234da0e404c7dc9d6c51bfc8527ed217e220a83d" },
