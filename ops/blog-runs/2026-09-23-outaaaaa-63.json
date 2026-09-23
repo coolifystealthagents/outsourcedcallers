@@ -16,9 +16,9 @@
   },
   "deployment": {
     "resource": "Coolify3 application s535e0bdro67gjswf330t59e",
-    "deploymentUuid": "cqpjmsbjpyk2llmfjocxbzvq",
+    "deploymentUuids": ["cqpjmsbjpyk2llmfjocxbzvq", "iukewmos3naaxmirmtomhdsw"],
     "status": "blocked",
-    "evidence": "Authenticated deployment request was accepted at 2026-09-23T16:25:08Z but remained queued with no build logs through 2026-09-23T16:28Z. The first public URL remained HTTP 404.",
+    "evidence": "Authenticated deployment requests were accepted at 2026-09-23T16:25:08Z and 2026-09-23T16:37:18Z. Both remained queued before build start with no logs, and the first public URL remained HTTP 404 through 2026-09-23T16:37:09Z.",
     "recoveryAction": "Coolify3 platform owner must drain the shared deployment queue. Resume this run by confirming the deployment fetches a19eff6f794607dd08e566d9de98569f143b8b7a, then verify all 12 URLs and replace this partial record with final evidence and ledger entries."
   },
   "sources": ["https://privacy.gov.ph/data-privacy-act/","https://www.nist.gov/privacy-framework","https://www.nist.gov/cyberframework","https://www.ftc.gov/business-guidance/resources/complying-telemarketing-sales-rule"],
