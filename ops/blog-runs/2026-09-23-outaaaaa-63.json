@@ -18,8 +18,8 @@
     "resource": "Coolify3 application s535e0bdro67gjswf330t59e",
     "deploymentUuids": ["cqpjmsbjpyk2llmfjocxbzvq", "iukewmos3naaxmirmtomhdsw"],
     "status": "blocked",
-    "evidence": "Authenticated deployment requests were accepted at 2026-09-23T16:25:08Z and 2026-09-23T16:37:18Z. Both remained queued before build start with no logs, and the first public URL remained HTTP 404 through 2026-09-23T16:37:09Z.",
-    "recoveryAction": "Coolify3 platform owner must drain the shared deployment queue. Resume this run by confirming the deployment fetches a19eff6f794607dd08e566d9de98569f143b8b7a, then verify all 12 URLs and replace this partial record with final evidence and ledger entries."
+    "evidence": "Rechecked at 2026-09-23T16:38Z. Deployment requests cqpjmsbjpyk2llmfjocxbzvq and iukewmos3naaxmirmtomhdsw remained queued before build start with no logs. Both Coolify records resolved stale commit 3e94322da8635562773e4e20bf513d2eff428ef9 even though authenticated Git reported origin/main at b94a62d007a357be08df9a1fd4c043ab2b977991, which contains content commit a19eff6f794607dd08e566d9de98569f143b8b7a. The first public article URL remained HTTP 404.",
+    "recoveryAction": "Coolify3 platform owner must drain the shared queue and repair or refresh this application's Git source resolution so a deployment fetches current origin/main b94a62d007a357be08df9a1fd4c043ab2b977991 (including content commit a19eff6f794607dd08e566d9de98569f143b8b7a). Then verify all 12 URLs and replace this partial record with final publication evidence and ledger entries."
   },
   "sources": ["https://privacy.gov.ph/data-privacy-act/","https://www.nist.gov/privacy-framework","https://www.nist.gov/cyberframework","https://www.ftc.gov/business-guidance/resources/complying-telemarketing-sales-rule"],
   "articles": [
