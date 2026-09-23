@@ -35,6 +35,7 @@ import { sep10ResearchPosts } from './sep10-research';
 import { sep11BlogPosts, sep11BlogDetails } from './sep11-blog';
 import { sep18BlogPosts, sep18BlogDetails } from './sep18-blog';
 import { sep22BlogPosts, sep22BlogDetails } from './sep22-blog';
+import { sep23BlogPosts, sep23BlogDetails } from './sep23-blog';
 import { sep11ResearchPosts } from './sep11-research';
 import { sep18Run2ResearchPosts } from './sep18-run2-research';
 import { sep22ResearchPosts } from './sep22-research';
@@ -224,6 +225,7 @@ blogPosts.push(...sep10BlogPosts);
 blogPosts.push(...sep11BlogPosts);
 blogPosts.push(...sep18BlogPosts);
 blogPosts.push(...sep22BlogPosts);
+blogPosts.push(...sep23BlogPosts);
 blogPosts.sort((a, b) => (('published' in b ? (b.published ?? '2026-07-28') : '2026-07-28').localeCompare('published' in a ? (a.published ?? '2026-07-28') : '2026-07-28')) || a.slug.localeCompare(b.slug));
 
 export const blogDetails = {
@@ -1293,6 +1295,9 @@ for (const post of sep18BlogPosts) {
 }
 for (const post of sep22BlogPosts) {
   blogDetailRecord[post.slug] = (sep22BlogDetails as Record<string, unknown>)[post.slug] as never;
+}
+for (const post of sep23BlogPosts) {
+  blogDetailRecord[post.slug] = (sep23BlogDetails as Record<string, unknown>)[post.slug] as never;
 }
 
 export const staffingOffer = {
