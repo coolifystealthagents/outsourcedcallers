@@ -18,7 +18,8 @@
     "validate:sep22-research": "node scripts/validate-sep22-research.mjs",
     "validate:sep23-research": "node scripts/validate-sep23-research.mjs",
     "validate:sep23-blog": "node scripts/validate-sep23-blog.mjs",
-    "validate:sep24-research": "node scripts/validate-sep24-research.mjs"
+    "validate:sep24-research": "node scripts/validate-sep24-research.mjs",
+    "validate:sep24-blog": "node scripts/validate-sep24-blog.mjs"
   },
   "dependencies": {
     "@next/third-parties": "^15.1.6",
