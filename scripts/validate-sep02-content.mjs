@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import crypto from 'node:crypto';
 import fs from 'node:fs';
+import { familyIndexIncludesRoute } from './paginated-family-index.mjs';
 
 const base = process.env.CONTENT_BASE_URL ?? 'http://127.0.0.1:3000';
 const canonicalBase = 'https://outsourcedcallers.com';
@@ -29,8 +30,9 @@ for (const route of routes) {
   assert.ok(html.includes('September 2, 2026'), `${route} must show the human-readable publication date`);
   assert.ok(html.includes('"datePublished":"2026-09-02"'), `${route} must expose datePublished=2026-09-02`);
   assert.ok(sitemap.includes(`<loc>${canonical}</loc>`), `${route} must appear in the sitemap`);
-  const index = route.startsWith('/blog/') ? blogIndex : researchIndex;
-  assert.ok(index.includes(`href="${route}"`), `${route} must appear on its family index`);
+  const familyRoot = route.startsWith('/blog/') ? '/blog' : '/research';
+  const index = familyRoot === '/blog' ? blogIndex : researchIndex;
+  assert.ok(await familyIndexIncludesRoute({ route, familyRoot, initialHtml: index, fetchPage: fetchOk }), `${route} must appear on its family index`);
   const title = html.match(/<h1[^>]*>(.*?)<\/h1>/)?.[1];
   assert.ok(title && !titles.has(title), `${route} must have a unique h1`);
   titles.add(title);

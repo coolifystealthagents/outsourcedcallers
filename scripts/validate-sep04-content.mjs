@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import crypto from 'node:crypto';
 import fs from 'node:fs';
+import { familyIndexIncludesRoute } from './paginated-family-index.mjs';
 const base=process.env.CONTENT_BASE_URL??'http://127.0.0.1:3000';
 const canonicalBase='https://outsourcedcallers.com';
 const blog=JSON.parse(fs.readFileSync('.paperclip/daily-content/2026-09-04/blog.json','utf8'));
@@ -16,7 +17,8 @@ for(const {route} of entries){const html=await get(route),canonical=`${canonical
  assert.ok(html.includes('September 4, 2026'),`${route} visible date`);
  assert.ok(html.includes('"datePublished":"2026-09-04"'),`${route} structured date`);
  assert.ok(sm.includes(`<loc>${canonical}</loc>`),`${route} sitemap`);
- assert.ok((route.startsWith('/blog/')?bi:ri).includes(`href="${route}"`),`${route} family index`);
+ const familyRoot=route.startsWith('/blog/')?'/blog':'/research',index=familyRoot==='/blog'?bi:ri;
+ assert.ok(await familyIndexIncludesRoute({route,familyRoot,initialHtml:index,fetchPage:get}),`${route} family index`);
  const title=html.match(/<h1[^>]*>(.*?)<\/h1>/)?.[1];assert.ok(title&&!titles.has(title),`${route} unique title`);titles.add(title);
  const article=html.match(/<article[\s\S]*?<\/article>/)?.[0];assert.ok(article,`${route} article`);const hash=crypto.createHash('sha256').update(article).digest('hex');assert.ok(!hashes.has(hash),`${route} unique body`);hashes.add(hash);
  const src=html.match(/<img[^>]+src="([^"]+)"/)?.[1];assert.ok(src,`${route} image`);const ir=await fetch(src.startsWith('http')?src:`${base}${src}`);assert.equal(ir.status,200,`${route} image HTTP`);
