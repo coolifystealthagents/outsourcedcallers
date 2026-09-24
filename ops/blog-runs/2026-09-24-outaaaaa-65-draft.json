@@ -1,0 +1,27 @@
+{
+  "runId": "OUTAAAAA-65",
+  "family": "Blog",
+  "requiredCount": 12,
+  "verifiedCount": 0,
+  "publicationTimezone": "UTC",
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "productionBranch": "main",
+  "baseRemoteSha": "5f04ea89c998f451409d5808c893d696249c5efd",
+  "branch": "routine/blog-2026-09-24-outaaaaa-65",
+  "status": "draft-topic-selection",
+  "topics": [
+    "outsourced-appointment-setting-pilot-plan",
+    "appointment-setting-calendar-permission-matrix",
+    "outbound-call-script-approval-workflow",
+    "outsourced-calling-kpi-definition-guide",
+    "outsourced-caller-coaching-plan",
+    "inbound-call-message-template",
+    "customer-follow-up-callback-promise-control",
+    "lead-qualification-budget-question-boundary",
+    "database-verification-wrong-number-workflow",
+    "renewal-reminder-call-timing-plan",
+    "survey-calling-response-rate-context",
+    "order-confirmation-address-change-handoff"
+  ],
+  "remaining": "Draft, validate, commit, rebase, push, deploy, live-verify all 12, then replace this draft with final evidence."
+}
