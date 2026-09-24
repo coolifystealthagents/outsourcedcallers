@@ -1,0 +1,14 @@
+{
+  "runId": "OUTAAAAA-66",
+  "family": "Research",
+  "publicationDate": "2026-09-24",
+  "timezone": "UTC",
+  "required": 5,
+  "entries": [
+    { "topic": "Partial fulfillment during order-confirmation calls", "slug": "order-confirmation-partial-fulfillment-research", "route": "/research/order-confirmation-partial-fulfillment-research", "service": "/services/order-confirmation-calls" },
+    { "topic": "Separating multiple stakeholders in lead qualification", "slug": "lead-qualification-multiple-stakeholder-research", "route": "/research/lead-qualification-multiple-stakeholder-research", "service": "/services/outbound-lead-qualification" },
+    { "topic": "Stop-request propagation across win-back queues", "slug": "win-back-suppression-propagation-research", "route": "/research/win-back-suppression-propagation-research", "service": "/services/win-back-campaign-support" },
+    { "topic": "Proxy respondent boundaries in telephone surveys", "slug": "survey-proxy-respondent-boundary-research", "route": "/research/survey-proxy-respondent-boundary-research", "service": "/services/survey-calling" },
+    { "topic": "Outbound caller-ID mismatch release controls", "slug": "outbound-caller-id-mismatch-research", "route": "/research/outbound-caller-id-mismatch-research", "service": "/services/outbound-lead-qualification" }
+  ]
+}
