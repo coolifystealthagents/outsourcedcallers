@@ -1,0 +1,25 @@
+{
+  "runId": "OUTAAAAA-66",
+  "family": "Research",
+  "requiredCount": 5,
+  "verifiedCount": 0,
+  "publicationTimezone": "UTC",
+  "publicationDate": "2026-09-24",
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "productionBranch": "main",
+  "contentCommitSha": "8028c419d130ec74ddbaeed1e3b822a3f996e3f5",
+  "remoteSha": "pending",
+  "validation": {
+    "content": "PASS: 5 unique new topics; 1,568-1,608 substantive words each; canonical, date, structured data, index, sitemap, service handoff, media, source, methodology, limitations, and public-copy gates",
+    "typescript": "PASS",
+    "productionBuild": "PASS with pre-existing CSS autoprefixer warning"
+  },
+  "deployment": { "resource": "Coolify3 application s535e0bdro67gjswf330t59e", "status": "pending" },
+  "articles": [
+    { "topic": "Partial fulfillment during order-confirmation calls", "slug": "order-confirmation-partial-fulfillment-research", "contentHash": "2e46ce71ffd1d0a2a0a2cbc69f27f132f70029a347046f2c113babbd431dfb10", "liveUrl": "https://outsourcedcallers.com/research/order-confirmation-partial-fulfillment-research", "verificationTime": "pending" },
+    { "topic": "Separating multiple stakeholders in lead qualification", "slug": "lead-qualification-multiple-stakeholder-research", "contentHash": "05b93b5b2a3ec0f035939fe08b0d78dafef0614f9c7aa364cb8dfb9e60978248", "liveUrl": "https://outsourcedcallers.com/research/lead-qualification-multiple-stakeholder-research", "verificationTime": "pending" },
+    { "topic": "Stop-request propagation across win-back queues", "slug": "win-back-suppression-propagation-research", "contentHash": "b20dd3a4b35bcaa319c9bf1088f40703cd98cce149bd436180ae29301199d1b8", "liveUrl": "https://outsourcedcallers.com/research/win-back-suppression-propagation-research", "verificationTime": "pending" },
+    { "topic": "Proxy respondent boundaries in telephone surveys", "slug": "survey-proxy-respondent-boundary-research", "contentHash": "33859179bcf1c380cf30878639323d2e039dc47254612259b50f7b76d4d6e29b", "liveUrl": "https://outsourcedcallers.com/research/survey-proxy-respondent-boundary-research", "verificationTime": "pending" },
+    { "topic": "Outbound caller-ID mismatch release controls", "slug": "outbound-caller-id-mismatch-research", "contentHash": "ff7100351f5cd4dd9f8c99c28c9c7afabee951b585385395998fd9fafee1a729", "liveUrl": "https://outsourcedcallers.com/research/outbound-caller-id-mismatch-research", "verificationTime": "pending" }
+  ]
+}
