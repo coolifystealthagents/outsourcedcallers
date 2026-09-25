@@ -1,0 +1,22 @@
+{
+  "campaignDate": "2026-09-25",
+  "family": "blog",
+  "count": 12,
+  "publicationStatus": "staged; publication date must be reconciled to actual first-publication date by release integrator",
+  "humanizer": "humanizer 2.9.1 editorial pass",
+  "imageStatus": "existing repository image reused",
+  "entries": [
+    {"route":"/blog/appointment-setting-sales-rep-acceptance-checklist","sourcePaths":["app/sep25-blog.ts"]},
+    {"route":"/blog/appointment-setting-no-show-feedback-loop","sourcePaths":["app/sep25-blog.ts"]},
+    {"route":"/blog/outbound-calling-list-vendor-due-diligence","sourcePaths":["app/sep25-blog.ts"]},
+    {"route":"/blog/outbound-calling-cost-per-accepted-outcome","sourcePaths":["app/sep25-blog.ts"]},
+    {"route":"/blog/outsourced-caller-ramp-readiness-gates","sourcePaths":["app/sep25-blog.ts"]},
+    {"route":"/blog/inbound-call-overflow-vendor-evaluation","sourcePaths":["app/sep25-blog.ts"]},
+    {"route":"/blog/customer-follow-up-unresolved-case-aging","sourcePaths":["app/sep25-blog.ts"]},
+    {"route":"/blog/lead-qualification-discovery-to-sales-handoff","sourcePaths":["app/sep25-blog.ts"]},
+    {"route":"/blog/database-verification-source-confidence-score","sourcePaths":["app/sep25-blog.ts"]},
+    {"route":"/blog/renewal-reminder-escalation-readiness","sourcePaths":["app/sep25-blog.ts"]},
+    {"route":"/blog/survey-calling-partial-completion-protocol","sourcePaths":["app/sep25-blog.ts"]},
+    {"route":"/blog/order-confirmation-stock-mismatch-handoff","sourcePaths":["app/sep25-blog.ts"]}
+  ]
+}
