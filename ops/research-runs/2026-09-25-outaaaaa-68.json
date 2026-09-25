@@ -1,0 +1,32 @@
+{
+  "runId": "OUTAAAAA-68",
+  "family": "Research",
+  "requiredCount": 5,
+  "stagedCount": 5,
+  "verifiedCount": 0,
+  "publicationTimezone": "UTC",
+  "publicationDate": "2026-09-25",
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "productionBranch": "main",
+  "baseProductionSha": "0e7b352001c96c1b3cbef1040467a5093ba9db60",
+  "contentCommitSha": "d9f10b25c0a3d7f0717206856ce7653ad6b6e8df",
+  "integrationBranch": "routine/outaaaaa-68-20260925",
+  "remoteSha": "not pushed by Research; Blog is sole release integrator",
+  "validation": {
+    "content": "PASS: 5 unique new topics; 1,554-1,576 substantive words each; canonical, date, structured data, index, sitemap, service handoff, media, source, methodology, limitations, public-copy, and prior-ledger gates",
+    "typescript": "PASS",
+    "productionBuild": "PASS with pre-existing CSS autoprefixer and workspace-root warnings"
+  },
+  "deployment": {
+    "resource": "Coolify3 application s535e0bdro67gjswf330t59e",
+    "status": "not requested; combined release and deployment owned by Blog/browser operator"
+  },
+  "handoff": "Cherry-pick the full handoff commit from routine/outaaaaa-68-20260925 into the same-cycle Blog integration branch, validate exactly 12 Blog + 5 Research, and push main once without force.",
+  "articles": [
+    { "topic": "Reconciling duplicate inbound callback requests", "slug": "inbound-duplicate-callback-request-research", "words": 1565, "contentHash": "667e92371aeca225317735d3f7f98123100a06bd906181c1c77f812b43440dff", "liveUrl": "https://outsourcedcallers.com/research/inbound-duplicate-callback-request-research", "verificationTime": "pending user verification" },
+    { "topic": "Evidence for appointment no-show dispositions", "slug": "appointment-no-show-disposition-research", "words": 1554, "contentHash": "48956c89f3a8f73a6b009dcecaeea73e346376effc6d0b928dfa149b6fdea360", "liveUrl": "https://outsourcedcallers.com/research/appointment-no-show-disposition-research", "verificationTime": "pending user verification" },
+    { "topic": "Unverifiable corrections in database verification", "slug": "database-unverifiable-correction-research", "words": 1572, "contentHash": "4acad05cc2859ce156b59069d594fba1a0f2d6d78645fbfa30d67bba4c5d0735", "liveUrl": "https://outsourcedcallers.com/research/database-unverifiable-correction-research", "verificationTime": "pending user verification" },
+    { "topic": "Evidence for event waitlist releases", "slug": "event-waitlist-release-research", "words": 1566, "contentHash": "fc0ea016cfbd3a52ea14b102a91246686580c0c2ab272d36a59ea9e41fd378a3", "liveUrl": "https://outsourcedcallers.com/research/event-waitlist-release-research", "verificationTime": "pending user verification" },
+    { "topic": "Quality review when call recordings are incomplete", "slug": "call-quality-missing-recording-research", "words": 1576, "contentHash": "03eb2262186bcf92fbea60667eaaae7b9f2a0af46beb82449ce71d0a6f23afaa", "liveUrl": "https://outsourcedcallers.com/research/call-quality-missing-recording-research", "verificationTime": "pending user verification" }
+  ]
+}
