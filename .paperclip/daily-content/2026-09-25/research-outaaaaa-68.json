@@ -1,0 +1,14 @@
+{
+  "runId": "OUTAAAAA-68",
+  "family": "Research",
+  "publicationDate": "2026-09-25",
+  "timezone": "UTC",
+  "required": 5,
+  "entries": [
+    { "topic": "Reconciling duplicate inbound callback requests", "slug": "inbound-duplicate-callback-request-research", "route": "/research/inbound-duplicate-callback-request-research", "service": "/services/inbound-call-handling" },
+    { "topic": "Evidence for appointment no-show dispositions", "slug": "appointment-no-show-disposition-research", "route": "/research/appointment-no-show-disposition-research", "service": "/services/appointment-setting" },
+    { "topic": "Unverifiable corrections in database verification", "slug": "database-unverifiable-correction-research", "route": "/research/database-unverifiable-correction-research", "service": "/services/database-verification-calls" },
+    { "topic": "Evidence for event waitlist releases", "slug": "event-waitlist-release-research", "route": "/research/event-waitlist-release-research", "service": "/services/event-registration-calls" },
+    { "topic": "Quality review when call recordings are incomplete", "slug": "call-quality-missing-recording-research", "route": "/research/call-quality-missing-recording-research", "service": "/services/call-quality-review" }
+  ]
+}
