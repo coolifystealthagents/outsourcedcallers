@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import crypto from 'node:crypto';
 import fs from 'node:fs';
+import { activePublicationDate } from './active-route-publication-date.mjs';
 import { familyIndexIncludesRoute } from './paginated-family-index.mjs';
 
 const base = process.env.CONTENT_BASE_URL ?? 'http://127.0.0.1:3000';
@@ -26,9 +27,13 @@ const titles = new Set();
 for (const route of routes) {
   const html = await fetchOk(route);
   const canonical = `${canonicalBase}${route}`;
+  const published = activePublicationDate(route, '2026-09-02');
+  const humanPublished = new Intl.DateTimeFormat('en-US', {
+    day: 'numeric', month: 'long', timeZone: 'UTC', year: 'numeric',
+  }).format(new Date(`${published}T00:00:00Z`));
   assert.ok(html.includes(`<link rel="canonical" href="${canonical}"`), `${route} must be self-canonical`);
-  assert.ok(html.includes('September 2, 2026'), `${route} must show the human-readable publication date`);
-  assert.ok(html.includes('"datePublished":"2026-09-02"'), `${route} must expose datePublished=2026-09-02`);
+  assert.ok(html.includes(humanPublished), `${route} must show its active human-readable publication date`);
+  assert.ok(html.includes(`"datePublished":"${published}"`), `${route} must expose its active datePublished value`);
   assert.ok(sitemap.includes(`<loc>${canonical}</loc>`), `${route} must appear in the sitemap`);
   const familyRoot = route.startsWith('/blog/') ? '/blog' : '/research';
   const index = familyRoot === '/blog' ? blogIndex : researchIndex;
