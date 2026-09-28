@@ -12,7 +12,7 @@ The service pages are the commercial pillars. Research pages examine one narrow 
 
 | Service pillar | Existing supporting research route | Reader decision supported | Link status |
 | --- | --- | --- | --- |
-| `/services/appointment-setting` | `/research/filipino-appointment-setting-show-rate-evidence-study` | Decide whether booked, held, cancelled, and context-missing meetings should remain separate in the review. | Candidate needs editorial review. |
+| `/services/appointment-setting` | `/research/appointment-setting-held-meeting-attribution-research` | Decide whether a held meeting is distinct from a booking and a later business result before reviewing the appointment-setting lane. | Existing reader-facing handoff, added in commit `e14038cc2156d31bced9b0c19b0878ef67596969`. |
 | `/services/outbound-lead-qualification` | `/research/outbound-call-answer-rate-denominator-research` | Choose a reporting denominator without treating a connected call as a qualified lead or outcome. | Candidate needs editorial review. |
 | `/services/customer-follow-up-calls` | `/research/customer-follow-up-resolution-proof-research` | Decide what proof is needed before a follow-up case is called resolved. | Existing reader-facing handoff, added in commit `99bd6ce42fec2bd60b861bd920ed8100bfa95a82`. |
 | `/services/reception-overflow` | `/research/inbound-reception-message-completeness-research` | Decide when a saved message carries enough purpose, timing, and callback detail for the owner. | Candidate needs editorial review. |
@@ -25,7 +25,7 @@ The service pages are the commercial pillars. Research pages examine one narrow 
 
 Use a research-to-service link only when the source route gives a reader a specific next decision that the destination service scope can help them plan. The link copy must name that decision, keep the client in charge of sensitive or commercial authority, and avoid suggesting that a research note proves staffing performance.
 
-The existing customer-follow-up handoff is the only confirmed reader-facing pair in this record. Before another pair moves from this ledger to a route, review the source and destination together for intent fit, visible copy, Philippines-only scope, owner boundaries, generated HTML, and sitemap coverage.
+The customer-follow-up and appointment-setting handoffs are confirmed reader-facing pairs in this record. Before another pair moves from this ledger to a route, review the source and destination together for intent fit, visible copy, Philippines-only scope, owner boundaries, generated HTML, and sitemap coverage.
 
 ## Duplicate-prevention rules
 
@@ -35,4 +35,4 @@ Do not use broad claims about answer rates, show rates, or caller quality as a s
 
 ## Next editorial candidate
 
-Review the appointment-setting pair first: `/research/filipino-appointment-setting-show-rate-evidence-study` to `/services/appointment-setting`. The source explains why a calendar booking is not enough evidence on its own, while the service page is the relevant planning destination for a team deciding how an appointment-setting lane should be run.
+Review the call-quality pair next: `/research/call-quality-rater-disagreement-research` to `/services/call-quality-review`. The source explains how reviewer disagreement can expose an unclear scorecard item or missing evidence, while the service page is the relevant planning destination for a team setting a bounded quality-review lane.
