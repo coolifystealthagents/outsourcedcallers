@@ -1,0 +1,21 @@
+{
+  "runId": "OUTAAAAA-70",
+  "cycleLabel": "September28",
+  "family": "Research",
+  "publicationDate": "2026-09-28",
+  "timezone": "UTC",
+  "required": 5,
+  "baselineProductionSha": "35107ac35ecff2b20683dd9788be807c72b58a03",
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "productionBranch": "main",
+  "integrationBranch": "routine/outaaaaa-70-20260928",
+  "deploymentResource": "s535e0bdro67gjswf330t59e",
+  "releaseOwner": "same-cycle Blog integrator; Research must not push or deploy",
+  "entries": [
+    { "topic": "Inbound disclosure before identity confirmation", "slug": "inbound-identity-before-disclosure-research", "route": "/research/inbound-identity-before-disclosure-research", "service": "/services/inbound-call-handling" },
+    { "topic": "Appointment double-booking conflict resolution", "slug": "appointment-double-booking-conflict-research", "route": "/research/appointment-double-booking-conflict-research", "service": "/services/appointment-setting" },
+    { "topic": "Authorization for order substitutions", "slug": "order-substitution-authorization-research", "route": "/research/order-substitution-authorization-research", "service": "/services/order-confirmation-calls" },
+    { "topic": "Renewal reminder grace-period ambiguity", "slug": "renewal-grace-period-ambiguity-research", "route": "/research/renewal-grace-period-ambiguity-research", "service": "/services/renewal-reminder-calls" },
+    { "topic": "Quality scoring for long holds and silence", "slug": "call-quality-hold-silence-research", "route": "/research/call-quality-hold-silence-research", "service": "/services/call-quality-review" }
+  ]
+}
