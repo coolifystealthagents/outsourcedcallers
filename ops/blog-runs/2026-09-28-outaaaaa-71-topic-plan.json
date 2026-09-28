@@ -1,0 +1,98 @@
+{
+  "runId": "OUTAAAAA-71",
+  "cycleLabel": "September 28, 2026",
+  "baselineSha": "35107ac35ecff2b20683dd9788be807c72b58a03",
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "productionBranch": "main",
+  "integrationBranch": "routine/outaaaaa-71-20260928",
+  "pairedResearchIssue": "OUTAAAAA-70",
+  "publicationDateRule": "Set immediately before the sole production push to the actual first-publication date in the site's configured timezone; September 28 is a cycle label, not permission to backdate.",
+  "topicSelectionEvidence": {
+    "surfacesReviewed": [
+      "app/page.tsx",
+      "app/services",
+      "app/blog/page.tsx",
+      "app/data.ts",
+      "ops/blog-topic-ledger.jsonl",
+      ".paperclip/daily-content",
+      "origin/main at baselineSha"
+    ],
+    "duplicateCheck": "Every proposed slug was absent from the baseline repository and durable blog ledger.",
+    "editorialGate": "Each final rendered body must contain at least 900 substantive words and pass a family-level five-word-shingle audit below 0.50 maximum pairwise Jaccard overlap. Shared-body keyword swaps are prohibited."
+  },
+  "topics": [
+    {
+      "slug": "outbound-calling-pilot-sample-design",
+      "title": "How to design a useful pilot sample for outsourced outbound calling",
+      "pillar": "outbound-lead-qualification",
+      "decision": "Select records that expose list, script, qualification, and handoff risk before a wider release."
+    },
+    {
+      "slug": "appointment-setting-calendar-capacity-guardrails",
+      "title": "Calendar capacity guardrails for outsourced appointment setting",
+      "pillar": "appointment-setting",
+      "decision": "Protect host capacity while callers book, reschedule, and route exceptions."
+    },
+    {
+      "slug": "inbound-call-overflow-after-hours-playbook",
+      "title": "An after-hours playbook for inbound call overflow",
+      "pillar": "inbound-call-handling",
+      "decision": "Define what an after-hours caller may resolve, record, transfer, or defer."
+    },
+    {
+      "slug": "customer-follow-up-contact-preference-reconciliation",
+      "title": "How to reconcile contact preferences before customer follow-up calls",
+      "pillar": "customer-follow-up-calls",
+      "decision": "Resolve conflicting channel, time, consent, and account instructions before contact."
+    },
+    {
+      "slug": "lead-qualification-evidence-vs-inference",
+      "title": "Evidence versus inference in outsourced lead qualification",
+      "pillar": "outbound-lead-qualification",
+      "decision": "Keep observed answers separate from caller interpretation in sales handoffs."
+    },
+    {
+      "slug": "outsourced-caller-call-recording-consent-brief",
+      "title": "How to brief outsourced callers on call recording and consent",
+      "pillar": "call-quality-review",
+      "decision": "Translate the client's approved recording policy into usable caller instructions and stop rules."
+    },
+    {
+      "slug": "database-verification-conflicting-source-resolution",
+      "title": "How to resolve conflicting sources during database verification calls",
+      "pillar": "database-verification-calls",
+      "decision": "Route conflicts by authority, recency, identity confidence, and change ownership."
+    },
+    {
+      "slug": "renewal-reminder-dispute-triage",
+      "title": "Dispute triage for outsourced renewal reminder calls",
+      "pillar": "renewal-reminder-calls",
+      "decision": "Separate routine reminders from term, amount, cancellation, and account disputes."
+    },
+    {
+      "slug": "order-confirmation-payment-question-boundary",
+      "title": "Payment-question boundaries for outsourced order confirmation calls",
+      "pillar": "order-confirmation-calls",
+      "decision": "Let callers confirm permitted order facts without collecting or interpreting restricted payment information."
+    },
+    {
+      "slug": "survey-calling-language-coverage-plan",
+      "title": "How to plan language coverage for outsourced survey calling",
+      "pillar": "survey-calling",
+      "decision": "Match sample needs to tested language ability, translated instruments, routing, and reporting limits."
+    },
+    {
+      "slug": "win-back-campaign-reentry-eligibility",
+      "title": "How to define reentry eligibility for a win-back calling campaign",
+      "pillar": "win-back-campaign-support",
+      "decision": "Prevent recently contacted, suppressed, disputed, or ineligible records from cycling back into outreach."
+    },
+    {
+      "slug": "outsourced-calling-manager-span-of-control",
+      "title": "How to set a manager span of control for outsourced callers",
+      "pillar": "call-quality-review",
+      "decision": "Size supervision around queue complexity, coaching, review, exceptions, and client decisions instead of a generic ratio."
+    }
+  ],
+  "releaseState": "topic inventory locked; drafting and paired Research handoff pending; nothing pushed or deployed"
+}
