@@ -1,0 +1,31 @@
+{
+  "cycleLabel": "2026-09-28",
+  "family": "blog",
+  "count": 12,
+  "runId": "OUTAAAAA-71",
+  "baselineSha": "35107ac35ecff2b20683dd9788be807c72b58a03",
+  "status": "staged locally; publication date must be reconciled immediately before the sole combined production push",
+  "sourcePaths": ["app/sep28-blog.ts", "app/data.ts"],
+  "imageStatus": "existing repository image reused",
+  "renderedValidation": {
+    "minimumBodyWords": 997,
+    "maximumBodyWords": 1198,
+    "maximumFiveWordShingleJaccard": 0.495271,
+    "maximumOverlapPair": ["appointment-setting-calendar-capacity-guardrails", "database-verification-conflicting-source-resolution"],
+    "validator": "scripts/validate-sep28-blog.mjs"
+  },
+  "entries": [
+    {"slug":"outbound-calling-pilot-sample-design","bodyWords":1009,"renderedHash":"ad9b33a037fa7edfedcbca62b22ae4caa65fe6bff44dd6a28f1206b694b3f293"},
+    {"slug":"appointment-setting-calendar-capacity-guardrails","bodyWords":997,"renderedHash":"f6bfb85251fb36f9363b63194d8c66a2c773a8a4b043788dec281f9af965eb2f"},
+    {"slug":"inbound-call-overflow-after-hours-playbook","bodyWords":1022,"renderedHash":"23a5e3efc1819d336697ed62d99147f010a11b528426f9b7189a3a20b02b9452"},
+    {"slug":"customer-follow-up-contact-preference-reconciliation","bodyWords":1015,"renderedHash":"5ab53f82a9b8f69a4f533c87baadf287035bdcbf6c33535f8d6a8afcedc40bc9"},
+    {"slug":"lead-qualification-evidence-vs-inference","bodyWords":1198,"renderedHash":"b05c5b5965ce47c0794dd6a6911c620fbd2fecd66aaa075846b97eb210af41e8"},
+    {"slug":"outsourced-caller-call-recording-consent-brief","bodyWords":1030,"renderedHash":"25d57e35fdd74fa1270a00fc603114e62381cd8727c18771d4fbb59c5a47c3eb"},
+    {"slug":"database-verification-conflicting-source-resolution","bodyWords":1001,"renderedHash":"dc80f7ba89a235e627292d0abe5736ffca95f2b6a21d71542be5de03745ea7ad"},
+    {"slug":"renewal-reminder-dispute-triage","bodyWords":1188,"renderedHash":"bc6e40bf901903dd27a52aecef46999fbc50747636812968556a9fd3e1cabd2c"},
+    {"slug":"order-confirmation-payment-question-boundary","bodyWords":1037,"renderedHash":"2e2181dddd86134267cdb4c5f889dbecf914bc941dd62ce0edafd0af4ad0777f"},
+    {"slug":"survey-calling-language-coverage-plan","bodyWords":1013,"renderedHash":"09c109574164ba88983e2473c308af254451f9dcdf6281095bfdfd63b85b7449"},
+    {"slug":"win-back-campaign-reentry-eligibility","bodyWords":1026,"renderedHash":"85122bde0f03973092d54e0839ac029421717b70d5aa3392d0dc75580d43ec96"},
+    {"slug":"outsourced-calling-manager-span-of-control","bodyWords":1032,"renderedHash":"6120a6e4c42569e1f5ccf2dcae0719e362d3cc4a0587cbc0cd23f3c0d2bc36a8"}
+  ]
+}
