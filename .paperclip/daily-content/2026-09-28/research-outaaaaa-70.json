@@ -11,11 +11,18 @@
   "integrationBranch": "routine/outaaaaa-70-20260928",
   "deploymentResource": "s535e0bdro67gjswf330t59e",
   "releaseOwner": "same-cycle Blog integrator; Research must not push or deploy",
+  "contentCommitSha": "74c1fd8c83c85bd4b73f346462abbe8354d01137",
+  "validation": {
+    "status": "PASS",
+    "typescript": "PASS",
+    "productionBuild": "PASS with pre-existing workspace-root and CSS autoprefixer warnings",
+    "maximumPairwiseFiveWordShingleJaccard": 0.47817538340542665
+  },
   "entries": [
-    { "topic": "Inbound disclosure before identity confirmation", "slug": "inbound-identity-before-disclosure-research", "route": "/research/inbound-identity-before-disclosure-research", "service": "/services/inbound-call-handling" },
-    { "topic": "Appointment double-booking conflict resolution", "slug": "appointment-double-booking-conflict-research", "route": "/research/appointment-double-booking-conflict-research", "service": "/services/appointment-setting" },
-    { "topic": "Authorization for order substitutions", "slug": "order-substitution-authorization-research", "route": "/research/order-substitution-authorization-research", "service": "/services/order-confirmation-calls" },
-    { "topic": "Renewal reminder grace-period ambiguity", "slug": "renewal-grace-period-ambiguity-research", "route": "/research/renewal-grace-period-ambiguity-research", "service": "/services/renewal-reminder-calls" },
-    { "topic": "Quality scoring for long holds and silence", "slug": "call-quality-hold-silence-research", "route": "/research/call-quality-hold-silence-research", "service": "/services/call-quality-review" }
+    { "topic": "Inbound disclosure before identity confirmation", "slug": "inbound-identity-before-disclosure-research", "route": "/research/inbound-identity-before-disclosure-research", "service": "/services/inbound-call-handling", "words": 1957, "contentHash": "39e36e5de14f36b53b7f496559f0dd0528edbffc31a7b3493bdffd4856b9dc4e" },
+    { "topic": "Appointment double-booking conflict resolution", "slug": "appointment-double-booking-conflict-research", "route": "/research/appointment-double-booking-conflict-research", "service": "/services/appointment-setting", "words": 1917, "contentHash": "37bd615cd3286f66555ee9b584814a7cad6e8684cc46c11eaa183ac4e6eb48b5" },
+    { "topic": "Authorization for order substitutions", "slug": "order-substitution-authorization-research", "route": "/research/order-substitution-authorization-research", "service": "/services/order-confirmation-calls", "words": 1891, "contentHash": "40d88f60caa1445e01511f31522112811983cf0ac4fcf483216695105caf6cac" },
+    { "topic": "Renewal reminder grace-period ambiguity", "slug": "renewal-grace-period-ambiguity-research", "route": "/research/renewal-grace-period-ambiguity-research", "service": "/services/renewal-reminder-calls", "words": 1881, "contentHash": "1572d83be9d104a7e4bb582e5bc2cd8e614a5ea760d32eaf7e61866938f5bd38" },
+    { "topic": "Quality scoring for long holds and silence", "slug": "call-quality-hold-silence-research", "route": "/research/call-quality-hold-silence-research", "service": "/services/call-quality-review", "words": 1896, "contentHash": "07e0ffae662effd608c6992b8a0e51059dee743d347bdbe6f77b23c12032c090" }
   ]
 }
