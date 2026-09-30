@@ -1,0 +1,20 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+
+const source = fs.readFileSync('app/sep01-research.ts', 'utf8');
+const renderer = fs.readFileSync('app/research/[slug]/page.tsx', 'utf8');
+const start = source.indexOf("slug:'call-quality-rater-disagreement-research'");
+const end = source.indexOf("slug:'inbound-message-urgency-label-validity-research'", start);
+assert.ok(start >= 0 && end > start, 'call-quality record boundaries must be present and ordered');
+const record = source.slice(start, end);
+assert.match(record, /updated:'2026-09-30'/);
+assert.match(record, /href:'\/services\/call-quality-review'/);
+assert.match(record, /label:'Build a call quality review lane'/);
+assert.match(record, /sample calls, evidence notes, and clear rubric checks/);
+assert.match(record, /The quality assurance owner decides coaching, score use, and changes to the rubric\./);
+assert.doesNotMatch(record, /caller can decide coaching|caller can change the rubric/i);
+assert.match(source, /updated:topic\.updated/);
+assert.match(source, /handoff:topic\.handoff/);
+assert.match(renderer, /dateModified: p\.updated \?\? p\.published/);
+assert.match(renderer, /href=\{p\.handoff\.href\}/);
+console.log('September 1 call-quality handoff source contract: PASS');
