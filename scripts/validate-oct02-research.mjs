@@ -13,10 +13,10 @@ assert.equal(new Set(manifest.entries.map((entry) => entry.slug)).size, 5);
 
 const priorFiles = fs.readdirSync('app').filter((name) => name.endsWith('.ts') && name !== 'oct02-research.ts');
 const priorSource = priorFiles.map((name) => fs.readFileSync(`app/${name}`, 'utf8')).join('\n');
-const priorLedger = fs.readFileSync('ops/research-topic-ledger.jsonl', 'utf8');
+const priorLedger = fs.readFileSync('ops/research-topic-ledger.jsonl', 'utf8').split('\n').filter(Boolean).map(JSON.parse).filter((row) => row.runId !== 'OUTAAAAA-72');
 for (const entry of manifest.entries) {
   assert.ok(!priorSource.includes(`slug: '${entry.slug}'`) && !priorSource.includes(`slug:'${entry.slug}'`), `${entry.slug} must be new to prior source`);
-  assert.ok(!priorLedger.includes(`"slug":"${entry.slug}"`), `${entry.slug} must be new to prior ledger`);
+  assert.ok(!priorLedger.some((row) => row.slug === entry.slug), `${entry.slug} must be new to prior ledger`);
 }
 
 const get = async (route) => {

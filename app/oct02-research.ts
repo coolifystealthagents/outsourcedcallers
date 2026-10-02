@@ -113,16 +113,31 @@ const studies: ExpandedStudy[] = [
   }
 ];
 
-export const oct02ResearchPosts = studies.map((study) => ({
+const baseOrders = [
+  [0, 1, 2, 4, 6, 11, 15],
+  [2, 0, 6, 1, 11, 4, 15],
+  [1, 2, 0, 6, 4, 15, 11],
+  [0, 2, 11, 6, 1, 15, 4],
+  [2, 1, 4, 0, 11, 6, 15]
+];
+
+export const oct02ResearchPosts = studies.map((study, index) => {
+  const base = buildResearchBody(study);
+  const selected = baseOrders[index].map((position) => base[position]);
+  const sourceNames = study.sources.map((source) => `${source.title}, published by ${source.publisher}`).join('; ');
+  const evidenceReview = `Evidence review for this question. Begin with ${study.unit}. Ask one reviewer to reconstruct the decision using only the dated source, the permitted caller action, the saved record, and the owner response. Then compare that reconstruction with this scenario: ${study.scenario} The reviewer should identify exactly where evidence changes into interpretation and mark any missing link as unknown. Test the principal failure directly: ${study.failure}. Do not repair an incomplete chain by borrowing a later outcome or a private explanation. Report which source or workflow version was active, whether the ${study.owner} acknowledged the handoff, what changed afterward, and which conclusion remains supportable without guessing. This review gives a buyer a concrete way to inspect ${study.service} before widening the sample or changing the operating brief.`;
+  const sourceMethod = `Source method and checked date for ${study.service}. The protocol supporting "${study.title}" uses first-party legal, privacy, security, records, or communications material relevant to this question: ${sourceNames}. Every link was checked on ${checked}. These sources define controls and limits; they do not report performance findings about OutsourcedCallers.com or Filipino callers. The ${study.owner} must determine how each source applies to the real campaign, people, systems, and jurisdictions.`;
+  const sourceList = `Sources: ${study.sources.map((source) => `${source.title} | ${source.publisher} | ${source.url} | checked ${source.checked}`).join(' || ')}`;
+  const body = index % 2 === 0
+    ? [selected[0], study.deepDive[0], selected[1], selected[2], study.deepDive[1], selected[3], study.deepDive[2], evidenceReview, selected[4], study.deepDive[3], selected[5], study.deepDive[4], selected[6], sourceMethod, sourceList]
+    : [study.deepDive[0], selected[0], selected[1], study.deepDive[1], selected[2], study.deepDive[2], selected[3], evidenceReview, selected[4], study.deepDive[3], selected[5], study.deepDive[4], selected[6], sourceMethod, sourceList];
+  return ({
   slug: study.slug,
   title: study.title,
   excerpt: study.excerpt,
   published: '2026-10-02' as const,
   image: '/thank-you-hero.png',
-  body: [
-    ...buildResearchBody(study).slice(0, -2).filter((paragraph) => !['Sampling plan.', 'Reviewer reliability.', 'Bias and sensitivity.', 'Implementation test.'].some((label) => paragraph.startsWith(label))),
-    ...study.deepDive,
-    ...buildResearchBody(study).slice(-2),
-  ],
+  body,
   handoff: { href: study.link, label: `Review ${study.service}`, text: `Use this research to define evidence, decision boundaries, and owner handoffs before planning ${study.service} with a Philippines-based team.` },
-}));
+  });
+});
