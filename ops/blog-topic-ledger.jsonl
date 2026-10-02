@@ -46,3 +46,15 @@
 {"family":"Blog","cycleLabel":"2026-09-28","runId":"OUTAAAAA-71","topic":"How to plan language coverage for outsourced survey calling","slug":"survey-calling-language-coverage-plan","contentHash":"09c109574164ba88983e2473c308af254451f9dcdf6281095bfdfd63b85b7449","status":"staged-local"}
 {"family":"Blog","cycleLabel":"2026-09-28","runId":"OUTAAAAA-71","topic":"How to define reentry eligibility for a win-back calling campaign","slug":"win-back-campaign-reentry-eligibility","contentHash":"85122bde0f03973092d54e0839ac029421717b70d5aa3392d0dc75580d43ec96","status":"staged-local"}
 {"family":"Blog","cycleLabel":"2026-09-28","runId":"OUTAAAAA-71","topic":"How to set a manager span of control for outsourced callers","slug":"outsourced-calling-manager-span-of-control","contentHash":"6120a6e4c42569e1f5ccf2dcae0719e362d3cc4a0587cbc0cd23f3c0d2bc36a8","status":"staged-local"}
+{"runId":"OUTAAAAA-73","cycleLabel":"2026-10-02","slug":"outsourced-appointment-setting-lead-acceptance-criteria","family":"Blog","pillar":"appointment-setting","state":"selected-not-published"}
+{"runId":"OUTAAAAA-73","cycleLabel":"2026-10-02","slug":"inbound-call-transfer-failure-recovery","family":"Blog","pillar":"inbound-call-handling","state":"selected-not-published"}
+{"runId":"OUTAAAAA-73","cycleLabel":"2026-10-02","slug":"outbound-calling-list-refresh-cadence","family":"Blog","pillar":"outbound-lead-qualification","state":"selected-not-published"}
+{"runId":"OUTAAAAA-73","cycleLabel":"2026-10-02","slug":"customer-follow-up-open-loop-audit","family":"Blog","pillar":"customer-follow-up-calls","state":"selected-not-published"}
+{"runId":"OUTAAAAA-73","cycleLabel":"2026-10-02","slug":"appointment-setting-meeting-type-routing","family":"Blog","pillar":"appointment-setting","state":"selected-not-published"}
+{"runId":"OUTAAAAA-73","cycleLabel":"2026-10-02","slug":"call-quality-critical-error-policy","family":"Blog","pillar":"call-quality-review","state":"selected-not-published"}
+{"runId":"OUTAAAAA-73","cycleLabel":"2026-10-02","slug":"database-verification-change-approval-thresholds","family":"Blog","pillar":"database-verification-calls","state":"selected-not-published"}
+{"runId":"OUTAAAAA-73","cycleLabel":"2026-10-02","slug":"renewal-reminder-unreachable-account-policy","family":"Blog","pillar":"renewal-reminder-calls","state":"selected-not-published"}
+{"runId":"OUTAAAAA-73","cycleLabel":"2026-10-02","slug":"order-confirmation-substitution-exception-workflow","family":"Blog","pillar":"order-confirmation-calls","state":"selected-not-published"}
+{"runId":"OUTAAAAA-73","cycleLabel":"2026-10-02","slug":"survey-calling-partial-completion-rules","family":"Blog","pillar":"survey-calling","state":"selected-not-published"}
+{"runId":"OUTAAAAA-73","cycleLabel":"2026-10-02","slug":"win-back-offer-version-control","family":"Blog","pillar":"win-back-campaign-support","state":"selected-not-published"}
+{"runId":"OUTAAAAA-73","cycleLabel":"2026-10-02","slug":"outsourced-caller-knowledge-base-governance","family":"Blog","pillar":"call-quality-review","state":"selected-not-published"}

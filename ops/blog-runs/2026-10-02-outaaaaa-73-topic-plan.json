@@ -1,0 +1,38 @@
+{
+  "runId": "OUTAAAAA-73",
+  "cycleLabel": "October 2, 2026",
+  "baselineSha": "70babb8f249409b423814373fde2471f4edb7a28",
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "productionBranch": "main",
+  "integrationBranch": "routine/outaaaaa-73-20261002",
+  "pairedResearchIssue": "OUTAAAAA-72",
+  "publicationDateRule": "Set immediately before the sole production push to the actual first-publication date in the site's configured timezone; October 2 is a cycle label and not permission to backdate.",
+  "topicSelectionEvidence": {
+    "surfacesReviewed": [
+      "app/page.tsx",
+      "app/services",
+      "app/blog/page.tsx",
+      "app/data.ts",
+      "ops/blog-topic-ledger.jsonl",
+      ".paperclip/daily-content",
+      "origin/main at baselineSha"
+    ],
+    "duplicateCheck": "Every proposed slug is absent from the baseline repository and durable Blog ledger.",
+    "editorialGate": "Each final rendered body must contain at least 900 substantive words, answer a distinct buyer decision with its own structure and examples, pass repeated-paragraph and shared-argument review, and remain below 0.50 maximum pairwise five-word-shingle Jaccard overlap."
+  },
+  "topics": [
+    {"slug":"outsourced-appointment-setting-lead-acceptance-criteria","title":"Lead acceptance criteria for outsourced appointment setting","pillar":"appointment-setting","decision":"Define the evidence a record needs before a caller may offer a meeting."},
+    {"slug":"inbound-call-transfer-failure-recovery","title":"How to recover when an inbound call transfer fails","pillar":"inbound-call-handling","decision":"Protect caller context and ownership when a live transfer does not connect."},
+    {"slug":"outbound-calling-list-refresh-cadence","title":"How often should an outbound calling list be refreshed?","pillar":"outbound-lead-qualification","decision":"Set refresh triggers from record volatility, contact risk, and campaign duration."},
+    {"slug":"customer-follow-up-open-loop-audit","title":"How to audit open loops in customer follow-up calling","pillar":"customer-follow-up-calls","decision":"Find promised callbacks and owner actions that remain unresolved."},
+    {"slug":"appointment-setting-meeting-type-routing","title":"Meeting-type routing rules for outsourced appointment setters","pillar":"appointment-setting","decision":"Match each qualified request to the correct duration, host, and preparation path."},
+    {"slug":"call-quality-critical-error-policy","title":"How to define critical errors in outsourced call quality review","pillar":"call-quality-review","decision":"Separate safety, consent, accuracy, and customer-impact failures from coachable variation."},
+    {"slug":"database-verification-change-approval-thresholds","title":"Change approval thresholds for database verification calls","pillar":"database-verification-calls","decision":"Decide which verified fields callers may update and which require a data steward."},
+    {"slug":"renewal-reminder-unreachable-account-policy","title":"An unreachable-account policy for renewal reminder calls","pillar":"renewal-reminder-calls","decision":"End repeated attempts with clear timing, channel, suppression, and owner rules."},
+    {"slug":"order-confirmation-substitution-exception-workflow","title":"A substitution exception workflow for order confirmation calls","pillar":"order-confirmation-calls","decision":"Route item substitutions without letting callers invent fulfillment or commercial promises."},
+    {"slug":"survey-calling-partial-completion-rules","title":"Partial completion rules for outsourced survey calling","pillar":"survey-calling","decision":"Preserve valid answers while distinguishing interruption, refusal, ineligibility, and dropout."},
+    {"slug":"win-back-offer-version-control","title":"Offer version control for outsourced win-back calling","pillar":"win-back-campaign-support","decision":"Prevent expired or ineligible offers from reaching returning customers."},
+    {"slug":"outsourced-caller-knowledge-base-governance","title":"Knowledge base governance for outsourced calling teams","pillar":"call-quality-review","decision":"Keep approved answers current, attributable, searchable, and bounded by owner authority."}
+  ],
+  "releaseState": "Topic inventory locked on isolated Blog integration branch; drafting and paired Research handoff pending; nothing pushed or deployed."
+}
