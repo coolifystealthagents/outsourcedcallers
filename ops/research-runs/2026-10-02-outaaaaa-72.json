@@ -9,7 +9,7 @@
   "repository": "coolifystealthagents/outsourcedcallers",
   "productionBranch": "main",
   "baseProductionSha": "70babb8f249409b423814373fde2471f4edb7a28",
-  "contentCommitSha": "ed3c111e95790980f50dea650a6efbb3ed72a4f7",
+  "contentCommitSha": "52007f3a57b69cdf78ec6b05a2a6a15fe0bab6bd",
   "integrationBranch": "routine/outaaaaa-72-20261002",
   "validation": {
     "content": "PASS: exactly 5 new Research routes; independently rewritten body-only counts 1,202-1,238; distinct argument structures, examples, outcomes, methodology and limitations; no repeated substantive paragraphs; canonical, visible date, structured date, index, sitemap, internal service link, source, image, and prior-inventory gates",
