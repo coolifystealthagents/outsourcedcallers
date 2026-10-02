@@ -1,0 +1,14 @@
+{
+  "runId": "OUTAAAAA-72",
+  "family": "Research",
+  "publicationDate": "2026-10-02",
+  "timezone": "UTC",
+  "required": 5,
+  "entries": [
+    {"topic":"Procurement-timeline evidence in lead qualification","slug":"lead-qualification-procurement-timeline-evidence-research","route":"/research/lead-qualification-procurement-timeline-evidence-research","service":"/services/outbound-lead-qualification"},
+    {"topic":"Authority to replace an appointment attendee","slug":"appointment-attendee-replacement-authority-research","route":"/research/appointment-attendee-replacement-authority-research","service":"/services/appointment-setting"},
+    {"topic":"Evidence for delivery-address corrections","slug":"order-delivery-address-correction-evidence-research","route":"/research/order-delivery-address-correction-evidence-research","service":"/services/order-confirmation-calls"},
+    {"topic":"Routing callbacks linked to the wrong account","slug":"inbound-wrong-account-callback-routing-research","route":"/research/inbound-wrong-account-callback-routing-research","service":"/services/inbound-call-handling"},
+    {"topic":"Pending-payment states in renewal reminders","slug":"renewal-reminder-payment-pending-state-research","route":"/research/renewal-reminder-payment-pending-state-research","service":"/services/renewal-reminder-calls"}
+  ]
+}
