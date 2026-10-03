@@ -6,6 +6,7 @@ const base = process.env.CONTENT_BASE_URL ?? 'http://127.0.0.1:3000';
 const canonicalBase = 'https://outsourcedcallers.com';
 const manifest = JSON.parse(fs.readFileSync('.paperclip/daily-content/2026-10-02/research-outaaaaa-72.json', 'utf8'));
 assert.equal(manifest.publicationDate, '2026-10-02');
+assert.equal(manifest.modificationDate, '2026-10-03');
 assert.equal(manifest.timezone, 'UTC');
 assert.equal(manifest.required, 5);
 assert.equal(manifest.entries.length, 5);
@@ -38,6 +39,8 @@ for (const entry of manifest.entries) {
   assert.ok(html.includes(`<link rel="canonical" href="${canonical}"`), `${entry.route} canonical`);
   assert.ok(html.includes('October 2, 2026'), `${entry.route} visible date`);
   assert.ok(html.includes('"datePublished":"2026-10-02"'), `${entry.route} structured date`);
+  assert.ok(html.includes('"dateModified":"2026-10-03"'), `${entry.route} truthful modification date`);
+  assert.ok(html.includes('Updated') && html.includes('October 3, 2026'), `${entry.route} visible modification date`);
   assert.ok(index.includes(`href="${entry.route}"`), `${entry.route} index`);
   assert.ok(sitemap.includes(`<loc>${canonical}</loc>`), `${entry.route} sitemap`);
   assert.ok(html.includes(`href="${entry.service}"`), `${entry.route} internal service link`);

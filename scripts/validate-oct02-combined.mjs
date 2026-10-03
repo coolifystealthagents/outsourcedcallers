@@ -15,6 +15,7 @@ assert.equal(blogEntries.length, 12);
 assert.equal(researchEntries.length, 5);
 assert.equal(new Set(all.map((entry) => entry.route)).size, 17);
 assert.equal(researchManifest.publicationDate, publicationDate);
+assert.equal(researchManifest.modificationDate, '2026-10-03');
 assert.equal(researchManifest.timezone, 'UTC');
 
 const blogIndex = fs.readFileSync('.next/server/app/blog.html', 'utf8');
@@ -38,6 +39,10 @@ for (const entry of all) {
   assert.ok(html.includes(`<link rel="canonical" href="${canonical}"`), `${entry.route} canonical`);
   assert.ok(html.includes(visibleDate), `${entry.route} visible date`);
   assert.ok(html.includes(`"datePublished":"${publicationDate}"`), `${entry.route} structured date`);
+  if (entry.family === 'Research') {
+    assert.ok(html.includes('"dateModified":"2026-10-03"'), `${entry.route} truthful modification date`);
+    assert.ok(html.includes('Updated') && html.includes('October 3, 2026'), `${entry.route} visible modification date`);
+  }
   assert.ok((entry.family === 'Blog' ? blogIndex : researchIndex).includes(`href="${entry.route}"`), `${entry.route} family index`);
   assert.ok(sitemap.includes(`<loc>${canonical}</loc>`), `${entry.route} sitemap`);
   const image = article.match(/<img[^>]+src="([^"]+)"/)?.[1];

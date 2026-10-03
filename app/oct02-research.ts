@@ -186,6 +186,7 @@ export const oct02ResearchPosts = studies.map((study) => ({
   title: study.title,
   excerpt: study.excerpt,
   published: '2026-10-02' as const,
+  updated: '2026-10-03' as const,
   image: '/thank-you-hero.png',
   body: [
     ...study.deepDive,

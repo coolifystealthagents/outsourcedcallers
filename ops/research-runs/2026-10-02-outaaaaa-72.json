@@ -6,6 +6,7 @@
   "verifiedCount": 0,
   "publicationTimezone": "UTC",
   "publicationDate": "2026-10-02",
+  "modificationDate": "2026-10-03",
   "repository": "coolifystealthagents/outsourcedcallers",
   "productionBranch": "main",
   "baseProductionSha": "70babb8f249409b423814373fde2471f4edb7a28",
@@ -19,10 +20,10 @@
   },
   "deployment": {"resource":"Coolify3 application s535e0bdro67gjswf330t59e","status":"pending production push"},
   "articles": [
-    {"slug":"lead-qualification-procurement-timeline-evidence-research","words":1202,"contentHash":"796b502c17bc935d802991a4fb9185fc71b5104198d1faa288feaa63ea4e69df","url":"https://outsourcedcallers.com/research/lead-qualification-procurement-timeline-evidence-research","verificationTime":"pending"},
-    {"slug":"appointment-attendee-replacement-authority-research","words":1203,"contentHash":"a8c6d5c6c5f720447bde8670ac008dad64c6c76b4f8ae641b1002e2de21b65c8","url":"https://outsourcedcallers.com/research/appointment-attendee-replacement-authority-research","verificationTime":"pending"},
-    {"slug":"order-delivery-address-correction-evidence-research","words":1204,"contentHash":"6c6a00c632656a383e628a3619d01b57d10647eb59dcc787603ea397cf2ebb15","url":"https://outsourcedcallers.com/research/order-delivery-address-correction-evidence-research","verificationTime":"pending"},
-    {"slug":"inbound-wrong-account-callback-routing-research","words":1238,"contentHash":"ea934f04fc709f8b4eea8d80bc808a172d7fb4fdd5f1f324c584196e641fcc25","url":"https://outsourcedcallers.com/research/inbound-wrong-account-callback-routing-research","verificationTime":"pending"},
-    {"slug":"renewal-reminder-payment-pending-state-research","words":1237,"contentHash":"ca6a648f4257073de1a7f57d7772dc338bf4ce3001398f697fb555b5d9e40ad2","url":"https://outsourcedcallers.com/research/renewal-reminder-payment-pending-state-research","verificationTime":"pending"}
+    {"slug":"lead-qualification-procurement-timeline-evidence-research","words":1202,"contentHash":"9858d643a642de7bba59a7ec22bdc3fde4256d94fca693a536c1823213ba4058","url":"https://outsourcedcallers.com/research/lead-qualification-procurement-timeline-evidence-research","verificationTime":"pending"},
+    {"slug":"appointment-attendee-replacement-authority-research","words":1203,"contentHash":"ee0e88e90f591ec940627dc349c414be835a90dcefc03cde0332ddf4cd023d0d","url":"https://outsourcedcallers.com/research/appointment-attendee-replacement-authority-research","verificationTime":"pending"},
+    {"slug":"order-delivery-address-correction-evidence-research","words":1204,"contentHash":"c0687ac5a4456bf459daf529e12752b796f32b839e964ac78e83512b6eaa74ad","url":"https://outsourcedcallers.com/research/order-delivery-address-correction-evidence-research","verificationTime":"pending"},
+    {"slug":"inbound-wrong-account-callback-routing-research","words":1238,"contentHash":"9d4072f437ac72aec1236be265670370a72ed6e63f5e18650081cf6c11f8aa6a","url":"https://outsourcedcallers.com/research/inbound-wrong-account-callback-routing-research","verificationTime":"pending"},
+    {"slug":"renewal-reminder-payment-pending-state-research","words":1237,"contentHash":"f971d1aa91ef494b499cff8c2ef33d5aeb43d92374d16351c8e73c1c54fec5a9","url":"https://outsourcedcallers.com/research/renewal-reminder-payment-pending-state-research","verificationTime":"pending"}
   ]
 }
