@@ -1,0 +1,21 @@
+{
+  "runId":"OUTAAAAA-75","family":"Blog","required":12,"staged":12,"verified":0,
+  "cycleLabel":"2026-10-05","publicationDate":"2026-10-05","timezone":"UTC",
+  "repository":"coolifystealthagents/outsourcedcallers","productionBranch":"main","integrationBranch":"routine/outaaaaa-75-20261005",
+  "baseProductionSha":"3eae7d0abe21d3f1696cf0f0e5df6c31e66764f8","contentCommitSha":"b8af6d479a175fdde67a8d581d1f3f5838510346",
+  "entries":[
+    {"slug":"inbound-call-overflow-trigger-design","words":908,"contentHash":"936d74a37208214bb718305cd41b94e79166313d9f2d58774161e48be9214d9f","route":"/blog/inbound-call-overflow-trigger-design","service":"/services/inbound-call-handling"},
+    {"slug":"appointment-setting-calendar-conflict-recovery","words":925,"contentHash":"04d8617e58239602e2985b0687b881224988c3a6c1d47740411a07c9a722bbfb","route":"/blog/appointment-setting-calendar-conflict-recovery","service":"/services/appointment-setting"},
+    {"slug":"outbound-calling-contact-timezone-controls","words":918,"contentHash":"3772b275ddb981c5ad9dbf7bec58a79ed632ff55d594eaecce1e876ffb67c318","route":"/blog/outbound-calling-contact-timezone-controls","service":"/services/outbound-lead-qualification"},
+    {"slug":"lead-qualification-multiple-stakeholder-routing","words":905,"contentHash":"dc2264875959b0457650ef330db1f0669c3a2a678cf7eaea74319d2f5342c0d6","route":"/blog/lead-qualification-multiple-stakeholder-routing","service":"/services/outbound-lead-qualification"},
+    {"slug":"customer-follow-up-duplicate-request-consolidation","words":903,"contentHash":"8ccbdae38ca537055662ee4906653c31cee22a638e4c56fcd86a1cca9c5a7858","route":"/blog/customer-follow-up-duplicate-request-consolidation","service":"/services/customer-follow-up-calls"},
+    {"slug":"order-confirmation-address-change-boundaries","words":990,"contentHash":"1ce3589603ca73e0bd9c38305b2489e83a2ca107de8ac3dea909b097c09bb41d","route":"/blog/order-confirmation-address-change-boundaries","service":"/services/order-confirmation-calls"},
+    {"slug":"renewal-reminder-account-owner-change-handoff","words":901,"contentHash":"9e301edfc888e33ed567a944cdd84dc8d95e21675e243f241daae02c4b8aa21a","route":"/blog/renewal-reminder-account-owner-change-handoff","service":"/services/renewal-reminder-calls"},
+    {"slug":"database-verification-conflicting-contact-evidence","words":939,"contentHash":"ff32cee63bc217a982285374bd498de4fdf40e343a8981e788c454f93aacbd7a","route":"/blog/database-verification-conflicting-contact-evidence","service":"/services/database-verification-calls"},
+    {"slug":"survey-calling-proxy-response-rules","words":926,"contentHash":"43a1bbc488ae41f6258921f6445f72f434ebbc126f62f6153f7152984972d18d","route":"/blog/survey-calling-proxy-response-rules","service":"/services/survey-calling"},
+    {"slug":"win-back-calling-existing-open-case-check","words":905,"contentHash":"31f2cf77c563cf85ec4a1462802236bfc58feabbe39e80049b5270715cc921c4","route":"/blog/win-back-calling-existing-open-case-check","service":"/services/win-back-campaign-support"},
+    {"slug":"call-quality-review-evidence-disagreement","words":932,"contentHash":"a287caa22f0f0ca5c3208e671ff0158e37dc3b96105b9b3f73a11f3e092f9bad","route":"/blog/call-quality-review-evidence-disagreement","service":"/services/call-quality-review"},
+    {"slug":"outsourced-calling-shift-handoff-standard","words":920,"contentHash":"101c9a633ba67273262940dfd3e22f9d78f5098cede80977d86afab753964574","route":"/blog/outsourced-calling-shift-handoff-standard","service":"/services/call-quality-review"}
+  ],
+  "deployment":{"resource":"Coolify3 application s535e0bdro67gjswf330t59e","owner":"browser operator","status":"pending sole combined push and operator success"}
+}
