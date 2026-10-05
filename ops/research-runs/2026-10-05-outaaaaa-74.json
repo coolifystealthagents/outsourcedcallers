@@ -10,6 +10,7 @@
   "repository": "coolifystealthagents/outsourcedcallers",
   "productionBranch": "main",
   "baseProductionSha": "3eae7d0abe21d3f1696cf0f0e5df6c31e66764f8",
+  "contentCommitSha": "4f619ed42318067ae0e8e059aefb6c60825a4eb0",
   "integrationBranch": "routine/outaaaaa-74-20261005",
   "handoffRole": "Research local handoff only",
   "deployment": {"resource":"Coolify3 application s535e0bdro67gjswf330t59e","status":"pending sole Blog integration, browser-operator deployment, and all-17 live verification"},
