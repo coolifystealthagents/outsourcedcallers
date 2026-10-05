@@ -13,6 +13,7 @@ export type Detail = {
 };
 
 import { oct05Batch2Entries } from './oct05-blog-batch2';
+import { oct05Batch3Entries } from './oct05-blog-batch3';
 
 const sources = [
   {name:'FCC consumer guide: Stop Unwanted Robocalls and Texts',url:'https://www.fcc.gov/consumers/guides/stop-unwanted-robocalls-and-texts'},
@@ -60,6 +61,8 @@ const overflow: Detail = {
       'Track answer and abandonment rates, but connect them to record quality. Sample whether the note identifies the caller, purpose, affected account or service, safe contact method, urgency facts, stated availability, destination, and next owner. Check that consent and contact-preference changes reached the authoritative system. A short call with missing context can create more customer effort than a slightly longer wait.',
       'Review repeat contact within a useful window. A caller may ring again because the line dropped, because the promised callback never occurred, or because the first message did not capture the request. Those causes need different corrections. Reconcile the telephony event, overflow note, owner acknowledgment, downstream action, and later contact instead of labelling every repeat as new demand.',
       'A weekly review should ask which triggers fired, whether the activation cause was correctly classified, which lanes produced the most exceptions, and whether primary capacity or routing needs a permanent change. Overflow is a resilience control, not a substitute for fixing recurring understaffing, broken destinations, or unclear ownership.'
+      ,'Run a tabletop exercise before launch. Use a sudden ten-minute spike, an invalid primary extension, an urgent call outside the overflow lane, and a callback owner who does not acknowledge the message. Follow each event from router to final action and record where evidence disappears. The exercise should test what the caller sees, what the primary team sees, and how a manager disables the route safely. Correct the workflow before live callers discover those gaps.'
+      ,'Document customer-facing continuity when overflow ends during an active interaction. A caller already speaking with the overflow team should normally finish the approved task rather than being transferred back solely because the queue recovered. New calls can return to the primary path while accepted handoffs remain with their recorded owners. This prevents route changes from creating duplicate notes, repeated identity checks, or a conversation that neither team believes it owns.'
     ]}
   ],
   scripts:[
@@ -128,6 +131,7 @@ const calendarConflict: Detail = {
       'Count a recovery only when the prospect’s decision and the final calendar state agree. Useful outcomes include replacement accepted, original retained, owner exception pending, prospect declined, no response after the approved sequence, and duplicate resolved. A changed calendar without prospect acceptance is not a successful rebooking.',
       'Review lead time between conflict discovery and first contact, the share resolved before the original time, context completeness, host acknowledgment, repeated changes, and held-meeting outcome. Segment by conflict cause. A recurring host conflict suggests availability governance; frequent duplicates suggest integration or process defects; meeting-type mismatches suggest qualification or routing problems.',
       'Use the review to repair the upstream control. Update availability buffers, ownership tables, integration behavior, or meeting definitions. Coaching the caller may help when the sequence was not followed, but it will not fix a calendar that publishes invalid availability. The best recovery routine reduces how often recovery is needed.'
+      ,'Include the prospect-facing notifications in the audit. Calendar platforms can send an update, a cancellation, and a replacement in an order that makes sense technically but looks contradictory in an inbox. Preview the sequence for email and calendar clients used by the audience. The owner should decide whether to edit one event or create a replacement, and the caller should follow that rule consistently so the prospect can identify the final invitation.'
     ]}
   ],
   scripts:[
@@ -261,6 +265,7 @@ const stakeholderRouting: Detail = {
       'More contacts are not necessarily better qualification. Measure whether the team resolved material decision gaps, obtained attributable evidence, used appropriate contact paths, and produced accepted handoffs. Count duplicate outreach, conflicting promises, opt-out propagation failures, and meetings missing required roles as defects rather than activity.',
       'Review stalled opportunities by missing decision. Some may lack a defined problem, others a process owner, evaluation criteria, timing evidence, or an authorized next step. This analysis improves list and script design because it shows what the caller can reasonably learn and what belongs to the internal owner. It also reveals when the campaign is contacting roles that cannot answer its questions.',
       'Audit a sample from first contact through handoff. Reconstruct each person’s source, role evidence, statements, preferences, introductions, and next actions. Check that no claim moved between people without attribution and that the final route followed the decision map. The aim is a truthful, usable picture of the buying work—not a crowded org chart.'
+      ,'Test the map against a worked account before releasing the script. Give the caller a department manager who reports an operational problem, a user who disagrees about its cause, a security reviewer with a mandatory questionnaire, and a finance contact who will not discuss timing. Ask the caller to identify what is known, what conflicts, and which single next action is justified. Reviewers should reach the same route from the saved evidence.'
     ]}
   ],
   scripts:[
@@ -289,6 +294,7 @@ const entries = [
   {slug:'outbound-calling-contact-timezone-controls',title:'Timezone controls for outsourced outbound calling campaigns',excerpt:'Verify and apply contact-local calling windows without treating an area code, headquarters address, or CRM default as proof.',detail:timezoneControls},
   {slug:'lead-qualification-multiple-stakeholder-routing',title:'How to route leads with multiple buying stakeholders',excerpt:'Map decision evidence across sponsors, users, evaluators, and approvers without collapsing person-level permissions or claims.',detail:stakeholderRouting},
   ...oct05Batch2Entries,
+  ...oct05Batch3Entries,
 ] as const;
 
 export function buildOct05Blog(publicationDate: string) {

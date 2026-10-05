@@ -36,10 +36,10 @@
   },
   "countsAtAudit": {
     "blogRequired": 12,
-    "blogDrafted": 6,
+    "blogDrafted": 12,
     "researchRequired": 5,
     "researchIntegrated": 5,
     "liveVerified": 0
   },
-  "releaseHold": "Do not push until six remaining Blog articles are complete and all 17 combined gates pass. Deployment remains browser-operator-only after the sole non-force push."
+  "releaseHold": "Do not push until all 17 combined gates pass. Deployment remains browser-operator-only after the sole non-force push."
 }
