@@ -1,4 +1,4 @@
-type Detail = {
+export type Detail = {
   published: string; mainKeyword: string; summary: string; takeaways: string[];
   decisionTable: Array<{lane:string;caller:string;owner:string;measure:string}>;
   planningBands: Array<{label:string;value:string;note:string}>;
@@ -11,6 +11,8 @@ type Detail = {
   banners: Array<{label:string;title:string;text:string;href:string;cta:string}>;
   image: string;
 };
+
+import { oct05Batch2Entries } from './oct05-blog-batch2';
 
 const sources = [
   {name:'FCC consumer guide: Stop Unwanted Robocalls and Texts',url:'https://www.fcc.gov/consumers/guides/stop-unwanted-robocalls-and-texts'},
@@ -286,6 +288,7 @@ const entries = [
   {slug:'appointment-setting-calendar-conflict-recovery',title:'A calendar conflict recovery process for outsourced appointment setting',excerpt:'Recover double bookings and blocked times while preserving prospect agreement, routing rules, and calendar evidence.',detail:calendarConflict},
   {slug:'outbound-calling-contact-timezone-controls',title:'Timezone controls for outsourced outbound calling campaigns',excerpt:'Verify and apply contact-local calling windows without treating an area code, headquarters address, or CRM default as proof.',detail:timezoneControls},
   {slug:'lead-qualification-multiple-stakeholder-routing',title:'How to route leads with multiple buying stakeholders',excerpt:'Map decision evidence across sponsors, users, evaluators, and approvers without collapsing person-level permissions or claims.',detail:stakeholderRouting},
+  ...oct05Batch2Entries,
 ] as const;
 
 export function buildOct05Blog(publicationDate: string) {
