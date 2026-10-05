@@ -2,7 +2,7 @@
   "runId":"OUTAAAAA-75","family":"Blog","required":12,"staged":12,"verified":0,
   "cycleLabel":"2026-10-05","publicationDate":"2026-10-05","timezone":"UTC",
   "repository":"coolifystealthagents/outsourcedcallers","productionBranch":"main","integrationBranch":"routine/outaaaaa-75-20261005",
-  "baseProductionSha":"3eae7d0abe21d3f1696cf0f0e5df6c31e66764f8","contentCommitSha":"b8af6d479a175fdde67a8d581d1f3f5838510346",
+  "baseProductionSha":"3eae7d0abe21d3f1696cf0f0e5df6c31e66764f8","contentCommitSha":"96368f87d2099c6a9fb030c88f80c38274cf74d4",
   "entries":[
     {"slug":"inbound-call-overflow-trigger-design","words":908,"contentHash":"936d74a37208214bb718305cd41b94e79166313d9f2d58774161e48be9214d9f","route":"/blog/inbound-call-overflow-trigger-design","service":"/services/inbound-call-handling"},
     {"slug":"appointment-setting-calendar-conflict-recovery","words":925,"contentHash":"04d8617e58239602e2985b0687b881224988c3a6c1d47740411a07c9a722bbfb","route":"/blog/appointment-setting-calendar-conflict-recovery","service":"/services/appointment-setting"},

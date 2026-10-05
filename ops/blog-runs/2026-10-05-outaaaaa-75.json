@@ -1,0 +1,20 @@
+{
+  "runId":"OUTAAAAA-75","cycleLabel":"2026-10-05","publicationTimezone":"UTC","publicationDate":"2026-10-05",
+  "repository":"coolifystealthagents/outsourcedcallers","productionBranch":"main","integrationBranch":"routine/outaaaaa-75-20261005",
+  "baseProductionSha":"3eae7d0abe21d3f1696cf0f0e5df6c31e66764f8","contentCommitSha":"96368f87d2099c6a9fb030c88f80c38274cf74d4",
+  "required":{"Blog":12,"Research":5},"staged":{"Blog":12,"Research":5},"liveVerified":{"Blog":0,"Research":0},
+  "validation":{
+    "lockedInstall":"PASS: npm ci --include=dev --ignore-scripts --no-audit --no-fund",
+    "dependencyAudit":"PASS: npm audit --omit=dev --audit-level=high; 0 vulnerabilities",
+    "typescript":"PASS",
+    "tests":"PASS: 7/7",
+    "cleanProductionBuild":"PASS: 706 static pages; pre-existing workspace-root and CSS flex-start warnings only",
+    "renderedBlog":"PASS: 12 routes; full ordered body paragraphs, titles, UTC visible and structured dates, canonicals, contextual internal links, Blog index, sitemap, and image HTTP/MIME/signature",
+    "renderedResearch":"PASS: 5 routes; titles, UTC visible and structured dates, canonicals, contextual internal links, Research index, sitemap, and image HTTP/MIME",
+    "links":"PASS after replacing one bot-blocked source destination: all contextual internal and authoritative source destinations returned HTTP 200 in final source inventory",
+    "blogOriginality":{"bodyOnlyWords":[908,925,918,905,903,990,901,939,926,905,932,920],"maximumFiveWordShingleJaccard":0,"repeatedSubstantiveParagraphs":0,"qualitativeSharedArgumentAndExampleReview":"PASS"},
+    "researchOriginality":{"bodyOnlyWords":[1256,1260,1262,1212,1230],"maximumFiveWordShingleJaccard":0.0020218358269308533,"repeatedSubstantiveParagraphs":0,"qualitativeSharedArgumentAndExampleReview":"PASS"}
+  },
+  "deployment":{"resource":"Coolify3 application s535e0bdro67gjswf330t59e","owner":"browser operator","status":"pending exact-SHA pin and successful deployment after sole combined push"},
+  "publicVerification":"pending operator success; existing OUTAAAAA-75 agent will verify all 17 routes"
+}
