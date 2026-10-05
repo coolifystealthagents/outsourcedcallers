@@ -6,7 +6,7 @@
   "productionBranch": "main",
   "integrationBranch": "routine/outaaaaa-75-20261005",
   "pairedResearchIssue": "OUTAAAAA-74",
-  "siteTimezone": "pending repository/runtime confirmation before release",
+  "siteTimezone": "UTC (confirmed in ops/recurring-routines.json and ops/routines.json; must be rechecked immediately before release)",
   "publicationDateRule": "October 5 is a cycle label only. Set each article's publication date to its actual first successful public verification date in the configured site timezone; do not backdate.",
   "audit": {
     "remoteBaselineFetchedAt": "2026-10-05T17:00:00Z",
@@ -36,5 +36,5 @@
     "qualitativeOriginality": ["no repeated substantive paragraphs", "no shared argument or section sequence", "no reused worked examples", "no prior-corpus topical collision"],
     "requiredPerArticle": ["distinct structure", "topic-specific example", "practical decision steps", "authoritative sources for changeable claims", "contextual service CTA", "source-to-rendered paragraph and hash equality"]
   },
-  "releaseState": "Isolated Blog branch established and topic inventory staged. Drafting, Research handoff, combined validation, sole push, browser-operated deployment, and all-17 live verification remain pending."
+  "releaseState": "Isolated Blog branch established; 2 of 12 complete Blog source records are drafted and locally integrated for build-time routing. Ten Blog drafts, Research handoff, combined validation, sole push, browser-operated deployment, and all-17 live verification remain pending."
 }
