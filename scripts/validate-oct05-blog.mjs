@@ -7,7 +7,7 @@ const manifest=JSON.parse(fs.readFileSync('.paperclip/daily-content/2026-10-05/b
 const tokens=t=>t.toLowerCase().match(/[a-z0-9]+(?:['’-][a-z0-9]+)*/g)??[];
 const shingles=(t,n=5)=>new Set(Array.from({length:Math.max(0,t.length-n+1)},(_,i)=>t.slice(i,i+n).join(' ')));
 const prior=fs.readdirSync('app').filter(n=>n.endsWith('-blog.ts')&&!files.some(f=>f.endsWith(n))).map(n=>fs.readFileSync(`app/${n}`,'utf8')).join('\n');
-const priorLedger=fs.readFileSync('ops/blog-topic-ledger.jsonl','utf8');
+const priorLedger=fs.readFileSync('ops/blog-topic-ledger.jsonl','utf8').split('\n').filter(line=>!line.includes('"runId":"OUTAAAAA-75"')).join('\n');
 const found=[];
 
 function add(slug,sectionSource){
