@@ -1,0 +1,45 @@
+{
+  "runId": "OUTAAAAA-75",
+  "cycleLabel": "2026-10-05",
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "productionBranch": "main",
+  "integrationBranch": "routine/outaaaaa-75-20261005",
+  "baseProductionSha": "3eae7d0abe21d3f1696cf0f0e5df6c31e66764f8",
+  "publicationTimezone": "UTC",
+  "researchHandoff": {
+    "sourceIssue": "OUTAAAAA-74",
+    "sourceWorktree": "/paperclip/instances/default/projects/80e03f26-67dd-411a-b27d-b00987ac424b/0e29668e-a563-4b4f-a3ce-9397a86c88d4/_default/outaaaaa-74-research-20261005",
+    "sourceCommitsInRequiredOrder": [
+      "4f619ed42318067ae0e8e059aefb6c60825a4eb0",
+      "a365422d8da029d0b514ad76dda106a24e4f6089"
+    ],
+    "integratedCommitsInRequiredOrder": [
+      "fe0c595e6650b6193e8ebb55c7379436a417d1b3",
+      "ee06d8bf952cbbd5efd2214e643270071095cd11"
+    ],
+    "articleCount": 5,
+    "bodyWords": [1256, 1260, 1262, 1212, 1230],
+    "contentHashes": [
+      "cae3d212fd4b7b1a427b9bade29aeb5cb968354c6083f9deacac18b5fd85fa76",
+      "1e5e6890b9137f12de16c8e211568a3a2f2891da2a9311296ba388e2d4737766",
+      "c026bbb20c9f9f397033bebe9d33d4ec6be3feef3e27acea074fc1dfc7097d58",
+      "ef220e6427cf7a791d26b3bcaa741a1dd4888f1d98948745e5c3e31f3134da27",
+      "d5c6de8762933f286bb39abed6a363e7373da7db26ab4e155435561b81c5c39a"
+    ],
+    "validation": {
+      "validator": "PASS on source handoff and combined integration head",
+      "typescript": "PASS on source handoff and combined integration head",
+      "maximumPairwiseFiveWordShingleJaccard": 0.0020218358269308533,
+      "repeatedSubstantiveParagraphs": 0,
+      "qualitativeArgumentAndExampleReview": "PASS: distinct evidence questions, methods, limitations, argument sequences, worked cases, and reader outcomes"
+    }
+  },
+  "countsAtAudit": {
+    "blogRequired": 12,
+    "blogDrafted": 2,
+    "researchRequired": 5,
+    "researchIntegrated": 5,
+    "liveVerified": 0
+  },
+  "releaseHold": "Do not push until ten remaining Blog articles are complete and all 17 combined gates pass. Deployment remains browser-operator-only after the sole non-force push."
+}
