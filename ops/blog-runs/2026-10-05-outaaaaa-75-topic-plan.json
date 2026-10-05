@@ -36,5 +36,5 @@
     "qualitativeOriginality": ["no repeated substantive paragraphs", "no shared argument or section sequence", "no reused worked examples", "no prior-corpus topical collision"],
     "requiredPerArticle": ["distinct structure", "topic-specific example", "practical decision steps", "authoritative sources for changeable claims", "contextual service CTA", "source-to-rendered paragraph and hash equality"]
   },
-  "releaseState": "Isolated Blog branch established; 2 of 12 complete Blog source records are drafted and locally integrated for build-time routing. Ten Blog drafts, Research handoff, combined validation, sole push, browser-operated deployment, and all-17 live verification remain pending."
+  "releaseState": "Isolated Blog branch established; 4 of 12 complete Blog source records are drafted and locally integrated for build-time routing. Research 5 of 5 is integrated. Eight Blog drafts, combined validation, sole push, browser-operated deployment, and all-17 live verification remain pending."
 }
