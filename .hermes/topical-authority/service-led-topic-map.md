@@ -13,7 +13,7 @@ The service pages are the commercial pillars. Research pages examine one narrow 
 | Service pillar | Existing supporting research route | Reader decision supported | Link status |
 | --- | --- | --- | --- |
 | `/services/appointment-setting` | `/research/appointment-setting-held-meeting-attribution-research` | Decide whether a held meeting is distinct from a booking and a later business result before reviewing the appointment-setting lane. | Existing reader-facing handoff, added in commit `e14038cc2156d31bced9b0c19b0878ef67596969`. |
-| `/services/outbound-lead-qualification` | `/research/outbound-call-answer-rate-denominator-research` | Choose a reporting denominator without treating a connected call as a qualified lead or outcome. | Candidate needs editorial review. |
+| `/services/outbound-lead-qualification` | `/research/outbound-call-answer-rate-denominator-research` | Choose a reporting denominator without treating a connected call as a qualified lead or outcome. | Reader-facing handoff added in the rendered-source commit for this review. |
 | `/services/customer-follow-up-calls` | `/research/customer-follow-up-resolution-proof-research` | Decide what proof is needed before a follow-up case is called resolved. | Existing reader-facing handoff, added in commit `99bd6ce42fec2bd60b861bd920ed8100bfa95a82`. |
 | `/services/customer-follow-up-calls` | `/research/customer-follow-up-resolution-time-clock-research` | Decide which clock events the team should review before changing its follow-up workflow. | Existing reader-facing handoff, added in commit `29d399b2d7f8537091cc32f1758912d7b0866562`. |
 | `/services/call-quality-review` | `/research/call-quality-rater-disagreement-research` | Turn reviewer disagreement into a clearer call-quality rubric without treating score use or coaching as a caller decision. | Existing reader-facing handoff, added in commit `bdc1f874208498d42e40c1b8471de11cefdb5e8d`. |
@@ -28,7 +28,7 @@ The service pages are the commercial pillars. Research pages examine one narrow 
 
 Use a research-to-service link only when the source route gives a reader a specific next decision that the destination service scope can help them plan. The link copy must name that decision, keep the client in charge of sensitive or commercial authority, and avoid suggesting that a research note proves staffing performance.
 
-The appointment-setting, customer-follow-up, call-quality, and inbound handoffs are confirmed reader-facing pairs in this record. Before another pair moves from this ledger to a route, review the source and destination together for intent fit, visible copy, Philippines-only scope, owner boundaries, generated HTML, and sitemap coverage.
+The appointment-setting, customer-follow-up, call-quality, inbound, and outbound-lead-qualification handoffs are confirmed reader-facing pairs in this record. Before another pair moves from this ledger to a route, review the source and destination together for intent fit, visible copy, Philippines-only scope, owner boundaries, generated HTML, and sitemap coverage.
 
 ## Duplicate-prevention rules
 
@@ -38,4 +38,4 @@ Do not use broad claims about answer rates, show rates, or caller quality as a s
 
 ## Next editorial candidate
 
-The call-quality and inbound pairs are already delivered. Do not add a second CTA. The next unreviewed pair remains outbound lead qualification: `/research/outbound-call-answer-rate-denominator-research` to `/services/outbound-lead-qualification`.
+The call-quality, inbound, and outbound-lead-qualification pairs are already delivered. Do not add a second CTA. The next unreviewed pair is reception overflow: `/research/inbound-reception-message-completeness-research` to `/services/reception-overflow`.
