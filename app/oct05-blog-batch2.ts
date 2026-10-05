@@ -3,7 +3,7 @@ import type { Detail } from './oct05-blog';
 const sources = [
   {name:'NIST Privacy Framework',url:'https://www.nist.gov/privacy-framework'},
   {name:'FTC: Protecting Personal Information',url:'https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business'},
-  {name:'National Privacy Commission: Data Privacy Act',url:'https://privacy.gov.ph/data-privacy-act/'},
+  {name:'NIST Cybersecurity Framework 2.0',url:'https://www.nist.gov/cyberframework'},
 ];
 
 const duplicateRequests: Detail = {
