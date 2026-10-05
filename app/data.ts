@@ -49,6 +49,7 @@ import { sep24ResearchPosts } from './sep24-research';
 import { sep25ResearchPosts } from './sep25-research';
 import { sep28ResearchPosts } from './sep28-research';
 import { oct02ResearchPosts } from './oct02-research';
+import { oct05ResearchPosts } from './oct05-research';
 
 export const site = {
   "domain": "OutsourcedCallers.com",
@@ -1652,6 +1653,7 @@ function makeResearchPost([slug, title, excerpt]: readonly [string, string, stri
 }
 
 export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; updated?: string; image?: string; handoff?: { href: string; label: string; text: string } }> = [
+  ...oct05ResearchPosts,
   ...oct02ResearchPosts,
   ...sep28ResearchPosts,
   ...sep25ResearchPosts,

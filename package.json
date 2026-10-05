@@ -29,6 +29,7 @@
     "validate:sep28-blog": "node scripts/validate-sep28-blog.mjs",
     "validate:sep28-research": "node scripts/validate-sep28-research.mjs"
     ,"validate:oct02-research": "node scripts/validate-oct02-research.mjs",
+    "validate:oct05-research": "node scripts/validate-oct05-research.mjs",
     "validate:oct02-blog-source": "node scripts/validate-oct02-blog-source.mjs",
     "validate:oct02-combined": "node scripts/validate-oct02-combined.mjs"
   },

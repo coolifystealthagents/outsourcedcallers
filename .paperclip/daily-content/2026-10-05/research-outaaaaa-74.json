@@ -1,0 +1,23 @@
+{
+  "runId": "OUTAAAAA-74",
+  "family": "Research",
+  "cycleLabel": "2026-10-05",
+  "publicationDate": "2026-10-05",
+  "timezone": "UTC",
+  "required": 5,
+  "staged": 5,
+  "verified": 0,
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "productionBranch": "main",
+  "baseProductionSha": "3eae7d0abe21d3f1696cf0f0e5df6c31e66764f8",
+  "integrationBranch": "routine/outaaaaa-74-20261005",
+  "deploymentResource": "Coolify3 application s535e0bdro67gjswf330t59e",
+  "publicationState": "staged for this cycle's Blog integrator; not pushed or deployed by Research",
+  "entries": [
+    {"topic":"Budget-currency evidence in lead qualification","slug":"lead-qualification-budget-currency-evidence-research","route":"/research/lead-qualification-budget-currency-evidence-research","service":"/services/outbound-lead-qualification","words":1256,"contentHash":"cae3d212fd4b7b1a427b9bade29aeb5cb968354c6083f9deacac18b5fd85fa76","liveUrl":"https://outsourcedcallers.com/research/lead-qualification-budget-currency-evidence-research","verificationTime":"pending combined release"},
+    {"topic":"Authority for group event-registration seats","slug":"event-group-registration-authority-research","route":"/research/event-group-registration-authority-research","service":"/services/event-registration-calls","words":1260,"contentHash":"1e5e6890b9137f12de16c8e211568a3a2f2891da2a9311296ba388e2d4737766","liveUrl":"https://outsourcedcallers.com/research/event-group-registration-authority-research","verificationTime":"pending combined release"},
+    {"topic":"Comparability across survey questionnaire versions","slug":"survey-questionnaire-version-transition-research","route":"/research/survey-questionnaire-version-transition-research","service":"/services/survey-calling","words":1262,"contentHash":"c026bbb20c9f9f397033bebe9d33d4ec6be3feef3e27acea074fc1dfc7097d58","liveUrl":"https://outsourcedcallers.com/research/survey-questionnaire-version-transition-research","verificationTime":"pending combined release"},
+    {"topic":"Ownership claims for shared mailboxes in database verification","slug":"database-shared-mailbox-ownership-research","route":"/research/database-shared-mailbox-ownership-research","service":"/services/database-verification-calls","words":1212,"contentHash":"ef220e6427cf7a791d26b3bcaa741a1dd4888f1d98948745e5c3e31f3134da27","liveUrl":"https://outsourcedcallers.com/research/database-shared-mailbox-ownership-research","verificationTime":"pending combined release"},
+    {"topic":"Channel-specific permission in customer follow-up","slug":"customer-follow-up-channel-switch-permission-research","route":"/research/customer-follow-up-channel-switch-permission-research","service":"/services/customer-follow-up-calls","words":1230,"contentHash":"d5c6de8762933f286bb39abed6a363e7373da7db26ab4e155435561b81c5c39a","liveUrl":"https://outsourcedcallers.com/research/customer-follow-up-channel-switch-permission-research","verificationTime":"pending combined release"}
+  ]
+}

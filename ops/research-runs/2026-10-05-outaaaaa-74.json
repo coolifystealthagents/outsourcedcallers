@@ -1,0 +1,32 @@
+{
+  "runId": "OUTAAAAA-74",
+  "family": "Research",
+  "requiredCount": 5,
+  "stagedCount": 5,
+  "verifiedCount": 0,
+  "cycleLabel": "2026-10-05",
+  "publicationTimezone": "UTC",
+  "publicationDate": "2026-10-05",
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "productionBranch": "main",
+  "baseProductionSha": "3eae7d0abe21d3f1696cf0f0e5df6c31e66764f8",
+  "integrationBranch": "routine/outaaaaa-74-20261005",
+  "handoffRole": "Research local handoff only",
+  "deployment": {"resource":"Coolify3 application s535e0bdro67gjswf330t59e","status":"pending sole Blog integration, browser-operator deployment, and all-17 live verification"},
+  "validation": {
+    "content": "PASS: exactly 5 new Research routes; rendered titles, October 5 visible and structured dates, canonicals, index, sitemap, contextual service links, source lines, and image HTTP/MIME verified locally",
+    "bodyWords": "PASS: 1256, 1260, 1262, 1212, 1230 substantive words",
+    "originality": "PASS: no repeated substantive paragraphs; independent methods, argument sequences, examples, analysis, and reader outcomes",
+    "maximumPairwiseFiveWordShingleJaccard": 0.0020218358269308533,
+    "typescript": "PASS",
+    "dependencyAudit": "PASS: npm ci --include=dev --ignore-scripts; 0 vulnerabilities",
+    "productionBuild": "PASS on Research head with pre-existing workspace-root and CSS autoprefixer warnings; combined-head build remains Blog integrator gate"
+  },
+  "articles": [
+    {"slug":"lead-qualification-budget-currency-evidence-research","words":1256,"contentHash":"cae3d212fd4b7b1a427b9bade29aeb5cb968354c6083f9deacac18b5fd85fa76","url":"https://outsourcedcallers.com/research/lead-qualification-budget-currency-evidence-research","verificationTime":"pending"},
+    {"slug":"event-group-registration-authority-research","words":1260,"contentHash":"1e5e6890b9137f12de16c8e211568a3a2f2891da2a9311296ba388e2d4737766","url":"https://outsourcedcallers.com/research/event-group-registration-authority-research","verificationTime":"pending"},
+    {"slug":"survey-questionnaire-version-transition-research","words":1262,"contentHash":"c026bbb20c9f9f397033bebe9d33d4ec6be3feef3e27acea074fc1dfc7097d58","url":"https://outsourcedcallers.com/research/survey-questionnaire-version-transition-research","verificationTime":"pending"},
+    {"slug":"database-shared-mailbox-ownership-research","words":1212,"contentHash":"ef220e6427cf7a791d26b3bcaa741a1dd4888f1d98948745e5c3e31f3134da27","url":"https://outsourcedcallers.com/research/database-shared-mailbox-ownership-research","verificationTime":"pending"},
+    {"slug":"customer-follow-up-channel-switch-permission-research","words":1230,"contentHash":"d5c6de8762933f286bb39abed6a363e7373da7db26ab4e155435561b81c5c39a","url":"https://outsourcedcallers.com/research/customer-follow-up-channel-switch-permission-research","verificationTime":"pending"}
+  ]
+}
