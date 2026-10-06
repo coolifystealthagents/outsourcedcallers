@@ -241,7 +241,7 @@ blogPosts.push(...sep25BlogPosts);
 blogPosts.push(...sep28BlogPosts);
 const {posts: oct02BlogPosts, details: oct02BlogDetails} = buildOct02Blog('2026-10-02');
 blogPosts.push(...oct02BlogPosts);
-const {posts: oct05BlogPosts, details: oct05BlogDetails} = buildOct05Blog('2026-10-05');
+const {posts: oct05BlogPosts, details: oct05BlogDetails} = buildOct05Blog('2026-10-06');
 blogPosts.push(...oct05BlogPosts);
 blogPosts.sort((a, b) => (('published' in b ? (b.published ?? '2026-07-28') : '2026-07-28').localeCompare('published' in a ? (a.published ?? '2026-07-28') : '2026-07-28')) || a.slug.localeCompare(b.slug));
 

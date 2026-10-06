@@ -22,7 +22,7 @@ const sources = [
 ];
 
 const overflow: Detail = {
-  published:'2026-10-05',
+  published:'2026-10-06',
   mainKeyword:'inbound call overflow triggers',
   summary:'An overflow trigger should describe an observable queue condition, the calls allowed to move, and the point at which normal routing resumes. It should not be a vague instruction to send calls elsewhere whenever the front desk feels busy.',
   takeaways:[
@@ -87,7 +87,7 @@ const overflow: Detail = {
 };
 
 const calendarConflict: Detail = {
-  published:'2026-10-05',
+  published:'2026-10-06',
   mainKeyword:'appointment setting calendar conflict recovery',
   summary:'Calendar conflict recovery is a controlled rebooking process. It preserves what the prospect agreed to, verifies the new constraint, offers only approved alternatives, and records acceptance before the original appointment is released.',
   takeaways:[
@@ -156,7 +156,7 @@ const calendarConflict: Detail = {
 };
 
 const timezoneControls: Detail = {
-  published:'2026-10-05', mainKeyword:'outbound calling timezone controls',
+  published:'2026-10-06', mainKeyword:'outbound calling timezone controls',
   summary:'A timezone control converts uncertain location evidence into a safe contact window. It keeps a caller from treating an area code, company headquarters, or CRM default as proof of where a person is today.',
   takeaways:[
     'Store the timezone used for the attempt, its evidence source, confidence, and the rule version that produced the allowed window.',
@@ -222,7 +222,7 @@ const timezoneControls: Detail = {
 };
 
 const stakeholderRouting: Detail = {
-  published:'2026-10-05', mainKeyword:'lead qualification multiple stakeholders',
+  published:'2026-10-06', mainKeyword:'lead qualification multiple stakeholders',
   summary:'Multi-stakeholder routing preserves each person’s role, evidence, and requested next step. It prevents a caller from treating the first friendly contact as the sole buyer or turning second-hand claims into qualification facts.',
   takeaways:[
     'Record sponsor, user, evaluator, approver, procurement, and blocker as evidence-backed roles rather than a fixed hierarchy.',

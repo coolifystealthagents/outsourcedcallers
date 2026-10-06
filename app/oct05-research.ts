@@ -155,7 +155,7 @@ export const oct05ResearchPosts = articles.map((article) => ({
   slug: article.slug,
   title: article.title,
   excerpt: article.excerpt,
-  published: '2026-10-05' as const,
+  published: '2026-10-06' as const,
   image: '/thank-you-hero.png',
   body: [
     ...article.body,

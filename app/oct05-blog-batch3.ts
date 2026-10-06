@@ -248,7 +248,7 @@ const drafts: Draft[] = [
 
 function detail(d: Draft): Detail {
   return {
-    published:'2026-10-05', mainKeyword:d.keyword, summary:d.summary, takeaways:d.takeaways,
+    published:'2026-10-06', mainKeyword:d.keyword, summary:d.summary, takeaways:d.takeaways,
     decisionTable:[
       {lane:'Standard',caller:'Follow the approved evidence and action rule',owner:'Maintain authority and resolve exceptions',measure:'Accepted actions with complete evidence'},
       {lane:'Uncertain',caller:'Preserve facts and use the hold route',owner:'Decide from authoritative sources',measure:'Uncertainty resolved without unsupported changes'},

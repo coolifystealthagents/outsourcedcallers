@@ -7,7 +7,7 @@ const sources = [
 ];
 
 const duplicateRequests: Detail = {
-  published:'2026-10-05', mainKeyword:'duplicate customer follow-up requests',
+  published:'2026-10-06', mainKeyword:'duplicate customer follow-up requests',
   summary:'Duplicate-request consolidation links related customer contacts without erasing separate promises, deadlines, channels, or evidence. The goal is one coordinated response, not one flattened record.',
   takeaways:[
     'Confirm that records describe the same customer, underlying need, and period before linking them.',
@@ -74,7 +74,7 @@ const duplicateRequests: Detail = {
 };
 
 const addressBoundaries: Detail = {
-  published:'2026-10-05', mainKeyword:'order confirmation address change process',
+  published:'2026-10-06', mainKeyword:'order confirmation address change process',
   summary:'An order-confirmation caller may capture an address-change request, but should change fulfillment data only when identity, timing, field scope, and approval rules all permit it. Confirmation and authorization are separate controls.',
   takeaways:[
     'Classify the change by destination field, fulfillment stage, value, sensitivity, and reversibility before editing anything.',

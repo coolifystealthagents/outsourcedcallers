@@ -13,11 +13,11 @@ const jaccard = (a, b) => { let intersection = 0; for (const value of a) if (b.h
 assert.equal(manifest.family, 'Research');
 assert.equal(manifest.required, 5);
 assert.equal(manifest.staged, 5);
-assert.equal(manifest.publicationDate, '2026-10-05');
+assert.equal(manifest.publicationDate, '2026-10-06');
 assert.equal(manifest.timezone, 'UTC');
 assert.equal(manifest.entries.length, 5);
 assert.equal(new Set(manifest.entries.map((entry) => entry.slug)).size, 5);
-assert.ok(source.includes("published: '2026-10-05' as const"));
+assert.ok(source.includes("published: '2026-10-06' as const"));
 
 const parts = source.split("    slug: '").slice(1);
 assert.equal(parts.length, 5);
@@ -74,8 +74,8 @@ if (base) {
     const html = await get(entry.route);
     const canonical = `https://outsourcedcallers.com${entry.route}`;
     assert.ok(html.includes(`<link rel="canonical" href="${canonical}"`), `${entry.route} canonical`);
-    assert.ok(html.includes('October 5, 2026'), `${entry.route} visible date`);
-    assert.ok(html.includes('"datePublished":"2026-10-05"'), `${entry.route} structured date`);
+    assert.ok(html.includes('October 6, 2026'), `${entry.route} visible date`);
+    assert.ok(html.includes('"datePublished":"2026-10-06"'), `${entry.route} structured date`);
     assert.ok(html.includes(`href="${entry.service}"`), `${entry.route} contextual internal link`);
     assert.ok(index.includes(`href="${entry.route}"`), `${entry.route} index`);
     assert.ok(sitemap.includes(`<loc>${canonical}</loc>`), `${entry.route} sitemap`);
