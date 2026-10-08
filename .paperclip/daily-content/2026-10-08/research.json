@@ -1,0 +1,17 @@
+{
+  "runId": "OCT8-OUTSOURCEDCALLERS-RESEARCH",
+  "family": "Research",
+  "required": 5,
+  "staged": 5,
+  "publicationDate": "2026-10-08",
+  "timezone": "UTC",
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "productionBranch": "main",
+  "entries": [
+    {"slug":"calling-disposition-inter-rater-reliability-research","words":1275,"route":"/research/calling-disposition-inter-rater-reliability-research"},
+    {"slug":"abandoned-call-callback-cohort-research","words":1236,"route":"/research/abandoned-call-callback-cohort-research"},
+    {"slug":"caller-id-source-accuracy-research","words":1209,"route":"/research/caller-id-source-accuracy-research"},
+    {"slug":"multi-channel-suppression-propagation-latency-research","words":1211,"route":"/research/multi-channel-suppression-propagation-latency-research"},
+    {"slug":"calling-script-deviation-sampling-research","words":1200,"route":"/research/calling-script-deviation-sampling-research"}
+  ]
+}

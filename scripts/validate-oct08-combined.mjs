@@ -1,0 +1,32 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { execFileSync, spawnSync } from 'node:child_process';
+
+const root=path.resolve(import.meta.dirname,'..');
+const read=(p)=>fs.readFileSync(path.join(root,p),'utf8');
+const parse=(p)=>JSON.parse(read(p).match(/=(\[[\s\S]*?\])(?: as const)?;/)[1]);
+const blog=parse('app/oct08-blog.ts');
+const research=parse('app/oct08-research.ts');
+const blogDetails=JSON.parse(read('app/oct08-blog.ts').match(/export const oct08BlogDetails=(\{[\s\S]*\}) satisfies Record/)[1]);
+const words=(s)=>(s.match(/[A-Za-z0-9][A-Za-z0-9'-]*/g)||[]).length;
+const shingles=(s)=>{const w=s.toLowerCase().match(/[a-z0-9]+/g)||[];return new Set(w.slice(0,-4).map((_,i)=>w.slice(i,i+5).join(' ')))};
+const overlap=(a,b)=>{const x=shingles(a),y=shingles(b),i=[...x].filter(v=>y.has(v)).length;return i/(x.size+y.size-i)};
+const assert=(ok,msg)=>{if(!ok)throw new Error(msg)};
+assert(blog.length===12,`expected 12 Blog articles, found ${blog.length}`);
+assert(research.length===5,`expected 5 Research articles, found ${research.length}`);
+const all=[...blog,...research];
+assert(new Set(all.map(x=>x.slug)).size===17,'October 8 slugs are not unique');
+assert(all.every(x=>x.published==='2026-10-08'),'publication date mismatch');
+const blogBodies=blog.map(x=>blogDetails[x.slug].sections.flatMap(s=>s.paragraphs).join(' '));
+assert(blogBodies.every(x=>words(x)>=900),'Blog article below 900 words');
+assert(research.every(x=>words(x.body.join(' '))>=1200),'Research article below 1200 words');
+for(const group of [blogBodies,research.map(x=>x.body.join(' '))])for(let i=0;i<group.length;i++)for(let j=i+1;j<group.length;j++)assert(overlap(group[i],group[j])<.5,`five-word overlap >= 0.5 for ${i}/${j}`);
+assert(all.every(x=>x.image==='/thank-you-hero.png'),'unexpected image path');
+execFileSync('git',['cat-file','-e','HEAD:public/thank-you-hero.png'],{cwd:root});
+for(const x of all){const found=spawnSync('git',['grep','-l',x.slug,'HEAD','--','app'],{cwd:root,encoding:'utf8'});assert(found.status===1,`slug already in HEAD: ${x.slug}`)}
+const data=read('app/data.ts'),blogList=read('app/blog/page.tsx')+read('app/blog/page/[page]/page.tsx'),researchList=read('app/research/page.tsx');
+assert(data.includes('...oct08ResearchPosts')&&data.includes('blogPosts.push(...oct08BlogPosts)'), 'registry wiring missing');
+assert(blogList.includes('Published:')&&researchList.includes('Published:'),'visible listing date missing');
+assert(read('app/blog/[slug]/page.tsx').includes('formatPublicationDate')&&read('app/research/[slug]/page.tsx').includes('formatPublicDate'),'visible article date missing');
+assert(research.every(x=>x.body.at(-1).includes('Federal Trade Commission')&&x.body.at(-1).includes('Federal Communications Commission')&&x.body.at(-1).includes('NIST Privacy Framework')&&x.body.at(-1).includes('Government Accountability Office')),'authoritative citations missing');
+console.log(JSON.stringify({status:'PASS',blog:blog.length,research:research.length,blogMin:Math.min(...blogBodies.map(words)),researchMin:Math.min(...research.map(x=>words(x.body.join(' '))))},null,2));

@@ -50,6 +50,8 @@ import { sep25ResearchPosts } from './sep25-research';
 import { sep28ResearchPosts } from './sep28-research';
 import { oct02ResearchPosts } from './oct02-research';
 import { oct05ResearchPosts } from './oct05-research';
+import { oct08BlogPosts, oct08BlogDetails } from './oct08-blog';
+import { oct08ResearchPosts } from './oct08-research';
 
 export const site = {
   "domain": "OutsourcedCallers.com",
@@ -243,6 +245,7 @@ const {posts: oct02BlogPosts, details: oct02BlogDetails} = buildOct02Blog('2026-
 blogPosts.push(...oct02BlogPosts);
 const {posts: oct05BlogPosts, details: oct05BlogDetails} = buildOct05Blog('2026-10-06');
 blogPosts.push(...oct05BlogPosts);
+blogPosts.push(...oct08BlogPosts);
 blogPosts.sort((a, b) => (('published' in b ? (b.published ?? '2026-07-28') : '2026-07-28').localeCompare('published' in a ? (a.published ?? '2026-07-28') : '2026-07-28')) || a.slug.localeCompare(b.slug));
 
 export const blogDetails = {
@@ -1331,6 +1334,9 @@ for (const post of oct02BlogPosts) {
 for (const post of oct05BlogPosts) {
   blogDetailRecord[post.slug] = (oct05BlogDetails as Record<string, unknown>)[post.slug] as never;
 }
+for (const post of oct08BlogPosts) {
+  blogDetailRecord[post.slug] = (oct08BlogDetails as Record<string, unknown>)[post.slug] as never;
+}
 
 export const staffingOffer = {
   partner: 'our Philippines staffing team',
@@ -1653,6 +1659,7 @@ function makeResearchPost([slug, title, excerpt]: readonly [string, string, stri
 }
 
 export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; updated?: string; image?: string; handoff?: { href: string; label: string; text: string } }> = [
+  ...oct08ResearchPosts,
   ...oct05ResearchPosts,
   ...oct02ResearchPosts,
   ...sep28ResearchPosts,

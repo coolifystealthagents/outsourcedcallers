@@ -1,0 +1,24 @@
+{
+  "runId": "OCT8-OUTSOURCEDCALLERS-BLOG",
+  "family": "Blog",
+  "required": 12,
+  "staged": 12,
+  "publicationDate": "2026-10-08",
+  "timezone": "UTC",
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "productionBranch": "main",
+  "entries": [
+    {"slug":"calling-consent-revocation-synchronization","words":1015,"route":"/blog/calling-consent-revocation-synchronization"},
+    {"slug":"wrong-party-contact-recovery","words":1030,"route":"/blog/wrong-party-contact-recovery"},
+    {"slug":"appointment-setting-double-booking-prevention","words":1001,"route":"/blog/appointment-setting-double-booking-prevention"},
+    {"slug":"call-recording-disclosure-escalation","words":1021,"route":"/blog/call-recording-disclosure-escalation"},
+    {"slug":"bilingual-caller-language-preference-handoff","words":1007,"route":"/blog/bilingual-caller-language-preference-handoff"},
+    {"slug":"callback-identity-reverification","words":1004,"route":"/blog/callback-identity-reverification"},
+    {"slug":"outbound-list-change-control","words":1022,"route":"/blog/outbound-list-change-control"},
+    {"slug":"customer-complaint-threat-escalation","words":1026,"route":"/blog/customer-complaint-threat-escalation"},
+    {"slug":"sales-qualification-budget-uncertainty","words":1001,"route":"/blog/sales-qualification-budget-uncertainty"},
+    {"slug":"inbound-payment-request-boundary","words":1007,"route":"/blog/inbound-payment-request-boundary"},
+    {"slug":"after-hours-urgent-message-triage","words":1020,"route":"/blog/after-hours-urgent-message-triage"},
+    {"slug":"voicemail-content-minimization","words":1006,"route":"/blog/voicemail-content-minimization"}
+  ]
+}
