@@ -31,8 +31,9 @@
     ,"validate:oct02-research": "node scripts/validate-oct02-research.mjs",
     "validate:oct05-research": "node scripts/validate-oct05-research.mjs",
     "validate:oct02-blog-source": "node scripts/validate-oct02-blog-source.mjs",
-    "validate:oct02-combined": "node scripts/validate-oct02-combined.mjs"
-    ,"validate:oct05-blog": "node scripts/validate-oct05-blog.mjs"
+    "validate:oct02-combined": "node scripts/validate-oct02-combined.mjs",
+    "validate:oct05-blog": "node scripts/validate-oct05-blog.mjs",
+    "verify:reception-message-handoff": "node scripts/verify-reception-message-handoff.mjs"
   },
   "dependencies": {
     "@next/third-parties": "^15.1.6",

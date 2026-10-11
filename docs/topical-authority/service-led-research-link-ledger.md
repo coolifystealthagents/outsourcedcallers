@@ -12,6 +12,7 @@ The current typed service inventory contains these twelve pillars: Outbound Lead
 | --- | --- | --- | --- |
 | `/research/appointment-setting-held-meeting-attribution-research` | `/services/appointment-setting` | How can a team review a Philippines-based appointment-setting lane without treating attendance as proof of a later business result? | Delivered locally through the typed `handoff` record; do not add a second CTA. |
 | `/research/outbound-call-answer-rate-denominator-research` | `/services/outbound-lead-qualification` | How should a team choose a call-answer-rate denominator without calling a connection a qualified lead or a business result? | Delivered locally through the typed `handoff` record; do not add a second CTA. |
+| `/research/inbound-reception-message-completeness-research` | `/services/reception-overflow` | How can a team preserve purpose, timing, and callback details in an overflow message without deciding urgency? | Delivered locally through the typed `handoff` record; do not add a second CTA. |
 
 ## Verified-absent candidates
 

@@ -18,7 +18,7 @@ The service pages are the commercial pillars. Research pages examine one narrow 
 | `/services/customer-follow-up-calls` | `/research/customer-follow-up-resolution-time-clock-research` | Decide which clock events the team should review before changing its follow-up workflow. | Existing reader-facing handoff, added in commit `29d399b2d7f8537091cc32f1758912d7b0866562`. |
 | `/services/call-quality-review` | `/research/call-quality-rater-disagreement-research` | Turn reviewer disagreement into a clearer call-quality rubric without treating score use or coaching as a caller decision. | Existing reader-facing handoff, added in commit `bdc1f874208498d42e40c1b8471de11cefdb5e8d`. |
 | `/services/inbound-call-handling` | `/research/inbound-message-urgency-label-validity-research` | Decide what evidence to keep before the team relies on an urgency label. | Existing reader-facing handoff, added in commit `70babb8f249409b423814373fde2471f4edb7a28`. |
-| `/services/reception-overflow` | `/research/inbound-reception-message-completeness-research` | Decide when a saved message carries enough purpose, timing, and callback detail for the owner. | Candidate needs editorial review. |
+| `/services/reception-overflow` | `/research/inbound-reception-message-completeness-research` | Decide when a saved message carries enough purpose, timing, and callback detail for the owner. | Reader-facing handoff added in the rendered-source commit for this review; do not add a second CTA. |
 | `/services/survey-calling` | `/research/filipino-caller-neutrality-survey-response-quality` | Decide whether the call setup can support a neutral response record rather than a sales prompt. | Candidate needs editorial review. |
 | `/services/win-back-campaign-support` | `/research/win-back-call-refusal-suppression-evidence` | Decide whether a refusal reaches the next list release even when the person gives useful feedback. | Candidate needs editorial review. |
 | `/services/order-confirmation-calls` | `/research/order-confirmation-address-change-control-study` | Decide where confirmation ends and an address-change request must return to the fulfillment owner. | Candidate needs editorial review. |
@@ -28,7 +28,7 @@ The service pages are the commercial pillars. Research pages examine one narrow 
 
 Use a research-to-service link only when the source route gives a reader a specific next decision that the destination service scope can help them plan. The link copy must name that decision, keep the client in charge of sensitive or commercial authority, and avoid suggesting that a research note proves staffing performance.
 
-The appointment-setting, customer-follow-up, call-quality, inbound, and outbound-lead-qualification handoffs are confirmed reader-facing pairs in this record. Before another pair moves from this ledger to a route, review the source and destination together for intent fit, visible copy, Philippines-only scope, owner boundaries, generated HTML, and sitemap coverage.
+The appointment-setting, customer-follow-up, call-quality, inbound, outbound-lead-qualification, and reception-overflow handoffs are confirmed reader-facing pairs in this record. Before another pair moves from this ledger to a route, review the source and destination together for intent fit, visible copy, Philippines-only scope, owner boundaries, generated HTML, and sitemap coverage.
 
 ## Duplicate-prevention rules
 
@@ -38,4 +38,4 @@ Do not use broad claims about answer rates, show rates, or caller quality as a s
 
 ## Next editorial candidate
 
-The call-quality, inbound, and outbound-lead-qualification pairs are already delivered. Do not add a second CTA. The next unreviewed pair is reception overflow: `/research/inbound-reception-message-completeness-research` to `/services/reception-overflow`.
+The call-quality, inbound, outbound-lead-qualification, and reception-overflow pairs are already delivered. Do not add a second CTA. The next unreviewed pair is survey calling: `/research/filipino-caller-neutrality-survey-response-quality` to `/services/survey-calling`.
