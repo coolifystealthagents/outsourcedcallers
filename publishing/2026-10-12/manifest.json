@@ -1,0 +1,168 @@
+{
+  "site": "OutsourcedCallers.com",
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "branch": "main",
+  "date": "2026-10-12",
+  "blogCount": 12,
+  "researchCount": 5,
+  "registryPaths": [
+    "app/data.ts",
+    "app/oct12-blog.ts",
+    "app/oct12-research.ts"
+  ],
+  "items": [
+    {
+      "family": "blog",
+      "slug": "caller-opening-script-variant-approval-ledger",
+      "title": "A Caller Opening Script Variant Approval Ledger",
+      "published": "2026-10-12",
+      "image": "/oct12-heroes/caller-opening-script-variant-approval-ledger.png",
+      "sourcePath": "app/oct12-blog.ts",
+      "thumbnailPath": "public/oct12-heroes/caller-opening-script-variant-approval-ledger.png"
+    },
+    {
+      "family": "blog",
+      "slug": "warm-transfer-reconnect-protocol",
+      "title": "A Warm Transfer Reconnect Protocol for Outsourced Callers",
+      "published": "2026-10-12",
+      "image": "/oct12-heroes/warm-transfer-reconnect-protocol.png",
+      "sourcePath": "app/oct12-blog.ts",
+      "thumbnailPath": "public/oct12-heroes/warm-transfer-reconnect-protocol.png"
+    },
+    {
+      "family": "blog",
+      "slug": "prospect-requested-call-time-evidence-card",
+      "title": "A Prospect-Requested Call-Time Evidence Card",
+      "published": "2026-10-12",
+      "image": "/oct12-heroes/prospect-requested-call-time-evidence-card.png",
+      "sourcePath": "app/oct12-blog.ts",
+      "thumbnailPath": "public/oct12-heroes/prospect-requested-call-time-evidence-card.png"
+    },
+    {
+      "family": "blog",
+      "slug": "business-number-spam-label-remediation-packet",
+      "title": "A Business Number Spam-Label Remediation Packet",
+      "published": "2026-10-12",
+      "image": "/oct12-heroes/business-number-spam-label-remediation-packet.png",
+      "sourcePath": "app/oct12-blog.ts",
+      "thumbnailPath": "public/oct12-heroes/business-number-spam-label-remediation-packet.png"
+    },
+    {
+      "family": "blog",
+      "slug": "shared-household-number-contact-boundary",
+      "title": "A Shared Household Number Contact Boundary",
+      "published": "2026-10-12",
+      "image": "/oct12-heroes/shared-household-number-contact-boundary.png",
+      "sourcePath": "app/oct12-blog.ts",
+      "thumbnailPath": "public/oct12-heroes/shared-household-number-contact-boundary.png"
+    },
+    {
+      "family": "blog",
+      "slug": "caller-pronunciation-correction-record",
+      "title": "A Caller Pronunciation Correction Record",
+      "published": "2026-10-12",
+      "image": "/oct12-heroes/caller-pronunciation-correction-record.png",
+      "sourcePath": "app/oct12-blog.ts",
+      "thumbnailPath": "public/oct12-heroes/caller-pronunciation-correction-record.png"
+    },
+    {
+      "family": "blog",
+      "slug": "ivr-callback-queue-ownership-map",
+      "title": "An IVR Callback Queue Ownership Map",
+      "published": "2026-10-12",
+      "image": "/oct12-heroes/ivr-callback-queue-ownership-map.png",
+      "sourcePath": "app/oct12-blog.ts",
+      "thumbnailPath": "public/oct12-heroes/ivr-callback-queue-ownership-map.png"
+    },
+    {
+      "family": "blog",
+      "slug": "call-disposition-reason-code-retirement-plan",
+      "title": "A Call Disposition Reason-Code Retirement Plan",
+      "published": "2026-10-12",
+      "image": "/oct12-heroes/call-disposition-reason-code-retirement-plan.png",
+      "sourcePath": "app/oct12-blog.ts",
+      "thumbnailPath": "public/oct12-heroes/call-disposition-reason-code-retirement-plan.png"
+    },
+    {
+      "family": "blog",
+      "slug": "interrupted-call-resumption-context-note",
+      "title": "An Interrupted-Call Resumption Context Note",
+      "published": "2026-10-12",
+      "image": "/oct12-heroes/interrupted-call-resumption-context-note.png",
+      "sourcePath": "app/oct12-blog.ts",
+      "thumbnailPath": "public/oct12-heroes/interrupted-call-resumption-context-note.png"
+    },
+    {
+      "family": "blog",
+      "slug": "customer-alternate-number-verification-gate",
+      "title": "A Customer Alternate-Number Verification Gate",
+      "published": "2026-10-12",
+      "image": "/oct12-heroes/customer-alternate-number-verification-gate.png",
+      "sourcePath": "app/oct12-blog.ts",
+      "thumbnailPath": "public/oct12-heroes/customer-alternate-number-verification-gate.png"
+    },
+    {
+      "family": "blog",
+      "slug": "campaign-clock-change-release-checklist",
+      "title": "A Campaign Clock-Change Release Checklist",
+      "published": "2026-10-12",
+      "image": "/oct12-heroes/campaign-clock-change-release-checklist.png",
+      "sourcePath": "app/oct12-blog.ts",
+      "thumbnailPath": "public/oct12-heroes/campaign-clock-change-release-checklist.png"
+    },
+    {
+      "family": "blog",
+      "slug": "conference-call-participant-disclosure-gate",
+      "title": "A Conference-Call Participant Disclosure Gate",
+      "published": "2026-10-12",
+      "image": "/oct12-heroes/conference-call-participant-disclosure-gate.png",
+      "sourcePath": "app/oct12-blog.ts",
+      "thumbnailPath": "public/oct12-heroes/conference-call-participant-disclosure-gate.png"
+    },
+    {
+      "family": "research",
+      "slug": "predictive-dialer-abandoned-call-denominator-study",
+      "title": "How Should Predictive Dialer Abandoned Calls Be Reconciled?",
+      "published": "2026-10-12",
+      "image": "/oct12-heroes/predictive-dialer-abandoned-call-denominator-study.png",
+      "sourcePath": "app/oct12-research.ts",
+      "thumbnailPath": "public/oct12-heroes/predictive-dialer-abandoned-call-denominator-study.png"
+    },
+    {
+      "family": "research",
+      "slug": "call-transcript-correction-fidelity-study",
+      "title": "How Faithfully Do Call Transcript Corrections Preserve Evidence?",
+      "published": "2026-10-12",
+      "image": "/oct12-heroes/call-transcript-correction-fidelity-study.png",
+      "sourcePath": "app/oct12-research.ts",
+      "thumbnailPath": "public/oct12-heroes/call-transcript-correction-fidelity-study.png"
+    },
+    {
+      "family": "research",
+      "slug": "warm-transfer-context-loss-observation-study",
+      "title": "Where Does Context Disappear During Warm Call Transfers?",
+      "published": "2026-10-12",
+      "image": "/oct12-heroes/warm-transfer-context-loss-observation-study.png",
+      "sourcePath": "app/oct12-research.ts",
+      "thumbnailPath": "public/oct12-heroes/warm-transfer-context-loss-observation-study.png"
+    },
+    {
+      "family": "research",
+      "slug": "contact-list-source-age-connection-analysis",
+      "title": "Does Contact-List Source Age Predict a Usable Connection?",
+      "published": "2026-10-12",
+      "image": "/oct12-heroes/contact-list-source-age-connection-analysis.png",
+      "sourcePath": "app/oct12-research.ts",
+      "thumbnailPath": "public/oct12-heroes/contact-list-source-age-connection-analysis.png"
+    },
+    {
+      "family": "research",
+      "slug": "requested-callback-adherence-measurement-study",
+      "title": "How Should Requested Callback Adherence Be Measured?",
+      "published": "2026-10-12",
+      "image": "/oct12-heroes/requested-callback-adherence-measurement-study.png",
+      "sourcePath": "app/oct12-research.ts",
+      "thumbnailPath": "public/oct12-heroes/requested-callback-adherence-measurement-study.png"
+    }
+  ]
+}
