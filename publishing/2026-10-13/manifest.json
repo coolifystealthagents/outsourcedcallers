@@ -1,0 +1,169 @@
+{
+  "site": "OutsourcedCallers.com",
+  "repository": "coolifystealthagents/outsourcedcallers",
+  "branch": "main",
+  "baseSha": "abc24e02fb201c1bbb9c73c71d6d824c2dbcae9e",
+  "date": "2026-10-13",
+  "blogCount": 12,
+  "researchCount": 5,
+  "registryPaths": [
+    "app/data.ts",
+    "app/oct13-blog.ts",
+    "app/oct13-research.ts"
+  ],
+  "items": [
+    {
+      "family": "blog",
+      "slug": "caller-script-withdrawal-version-ledger",
+      "title": "A Caller Script Withdrawal Version Ledger",
+      "published": "2026-10-13",
+      "image": "/oct13-heroes/caller-script-withdrawal-version-ledger.png",
+      "sourcePath": "app/oct13-blog.ts",
+      "thumbnailPath": "public/oct13-heroes/caller-script-withdrawal-version-ledger.png"
+    },
+    {
+      "family": "blog",
+      "slug": "voicemail-optout-retry-protocol",
+      "title": "A Voicemail Opt-Out Retry Protocol for Outsourced Callers",
+      "published": "2026-10-13",
+      "image": "/oct13-heroes/voicemail-optout-retry-protocol.png",
+      "sourcePath": "app/oct13-blog.ts",
+      "thumbnailPath": "public/oct13-heroes/voicemail-optout-retry-protocol.png"
+    },
+    {
+      "family": "blog",
+      "slug": "contact-timezone-confirmation-evidence-card",
+      "title": "A Contact Time-Zone Confirmation Evidence Card",
+      "published": "2026-10-13",
+      "image": "/oct13-heroes/contact-timezone-confirmation-evidence-card.png",
+      "sourcePath": "app/oct13-blog.ts",
+      "thumbnailPath": "public/oct13-heroes/contact-timezone-confirmation-evidence-card.png"
+    },
+    {
+      "family": "blog",
+      "slug": "business-number-ownership-reassignment-packet",
+      "title": "A Business Number Ownership Reassignment Packet",
+      "published": "2026-10-13",
+      "image": "/oct13-heroes/business-number-ownership-reassignment-packet.png",
+      "sourcePath": "app/oct13-blog.ts",
+      "thumbnailPath": "public/oct13-heroes/business-number-ownership-reassignment-packet.png"
+    },
+    {
+      "family": "blog",
+      "slug": "language-preference-callback-boundary",
+      "title": "A Language-Preference Callback Boundary",
+      "published": "2026-10-13",
+      "image": "/oct13-heroes/language-preference-callback-boundary.png",
+      "sourcePath": "app/oct13-blog.ts",
+      "thumbnailPath": "public/oct13-heroes/language-preference-callback-boundary.png"
+    },
+    {
+      "family": "blog",
+      "slug": "crm-call-note-correction-record",
+      "title": "A CRM Call Note Correction Record",
+      "published": "2026-10-13",
+      "image": "/oct13-heroes/crm-call-note-correction-record.png",
+      "sourcePath": "app/oct13-blog.ts",
+      "thumbnailPath": "public/oct13-heroes/crm-call-note-correction-record.png"
+    },
+    {
+      "family": "blog",
+      "slug": "after-hours-callback-ownership-map",
+      "title": "An After-Hours Callback Ownership Map",
+      "published": "2026-10-13",
+      "image": "/oct13-heroes/after-hours-callback-ownership-map.png",
+      "sourcePath": "app/oct13-blog.ts",
+      "thumbnailPath": "public/oct13-heroes/after-hours-callback-ownership-map.png"
+    },
+    {
+      "family": "blog",
+      "slug": "disposition-code-merge-migration-plan",
+      "title": "A Disposition Code Merge Migration Plan",
+      "published": "2026-10-13",
+      "image": "/oct13-heroes/disposition-code-merge-migration-plan.png",
+      "sourcePath": "app/oct13-blog.ts",
+      "thumbnailPath": "public/oct13-heroes/disposition-code-merge-migration-plan.png"
+    },
+    {
+      "family": "blog",
+      "slug": "dropped-voicemail-retry-context-note",
+      "title": "A Dropped-Voicemail Retry Context Note",
+      "published": "2026-10-13",
+      "image": "/oct13-heroes/dropped-voicemail-retry-context-note.png",
+      "sourcePath": "app/oct13-blog.ts",
+      "thumbnailPath": "public/oct13-heroes/dropped-voicemail-retry-context-note.png"
+    },
+    {
+      "family": "blog",
+      "slug": "alternate-contact-consent-verification-gate",
+      "title": "An Alternate Contact Consent Verification Gate",
+      "published": "2026-10-13",
+      "image": "/oct13-heroes/alternate-contact-consent-verification-gate.png",
+      "sourcePath": "app/oct13-blog.ts",
+      "thumbnailPath": "public/oct13-heroes/alternate-contact-consent-verification-gate.png"
+    },
+    {
+      "family": "blog",
+      "slug": "holiday-campaign-release-checklist",
+      "title": "A Holiday Campaign Release Checklist",
+      "published": "2026-10-13",
+      "image": "/oct13-heroes/holiday-campaign-release-checklist.png",
+      "sourcePath": "app/oct13-blog.ts",
+      "thumbnailPath": "public/oct13-heroes/holiday-campaign-release-checklist.png"
+    },
+    {
+      "family": "blog",
+      "slug": "three-way-transfer-participant-acceptance-gate",
+      "title": "A Three-Way Transfer Participant Acceptance Gate",
+      "published": "2026-10-13",
+      "image": "/oct13-heroes/three-way-transfer-participant-acceptance-gate.png",
+      "sourcePath": "app/oct13-blog.ts",
+      "thumbnailPath": "public/oct13-heroes/three-way-transfer-participant-acceptance-gate.png"
+    },
+    {
+      "family": "research",
+      "slug": "voicemail-optout-denominator-study",
+      "title": "How Should Voicemail Opt-Out Events Be Reconciled?",
+      "published": "2026-10-13",
+      "image": "/oct13-heroes/voicemail-optout-denominator-study.png",
+      "sourcePath": "app/oct13-research.ts",
+      "thumbnailPath": "public/oct13-heroes/voicemail-optout-denominator-study.png"
+    },
+    {
+      "family": "research",
+      "slug": "callback-identity-correction-fidelity-study",
+      "title": "How Faithfully Are Callback Identity Corrections Propagated?",
+      "published": "2026-10-13",
+      "image": "/oct13-heroes/callback-identity-correction-fidelity-study.png",
+      "sourcePath": "app/oct13-research.ts",
+      "thumbnailPath": "public/oct13-heroes/callback-identity-correction-fidelity-study.png"
+    },
+    {
+      "family": "research",
+      "slug": "cold-transfer-context-loss-observation-study",
+      "title": "Where Does Context Disappear During Cold Transfers?",
+      "published": "2026-10-13",
+      "image": "/oct13-heroes/cold-transfer-context-loss-observation-study.png",
+      "sourcePath": "app/oct13-research.ts",
+      "thumbnailPath": "public/oct13-heroes/cold-transfer-context-loss-observation-study.png"
+    },
+    {
+      "family": "research",
+      "slug": "contact-list-consent-age-analysis",
+      "title": "How Does Contact-List Consent Age Relate to Calling Outcomes?",
+      "published": "2026-10-13",
+      "image": "/oct13-heroes/contact-list-consent-age-analysis.png",
+      "sourcePath": "app/oct13-research.ts",
+      "thumbnailPath": "public/oct13-heroes/contact-list-consent-age-analysis.png"
+    },
+    {
+      "family": "research",
+      "slug": "retry-window-adherence-measurement-study",
+      "title": "How Should Retry-Window Adherence Be Measured?",
+      "published": "2026-10-13",
+      "image": "/oct13-heroes/retry-window-adherence-measurement-study.png",
+      "sourcePath": "app/oct13-research.ts",
+      "thumbnailPath": "public/oct13-heroes/retry-window-adherence-measurement-study.png"
+    }
+  ]
+}
