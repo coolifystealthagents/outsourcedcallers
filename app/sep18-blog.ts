@@ -89,7 +89,7 @@ export function makeBuyerGuideDetail(t: Topic, publicationDate = published) {
       {q:'What is the most useful first metric?',a:`Use ${t.metric}. Report the eligible denominator and show exceptions rather than mixing them into a general activity count.`},
       {q:'When should the workflow pause?',a:`Pause when identity, permission, source data, suppression state, system availability, or owner authority is unclear. Also pause when the caller would need to ${t.boundary.charAt(0).toLowerCase()+t.boundary.slice(1)}`}
     ],
-    related:[{label:t.title.includes('CRM')?'Database verification calls':'Outbound lead qualification',href:`/services/${t.service}`},{label:'Appointment setting',href:'/services/appointment-setting'},{label:'Plan a calling desk',href:'/contact'}],
+    related:[{label:t.title.includes('CRM')?'Database verification calls':'Outbound lead qualification',href:`/services/${t.service}`},{label:'Appointment setting',href:'/services/appointment-setting'},{label:'Plan a calling desk',href:'/contact-us'}],
     sources,image:'/thank-you-hero.png'
   };
 }

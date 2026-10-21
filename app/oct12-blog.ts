@@ -253,11 +253,11 @@ export const oct12BlogDetails={
     "related": [
       {
         "label": "Review the related calling service",
-        "href": "/services/outbound-calling"
+        "href": "/services/outbound-lead-qualification"
       },
       {
         "label": "Plan a controlled calling role",
-        "href": "/contact"
+        "href": "/contact-us"
       }
     ],
     "sources": [
@@ -287,7 +287,7 @@ export const oct12BlogDetails={
         "label": "Calling control",
         "title": "Build the workflow around evidence",
         "text": "Define caller actions, owner decisions, and closure proof before releasing live work.",
-        "href": "/contact",
+        "href": "/contact-us",
         "cta": "Plan the calling role"
       }
     ],
@@ -452,7 +452,7 @@ export const oct12BlogDetails={
       },
       {
         "label": "Plan a controlled calling role",
-        "href": "/contact"
+        "href": "/contact-us"
       }
     ],
     "sources": [
@@ -482,7 +482,7 @@ export const oct12BlogDetails={
         "label": "Calling control",
         "title": "Build the workflow around evidence",
         "text": "Define caller actions, owner decisions, and closure proof before releasing live work.",
-        "href": "/contact",
+        "href": "/contact-us",
         "cta": "Plan the calling role"
       }
     ],
@@ -647,7 +647,7 @@ export const oct12BlogDetails={
       },
       {
         "label": "Plan a controlled calling role",
-        "href": "/contact"
+        "href": "/contact-us"
       }
     ],
     "sources": [
@@ -677,7 +677,7 @@ export const oct12BlogDetails={
         "label": "Calling control",
         "title": "Build the workflow around evidence",
         "text": "Define caller actions, owner decisions, and closure proof before releasing live work.",
-        "href": "/contact",
+        "href": "/contact-us",
         "cta": "Plan the calling role"
       }
     ],
@@ -838,11 +838,11 @@ export const oct12BlogDetails={
     "related": [
       {
         "label": "Review the related calling service",
-        "href": "/services/outbound-calling"
+        "href": "/services/outbound-lead-qualification"
       },
       {
         "label": "Plan a controlled calling role",
-        "href": "/contact"
+        "href": "/contact-us"
       }
     ],
     "sources": [
@@ -872,7 +872,7 @@ export const oct12BlogDetails={
         "label": "Calling control",
         "title": "Build the workflow around evidence",
         "text": "Define caller actions, owner decisions, and closure proof before releasing live work.",
-        "href": "/contact",
+        "href": "/contact-us",
         "cta": "Plan the calling role"
       }
     ],
@@ -1037,7 +1037,7 @@ export const oct12BlogDetails={
       },
       {
         "label": "Plan a controlled calling role",
-        "href": "/contact"
+        "href": "/contact-us"
       }
     ],
     "sources": [
@@ -1067,7 +1067,7 @@ export const oct12BlogDetails={
         "label": "Calling control",
         "title": "Build the workflow around evidence",
         "text": "Define caller actions, owner decisions, and closure proof before releasing live work.",
-        "href": "/contact",
+        "href": "/contact-us",
         "cta": "Plan the calling role"
       }
     ],
@@ -1232,7 +1232,7 @@ export const oct12BlogDetails={
       },
       {
         "label": "Plan a controlled calling role",
-        "href": "/contact"
+        "href": "/contact-us"
       }
     ],
     "sources": [
@@ -1262,7 +1262,7 @@ export const oct12BlogDetails={
         "label": "Calling control",
         "title": "Build the workflow around evidence",
         "text": "Define caller actions, owner decisions, and closure proof before releasing live work.",
-        "href": "/contact",
+        "href": "/contact-us",
         "cta": "Plan the calling role"
       }
     ],
@@ -1427,7 +1427,7 @@ export const oct12BlogDetails={
       },
       {
         "label": "Plan a controlled calling role",
-        "href": "/contact"
+        "href": "/contact-us"
       }
     ],
     "sources": [
@@ -1457,7 +1457,7 @@ export const oct12BlogDetails={
         "label": "Calling control",
         "title": "Build the workflow around evidence",
         "text": "Define caller actions, owner decisions, and closure proof before releasing live work.",
-        "href": "/contact",
+        "href": "/contact-us",
         "cta": "Plan the calling role"
       }
     ],
@@ -1622,7 +1622,7 @@ export const oct12BlogDetails={
       },
       {
         "label": "Plan a controlled calling role",
-        "href": "/contact"
+        "href": "/contact-us"
       }
     ],
     "sources": [
@@ -1652,7 +1652,7 @@ export const oct12BlogDetails={
         "label": "Calling control",
         "title": "Build the workflow around evidence",
         "text": "Define caller actions, owner decisions, and closure proof before releasing live work.",
-        "href": "/contact",
+        "href": "/contact-us",
         "cta": "Plan the calling role"
       }
     ],
@@ -1817,7 +1817,7 @@ export const oct12BlogDetails={
       },
       {
         "label": "Plan a controlled calling role",
-        "href": "/contact"
+        "href": "/contact-us"
       }
     ],
     "sources": [
@@ -1847,7 +1847,7 @@ export const oct12BlogDetails={
         "label": "Calling control",
         "title": "Build the workflow around evidence",
         "text": "Define caller actions, owner decisions, and closure proof before releasing live work.",
-        "href": "/contact",
+        "href": "/contact-us",
         "cta": "Plan the calling role"
       }
     ],
@@ -2012,7 +2012,7 @@ export const oct12BlogDetails={
       },
       {
         "label": "Plan a controlled calling role",
-        "href": "/contact"
+        "href": "/contact-us"
       }
     ],
     "sources": [
@@ -2042,7 +2042,7 @@ export const oct12BlogDetails={
         "label": "Calling control",
         "title": "Build the workflow around evidence",
         "text": "Define caller actions, owner decisions, and closure proof before releasing live work.",
-        "href": "/contact",
+        "href": "/contact-us",
         "cta": "Plan the calling role"
       }
     ],
@@ -2203,11 +2203,11 @@ export const oct12BlogDetails={
     "related": [
       {
         "label": "Review the related calling service",
-        "href": "/services/outbound-calling"
+        "href": "/services/outbound-lead-qualification"
       },
       {
         "label": "Plan a controlled calling role",
-        "href": "/contact"
+        "href": "/contact-us"
       }
     ],
     "sources": [
@@ -2237,7 +2237,7 @@ export const oct12BlogDetails={
         "label": "Calling control",
         "title": "Build the workflow around evidence",
         "text": "Define caller actions, owner decisions, and closure proof before releasing live work.",
-        "href": "/contact",
+        "href": "/contact-us",
         "cta": "Plan the calling role"
       }
     ],
@@ -2402,7 +2402,7 @@ export const oct12BlogDetails={
       },
       {
         "label": "Plan a controlled calling role",
-        "href": "/contact"
+        "href": "/contact-us"
       }
     ],
     "sources": [
@@ -2432,7 +2432,7 @@ export const oct12BlogDetails={
         "label": "Calling control",
         "title": "Build the workflow around evidence",
         "text": "Define caller actions, owner decisions, and closure proof before releasing live work.",
-        "href": "/contact",
+        "href": "/contact-us",
         "cta": "Plan the calling role"
       }
     ],

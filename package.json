@@ -6,6 +6,8 @@
     "build": "next build",
     "start": "next start -H 0.0.0.0 -p 3000",
     "lint": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "test:contracts": "node --test tests/*.test.mjs",
     "validate:routines": "node scripts/validate-routine-manifest.mjs",
     "verify:sep01-call-quality-handoff": "node scripts/verify-sep01-call-quality-handoff.mjs",
     "verify:sep01-inbound-urgency-handoff": "node scripts/verify-sep01-inbound-urgency-handoff.mjs",
@@ -27,8 +29,8 @@
     "validate:sep25-research": "node scripts/validate-sep25-research.mjs",
     "validate:sep25-combined": "node scripts/validate-sep25-combined.mjs",
     "validate:sep28-blog": "node scripts/validate-sep28-blog.mjs",
-    "validate:sep28-research": "node scripts/validate-sep28-research.mjs"
-    ,"validate:oct02-research": "node scripts/validate-oct02-research.mjs",
+    "validate:sep28-research": "node scripts/validate-sep28-research.mjs",
+    "validate:oct02-research": "node scripts/validate-oct02-research.mjs",
     "validate:oct05-research": "node scripts/validate-oct05-research.mjs",
     "validate:oct02-blog-source": "node scripts/validate-oct02-blog-source.mjs",
     "validate:oct02-combined": "node scripts/validate-oct02-combined.mjs",
@@ -37,7 +39,7 @@
   },
   "dependencies": {
     "@next/third-parties": "^15.1.6",
-    "next": "15.5.24",
+    "next": "15.5.28",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

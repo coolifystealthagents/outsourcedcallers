@@ -68,9 +68,9 @@ const duplicateRequests: Detail = {
     {q:'Should the newest customer request replace older ones?',a:'No. The newest record may contain new evidence, but older records can hold promises, deadlines, and preferences that remain active.'},
     {q:'Can records with the same phone number be merged automatically?',a:'A shared number is only one signal. Verify identity and the underlying request because families, offices, and delegated contacts may share a number.'}
   ],
-  related:[{label:'Customer follow-up calls',href:'/services/customer-follow-up-calls'},{label:'Database verification calls',href:'/services/database-verification-calls'},{label:'Plan a follow-up role',href:'/contact'}],
+  related:[{label:'Customer follow-up calls',href:'/services/customer-follow-up-calls'},{label:'Database verification calls',href:'/services/database-verification-calls'},{label:'Plan a follow-up role',href:'/contact-us'}],
   sources,
-  banners:[{label:'Follow-up control',title:'Coordinate repeat contacts without losing promises',text:'Define matching, commitment reconciliation, ownership, and closure evidence for your Filipino calling role.',href:'/contact',cta:'Scope the role'}], image:'/thank-you-hero.png'
+  banners:[{label:'Follow-up control',title:'Coordinate repeat contacts without losing promises',text:'Define matching, commitment reconciliation, ownership, and closure evidence for your Filipino calling role.',href:'/contact-us',cta:'Scope the role'}], image:'/thank-you-hero.png'
 };
 
 const addressBoundaries: Detail = {
@@ -139,9 +139,9 @@ const addressBoundaries: Detail = {
     {q:'Can an order-confirmation caller correct a delivery address?',a:'Only within the field, identity, order-stage, and approval authority explicitly granted by the business. Material or late changes should enter the documented owner route.'},
     {q:'Does logging an address request mean the order was updated?',a:'No. Requested, approved, applied, and accepted by fulfillment or carrier are separate states and should be reported separately.'}
   ],
-  related:[{label:'Order confirmation calls',href:'/services/order-confirmation-calls'},{label:'Customer follow-up calls',href:'/services/customer-follow-up-calls'},{label:'Plan a controlled confirmation role',href:'/contact'}],
+  related:[{label:'Order confirmation calls',href:'/services/order-confirmation-calls'},{label:'Customer follow-up calls',href:'/services/customer-follow-up-calls'},{label:'Plan a controlled confirmation role',href:'/contact-us'}],
   sources,
-  banners:[{label:'Fulfillment control',title:'Define address-change authority before callers confirm orders',text:'Map identity checks, order stages, owner approvals, system states, and customer wording for Filipino calling specialists.',href:'/contact',cta:'Scope the role'}], image:'/thank-you-hero.png'
+  banners:[{label:'Fulfillment control',title:'Define address-change authority before callers confirm orders',text:'Map identity checks, order stages, owner approvals, system states, and customer wording for Filipino calling specialists.',href:'/contact-us',cta:'Scope the role'}], image:'/thank-you-hero.png'
 };
 
 export const oct05Batch2Entries = [

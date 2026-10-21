@@ -80,9 +80,9 @@ const overflow: Detail = {
     {q:'Should overflow start after a fixed number of rings?',a:'A ring threshold can be one input, but it does not show queue demand, staff eligibility, or whether the destination failed. Pair it with another observable condition and test it against real call patterns.'},
     {q:'Can an overflow caller handle every inbound request?',a:'Only if every lane has appropriate training, access, identity checks, and decision authority. Most programs should define complete, message-only, and prohibited lanes separately.'}
   ],
-  related:[{label:'Inbound call handling',href:'/services/inbound-call-handling'},{label:'Reception overflow',href:'/services/reception-overflow'},{label:'Plan controlled coverage',href:'/contact'}],
+  related:[{label:'Inbound call handling',href:'/services/inbound-call-handling'},{label:'Reception overflow',href:'/services/reception-overflow'},{label:'Plan controlled coverage',href:'/contact-us'}],
   sources,
-  banners:[{label:'Coverage design',title:'Build an overflow role around real call lanes',text:'Map the signals, permissions, handoffs, and review routine before releasing live calls.',href:'/contact',cta:'Plan the calling role'}],
+  banners:[{label:'Coverage design',title:'Build an overflow role around real call lanes',text:'Map the signals, permissions, handoffs, and review routine before releasing live calls.',href:'/contact-us',cta:'Plan the calling role'}],
   image:'/thank-you-hero.png'
 };
 
@@ -149,9 +149,9 @@ const calendarConflict: Detail = {
     {q:'Should the original appointment be cancelled before contacting the prospect?',a:'Usually no. Preserve the last agreed state until the prospect accepts a replacement or an authorized owner applies the documented cancellation rule.'},
     {q:'Can a setter substitute any available host?',a:'Only hosts allowed by the routing table for that meeting type, account, territory, language, and required expertise. Other substitutions need owner approval.'}
   ],
-  related:[{label:'Appointment setting',href:'/services/appointment-setting'},{label:'Customer follow-up calls',href:'/services/customer-follow-up-calls'},{label:'Plan a calling role',href:'/contact'}],
+  related:[{label:'Appointment setting',href:'/services/appointment-setting'},{label:'Customer follow-up calls',href:'/services/customer-follow-up-calls'},{label:'Plan a calling role',href:'/contact-us'}],
   sources,
-  banners:[{label:'Calendar control',title:'Turn conflict recovery into a repeatable handoff',text:'Define authority, equivalent alternatives, prospect confirmation, and closure evidence for your appointment-setting role.',href:'/contact',cta:'Scope the role'}],
+  banners:[{label:'Calendar control',title:'Turn conflict recovery into a repeatable handoff',text:'Define authority, equivalent alternatives, prospect confirmation, and closure evidence for your appointment-setting role.',href:'/contact-us',cta:'Scope the role'}],
   image:'/thank-you-hero.png'
 };
 
@@ -216,9 +216,9 @@ const timezoneControls: Detail = {
     {q:'Is a phone area code enough to determine contact time?',a:'No. Numbers can be retained after moves, used while travelling, or shared across locations. Treat an area code as low-confidence evidence unless the approved policy establishes more.'},
     {q:'Should callers store a UTC offset or a timezone name?',a:'A named timezone is generally more reliable because current rules can account for seasonal changes. Keep the source and confirmation date as well.'}
   ],
-  related:[{label:'Outbound lead qualification',href:'/services/outbound-lead-qualification'},{label:'Database verification calls',href:'/services/database-verification-calls'},{label:'Plan a controlled campaign',href:'/contact'}],
+  related:[{label:'Outbound lead qualification',href:'/services/outbound-lead-qualification'},{label:'Database verification calls',href:'/services/database-verification-calls'},{label:'Plan a controlled campaign',href:'/contact-us'}],
   sources,
-  banners:[{label:'List control',title:'Build timezone evidence into the calling role',text:'Define source precedence, uncertainty handling, boundary checks, and correction ownership before records reach callers.',href:'/contact',cta:'Plan the role'}], image:'/thank-you-hero.png'
+  banners:[{label:'List control',title:'Build timezone evidence into the calling role',text:'Define source precedence, uncertainty handling, boundary checks, and correction ownership before records reach callers.',href:'/contact-us',cta:'Plan the role'}], image:'/thank-you-hero.png'
 };
 
 const stakeholderRouting: Detail = {
@@ -283,9 +283,9 @@ const stakeholderRouting: Detail = {
     {q:'Should a caller always ask for the decision-maker?',a:'No. Ask about the decisions and roles relevant to the next step. A single decision-maker label often hides evaluators, users, owners, and approval dependencies.'},
     {q:'Does a referral from one employee authorize calling another?',a:'Not automatically. Use the campaign’s approved source, purpose, suppression, and contact rules for the referred person, and preserve the referring context.'}
   ],
-  related:[{label:'Outbound lead qualification',href:'/services/outbound-lead-qualification'},{label:'Appointment setting',href:'/services/appointment-setting'},{label:'Scope a qualification role',href:'/contact'}],
+  related:[{label:'Outbound lead qualification',href:'/services/outbound-lead-qualification'},{label:'Appointment setting',href:'/services/appointment-setting'},{label:'Scope a qualification role',href:'/contact-us'}],
   sources,
-  banners:[{label:'Qualification design',title:'Route buying groups from evidence, not titles',text:'Give Filipino calling specialists a decision map, person-level record rules, and an explicit owner path.',href:'/contact',cta:'Plan the role'}], image:'/thank-you-hero.png'
+  banners:[{label:'Qualification design',title:'Route buying groups from evidence, not titles',text:'Give Filipino calling specialists a decision map, person-level record rules, and an explicit owner path.',href:'/contact-us',cta:'Plan the role'}], image:'/thank-you-hero.png'
 };
 
 const entries = [

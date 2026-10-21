@@ -1,6 +1,7 @@
 import { AcrClient } from './acr-client';
 import Script from 'next/script';
 import './globals.css';
+import './editorial.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -10,13 +11,17 @@ export const metadata: Metadata = {
     template: '%s | Outsourced Callers',
   },
   description: 'Plan Filipino callers for follow-up, appointment setting, lead qualification, CRM notes, call review, and clear owner approvals.',
+  alternates: { canonical: '/' },
+  icons: { icon: '/logo.svg', shortcut: '/logo.svg', apple: '/logo.svg' },
   openGraph: {
     title: 'Outsourced Callers',
     description: 'Practical guides and staffing plans for Filipino calling talent.',
     url: 'https://outsourcedcallers.com',
     siteName: 'Outsourced Callers',
     type: 'website',
+    images: [{ url: '/brand/stealth-agents-team-bacolod.jpg', width: 1906, height: 1080, alt: 'Stealth Agents team in Bacolod' }],
   },
+  twitter: { card: 'summary_large_image', title: 'Outsourced Callers', description: 'Practical guides and staffing plans for Filipino calling talent.', images: ['/brand/stealth-agents-team-bacolod.jpg'] },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

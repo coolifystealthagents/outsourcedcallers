@@ -382,7 +382,7 @@ export const blogDetails = {
       { step: '5', title: 'Review', text: 'Compare the call note with the final record, label, owner, and reply time.' }
     ],
     banners: [
-      { label: 'Role brief', title: 'Set the field limits before interviews', text: 'Map the approved queue, identity step, visible fields, stop points, and final labels. The intake gives our Philippines staffing team a clear caller role to match.', href: '/contact', cta: 'Build the verification brief' },
+      { label: 'Role brief', title: 'Set the field limits before interviews', text: 'Map the approved queue, identity step, visible fields, stop points, and final labels. The intake gives our Philippines staffing team a clear caller role to match.', href: '/contact-us', cta: 'Build the verification brief' },
       { label: 'Service path', title: 'Need help checking customer records?', text: 'Review the service scope for Filipino talent, then bring your database fields, tools, access rules, and owners to the planning call.', href: '/services/database-verification-calls', cta: 'See database verification support' },
       { label: 'Quality path', title: 'Review the call and saved record together', text: 'A clear conversation can still leave the wrong field behind. Use the call quality page to plan checks that cover the spoken answer and the final system state.', href: '/services/call-quality-review', cta: 'Plan call quality review' }
     ],
@@ -397,7 +397,7 @@ export const blogDetails = {
       { label: 'Database verification calls', href: '/services/database-verification-calls' },
       { label: 'Call quality review', href: '/services/call-quality-review' },
       { label: 'Customer follow-up calls', href: '/services/customer-follow-up-calls' },
-      { label: 'Build a caller role brief', href: '/contact' }
+      { label: 'Build a caller role brief', href: '/contact-us' }
     ],
     sources: [
       { name: '1. FTC: New FTC Data Show a Big Jump in Reported Losses to Fraud to $12.5 Billion in 2024, March 10, 2025', url: 'https://www.ftc.gov/news-events/news/press-releases/2025/03/new-ftc-data-show-big-jump-reported-losses-fraud-125-billion-2024' },
@@ -534,7 +534,7 @@ export const blogDetails = {
       { step: '5', title: 'Close', text: 'Apply the final label and save the next owner and reply time.' }
     ],
     banners: [
-      { label: 'Role brief', title: 'Write the confirmation limits before interviews', text: 'Map the order fields, trusted contact path, check, stop points, and final labels. The intake gives our Philippines staffing team a clear caller role to match.', href: '/contact', cta: 'Build the order call brief' },
+      { label: 'Role brief', title: 'Write the confirmation limits before interviews', text: 'Map the order fields, trusted contact path, check, stop points, and final labels. The intake gives our Philippines staffing team a clear caller role to match.', href: '/contact-us', cta: 'Build the order call brief' },
       { label: 'Service path', title: 'Need a steady order confirmation queue?', text: 'Review the service scope for Filipino talent, then bring your order system, hours, checks, and owner rules to the planning call.', href: '/services/order-confirmation-calls', cta: 'See order confirmation support' },
       { label: 'Control path', title: 'Review the call and order record together', text: 'A calm call can still leave a risky change in the system. Use the call quality page to plan checks that cover the spoken call and the final order state.', href: '/services/call-quality-review', cta: 'Plan call quality review' }
     ],
@@ -680,7 +680,7 @@ export const blogDetails = {
       { step: '5', title: 'Review', text: 'Compare the call note, source list, and final record status before the next upload.' }
     ],
     banners: [
-      { label: 'Role brief', title: 'Set the win-back rules before interviews', text: 'Map the approved records, stop labels, owner decisions, and final notes. The intake gives our Philippines staffing team a clear caller role to match.', href: '/contact', cta: 'Build the win-back brief' },
+      { label: 'Role brief', title: 'Set the win-back rules before interviews', text: 'Map the approved records, stop labels, owner decisions, and final notes. The intake gives our Philippines staffing team a clear caller role to match.', href: '/contact-us', cta: 'Build the win-back brief' },
       { label: 'Service path', title: 'Need help with a return campaign?', text: 'Review the service scope for Filipino talent, then bring your list source, tools, hours, and owner rules to the planning call.', href: '/services/win-back-campaign-support', cta: 'See win-back support' },
       { label: 'Quality path', title: 'Check the call and record together', text: 'A clean close can still leave a bad list entry behind. Use the call quality page to plan reviews that include the spoken call and the final record.', href: '/services/call-quality-review', cta: 'Plan call quality review' }
     ],
@@ -825,7 +825,7 @@ export const blogDetails = {
       { step: '5', title: 'Close', text: 'Save the result, owner handoff, and promised reply before moving on.' }
     ],
     banners: [
-      { label: 'Role brief', title: 'Write the callback rules before interviews', text: 'Map the request sources, trusted records, identity checks, owner decisions, and final labels. The intake gives our Philippines staffing team a clear caller role to match.', href: '/contact', cta: 'Build the callback brief' },
+      { label: 'Role brief', title: 'Write the callback rules before interviews', text: 'Map the request sources, trusted records, identity checks, owner decisions, and final labels. The intake gives our Philippines staffing team a clear caller role to match.', href: '/contact-us', cta: 'Build the callback brief' },
       { label: 'Service path', title: 'Need a steady customer follow-up queue?', text: 'Review the service scope for Filipino talent, then bring your contact paths, tools, hours, and owner rules to the planning call.', href: '/services/customer-follow-up-calls', cta: 'See follow-up call support' },
       { label: 'Control path', title: 'Make call review part of the handoff', text: 'Check the recording and CRM note together so failed checks and loose promises do not hide. The call quality page shows how to plan that review.', href: '/services/call-quality-review', cta: 'Plan call quality review' }
     ],
@@ -975,7 +975,7 @@ export const blogDetails = {
       { step: '5', title: 'Check', text: 'Use the next mixed sample to see whether the same miss appears again.' }
     ],
     banners: [
-      { label: 'Role brief', title: 'Give the caller one clear meeting goal', text: 'Map the fit questions, owner limits, and calendar handoff before interviews begin. The contact brief gives our Philippines staffing team the facts needed to shape the role.', href: '/contact', cta: 'Build the caller brief' },
+      { label: 'Role brief', title: 'Give the caller one clear meeting goal', text: 'Map the fit questions, owner limits, and calendar handoff before interviews begin. The contact brief gives our Philippines staffing team the facts needed to shape the role.', href: '/contact-us', cta: 'Build the caller brief' },
       { label: 'Service path', title: 'Need a focused appointment setting lane?', text: 'Review the service scope for Filipino talent, then bring your list, tools, schedule, and owner rules to the planning call.', href: '/services/appointment-setting', cta: 'See appointment setting support' },
       { label: 'Quality path', title: 'Make call review part of the role', text: 'A caller needs examples and a fair review rule, not surprise feedback. Use the call quality service page to map recordings, notes, and owner checks.', href: '/services/call-quality-review', cta: 'Plan call quality review' }
     ],
@@ -1211,8 +1211,8 @@ export const blogDetails = {
     ],
     related: [
       { label: 'Plan customer follow-up calls', href: '/services/customer-follow-up-calls' },
-      { label: 'Read provider questions', href: '/blog/outsourced-callers-provider-questions' },
-      { label: 'Start a calling role brief', href: '/contact' }
+      { label: 'Read provider questions', href: '/blog' },
+      { label: 'Start a calling role brief', href: '/contact-us' }
     ],
     sources: [
       { name: 'NIST Cybersecurity Framework 2.0', url: 'https://www.nist.gov/cyberframework' },
@@ -1220,7 +1220,7 @@ export const blogDetails = {
       { name: 'FCC telemarketing and TCPA guidance', url: 'https://www.fcc.gov/general/telemarketing-and-telephone-consumer-protection-act' }
     ],
     banners: [
-      { label: 'Next step', title: 'Turn the queue into a clear role', text: 'Share the call type, tools, schedule, and review needs so the staffing team can map a controlled Filipino caller role.', href: '/contact', cta: 'Build the role brief' }
+      { label: 'Next step', title: 'Turn the queue into a clear role', text: 'Share the call type, tools, schedule, and review needs so the staffing team can map a controlled Filipino caller role.', href: '/contact-us', cta: 'Build the role brief' }
     ]
   }
 } as const;
@@ -1255,7 +1255,7 @@ for (const [slug, title, excerpt] of scheduledBlogBatch) {
     faqs: [{ q: 'What should a Filipino caller do when the brief is unclear?', a: 'Pause the record, write the missing detail, and send it to the named owner. Unclear instructions are a review result, not permission to guess.' }, { q: 'What belongs in the daily report?', a: 'Record attempts, conversations, outcomes, follow-ups, suppressions, exceptions, and owner decisions. Keep activity counts separate from completed outcomes.' }],
     related: [{ label: 'Appointment setting service', href: '/services/appointment-setting' }, { label: 'Customer follow-up service', href: '/services/customer-follow-up-calls' }, { label: 'Call quality review service', href: '/services/call-quality-review' }],
     sources: [{ name: 'FCC Telephone Consumer Protection Act guidance', url: 'https://www.fcc.gov/general/telemarketing-and-telephone-consumer-protection-act' }],
-    banners: [{ label: 'Next step', title: 'Turn the workflow into a role', text: excerpt, href: '/contact', cta: 'Build the role brief' }]
+    banners: [{ label: 'Next step', title: 'Turn the workflow into a role', text: excerpt, href: '/contact-us', cta: 'Build the role brief' }]
   };
 }
 for (const post of aug11BlogPosts) {
@@ -1661,7 +1661,7 @@ function makeResearchPost([slug, title, excerpt]: readonly [string, string, stri
     'Methodology: this is a desk-research synthesis of the ten sources below, paired with a control-oriented workflow. Public statistics describe their own populations and dates; they are not performance claims about OutsourcedCallers.com or Filipino callers.',
     'Key Stats: the U.S. Bureau of Labor Statistics reports a $20.59 median hourly wage for customer service representatives in May 2024 and projects 341,700 average annual openings from 2024–2034. The FTC says covered telemarketers must maintain do-not-call procedures and update National Registry data at least every 31 days. These figures provide context, not a guaranteed result.',
     'Key Takeaways: 1) name the queue and owner; 2) show the smallest useful record; 3) define confirmed, refused, unreachable, and review outcomes; 4) suppress requests immediately; 5) audit notes beside the final system state.',
-    'Workflow: Release → verify the approved record → ask one question at a time → save the source and result → escalate exceptions → review a sample daily. A script is a guardrail, not permission to improvise a legal, financial, medical, or account-control answer.',
+    'Workflow: Release  verify the approved record  ask one question at a time  save the source and result  escalate exceptions  review a sample daily. A script is a guardrail, not permission to improvise a legal, financial, medical, or account-control answer.',
     'Decision table: Routine request | caller follows the approved script and records the outcome | owner defines the fields and labels. Uncertain identity | caller stops and routes it | owner decides the trusted review path. Sensitive change | caller records the request only | owner approves or rejects it. Do-not-call request | caller stops future outreach and logs suppression | owner verifies the list sync.',
     'Evidence note: FTC guidance emphasizes disclosures, truthful claims, caller-ID transmission, calling-time limits, and do-not-call controls. ICO guidance explains that live direct-marketing calls are regulated by PECR in the UK. Apply the law for the people, numbers, and jurisdictions in the actual campaign; this article is not legal advice.',
     'Internal links: review /services/appointment-setting, /services/customer-follow-up-calls, and /services/call-quality-review. Keep the Research family separate from Blog content and use this note as a planning aid, not a substitute for a client brief.',

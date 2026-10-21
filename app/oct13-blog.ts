@@ -253,7 +253,7 @@ export const oct13BlogDetails={
     "related": [
       {
         "label": "Review the related calling service",
-        "href": "/services/outbound-calling"
+        "href": "/services/outbound-lead-qualification"
       },
       {
         "label": "Plan a controlled calling role",
@@ -838,7 +838,7 @@ export const oct13BlogDetails={
     "related": [
       {
         "label": "Review the related calling service",
-        "href": "/services/outbound-calling"
+        "href": "/services/outbound-lead-qualification"
       },
       {
         "label": "Plan a controlled calling role",
@@ -2203,7 +2203,7 @@ export const oct13BlogDetails={
     "related": [
       {
         "label": "Review the related calling service",
-        "href": "/services/outbound-calling"
+        "href": "/services/outbound-lead-qualification"
       },
       {
         "label": "Plan a controlled calling role",

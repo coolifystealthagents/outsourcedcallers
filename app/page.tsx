@@ -9,28 +9,28 @@ const domain = site.domain || 'OutsourcedCallers.com';
 const serviceCards = [
   {
     slug: 'operations-support',
-    code: '01',
+
     title: 'Outbound follow-up',
     body: 'Work through lead lists, missed inquiries, reactivation calls, and scheduled callbacks with a clear outcome for every attempt.',
     tag: 'List rules + outcomes',
   },
   {
     slug: 'customer-support',
-    code: '02',
+
     title: 'Customer check-ins',
     body: 'Handle routine status calls and service follow-up without giving the caller permission to improvise refunds, dates, or account changes.',
     tag: 'Script + escalation',
   },
   {
     slug: 'admin-support',
-    code: '03',
+
     title: 'Appointment setting',
     body: 'Qualify the basics, book the right calendar, and leave the closer with enough context to walk into the conversation prepared.',
     tag: 'Fit rules + calendar',
   },
   {
     slug: 'reporting-and-qa',
-    code: '04',
+
     title: 'Call review and CRM notes',
     body: 'Check recordings, clean up outcome labels, flag coaching examples, and keep follow-up dates from disappearing into a spreadsheet.',
     tag: 'Recordings + review',
@@ -69,8 +69,8 @@ export default function Home() {
               <h1>Put the calls in motion. Keep every promise on record.</h1>
               <p className="desk-lead">Build a calling desk with Filipino talent for follow-up, appointment setting, customer check-ins, or lead qualification. You set the boundaries. The caller works the queue and leaves your team clean notes.</p>
               <div className="desk-actions">
-                <a className="btn desk-primary" href="/contact">Plan my calling desk <span aria-hidden="true">↗</span></a>
-                <a className="desk-link" href="#handoff">See the handoff <span aria-hidden="true">↓</span></a>
+                <a className="btn desk-primary" href="/contact-us">Plan my calling desk</a>
+                <a className="desk-link" href="#handoff">See the handoff</a>
               </div>
               <p className="scope-note">No public rate card. The right setup depends on call type, hours, tools, volume, and review needs.</p>
             </div>
@@ -98,10 +98,10 @@ export default function Home() {
 
           <div className="container control-strip" aria-label="Calling desk controls">
             <p>Built around the call work</p>
-            <div><span>01</span> Script ownership</div>
-            <div><span>02</span> Outcome labels</div>
-            <div><span>03</span> Escalation rules</div>
-            <div><span>04</span> Call review</div>
+            <div>Script ownership</div>
+            <div>Outcome labels</div>
+            <div>Escalation rules</div>
+            <div>Call review</div>
           </div>
         </section>
 
@@ -116,13 +116,12 @@ export default function Home() {
           <div className="service-console">
             {serviceCards.map((service) => (
               <a className="service-module" href="/services" key={service.slug}>
-                <div className="module-code">{service.code}</div>
                 <div>
                   <span className="module-tag">{service.tag}</span>
                   <h3>{service.title}</h3>
                   <p>{service.body}</p>
                 </div>
-                <span className="module-arrow" aria-hidden="true">↗</span>
+                <span className="module-arrow" aria-hidden="true">Explore</span>
               </a>
             ))}
           </div>
@@ -135,9 +134,8 @@ export default function Home() {
               <h2>A call is only useful if the next person knows what happened.</h2>
             </div>
             <div className="handoff-track">
-              {handoff.map(([title, body], index) => (
+              {handoff.map(([title, body]) => (
                 <article key={title}>
-                  <span>{String(index + 1).padStart(2, '0')}</span>
                   <h3>{title}</h3>
                   <p>{body}</p>
                 </article>
@@ -151,7 +149,7 @@ export default function Home() {
             <p className="desk-label dark"><span /> Guardrails first</p>
             <h2>Let callers move the conversation. Keep owner decisions with the owner.</h2>
             <p>Good scripts help, but scripts do not cover every call. Write down what the caller can answer, what needs a callback, and what they must never promise.</p>
-            <a className="desk-link dark-link" href="/blog">Read the provider questions <span aria-hidden="true">↗</span></a>
+            <a className="desk-link dark-link" href="/blog">Read the provider questions</a>
           </div>
           <div className="decision-panel">
             <div className="decision-col go">
@@ -187,14 +185,14 @@ export default function Home() {
                 <p className="desk-label dark"><span /> Before the first dial</p>
                 <h2>Short guides for a cleaner launch.</h2>
               </div>
-              <a href="/blog">Browse all guides <span aria-hidden="true">↗</span></a>
+              <a href="/blog">Browse all guides</a>
             </div>
             <div className="guide-list">
               {posts.map((post: any, index: number) => (
                 <a href={`/blog/${post.slug}`} key={post.slug}>
-                  <span className="guide-number">0{index + 1}</span>
+                  <span className="guide-number">Guide {index + 1}</span>
                   <div><small>{post.minutes || 7} MIN READ</small><h3>{postTitle(post)}</h3><p>{postText(post)}</p></div>
-                  <span className="guide-arrow" aria-hidden="true">↗</span>
+                  <span className="guide-arrow" aria-hidden="true">Read</span>
                 </a>
               ))}
             </div>
@@ -208,7 +206,7 @@ export default function Home() {
           </div>
           <div>
             <p>Share the call type, list size, hours, tools, and approval rules. We will help turn that into a staffing scope.</p>
-            <a className="btn desk-primary" href="/contact">Plan my calling desk <span aria-hidden="true">↗</span></a>
+            <a className="btn desk-primary" href="/contact-us">Plan my calling desk</a>
           </div>
         </section>
       </main>

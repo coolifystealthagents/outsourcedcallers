@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Header, Footer, CTA, JsonLd } from '../../components';
 import { blogDetails, blogPosts, site } from '../../data';
+import { EditorialToc } from '../../EditorialToc';
+import { editorialHeadings } from '../../editorial';
+import { resolveArticleImage } from '../../article-images';
 
 const publicationDateFormatter = new Intl.DateTimeFormat('en-US', {
   year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC',
@@ -43,8 +46,8 @@ type RichDetail = {
 
 function ArticleBanner({ banner, slot }: { banner: NonNullable<RichDetail['banners']>[number]; slot: number }) {
   return <aside className={`article-banner banner-${slot}`} data-rotation-slot={slot} aria-label={`${banner.label}: ${banner.title}`}>
-    <div><p className="module-label">{banner.label}</p><h2>{banner.title}</h2><p>{banner.text}</p></div>
-    <a href={banner.href}>{banner.cta}<span aria-hidden="true">→</span></a>
+    <div><p className="module-label">{banner.label}</p><h3>{banner.title}</h3><p>{banner.text}</p></div>
+    <a href={banner.href}>{banner.cta}<span aria-hidden="true"></span></a>
   </aside>;
 }
 
@@ -57,11 +60,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = blogPosts.find((item) => item.slug === slug);
   if (!post) return {};
   const url = `https://${String(site.domain).toLowerCase()}/blog/${post.slug}`;
+  const image = resolveArticleImage('blog', post.slug, post.title);
   return {
     title: post.title,
     description: post.excerpt,
     alternates: { canonical: url },
-    openGraph: { title: post.title, description: post.excerpt, url, type: 'article', images: [{ url: 'https://' + String(site.domain).toLowerCase() + (('image' in post && post.image) ? post.image : '/thank-you-hero.png') }] },
+    openGraph: { title: post.title, description: post.excerpt, url, type: 'article', images: [{ url: `https://${String(site.domain).toLowerCase()}${image.src}`, width: image.width, height: image.height, alt: image.alt }] },
   };
 }
 
@@ -76,10 +80,12 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
 
   const url = `https://${String(site.domain).toLowerCase()}/blog/${post.slug}`;
   const rawDetail = (blogDetails as Record<string, unknown>)[slug];
+  const image = resolveArticleImage('blog', post.slug, post.title);
 
   if (!isRichDetail(rawDetail)) {
     const published = 'published' in post && post.published ? post.published : '2026-07-28';
-    return <><Header /><main className="section"><JsonLd data={{ '@context': 'https://schema.org', '@type': 'Article', headline: post.title, description: post.excerpt, datePublished: published, url, image: `https://${String(site.domain).toLowerCase()}/thank-you-hero.png`, citation: ['https://www.nist.gov/cyberframework', 'https://www.ftc.gov/business-guidance/privacy-security/data-security'] }} /><article className="container guide-article"><p className="eyebrow">Philippines staffing blog</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><p className="article-meta">Published: <time dateTime={published}>{formatPublicationDate(published)}</time> · Philippines-only talent</p><img className="sa-booking-image" src="/thank-you-hero.png" alt="Outsourced callers team ready to support a controlled calling workflow" width="619" height="402" /><div className="card"><h2>Start with a defined role</h2><p>Write the recurring tasks, examples, tools, and approval boundaries before a Filipino specialist begins. This gives the role owner a practical basis for review.</p><h2>Build a controlled handoff</h2><p>Begin with low-risk samples and only the permissions required for the approved Philippines-based workload. Record questions and exceptions for the owner.</p><h2>Review the workload</h2><p>Use a weekly check of completed work, open decisions, and changing priorities. Update the role notes when the process changes.</p><h2>Use an evidence-first close</h2><p>Every call should end with a result label, next action, owner, and due time. Escalate uncertainty rather than turning a guess into a commitment.</p><h2>Sources</h2><ol><li><a href="https://www.nist.gov/cyberframework" rel="noopener noreferrer" target="_blank">NIST Cybersecurity Framework 2.0</a></li><li><a href="https://www.ftc.gov/business-guidance/privacy-security/data-security" rel="noopener noreferrer" target="_blank">FTC business guidance on data security</a></li><li><a href="https://www.fcc.gov/general/telemarketing-and-telephone-consumer-protection-act" rel="noopener noreferrer" target="_blank">FCC telemarketing guidance</a></li></ol><p><a href="/contact">Talk with our Philippines staffing team →</a></p></div></article><CTA /></main><Footer /></>;
+    const headings = editorialHeadings(['Start with a defined role', 'Build a controlled handoff', 'Review the workload', 'Use an evidence-first close', 'Sources']);
+    return <><Header /><main className="section"><JsonLd data={{ '@context': 'https://schema.org', '@type': 'Article', headline: post.title, description: post.excerpt, datePublished: published, url, image: `https://${String(site.domain).toLowerCase()}${image.src}`, citation: ['https://www.nist.gov/cyberframework', 'https://www.ftc.gov/business-guidance/privacy-security/data-security'] }} /><article className="container guide-article"><p className="eyebrow">Philippines staffing blog</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><p className="article-meta">Published: <time dateTime={published}>{formatPublicationDate(published)}</time> · Philippines-only talent</p><img className="editorial-hero-image" src={image.src} alt={image.alt} width={image.width} height={image.height} /><div className="editorial-layout"><div className="editorial-content card"><h2 id={headings[0].id}>Start with a defined role</h2><p>Write the recurring tasks, examples, tools, and approval boundaries before a Filipino specialist begins. This gives the role owner a practical basis for review.</p><h2 id={headings[1].id}>Build a controlled handoff</h2><p>Begin with low-risk samples and only the permissions required for the approved Philippines-based workload. Record questions and exceptions for the owner.</p><h2 id={headings[2].id}>Review the workload</h2><p>Use a weekly check of completed work, open decisions, and changing priorities. Update the role notes when the process changes.</p><h2 id={headings[3].id}>Use an evidence-first close</h2><p>Every call should end with a result label, next action, owner, and due time. Escalate uncertainty rather than turning a guess into a commitment.</p><h2 id={headings[4].id}>Sources</h2><ol><li><a href="https://www.nist.gov/cyberframework" rel="noopener noreferrer" target="_blank">NIST Cybersecurity Framework 2.0</a></li><li><a href="https://www.ftc.gov/business-guidance/privacy-security/data-security" rel="noopener noreferrer" target="_blank">FTC business guidance on data security</a></li><li><a href="https://www.fcc.gov/general/telemarketing-and-telephone-consumer-protection-act" rel="noopener noreferrer" target="_blank">FCC telemarketing guidance</a></li></ol><p><a href="/contact">Talk with our Philippines staffing team </a></p></div><EditorialToc items={headings} family="Blog" published={formatPublicationDate(published)} readingTime={`${post.minutes} minutes`} related={[{ href: '/blog', label: 'More calling guides' }, { href: '/services', label: 'Explore calling services' }, { href: '/research', label: 'Research library' }]} /></div></article><CTA /></main><Footer /></>;
   }
 
   const detail = rawDetail;
@@ -98,7 +104,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
         articleSection: detail.sections.map((section) => section.heading),
         citation: detail.sources.map((source) => source.url),
         mainEntityOfPage: { '@type': 'WebPage', '@id': url },
-        image: detail.image ? `https://${String(site.domain).toLowerCase()}${detail.image}` : undefined,
+        image: `https://${String(site.domain).toLowerCase()}${image.src}`,
       },
       {
         '@type': 'FAQPage',
@@ -117,6 +123,20 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   };
   const publishedLabel = formatPublicationDate(detail.published);
   const banners = detail.banners ?? [];
+  const sectionHeadings = editorialHeadings(detail.sections.map((section) => section.heading));
+  const tocItems = [
+    { id: 'direct-answer', label: detail.directAnswerHeading ?? 'What outbound call center outsourcing means', level: 2 as const },
+    { id: 'takeaways', label: detail.takeawaysHeading ?? 'What to get right first', level: 2 as const },
+    { id: 'work-split', label: detail.tableHeading ?? 'Split caller work from owner decisions', level: 2 as const },
+    { id: 'pilot-numbers', label: detail.statsHeading ?? 'Small numbers make the first review easier', level: 2 as const },
+    ...(detail.chart ? [{ id: 'complaint-chart-heading', label: detail.chart.title, level: 2 as const }] : []),
+    ...sectionHeadings,
+    { id: 'scripts', label: detail.scriptsHeading ?? 'Scripts your caller can adapt', level: 2 as const },
+    { id: 'launch-flow', label: detail.workflowHeading ?? 'Move from one clean list to steady calls', level: 2 as const },
+    { id: 'faq', label: detail.faqHeading ?? 'Outbound calling FAQ', level: 2 as const },
+    { id: 'article-related', label: detail.relatedHeading ?? 'Plan the next step', level: 2 as const },
+    { id: 'numbered-sources', label: 'Numbered sources', level: 2 as const },
+  ];
 
   return <><Header hidePricing /><main className="article-page"><JsonLd data={schema} /><article className="container rich-article" data-article-slug={slug}>
     <header className="article-hero">
@@ -125,8 +145,10 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
       <p className="lead">{post.excerpt}</p>
       <div className="article-meta"><span>{post.minutes} minute read</span><span>Published: <time dateTime={detail.published}>{publishedLabel}</time></span><span>Philippines-only talent</span></div>
     </header>
+    <img className="editorial-hero-image" src={image.src} alt={image.alt} width={image.width} height={image.height} />
+    <div className="editorial-layout"><div className="editorial-content">
 
-    <section className="answer-box" aria-labelledby="direct-answer">{detail.image && <img className="sa-booking-image" src={detail.image} alt={`${post.title} editorial illustration`} width="1200" height="675" />}<p className="module-label">Direct answer</p><h2 id="direct-answer">{detail.directAnswerHeading ?? 'What outbound call center outsourcing means'}</h2><p>{detail.summary}</p></section>
+    <section className="answer-box" aria-labelledby="direct-answer"><p className="module-label">Direct answer</p><h2 id="direct-answer">{detail.directAnswerHeading ?? 'What outbound call center outsourcing means'}</h2><p>{detail.summary}</p></section>
     <section className="article-section takeaways" aria-labelledby="takeaways"><h2 id="takeaways">{detail.takeawaysHeading ?? 'What to get right first'}</h2><ul>{detail.takeaways.map((item) => <li key={item}>{item}</li>)}</ul></section>
 
     <section className="article-section" aria-labelledby="work-split"><p className="module-label">{detail.tableLabel ?? 'Control map'}</p><h2 id="work-split">{detail.tableHeading ?? 'Split caller work from owner decisions'}</h2><p className="scroll-cue">Swipe or scroll sideways to see every scorecard column.</p><div className="table-scroll" tabIndex={0}><table><thead><tr><th>Call lane</th><th>Filipino caller</th><th>Owner or manager</th><th>Useful check</th></tr></thead><tbody>{detail.decisionTable.map((row) => <tr key={row.lane}><th scope="row">{row.lane}</th><td>{row.caller}</td><td>{row.owner}</td><td>{row.measure}</td></tr>)}</tbody></table></div></section>
@@ -137,7 +159,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
 
     {detail.expertQuote && <figure className="expert-quote"><blockquote>"{detail.expertQuote.text}."</blockquote><figcaption>{detail.expertQuote.attribution}</figcaption></figure>}
 
-    {detail.sections.slice(0, 4).map((section) => <section className="article-section prose-section" key={section.heading}><h2>{section.heading}</h2>{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section>)}
+    {detail.sections.slice(0, 4).map((section, index) => <section className="article-section prose-section" key={section.heading}><h2 id={sectionHeadings[index].id}>{section.heading}</h2>{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section>)}
     {banners[0] && <ArticleBanner banner={banners[0]} slot={1} />}
 
     <section className="article-section script-section" aria-labelledby="scripts"><p className="module-label">Copy-ready words</p><h2 id="scripts">{detail.scriptsHeading ?? 'Scripts your caller can adapt'}</h2><div className="script-grid">{detail.scripts.map((script) => <figure key={script.title}><figcaption>{script.title}</figcaption><blockquote>"{script.text}"</blockquote></figure>)}</div></section>
@@ -145,11 +167,12 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
 
     <section className="article-section workflow-section" aria-labelledby="launch-flow"><p className="module-label">Review flow</p><h2 id="launch-flow">{detail.workflowHeading ?? 'Move from one clean list to steady calls'}</h2><p className="scroll-cue">Swipe or scroll sideways to see all five review steps.</p><div className="visual-scroll" tabIndex={0}><svg className="review-loop" viewBox="0 0 840 240" role="img" aria-labelledby="review-loop-title review-loop-desc" data-visual="separate-process-graphic"><title id="review-loop-title">Five-step appointment setting quality review</title><desc id="review-loop-desc">A separate process graphic moves from sample to listen, score, repair, and check.</desc><path d="M90 118 H730" stroke="currentColor" strokeWidth="4" strokeDasharray="10 12" fill="none" />{detail.workflow.map((item, index) => { const x = 90 + index * 160; return <g key={item.step}><circle cx={x} cy="118" r="43" /><text className="loop-step" x={x} y="110" textAnchor="middle">{item.step}</text><text className="loop-title" x={x} y="137" textAnchor="middle">{item.title}</text></g>; })}</svg></div><ol>{detail.workflow.map((item) => <li key={item.step}><span>{item.step}</span><div><h3>{item.title}</h3><p>{item.text}</p></div></li>)}</ol></section>
 
-    {detail.sections.slice(4).map((section) => <section className="article-section prose-section" key={section.heading}><h2>{section.heading}</h2>{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section>)}
+    {detail.sections.slice(4).map((section, index) => <section className="article-section prose-section" key={section.heading}><h2 id={sectionHeadings[index + 4].id}>{section.heading}</h2>{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</section>)}
     {banners[2] && <ArticleBanner banner={banners[2]} slot={3} />}
 
     <section className="article-section faq-section" id="faq"><p className="module-label">Buyer questions</p><h2>{detail.faqHeading ?? 'Outbound calling FAQ'}</h2>{detail.faqs.map((faq) => <details key={faq.q}><summary>{faq.q}</summary><p>{faq.a}</p></details>)}</section>
-    <section className="article-section related-section"><h2>{detail.relatedHeading ?? 'Plan the next step'}</h2><div>{detail.related.map((link) => <a href={link.href} key={link.href}>{link.label}<span aria-hidden="true">→</span></a>)}</div></section>
-    <section className="article-section sources-section"><h2>Numbered sources</h2><p>These primary pages support the dated figures, exact quote, calling rules, and Philippines context used in this guide. A qualified adviser should apply the rules to your list, call type, and contact locations.</p><ol>{detail.sources.map((source) => <li key={source.url}><a href={source.url} rel="noopener noreferrer" target="_blank">{source.name}</a></li>)}</ol></section>
+    <section className="article-section related-section"><h2 id="article-related">{detail.relatedHeading ?? 'Plan the next step'}</h2><div>{detail.related.map((link) => <a href={link.href} key={link.href}>{link.label}<span aria-hidden="true"></span></a>)}</div></section>
+    <section className="article-section sources-section"><h2 id="numbered-sources">Numbered sources</h2><p>These primary pages support the dated figures, exact quote, calling rules, and Philippines context used in this guide. A qualified adviser should apply the rules to your list, call type, and contact locations.</p><ol>{detail.sources.map((source) => <li key={source.url}><a href={source.url} rel="noopener noreferrer" target="_blank">{source.name}</a></li>)}</ol></section>
+    </div><EditorialToc items={tocItems} family="Blog" published={publishedLabel} readingTime={`${post.minutes} minutes`} related={detail.related.length ? detail.related : [{ href: '/blog', label: 'More calling guides' }, { href: '/services', label: 'Calling services' }]} /></div>
   </article><CTA /></main><Footer hidePricing /></>;
 }

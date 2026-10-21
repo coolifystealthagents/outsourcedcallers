@@ -269,9 +269,9 @@ function detail(d: Draft): Detail {
       {step:'5',title:'Reconcile',text:'Verify closure in the authoritative system.'}
     ],
     faqs:[d.faq],
-    related:[{label:'Relevant calling service',href:`/services/${d.service}`},{label:'Call quality review',href:'/services/call-quality-review'},{label:'Plan the role',href:'/contact'}],
+    related:[{label:'Relevant calling service',href:`/services/${d.service}`},{label:'Call quality review',href:'/services/call-quality-review'},{label:'Plan the role',href:'/contact-us'}],
     sources:sourceRegister,
-    banners:[{label:'Operating control',title:d.title,text:d.summary,href:'/contact',cta:'Scope the calling role'}],
+    banners:[{label:'Operating control',title:d.title,text:d.summary,href:'/contact-us',cta:'Scope the calling role'}],
     image:'/thank-you-hero.png'
   };
 }
