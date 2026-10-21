@@ -9,3 +9,4 @@ function allSource(){let out=''; const walk=d=>{for(const e of fs.readdirSync(d,
 test('homepage images have nonempty text labels',()=>assert.ok(!/alt\s*=\s*['"]\s*['"]/.test(homepageSource())));
 test('homepage source does not define duplicate main headings',()=>assert.ok((homepageSource().match(/<h1\b/g)||[]).length<=1));
 test('homepage chrome does not emit dynamic service links from mismatched data', () => { const s = homepageSource(); for (const slug of ['admin-support','customer-support','operations-support','reporting-and-qa']) assert.ok(!s.includes(`/services/${slug}`), slug); assert.ok(!/href=\{`\/services\/\$\{[^}]+\.slug\}`\}/.test(s)); });
+test('homepage hero image is not covered by the shift board', () => assert.ok(!homepageSource().includes('shift-board')));

@@ -83,16 +83,6 @@ export default function Home() {
                   <strong>Approved language. Clear handoff.</strong>
                 </div>
               </div>
-              <aside className="shift-board" aria-label="Example calling desk handoff">
-                <div className="board-top">
-                  <div><span className="pulse" /> Shift brief</div>
-                  <small>OWNER REVIEW</small>
-                </div>
-                <div className="queue-row"><span>Reached</span><b>Log outcome</b><img className="status-icon" src="/icons/getillustrations/blueprint-communication-icons-svg/call.svg" alt="Call outcome icon"/></div>
-                <div className="queue-row"><span>No answer</span><b>Schedule retry</b><img className="status-icon" src="/icons/getillustrations/blueprint-communication-icons-svg/outcome-note.svg" alt="Outcome note icon"/></div>
-                <div className="queue-row"><span>Needs approval</span><b>Send to owner</b><img className="status-icon" src="/icons/getillustrations/blueprint-communication-icons-svg/handoff.svg" alt="Owner handoff icon"/></div>
-                <div className="board-foot"><span>CRM note required</span><strong>before next call</strong></div>
-              </aside>
             </div>
           </div>
 

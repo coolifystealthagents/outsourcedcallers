@@ -63,20 +63,7 @@ h1, h2, h3, p { margin-top: 0; }
 .photo-caption { position: absolute; z-index: 2; left: 28px; right: 230px; bottom: 30px; }
 .photo-caption span { display: block; margin-bottom: 7px; color: var(--lime); font: 500 10px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .12em; }
 .photo-caption strong { font: 400 25px/1.05 'Instrument Serif', serif; }
-.shift-board { position: absolute; z-index: 4; right: 0; bottom: 42px; width: min(360px, 76%); padding: 22px; background: rgba(249,247,239,.96); color: var(--ink); box-shadow: 0 28px 70px rgba(0,0,0,.38); backdrop-filter: blur(12px); }
-.board-top { display: flex; justify-content: space-between; align-items: center; gap: 14px; padding-bottom: 18px; border-bottom: 1px solid #d5d1c8; font: 500 12px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .07em; }
-.board-top div { display: flex; align-items: center; gap: 9px; }
-.board-top small { color: #777b70; font-size: 9px; }
-.pulse { width: 8px; height: 8px; border-radius: 50%; background: #44a168; box-shadow: 0 0 0 5px rgba(68,161,104,.13); }
-.queue-row { display: grid; grid-template-columns: 1fr 1fr 31px; gap: 12px; align-items: center; padding: 15px 0; border-bottom: 1px solid #dfdbd2; font-size: 12px; }
-.queue-row span { color: #676b62; }
-.queue-row b { font-weight: 600; }
-.tone { width: 8px; height: 8px; border-radius: 50%; }
-.tone.green { background: #45aa6f; }
-.tone.amber { background: #e4a536; }
-.tone.coral { background: #df6d56; }
-.board-foot { display: flex; justify-content: space-between; gap: 14px; padding-top: 18px; color: #676b62; font: 400 10px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .04em; }
-.board-foot strong { color: var(--ink); font-weight: 500; }
+
 .control-strip { position: relative; z-index: 3; display: grid; grid-template-columns: 1.4fr repeat(4,1fr); border-top: 1px solid rgba(255,255,255,.14); border-left: 1px solid rgba(255,255,255,.14); }
 .control-strip > * { min-height: 72px; margin: 0; display: flex; align-items: center; padding: 17px 20px; border-right: 1px solid rgba(255,255,255,.14); color: rgba(255,255,255,.7); font-size: 12px; }
 .control-strip p { color: white; font-family: 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .08em; }
