@@ -193,7 +193,6 @@ form.card .btn, .section .btn, .service-hero .btn, .final-cta .btn { background:
   .hero-copy h1 { font-size: 55px; }
   .caller-visual { min-height: 540px; }
   .photo-frame { inset: 0 0 70px; }
-  .shift-board { width: calc(100% - 20px); bottom: 0; }
   .photo-caption { right: 20px; bottom: 160px; }
   .control-strip { width: 100%; grid-template-columns: 1fr; }
   .control-strip p { grid-column: auto; }
@@ -228,9 +227,6 @@ form.card .btn, .section .btn, .service-hero .btn, .final-cta .btn { background:
   .hero-copy h1 { font-size: 49px; }
   .desk-actions { align-items: flex-start; flex-direction: column; gap: 12px; }
   .caller-visual { min-height: 510px; }
-  .shift-board { padding: 18px; }
-  .queue-row { grid-template-columns: 1fr 1fr 27px; gap: 8px; }
-  .board-foot { display: grid; }
   .service-module { grid-template-columns: 1fr; }
   .module-code { margin-bottom: -8px; }
 }
