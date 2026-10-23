@@ -15,7 +15,7 @@ type Props = {
 function TocLinks({ items, active }: { items: EditorialHeading[]; active: string }) {
   return <ol className="editorial-toc-list">{items.map((item) => (
     <li key={item.id} data-level={item.level ?? 2}>
-      <a href={`#${item.id}`} aria-current={active === item.id ? 'location' : undefined}>{item.label}</a>
+      <a href={`#${item.id}`} onClick={(event) => { const d = event.currentTarget.closest('details'); if (d) d.removeAttribute('open'); }} aria-current={active === item.id ? 'location' : undefined}>{item.label}</a>
     </li>
   ))}</ol>;
 }

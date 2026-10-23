@@ -54,7 +54,7 @@ export default async function ResearchPost({ params }: { params: Promise<{ slug:
 
   return <><Header /><main className="section"><article className="container guide-article">
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-    <header><p className="eyebrow">Philippines staffing research</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><p className="article-meta"><time dateTime={post.published}>Published: {formatPublicDate(post.published)}</time>{post.updated && <> · Updated <time dateTime={post.updated}>{formatPublicDate(post.updated)}</time></>} · Evidence-first research</p></header>
+    <header><p className="eyebrow">Philippines staffing research</p><h1>{post.title}</h1><p className="lead">{post.excerpt}</p><p className="article-meta"><time dateTime={post.published}>Published {formatPublicDate(post.published)}</time>{post.updated && <> · Updated <time dateTime={post.updated}>{formatPublicDate(post.updated)}</time></>} · Evidence-first research</p></header>
     <img className="editorial-hero-image" src={image.src} alt={image.alt} width={image.width} height={image.height} />
     <div className="editorial-layout"><div className="editorial-content">
       {groups.map((paragraphs, index) => <section className="editorial-prose-section" key={headings[index].id}><h2 id={headings[index].id}>{sectionLabels[index]}</h2>{paragraphs.map((paragraph) => <p key={paragraph}>{paragraph.startsWith('Sources:') ? <><strong>Sources:</strong> {paragraph.slice('Sources:'.length).trim()}</> : paragraph}</p>)}</section>)}

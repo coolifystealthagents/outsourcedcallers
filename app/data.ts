@@ -87,7 +87,11 @@ export const services = [
   { slug: "reception-overflow", title: "Reception Overflow", desc: "Filipino calling specialists can handle reception overflow with documented workflows, approval limits, and owner review." },
   { slug: "call-quality-review", title: "Call Quality Review", desc: "Filipino calling specialists can handle call quality review with documented workflows, approval limits, and owner review." },
 ] as const;
+import { oct22BlogPosts, oct22BlogDetails } from './oct22-blog';
+import { oct22ResearchPosts } from './oct22-research';
+
 export const blogPosts = [
+  ...oct22BlogPosts,
   {
     "slug": "philippines-database-verification-call-data-minimization-checklist",
     "title": "Philippines database verification call data minimization checklist",
@@ -255,6 +259,7 @@ blogPosts.push(...oct13BlogPosts);
 blogPosts.sort((a, b) => (('published' in b ? (b.published ?? '2026-07-28') : '2026-07-28').localeCompare('published' in a ? (a.published ?? '2026-07-28') : '2026-07-28')) || a.slug.localeCompare(b.slug));
 
 export const blogDetails = {
+  ...oct22BlogDetails,
   'philippines-database-verification-call-data-minimization-checklist': {
     published: '2026-07-28',
     mainKeyword: 'Philippines database verification call data minimization checklist',
@@ -1671,6 +1676,7 @@ function makeResearchPost([slug, title, excerpt]: readonly [string, string, stri
 }
 
 export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; updated?: string; image?: string; handoff?: { href: string; label: string; text: string } }> = [
+  ...(oct22ResearchPosts as unknown as Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; updated?: string; image?: string }>),
   ...oct13ResearchPosts,
   ...oct12ResearchPosts,
   ...oct08ResearchPosts,

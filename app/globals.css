@@ -17,7 +17,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-html, body { max-width: 100%; overflow-x: hidden; }
+html, body { max-width: 100%; overflow-x: clip; }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font); }
 a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
@@ -279,3 +279,16 @@ form.card .btn, .section .btn, .service-hero .btn, .final-cta .btn { background:
 /* About route */
 .about-page{background:var(--paper);color:var(--ink)}.about-hero{padding:76px 0;background:var(--night);color:white}.about-hero-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:58px;align-items:center}.about-hero h1{margin:0 0 22px;font:400 clamp(50px,6vw,78px)/.94 'Instrument Serif',serif;letter-spacing:-.04em}.about-hero .lead{color:rgba(255,255,255,.72);font-size:18px;line-height:1.68}.about-hero figure{margin:0}.about-hero figure img{display:block;width:100%;height:450px;object-fit:cover;filter:saturate(.72) contrast(1.04)}.about-hero figcaption{padding:12px 14px;background:var(--lime);color:var(--night);font:600 11px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.06em}.about-section{padding:90px 0}.about-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}.about-cards article{padding:28px;border:1px solid #b9b4aa;background:var(--white);box-shadow:7px 7px 0 #d9d4ca}.about-cards h3{margin:0 0 12px;font:400 31px 'Instrument Serif',serif}.about-cards p{margin:0;color:var(--muted);line-height:1.68}.about-partner{padding:78px 0;background:#e7e2d7}.about-partner-grid{display:grid;grid-template-columns:1fr auto;gap:64px;align-items:center}.about-partner h2{margin:0 0 18px;font:400 clamp(42px,5vw,65px)/.97 'Instrument Serif',serif}.about-partner p{max-width:740px;color:var(--muted);font-size:17px;line-height:1.68}.about-partner-grid>img{width:298px;height:100px;object-fit:contain;background:white;padding:15px;border:1px solid #b9b4aa}
 @media(max-width:850px){.about-hero-grid,.about-partner-grid{grid-template-columns:1fr}.about-hero figure img{height:340px}.about-cards{grid-template-columns:1fr}.about-partner-grid>img{width:224px;height:75px}}
+
+/* 2026-10-22 batch: compact sticky mobile ToC */
+@media (max-width: 900px) {
+  .editorial-toc-mobile { position: fixed; top: 86px; left: 12px; right: 12px; z-index: 60; margin: 0; background: #fff; border: 1px solid #aaa69d; border-radius: 8px; box-shadow: 0 12px 24px rgba(20,25,20,.16); }
+  .editorial-toc-mobile:not([open]) { height: 52px; overflow: hidden; }
+  .editorial-toc-mobile summary { display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 18px; list-style: none; cursor: pointer; }
+  .editorial-toc-mobile summary::-webkit-details-marker { display: none; }
+  .editorial-toc-mobile summary::after { content: "+"; font-size: 20px; line-height: 1; }
+  .editorial-toc-mobile[open] summary::after { content: "-"; }
+  .editorial-toc-mobile:not([open]) nav { display: none; }
+  .editorial-toc-mobile[open] nav { position: absolute; top: 100%; left: -1px; right: -1px; max-height: 42vh; overflow: auto; padding: 10px 16px 14px; background: #fff; border: 1px solid #aaa69d; }
+  .editorial-content :is(h2,h3), .article-body :is(h2,h3) { scroll-margin-top: 150px; }
+}
