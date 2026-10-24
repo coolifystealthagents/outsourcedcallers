@@ -292,3 +292,5 @@ form.card .btn, .section .btn, .service-hero .btn, .final-cta .btn { background:
   .editorial-toc-mobile[open] nav { position: absolute; top: 100%; left: -1px; right: -1px; max-height: 42vh; overflow: auto; padding: 10px 16px 14px; background: #fff; border: 1px solid #aaa69d; }
   .editorial-content :is(h2,h3), .article-body :is(h2,h3) { scroll-margin-top: 150px; }
 }
+
+.article-meta .article-date{text-transform:none;letter-spacing:normal}

@@ -143,7 +143,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
       <p className="eyebrow">{detail.metaLabel ?? 'Philippines staffing blog'}</p>
       <h1>{post.title}</h1>
       <p className="lead">{post.excerpt}</p>
-      <div className="article-meta"><span>{post.minutes} minute read</span><span>Published <time dateTime={detail.published}>{publishedLabel}</time></span><span>Philippines-only talent</span></div>
+      <div className="article-meta"><span>{post.minutes} minute read</span><span className="article-date">Published <time dateTime={detail.published}>{publishedLabel}</time></span><span>Philippines-only talent</span></div>
     </header>
     <img className="editorial-hero-image" src={image.src} alt={image.alt} width={image.width} height={image.height} />
     <div className="editorial-layout"><div className="editorial-content">
