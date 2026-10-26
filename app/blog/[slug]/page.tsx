@@ -60,7 +60,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = blogPosts.find((item) => item.slug === slug);
   if (!post) return {};
   const url = `https://${String(site.domain).toLowerCase()}/blog/${post.slug}`;
-  const image = resolveArticleImage('blog', post.slug, post.title);
+  const image = post.image ? { src: post.image, width: 1200, height: 630, alt: post.title } : resolveArticleImage('blog', post.slug, post.title);
   return {
     title: post.title,
     description: post.excerpt,
@@ -80,7 +80,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
 
   const url = `https://${String(site.domain).toLowerCase()}/blog/${post.slug}`;
   const rawDetail = (blogDetails as Record<string, unknown>)[slug];
-  const image = resolveArticleImage('blog', post.slug, post.title);
+  const image = post.image ? { src: post.image, width: 1200, height: 630, alt: post.title } : resolveArticleImage('blog', post.slug, post.title);
 
   if (!isRichDetail(rawDetail)) {
     const published = 'published' in post && post.published ? post.published : '2026-07-28';
