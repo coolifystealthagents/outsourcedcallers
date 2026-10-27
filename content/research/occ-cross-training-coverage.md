@@ -1,3 +1,38 @@
+---
+title: "Does Cross-Training Cover the Outsourced Calling And Outreach Operations Queue?"
+slug: "occ-cross-training-coverage"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A protocol testing whether every outsourced calling and outreach operations lane has a backup who can complete the task without help."
+category: "research"
+cluster: "outsourced calling and outreach operations"
+featuredImage: "/daily27/outsourcedcallers/occ-cross-training-coverage.png"
+sourceCount: 10
+sources:
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "GAO Assessing Data Reliability"
+    url: "https://www.gao.gov/products/gao-20-283g"
+  - name: "American Bar Association"
+    url: "https://www.americanbar.org/"
+  - name: "U.S. Bureau of Labor Statistics Occupational Outlook"
+    url: "https://www.bls.gov/ooh/"
+  - name: "U.S. General Services Administration"
+    url: "https://www.gsa.gov/"
+  - name: "CMS Medicare Learning Network"
+    url: "https://www.cms.gov/"
+---
+
 # Does Cross-Training Cover the Outsourced Calling And Outreach Operations Queue?
 
 Published: October 27, 2026

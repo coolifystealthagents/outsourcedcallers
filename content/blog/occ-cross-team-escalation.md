@@ -1,3 +1,28 @@
+---
+title: "Route Cross-Team Outsourced Calling And Outreach Operations Escalations to One Owner"
+slug: "occ-cross-team-escalation"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "An escalation model for outsourced calling and outreach operations that names the dependency, the receiving owner, and the response target."
+category: "blog"
+cluster: "outsourced calling and outreach operations"
+featuredImage: "/daily27/outsourcedcallers/occ-cross-team-escalation.png"
+sourceCount: 5
+sources:
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+---
+
 # Route Cross-Team Outsourced Calling And Outreach Operations Escalations to One Owner
 
 Published: October 27, 2026

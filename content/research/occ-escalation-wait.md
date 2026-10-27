@@ -1,3 +1,38 @@
+---
+title: "Where Does Outsourced Calling And Outreach Operations Escalation Time Go?"
+slug: "occ-escalation-wait"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A protocol separating owner wait, dependency wait, system delay, and rework in outsourced calling and outreach operations escalations."
+category: "research"
+cluster: "outsourced calling and outreach operations"
+featuredImage: "/daily27/outsourcedcallers/occ-escalation-wait.png"
+sourceCount: 10
+sources:
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "NIST SP 800-128, Security-Focused Configuration Management"
+    url: "https://csrc.nist.gov/pubs/sp/800/128/final"
+  - name: "GAO Standards for Internal Control"
+    url: "https://www.gao.gov/products/gao-14-704g"
+  - name: "FTC Advertising and Marketing Basics"
+    url: "https://www.ftc.gov/business-guidance/resources/advertising-marketing-basics"
+  - name: "U.S. General Services Administration"
+    url: "https://www.gsa.gov/"
+  - name: "FTC Protecting Personal Information"
+    url: "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business"
+---
+
 # Where Does Outsourced Calling And Outreach Operations Escalation Time Go?
 
 Published: October 27, 2026

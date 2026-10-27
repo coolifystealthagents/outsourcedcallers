@@ -1,3 +1,38 @@
+---
+title: "How Complete Is the Outsourced Calling And Outreach Operations Vendor Onboarding Packet at First Review?"
+slug: "occ-vendor-cycle"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A protocol measuring whether outsourced calling and outreach operations vendor packets carry identity, insurance, security, access, and owner acceptance before work starts."
+category: "research"
+cluster: "outsourced calling and outreach operations"
+featuredImage: "/daily27/outsourcedcallers/occ-vendor-cycle.png"
+sourceCount: 10
+sources:
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "U.S. General Services Administration"
+    url: "https://www.gsa.gov/"
+  - name: "CMS Medicare Learning Network"
+    url: "https://www.cms.gov/"
+  - name: "W3C Web Accessibility Initiative"
+    url: "https://www.w3.org/WAI/"
+  - name: "Project Management Institute Standards"
+    url: "https://www.pmi.org/standards"
+  - name: "World Bank Philippines Overview"
+    url: "https://www.worldbank.org/en/country/philippines/overview"
+---
+
 # How Complete Is the Outsourced Calling And Outreach Operations Vendor Onboarding Packet at First Review?
 
 Published: October 27, 2026

@@ -1,3 +1,38 @@
+---
+title: "How Accurate Is Outsourced Calling And Outreach Operations Capacity Forecasting?"
+slug: "occ-capacity-error"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A protocol comparing forecast demand and handling time with actual outsourced calling and outreach operations queue performance."
+category: "research"
+cluster: "outsourced calling and outreach operations"
+featuredImage: "/daily27/outsourcedcallers/occ-capacity-error.png"
+sourceCount: 10
+sources:
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "NIST Digital Identity Guidelines, SP 800-63-4"
+    url: "https://pages.nist.gov/800-63-4/"
+  - name: "W3C Web Accessibility Initiative"
+    url: "https://www.w3.org/WAI/"
+  - name: "FTC Protecting Personal Information"
+    url: "https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business"
+  - name: "American Staffing Association"
+    url: "https://americanstaffing.net/"
+  - name: "FTC Data Breach Response Guide"
+    url: "https://www.ftc.gov/business-guidance/resources/data-breach-response-guide-business"
+---
+
 # How Accurate Is Outsourced Calling And Outreach Operations Capacity Forecasting?
 
 Published: October 27, 2026

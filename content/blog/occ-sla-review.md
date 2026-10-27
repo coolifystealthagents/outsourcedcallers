@@ -1,3 +1,28 @@
+---
+title: "Review Outsourced Calling And Outreach Operations SLAs With Exception Evidence"
+slug: "occ-sla-review"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "An SLA review for outsourced calling and outreach operations that separates measured performance, exclusions, and owner decisions."
+category: "blog"
+cluster: "outsourced calling and outreach operations"
+featuredImage: "/daily27/outsourcedcallers/occ-sla-review.png"
+sourceCount: 5
+sources:
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+---
+
 # Review Outsourced Calling And Outreach Operations SLAs With Exception Evidence
 
 Published: October 27, 2026

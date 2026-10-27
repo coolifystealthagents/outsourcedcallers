@@ -1,3 +1,28 @@
+---
+title: "Map Cross-Training Coverage for Outsourced Calling And Outreach Operations Work"
+slug: "occ-cross-training-map"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A coverage map for outsourced calling and outreach operations that shows who can run each lane, who is a backup, and where the single points of failure are."
+category: "blog"
+cluster: "outsourced calling and outreach operations"
+featuredImage: "/daily27/outsourcedcallers/occ-cross-training-map.png"
+sourceCount: 5
+sources:
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+---
+
 # Map Cross-Training Coverage for Outsourced Calling And Outreach Operations Work
 
 Published: October 27, 2026

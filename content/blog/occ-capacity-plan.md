@@ -1,3 +1,28 @@
+---
+title: "Plan Outsourced Calling And Outreach Operations Capacity From Queue Demand"
+slug: "occ-capacity-plan"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A capacity plan for outsourced calling and outreach operations that uses queue demand, handling time, and blocked time instead of headcount alone."
+category: "blog"
+cluster: "outsourced calling and outreach operations"
+featuredImage: "/daily27/outsourcedcallers/occ-capacity-plan.png"
+sourceCount: 5
+sources:
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+---
+
 # Plan Outsourced Calling And Outreach Operations Capacity From Queue Demand
 
 Published: October 27, 2026

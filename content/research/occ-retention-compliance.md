@@ -1,3 +1,38 @@
+---
+title: "Do Outsourced Calling And Outreach Operations Records Follow the Retention Schedule?"
+slug: "occ-retention-compliance"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A protocol measuring whether outsourced calling and outreach operations records are kept, reviewed, and disposed of according to a written schedule."
+category: "research"
+cluster: "outsourced calling and outreach operations"
+featuredImage: "/daily27/outsourcedcallers/occ-retention-compliance.png"
+sourceCount: 10
+sources:
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "SAMHSA"
+    url: "https://www.samhsa.gov/"
+  - name: "SEC Recordkeeping Guidance"
+    url: "https://www.sec.gov/rules-regulations/staff-guidance/division-investment-management-frequently-asked-questions"
+  - name: "NIST Cybersecurity Framework 2.0"
+    url: "https://www.nist.gov/cyberframework"
+  - name: "NAPEO"
+    url: "https://www.napeo.org/"
+  - name: "CISA Secure Our World"
+    url: "https://www.cisa.gov/secure-our-world"
+---
+
 # Do Outsourced Calling And Outreach Operations Records Follow the Retention Schedule?
 
 Published: October 27, 2026

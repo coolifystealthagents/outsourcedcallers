@@ -1,3 +1,28 @@
+---
+title: "Turn the Outsourced Calling And Outreach Operations Risk Register Into a Monthly Decision"
+slug: "occ-risk-register"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A monthly risk review for outsourced calling and outreach operations that ranks likelihood, impact, owner, and the next action instead of listing everything."
+category: "blog"
+cluster: "outsourced calling and outreach operations"
+featuredImage: "/daily27/outsourcedcallers/occ-risk-register.png"
+sourceCount: 5
+sources:
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+---
+
 # Turn the Outsourced Calling And Outreach Operations Risk Register Into a Monthly Decision
 
 Published: October 27, 2026

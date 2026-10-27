@@ -1,3 +1,28 @@
+---
+title: "Build an Outsourced Calling And Outreach Operations Vendor Onboarding Evidence Packet"
+slug: "occ-vendor-onboarding-packet"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A vendor onboarding packet for outsourced calling and outreach operations that keeps required records, approvals, and first-task access together."
+category: "blog"
+cluster: "outsourced calling and outreach operations"
+featuredImage: "/daily27/outsourcedcallers/occ-vendor-onboarding-packet.png"
+sourceCount: 5
+sources:
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+---
+
 # Build an Outsourced Calling And Outreach Operations Vendor Onboarding Evidence Packet
 
 Published: October 27, 2026

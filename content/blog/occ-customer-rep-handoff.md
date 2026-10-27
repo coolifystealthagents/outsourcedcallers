@@ -1,3 +1,28 @@
+---
+title: "Hand Off an Outsourced Calling And Outreach Operations Customer After a Rep Change"
+slug: "occ-customer-rep-handoff"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A customer handoff for outsourced calling and outreach operations that preserves commitments, history, access, and the next conversation."
+category: "blog"
+cluster: "outsourced calling and outreach operations"
+featuredImage: "/daily27/outsourcedcallers/occ-customer-rep-handoff.png"
+sourceCount: 5
+sources:
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+---
+
 # Hand Off an Outsourced Calling And Outreach Operations Customer After a Rep Change
 
 Published: October 27, 2026

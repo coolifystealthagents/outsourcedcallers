@@ -1,3 +1,28 @@
+---
+title: "Put Outsourced Calling And Outreach Operations Records on a Retention and Disposal Schedule"
+slug: "occ-retention-disposal"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A retention schedule for outsourced calling and outreach operations that names the record class, the retention period, the owner, and the disposal evidence."
+category: "blog"
+cluster: "outsourced calling and outreach operations"
+featuredImage: "/daily27/outsourcedcallers/occ-retention-disposal.png"
+sourceCount: 5
+sources:
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+---
+
 # Put Outsourced Calling And Outreach Operations Records on a Retention and Disposal Schedule
 
 Published: October 27, 2026

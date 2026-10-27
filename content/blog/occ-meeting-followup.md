@@ -1,3 +1,28 @@
+---
+title: "Keep Outsourced Calling And Outreach Operations Meeting Follow-Ups With One Owner"
+slug: "occ-meeting-followup"
+date: "2026-10-27"
+published: "2026-10-27"
+publishedAt: "2026-10-27"
+updatedAt: "2026-10-27"
+description: "A follow-up method for outsourced calling and outreach operations meetings that turns decisions and actions into one owned list with dates."
+category: "blog"
+cluster: "outsourced calling and outreach operations"
+featuredImage: "/daily27/outsourcedcallers/occ-meeting-followup.png"
+sourceCount: 5
+sources:
+  - name: "International Labour Organization Data"
+    url: "https://www.ilo.org/data"
+  - name: "U.S. Department of Labor, FLSA Recordkeeping"
+    url: "https://www.dol.gov/agencies/whd/fact-sheets/21-flsa-recordkeeping"
+  - name: "NALS, The Association for Legal Professionals"
+    url: "https://www.nals.org/"
+  - name: "ICO Data Protection Guidance"
+    url: "https://ico.org.uk/for-organisations/"
+  - name: "OSHA Recordkeeping"
+    url: "https://www.osha.gov/recordkeeping"
+---
+
 # Keep Outsourced Calling And Outreach Operations Meeting Follow-Ups With One Owner
 
 Published: October 27, 2026
