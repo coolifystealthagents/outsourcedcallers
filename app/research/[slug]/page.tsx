@@ -12,12 +12,14 @@ export function generateStaticParams() {
   return researchPosts.map((post) => ({ slug: post.slug }));
 }
 
+const resolvedResearchImage = (post: any) => 'image' in post && typeof post.image === 'string' ? { src: post.image, width: 1200, height: 630, alt: post.title } : resolveArticleImage('research', post.slug, post.title);
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const post = researchPosts.find((item) => item.slug === slug);
   if (!post) return {};
   const url = `https://${site.domain.toLowerCase()}/research/${post.slug}`;
-  const image = resolveArticleImage('research', post.slug, post.title);
+  const image = resolvedResearchImage(post);
   return {
     title: post.title,
     description: post.excerpt,
@@ -32,7 +34,7 @@ export default async function ResearchPost({ params }: { params: Promise<{ slug:
   const { slug } = await params;
   const post = researchPosts.find((item) => item.slug === slug);
   if (!post) notFound();
-  const image = resolveArticleImage('research', post.slug, post.title);
+  const image = resolvedResearchImage(post);
   const headings = editorialHeadings(sectionLabels);
   const groups = [post.body.slice(0, 3), post.body.slice(3, 5), post.body.slice(5, 8), post.body.slice(8, 11), post.body.slice(11)];
   const url = `https://${site.domain.toLowerCase()}/research/${post.slug}`;
