@@ -81,7 +81,8 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
 
   const url = `https://${String(site.domain).toLowerCase()}/blog/${post.slug}`;
   const rawDetail = (blogDetails as Record<string, unknown>)[slug];
-  const image = post.image ? { src: post.image, width: 1200, height: 630, alt: post.title } : resolveArticleImage('blog', post.slug, post.title);
+  const imageSrc2 = 'image' in post && typeof post.image === 'string' ? post.image : undefined;
+  const image = imageSrc2 ? { src: imageSrc2, width: 1200, height: 630, alt: post.title } : resolveArticleImage('blog', post.slug, post.title);
 
   if (!isRichDetail(rawDetail)) {
     const published = 'published' in post && post.published ? post.published : '2026-07-28';
