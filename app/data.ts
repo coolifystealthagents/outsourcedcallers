@@ -91,8 +91,11 @@ import { oct22BlogPosts, oct22BlogDetails } from './oct22-blog';
 import { oct22ResearchPosts } from './oct22-research';
 import { oct26BlogPosts, oct26BlogDetails } from './oct26-blog';
 import { oct26ResearchPosts } from './oct26-research';
+import { oct27BlogPosts, oct27BlogDetails } from './oct27-blog';
+import { oct27ResearchPosts } from './oct27-research';
 
 export const blogPosts = [
+  ...oct27BlogPosts,
   ...oct26BlogPosts,
   ...oct22BlogPosts,
   {
@@ -262,6 +265,7 @@ blogPosts.push(...oct13BlogPosts);
 blogPosts.sort((a, b) => (('published' in b ? (b.published ?? '2026-07-28') : '2026-07-28').localeCompare('published' in a ? (a.published ?? '2026-07-28') : '2026-07-28')) || a.slug.localeCompare(b.slug));
 
 export const blogDetails = {
+  ...oct27BlogDetails,
   ...oct26BlogDetails,
   ...oct22BlogDetails,
   'philippines-database-verification-call-data-minimization-checklist': {
@@ -1680,6 +1684,7 @@ function makeResearchPost([slug, title, excerpt]: readonly [string, string, stri
 }
 
 export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; updated?: string; image?: string; handoff?: { href: string; label: string; text: string } }> = [
+  ...(oct27ResearchPosts as unknown as Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; updated?: string; image?: string }>),
   ...(oct26ResearchPosts as unknown as Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; updated?: string; image?: string }>),
   ...(oct22ResearchPosts as unknown as Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; updated?: string; image?: string }>),
   ...oct13ResearchPosts,
