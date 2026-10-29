@@ -13,6 +13,6 @@ assert.match(record, /label: 'Plan an outbound lead qualification lane'/);
 assert.match(record, /set list rules, approved questions, and evidence checks/);
 assert.match(record, /The sales owner decides fit, consent, offer terms, and any commercial next step\./);
 assert.doesNotMatch(record, /caller (?:can )?(?:decides?|approves?|sets?) (?:fit|consent|offer terms|commercial)/i);
-assert.match(renderer, /dateModified: p\.updated \?\? p\.published/);
-assert.match(renderer, /href=\{p\.handoff\.href\}/);
+assert.match(renderer, /dateModified: post\.updated \?\? post\.published/);
+assert.match(renderer, /href=\{post\.handoff\.href\}/);
 console.log('August 19 outbound-denominator handoff source contract: PASS');

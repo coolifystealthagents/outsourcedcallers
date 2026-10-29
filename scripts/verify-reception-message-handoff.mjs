@@ -12,8 +12,8 @@ assert.match(record, /updated: '2026-10-11'/, 'the selected research record must
 assert.match(record, /href: '\/services\/reception-overflow'/, 'the selected record must own the reception-overflow destination');
 assert.match(record, /label: 'Plan reception overflow call support'/, 'the selected record must use the route-specific reader action');
 assert.match(record, /The client decides urgency, sensitive routing, and any exception\./, 'the handoff must retain the client decision boundary');
-assert.match(renderer, /\{p\.handoff && \(/, 'the generic research renderer must render optional record-owned handoffs');
-assert.match(renderer, /href=\{p\.handoff\.href\}/, 'the generic research renderer must use the record-owned destination');
-assert.match(renderer, /dateModified: p\.updated \?\? p\.published/, 'Article modified date must derive from the record update');
+assert.match(renderer, /\{post\.handoff && <aside className="support-strip">/, 'the generic research renderer must render optional record-owned handoffs');
+assert.match(renderer, /href=\{post\.handoff\.href\}/, 'the generic research renderer must use the record-owned destination');
+assert.match(renderer, /dateModified: post\.updated \?\? post\.published/, 'Article modified date must derive from the record update');
 
 console.log('reception-message handoff: PASS');

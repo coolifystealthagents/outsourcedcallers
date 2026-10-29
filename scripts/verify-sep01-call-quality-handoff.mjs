@@ -15,6 +15,6 @@ assert.match(record, /The quality assurance owner decides coaching, score use, a
 assert.doesNotMatch(record, /caller can decide coaching|caller can change the rubric/i);
 assert.match(source, /updated:topic\.updated/);
 assert.match(source, /handoff:topic\.handoff/);
-assert.match(renderer, /dateModified: p\.updated \?\? p\.published/);
-assert.match(renderer, /href=\{p\.handoff\.href\}/);
+assert.match(renderer, /dateModified: post\.updated \?\? post\.published/);
+assert.match(renderer, /href=\{post\.handoff\.href\}/);
 console.log('September 1 call-quality handoff source contract: PASS');
