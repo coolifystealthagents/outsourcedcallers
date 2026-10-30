@@ -42,3 +42,13 @@ test('image resolver exposes intrinsic dimensions and never references generic t
   assert.match(images, /resolveArticleImage/);
   assert.doesNotMatch(images, /thank-you-hero/);
 });
+
+test('survey-response research owns its contextual service handoff and freshness', () => {
+  const source = read('app/aug19-research.ts');
+  const record = source.slice(source.indexOf("slug: 'filipino-caller-neutrality-survey-response-quality'"), source.indexOf("slug: 'win-back-call-refusal-suppression-evidence'"));
+  assert.match(record, /updated: '2026-10-30'/);
+  assert.match(record, /href: '\/services\/survey-calling'/);
+  assert.match(record, /label: 'Plan a neutral survey-calling lane'/);
+  assert.match(record, /The research owner controls the questionnaire, sampling, analysis, and policy decisions\./);
+  assert.doesNotMatch(record, /href: '\/contact-us'/);
+});
