@@ -1,13 +1,13 @@
 // Staged for coolifystealthagents/outsourcedcallers. Dated 2026-11-03.
 export const nov03ResearchPosts = [
   {
-    slug: "occ03-research-callback-promise-aging",
-    title: "How old do callback promises become before a documented attempt?",
-    excerpt: "A measurement protocol for callback promise aging in outsourced calling operations, with a frozen population, defined start and stop points, and a dated review.",
-    published: "2026-11-03",
-    updated: "2026-11-03",
-    image: "/daily03/outsourcedcallers/occ03-research-callback-promise-aging.webp",
-    body: [
+    "slug": "occ03-research-callback-promise-aging",
+    "title": "How old do callback promises become before a documented attempt?",
+    "excerpt": "A measurement protocol for callback promise aging in outsourced calling operations, with a frozen population, defined start and stop points, and a dated review.",
+    "published": "2026-11-03",
+    "updated": "2026-11-03",
+    "image": "/daily03/outsourcedcallers/occ03-research-callback-promise-aging.webp",
+    "body": [
       "How long does a callback promise wait before a documented call attempt? The scope is the callback register in one outsourced calling operation during a defined period, not an industry benchmark. The measure matters because a promise the customer has already heard is different from an internal task that can move without notice. The protocol describes the age of open promises and the stage where time accumulates.",
       "This note does not decide whether a caller performed well or whether a customer was satisfied. Those questions require a wider review of call quality, staffing, and the customer relationship. The narrow purpose is to make the promise path visible so the team can fix the handoff or the coverage window with evidence.",
       "The unit is one callback promise, from the moment it is recorded with the customer to the first documented attempt or the close. A promise that is rescheduled remains the same unit with an additional commitment, not a new unit. If a customer calls again and a new promise is made, keep the new promise separate and link it to the original.",
@@ -26,13 +26,13 @@ export const nov03ResearchPosts = [
     ]
   },
   {
-    slug: "occ03-research-abandoned-call-followup-coverage",
-    title: "Testing whether abandoned calls receive a documented follow-up",
-    excerpt: "A bounded test for checking follow-up coverage after abandoned calls in outsourced calling operations, with a frozen sample and a dated result.",
-    published: "2026-11-03",
-    updated: "2026-11-03",
-    image: "/daily03/outsourcedcallers/occ03-research-abandoned-call-followup-coverage.webp",
-    body: [
+    "slug": "occ03-research-abandoned-call-followup-coverage",
+    "title": "Testing whether abandoned calls receive a documented follow-up",
+    "excerpt": "A bounded test for checking follow-up coverage after abandoned calls in outsourced calling operations, with a frozen sample and a dated result.",
+    "published": "2026-11-03",
+    "updated": "2026-11-03",
+    "image": "/daily03/outsourcedcallers/occ03-research-abandoned-call-followup-coverage.webp",
+    "body": [
       "When a caller abandons a call before reaching a person, does the record show a documented follow-up attempt? The question is narrower than whether the caller was satisfied or whether the queue was adequately staffed. It asks whether the operation notices the abandoned contact and gives someone a clear next action. A missed follow-up can turn a temporary wait into a lost customer who never hears from the business again.",
       "This test does not measure the cause of the abandonment or assign fault to an individual. Those questions require queue data, staffing records, and a review of the customer's prior contacts. The narrow purpose is to describe how often abandoned calls receive a follow-up and where the record breaks.",
       "The unit is one abandoned call event. A caller who abandons twice on the same day creates two events, and each should be tracked separately because the follow-up may differ. If the system groups events into a single contact record, keep the group but note the reduced precision. Include calls abandoned after a menu selection and calls abandoned while waiting for a person, and label the stage.",
