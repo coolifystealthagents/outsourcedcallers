@@ -5,6 +5,10 @@ import { familyIndexIncludesRoute } from './paginated-family-index.mjs';
 
 const base = process.env.CONTENT_BASE_URL ?? 'http://127.0.0.1:3000';
 const canonicalBase = 'https://outsourcedcallers.com';
+const baseUrl = new URL(base);
+const localCanonicalHeaders = ['127.0.0.1', 'localhost'].includes(baseUrl.hostname)
+  ? { 'x-forwarded-host': 'outsourcedcallers.com', 'x-forwarded-proto': 'https' }
+  : {};
 const blogManifest = JSON.parse(fs.readFileSync('.paperclip/daily-content/2026-09-01/blog.json', 'utf8'));
 const researchManifest = JSON.parse(fs.readFileSync('.paperclip/daily-content/2026-09-01/research.json', 'utf8'));
 assert.equal(blogManifest.count, 12);
@@ -17,7 +21,7 @@ const routes = entries.map((entry) => entry.route);
 assert.equal(new Set(routes).size, 17, 'manifest routes must be unique');
 
 const fetchOk = async (route) => {
-  const response = await fetch(`${base}${route}`, { redirect: 'manual' });
+  const response = await fetch(`${base}${route}`, { headers: localCanonicalHeaders, redirect: 'manual' });
   assert.equal(response.status, 200, `${route} must return HTTP 200 without a redirect`);
   return response.text();
 };
