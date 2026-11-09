@@ -16,6 +16,7 @@ const BLOG_IMAGES: Candidate[] = [
   { src: '/blog-heroes/database-verification-field-change-evidence.png', width: 1536, height: 1024, alt: 'Database verification field change evidence record', topics: ['database', 'verification', 'record', 'data'] },
   { src: '/blog-heroes/filipino-caller-precall-record-review.png', width: 1536, height: 1024, alt: 'Filipino caller reviewing an approved pre-call record', topics: ['caller', 'training', 'quality', 'script'] },
   { src: '/blog-heroes/outbound-calling-outcome-state-ledger.png', width: 1693, height: 929, alt: 'Outbound calling outcome state ledger', topics: ['outbound', 'queue', 'call', 'workflow'] },
+  { src: '/daily08/outsourcedcallers/a-first-attempt-standard-for-inbound-appointment-requests.jpg', width: 1200, height: 630, alt: 'A first-attempt standard for inbound appointment requests', topics: ['first-attempt'] },
 ];
 
 const RESEARCH_IMAGES: Candidate[] = [
@@ -25,6 +26,8 @@ const RESEARCH_IMAGES: Candidate[] = [
   { src: '/research-heroes/multilingual-clarification-fidelity-research.png', width: 1536, height: 1024, alt: 'Multilingual clarification fidelity research diagram', topics: ['multilingual', 'language', 'clarification', 'caller'] },
   { src: '/research-heroes/handoff-evidence-clarity-research.png', width: 1536, height: 1024, alt: 'Handoff evidence and clarity research diagram', topics: ['handoff', 'transfer', 'reception', 'message'] },
   { src: '/research-heroes/queue-sample-reliability-research.png', width: 1536, height: 1024, alt: 'Calling queue sample reliability research diagram', topics: ['queue', 'quality', 'outbound', 'list', 'evidence'] },
+  { src: '/daily08/outsourcedcallers/measuring-the-time-from-inbound-request-to-first-dial.jpg', width: 1200, height: 630, alt: 'Measuring the time from inbound request to first dial', topics: ['first-dial', 'request-to-dial'] },
+  { src: '/daily08/outsourcedcallers/auditing-reschedule-reasons-in-appointment-setting-notes.jpg', width: 1200, height: 630, alt: 'Auditing reschedule reasons in appointment-setting notes', topics: ['reschedule', 'reschedule-reasons'] },
 ];
 
 export function resolveArticleImage(family: 'blog' | 'research', slug: string, title = ''): ArticleImage {
