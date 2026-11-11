@@ -101,6 +101,7 @@ import { nov05BlogPosts, nov05BlogDetails } from './nov05-blog';
 import { nov06BlogPosts, nov06BlogDetails } from './nov06-blog';
 import { nov07BlogPosts, nov07BlogDetails } from './nov07-blog';
 import { nov08BlogPosts, nov08BlogDetails } from './nov08-blog';
+import { nov11BlogPosts, nov11BlogDetails } from './nov11-blog';
 import { nov10BlogPosts, nov10BlogDetails } from './nov10-blog';
 import { nov09BlogPosts, nov09BlogDetails } from './nov09-blog';
 import { nov03ResearchPosts } from './nov03-research';
@@ -109,10 +110,12 @@ import { nov05ResearchPosts } from './nov05-research';
 import { nov06ResearchPosts } from './nov06-research';
 import { nov07ResearchPosts } from './nov07-research';
 import { nov08ResearchPosts } from './nov08-research';
+import { nov11ResearchPosts } from './nov11-research';
 import { nov10ResearchPosts } from './nov10-research';
 import { nov09ResearchPosts } from './nov09-research';
 
 export const blogPosts = [
+  ...nov11BlogPosts,
   ...nov10BlogPosts,
   ...nov09BlogPosts,
   ...nov08BlogPosts,
@@ -292,6 +295,7 @@ blogPosts.push(...oct13BlogPosts);
 blogPosts.sort((a, b) => (('published' in b ? (b.published ?? '2026-07-28') : '2026-07-28').localeCompare('published' in a ? (a.published ?? '2026-07-28') : '2026-07-28')) || a.slug.localeCompare(b.slug));
 
 export const blogDetails = {
+  ...nov11BlogDetails,
   ...nov10BlogDetails,
   ...nov09BlogDetails,
   ...nov08BlogDetails,
@@ -1720,6 +1724,7 @@ function makeResearchPost([slug, title, excerpt]: readonly [string, string, stri
 }
 
 export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; updated?: string; image?: string; handoff?: { href: string; label: string; text: string } }> = [
+  ...(nov11ResearchPosts as unknown as Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; updated?: string; image?: string; handoff?: { href: string; label: string; text: string } }>),
   ...(nov10ResearchPosts as unknown as Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; updated?: string; image?: string; handoff?: { href: string; label: string; text: string } }>),
   ...(nov09ResearchPosts as unknown as Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; updated?: string; image?: string; handoff?: { href: string; label: string; text: string } }>),
   ...(nov08ResearchPosts as unknown as Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; updated?: string; image?: string }>),
