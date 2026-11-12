@@ -72,7 +72,8 @@ test('contact first fold preserves full form and puts official team plate immedi
   assert.match(contact, /stealth-agents-team-bacolod\.jpg" width="1906" height="1080"/);
   assert.match(contact, /<figcaption><img[^>]+stealth-agents-logo\.png[\s\S]*?<strong>Official team, Bacolod<\/strong>/);
   for (const field of ['firstName', 'lastName', 'email', 'phoneLocal', 'countryCode', 'companyName', 'website', 'companySize', 'positions', 'referral', 'referralSpecify', 'message']) assert.match(form, new RegExp(`name=["']${field}["']`), `missing ${field}`);
-  assert.match(form, /acrTracker\?\.trackLead/);
+  assert.match(form, /data-acr-managed="react"/);
+  assert.doesNotMatch(form, /acrTracker\?\.trackLead/);
   assert.match(form, /window\.location\.assign\("\/thank-you"\)/);
 });
 

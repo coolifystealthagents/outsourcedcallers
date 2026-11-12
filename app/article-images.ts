@@ -9,6 +9,7 @@ type Candidate = ArticleImage & { topics: string[] };
 
 // Dimensions are the intrinsic dimensions read from the files in /public.
 const BLOG_IMAGES: Candidate[] = [
+  { src: '/daily12/outsourcedcallers/when-an-outsourced-setter-should-mark-a-lead-as-not-ready-to-book.jpg', width: 1200, height: 630, alt: 'When an outsourced setter should mark a lead as not ready to book', topics: ['not-ready', 'readiness', 'booking', 'appointment'] },
   { src: '/blog-heroes/appointment-setting-calendar-intent-brief.png', width: 1693, height: 929, alt: 'Appointment setting calendar intent and handoff workflow', topics: ['appointment', 'calendar', 'meeting', 'schedule'] },
   { src: '/blog-heroes/customer-follow-up-sequence-exit-criteria.png', width: 1713, height: 918, alt: 'Customer follow-up sequence and exit criteria workflow', topics: ['customer', 'follow-up', 'renewal', 'win-back'] },
   { src: '/blog-heroes/inbound-call-callback-route-record.png', width: 1536, height: 1024, alt: 'Inbound call and callback routing record', topics: ['inbound', 'reception', 'callback', 'message'] },
@@ -23,6 +24,8 @@ const BLOG_IMAGES: Candidate[] = [
 ];
 
 const RESEARCH_IMAGES: Candidate[] = [
+  { src: '/daily12/outsourcedcallers/auditing-whether-call-dispositions-match-the-recorded-conversation.jpg', width: 1200, height: 630, alt: 'Auditing whether call dispositions match the recorded conversation', topics: ['disposition', 'conversation', 'recording', 'call'] },
+  { src: '/daily12/outsourcedcallers/measuring-the-share-of-bookings-that-include-a-confirmed-decision-maker.jpg', width: 1200, height: 630, alt: 'Measuring the share of bookings that include a confirmed decision-maker', topics: ['decision-maker', 'bookings', 'authority'] },
   { src: '/research-heroes/appointment-meeting-readiness-research.png', width: 1536, height: 1024, alt: 'Appointment and meeting readiness research diagram', topics: ['appointment', 'calendar', 'meeting', 'show-rate'] },
   { src: '/research-heroes/survey-refusal-bias-interpretation-research.png', width: 1693, height: 929, alt: 'Survey refusal and response bias research diagram', topics: ['survey', 'refusal', 'response', 'sample'] },
   { src: '/research-heroes/voicemail-callback-evidence-research.png', width: 1536, height: 1024, alt: 'Voicemail and callback evidence research diagram', topics: ['voicemail', 'callback', 'contact', 'follow-up'] },
