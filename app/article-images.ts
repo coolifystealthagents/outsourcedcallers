@@ -9,6 +9,7 @@ type Candidate = ArticleImage & { topics: string[] };
 
 // Dimensions are the intrinsic dimensions read from the files in /public.
 const BLOG_IMAGES: Candidate[] = [
+  { src: '/daily16/outsourcedcallers/the-booking-readback-standard-for-outsourced-appointment-setters.jpg', width: 1200, height: 630, alt: 'The booking readback standard for outsourced appointment setters', topics: ['readback', 'booking', 'appointment', 'setter'] },
   { src: '/daily12/outsourcedcallers/when-an-outsourced-setter-should-mark-a-lead-as-not-ready-to-book.jpg', width: 1200, height: 630, alt: 'When an outsourced setter should mark a lead as not ready to book', topics: ['not-ready', 'readiness', 'booking', 'appointment'] },
   { src: '/blog-heroes/appointment-setting-calendar-intent-brief.png', width: 1693, height: 929, alt: 'Appointment setting calendar intent and handoff workflow', topics: ['appointment', 'calendar', 'meeting', 'schedule'] },
   { src: '/blog-heroes/customer-follow-up-sequence-exit-criteria.png', width: 1713, height: 918, alt: 'Customer follow-up sequence and exit criteria workflow', topics: ['customer', 'follow-up', 'renewal', 'win-back'] },
@@ -24,6 +25,8 @@ const BLOG_IMAGES: Candidate[] = [
 ];
 
 const RESEARCH_IMAGES: Candidate[] = [
+  { src: '/daily16/outsourcedcallers/auditing-whether-appointment-reminders-reach-the-person-who-will-attend.jpg', width: 1200, height: 630, alt: 'Auditing whether appointment reminders reach the person who will attend', topics: ['reminder', 'attendee', 'appointment', 'reminders'] },
+  { src: '/daily16/outsourcedcallers/measuring-whether-appointments-start-inside-the-booked-time-window.jpg', width: 1200, height: 630, alt: 'Measuring whether appointments start inside the booked time window', topics: ['start-time', 'appointment', 'booked', 'window'] },
   { src: '/daily12/outsourcedcallers/auditing-whether-call-dispositions-match-the-recorded-conversation.jpg', width: 1200, height: 630, alt: 'Auditing whether call dispositions match the recorded conversation', topics: ['disposition', 'conversation', 'recording', 'call'] },
   { src: '/daily12/outsourcedcallers/measuring-the-share-of-bookings-that-include-a-confirmed-decision-maker.jpg', width: 1200, height: 630, alt: 'Measuring the share of bookings that include a confirmed decision-maker', topics: ['decision-maker', 'bookings', 'authority'] },
   { src: '/research-heroes/appointment-meeting-readiness-research.png', width: 1536, height: 1024, alt: 'Appointment and meeting readiness research diagram', topics: ['appointment', 'calendar', 'meeting', 'show-rate'] },
