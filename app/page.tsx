@@ -1,5 +1,6 @@
 import * as data from './data';
 import { Footer, Header, JsonLd } from './components';
+import { servicePhotography } from './service-photography';
 
 const d = data as any;
 const site = d.site || {};
@@ -8,28 +9,28 @@ const domain = site.domain || 'OutsourcedCallers.com';
 
 const serviceCards = [
   {
-    slug: 'operations-support',
+    slug: 'outbound-lead-qualification',
 
     title: 'Outbound follow-up',
     body: 'Work through lead lists, missed inquiries, reactivation calls, and scheduled callbacks with a clear outcome for every attempt.',
     tag: 'List rules + outcomes',
   },
   {
-    slug: 'customer-support',
+    slug: 'customer-follow-up-calls',
 
     title: 'Customer check-ins',
     body: 'Handle routine status calls and service follow-up without giving the caller permission to improvise refunds, dates, or account changes.',
     tag: 'Script + escalation',
   },
   {
-    slug: 'admin-support',
+    slug: 'appointment-setting',
 
     title: 'Appointment setting',
     body: 'Qualify the basics, book the right calendar, and leave the closer with enough context to walk into the conversation prepared.',
     tag: 'Fit rules + calendar',
   },
   {
-    slug: 'reporting-and-qa',
+    slug: 'call-quality-review',
 
     title: 'Call review and CRM notes',
     body: 'Check recordings, clean up outcome labels, flag coaching examples, and keep follow-up dates from disappearing into a spreadsheet.',
@@ -77,7 +78,7 @@ export default function Home() {
 
             <div className="caller-visual">
               <div className="photo-frame">
-                <img src="/illustrations/getillustrations/communication-illustrations-pack-svg/calling-specialist.webp" alt="Illustration representing a calling specialist handling connected conversations" />
+                <img src="/optimization/hero.webp" alt="Office professional coordinating work with a headset and binder" />
                 <div className="photo-caption">
                   <span>Caller brief</span>
                   <strong>Approved language. Clear handoff.</strong>
@@ -105,7 +106,7 @@ export default function Home() {
           </div>
           <div className="service-console">
             {serviceCards.map((service) => (
-              <a className="service-module" href="/services" key={service.slug}>
+              <a className="service-module" href={`/services/${service.slug}`} key={service.slug}><img className="service-module-photo" src={servicePhotography[service.slug].src} alt={servicePhotography[service.slug].alt} loading="lazy" />
                 <div>
                   <span className="module-tag">{service.tag}</span>
                   <h3>{service.title}</h3>

@@ -1,9 +1,10 @@
 import * as data from './data';
 import { stealthAgentsReviews } from './reviews';
+import { commercialServices } from './commercial-data';
 
 const d = data as any;
 const site = d.site || {};
-const services = d.services || [];
+const footerServices = commercialServices.slice(0, 6).map(service => ({ title: service.title, href: `/services/${service.slug}` }));
 const year = new Date().getFullYear();
 
 export function JsonLd({ data }: { data: unknown }) {
@@ -23,7 +24,7 @@ export function Header({ hidePricing: _hidePricing = false }: { hidePricing?: bo
 }
 
 export function Footer({ hidePricing: _hidePricing = false }: { hidePricing?: boolean } = {}) {
-  return <footer className="legit-footer"><div className="footer-grid"><div className="footer-brand"><a className="footer-logo" href="/" aria-label={`${site.brand} home`}><LogoMark /></a><p>Calling operations guidance for teams that need clear scripts, handoffs, review, and accountable next steps.</p><PartnerAttribution footer /></div><div><h2>Services</h2><div className="footer-links">{services.slice(0, 6).map((service: any) => <a href="/services" key={service.slug}>{service.title}</a>)}</div></div><div><h2>Explore</h2><div className="footer-links"><a href="/about">About</a><a href="/services">Services</a><a href="/blog">Blog</a><a href="/research">Research</a><a href="/contact-us">Contact Us</a><a href="/privacy">Privacy policy</a></div></div></div><div className="footer-bottom"><span>© {year} {site.brand}. All rights reserved.</span><span>Philippines based calling talent</span></div></footer>;
+  return <footer className="legit-footer"><div className="footer-grid"><div className="footer-brand"><a className="footer-logo" href="/" aria-label={`${site.brand} home`}><LogoMark /></a><p>Calling operations guidance for teams that need clear scripts, handoffs, review, and accountable next steps.</p><PartnerAttribution footer /></div><div><h2>Services</h2><div className="footer-links">{footerServices.map(service => <a href={service.href} key={service.href}>{service.title}</a>)}</div></div><div><h2>Explore</h2><div className="footer-links"><a href="/about">About</a><a href="/services">Services</a><a href="/blog">Blog</a><a href="/research">Research</a><a href="/contact-us">Contact Us</a><a href="/privacy">Privacy policy</a></div></div></div><div className="footer-bottom"><span>© {year} {site.brand}. All rights reserved.</span><span>Philippines based calling talent</span></div></footer>;
 }
 
 export function CTA() {

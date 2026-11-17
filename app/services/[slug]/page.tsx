@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Header, Footer, JsonLd } from '../../components';
 import { commercialHeroDimensions, commercialServices, getServiceBySlug } from '../../commercial-data';
+import { servicePhotography } from '../../service-photography';
 import '../../commercial.css';
 
 const base = 'https://outsourcedcallers.com';
@@ -27,7 +28,6 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
   const service = getServiceBySlug((await params).slug);
   if (!service) notFound();
   const url = `${base}/services/${service.slug}`;
-  const heroDimensions = commercialHeroDimensions[service.heroImage];
   const related = service.related.map(getServiceBySlug).filter((item): item is NonNullable<typeof item> => Boolean(item));
   const schema = {
     '@context': 'https://schema.org', '@graph': [
@@ -39,7 +39,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
   };
 
   return <><Header /><main className="oc-commercial"><JsonLd data={schema} />
-    <section className="oc-service-hero"><div className="oc-shell oc-hero-grid"><div><p className="oc-kicker">Documented calling operation</p><h1>{service.title}</h1><p className="oc-lead">{service.description}</p><p className="oc-audience"><strong>Best suited to:</strong> {service.audience}</p><a className="oc-button" href="/contact">Discuss this calling lane</a></div><figure className="oc-hero-figure"><img src={service.heroImage} width={heroDimensions.width} height={heroDimensions.height} alt={service.heroAlt} /><figcaption>Calls, evidence, outcomes, and handoffs stay connected.</figcaption></figure></div></section>
+    <section className="oc-service-hero"><div className="oc-shell oc-hero-grid"><div><p className="oc-kicker">Documented calling operation</p><h1>{service.title}</h1><p className="oc-lead">{service.description}</p><p className="oc-audience"><strong>Best suited to:</strong> {service.audience}</p><a className="oc-button" href="/contact">Discuss this calling lane</a></div><figure className="oc-hero-figure"><img src={servicePhotography[service.slug].src} width="2000" height="1333" alt={servicePhotography[service.slug].alt} /><figcaption>Calls, evidence, outcomes, and handoffs stay connected.</figcaption></figure></div></section>
 
     <section className="oc-section"><div className="oc-shell oc-problem"><div><p className="oc-kicker">The operating problem</p><h2>Capacity only helps when the work is reviewable.</h2></div><p>{service.problem}</p></div></section>
 

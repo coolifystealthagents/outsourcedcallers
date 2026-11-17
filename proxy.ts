@@ -19,6 +19,7 @@ export function proxy(request: NextRequest) {
   const forwardedHost = request.headers.get('x-forwarded-host')?.split(',')[0]?.trim();
   const requestHost = forwardedHost || request.headers.get('host') || request.nextUrl.hostname;
   const hostname = requestHost.split(':')[0].toLowerCase();
+  if (hostname === 'localhost' || hostname === '127.0.0.1') return NextResponse.next();
   const scheme = publicScheme(request);
 
   if (scheme === 'http' || hostname === `www.${CANONICAL_HOST}`) {

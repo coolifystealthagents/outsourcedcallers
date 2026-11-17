@@ -294,3 +294,21 @@ form.card .btn, .section .btn, .service-hero .btn, .final-cta .btn { background:
 }
 
 .article-meta .article-date{text-transform:none;letter-spacing:normal}
+
+.service-module{overflow:hidden}.service-module-photo{display:block;width:calc(100% + 40px);height:165px;object-fit:cover;margin:-20px -20px 18px}.caller-visual .photo-frame>img{object-fit:cover}@media(prefers-reduced-motion:reduce){.review-track{animation:none}}
+
+/* Compact desktop intake: keep every field and the submit action in view. */
+@media(min-width:1000px){
+  .sa-form-card{max-width:790px!important;padding:18px 22px 20px!important}
+  .sa-form-card h2{margin-bottom:9px!important}
+  .sa-form-card .sa-form-intro{margin-bottom:9px!important}
+  .sa-form-card form{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:6px 12px!important}
+  .sa-form-card .sa-grid{display:contents!important}
+  .sa-form-card form>label:has(textarea),.sa-form-card form>button,.sa-form-card form>.sa-error,.sa-form-card form>.sa-form-note{grid-column:1/-1}
+  .sa-form-card label{min-width:0;gap:3px!important;font-size:12px!important}
+  .sa-form-card input,.sa-form-card select{min-height:35px!important;padding:5px 9px!important;font-size:13px!important}
+  .sa-form-card textarea{min-height:48px!important;padding:6px 9px!important}
+  .sa-form-card small{font-size:10px!important}
+  .sa-form-card button{padding:9px 16px!important;font-size:15px!important}
+}
+@media(max-width:700px){.sa-form-card .sa-grid{display:grid!important}.sa-form-card label{font-size:15px!important}}

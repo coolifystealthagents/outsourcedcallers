@@ -59,3 +59,6 @@
 .oc-button-light{margin-top:12px}
 @media(max-width:900px){.oc-hero-grid,.oc-problem,.oc-two,.oc-final{grid-template-columns:1fr}.oc-workflow,.oc-directory,.oc-related-grid{grid-template-columns:1fr 1fr}.oc-decision-grid{grid-template-columns:1fr 1fr}.oc-decision-grid article,.oc-decision-grid article:nth-child(4),.oc-decision-grid article:nth-child(5){grid-column:auto}}
 @media(max-width:620px){.oc-shell{width:min(100% - 30px,1180px)}.oc-service-hero{padding:54px 0}.oc-service-hero h1{font-size:52px}.oc-section{padding:70px 0}.oc-workflow,.oc-directory,.oc-related-grid,.oc-scenarios,.oc-decision-grid{grid-template-columns:1fr}.oc-workflow article{min-height:auto}.oc-workflow h3{margin-top:26px}.oc-input-panel{padding:26px;box-shadow:7px 7px 0 #cdc7bc}.oc-final{width:calc(100% - 30px);padding:34px 27px;gap:28px;box-shadow:9px 9px 0 #c9c4b8}}
+
+/* November portfolio refinement: relevant service photography. */
+.oc-directory>a{overflow:hidden}.oc-directory-photo{display:block;width:calc(100% + 54px);height:175px;object-fit:cover;margin:-27px -27px 20px}.oc-hero-figure img{height:clamp(300px,38vw,480px);object-fit:cover}
