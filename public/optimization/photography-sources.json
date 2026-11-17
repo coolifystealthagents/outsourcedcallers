@@ -21,13 +21,6 @@
     "note": "Stock photography illustrating the work; not represented as StealthAgents employees or clients."
   },
   {
-    "asset": "/optimization/crm-administration.webp",
-    "source": "https://www.pexels.com/photo/8441819/",
-    "license": "https://www.pexels.com/license/",
-    "alt": "Professional reviewing information on a laptop",
-    "note": "Stock photography illustrating the work; not represented as StealthAgents employees or clients."
-  },
-  {
     "asset": "/optimization/customer-retention-support-20261117.jpg",
     "source": "https://www.pexels.com/photo/7682351/",
     "license": "https://www.pexels.com/license/",
@@ -42,38 +35,10 @@
     "note": "Stock photography illustrating the work; not represented as StealthAgents employees or clients."
   },
   {
-    "asset": "/optimization/executive-calendar-management.webp",
-    "source": "https://www.pexels.com/photo/7654451/",
-    "license": "https://www.pexels.com/license/",
-    "alt": "Office professional checking a folder beside her laptop",
-    "note": "Stock photography illustrating the work; not represented as StealthAgents employees or clients."
-  },
-  {
-    "asset": "/optimization/hero.webp",
-    "source": "https://www.pexels.com/photo/8101449/",
-    "license": "https://www.pexels.com/license/",
-    "alt": "Office professional coordinating work with a headset and binder",
-    "note": "Licensed stock photograph illustrating the work context; not presented as company staff or a client."
-  },
-  {
     "asset": "/optimization/inbound-customer-care-20261117.jpg",
     "source": "https://www.pexels.com/photo/7709199/",
     "license": "https://www.pexels.com/license/",
     "alt": "Customer support agent wearing a headset",
-    "note": "Stock photography illustrating the work; not represented as StealthAgents employees or clients."
-  },
-  {
-    "asset": "/optimization/outbound-lead-qualification-20261117.jpg",
-    "source": "https://www.pexels.com/photo/7709215/",
-    "license": "https://www.pexels.com/license/",
-    "alt": "Two support professionals using headsets and laptops",
-    "note": "Stock photography illustrating the work; not represented as StealthAgents employees or clients."
-  },
-  {
-    "asset": "/optimization/research-briefing.webp",
-    "source": "https://www.pexels.com/photo/7964540/",
-    "license": "https://www.pexels.com/license/",
-    "alt": "Colleagues preparing a research report with charts",
     "note": "Stock photography illustrating the work; not represented as StealthAgents employees or clients."
   },
   {
@@ -89,5 +54,53 @@
     "license": "https://www.pexels.com/license/",
     "alt": "Technical professional investigating an issue at a computer",
     "note": "Stock photography illustrating the work; not represented as StealthAgents employees or clients."
+  },
+  {
+    "asset": "/optimization/survey-calling.jpg",
+    "source": "https://www.pexels.com/photo/8192007/",
+    "license": "https://www.pexels.com/license/",
+    "alt": "Support professional wearing a headset while reviewing documents",
+    "sha256": "a76429790f4b86b32fb4e57c3aa2e494e08a925e86e60a5be1ee8491b749f359",
+    "note": "Licensed stock photography illustrating the service; not company staff or a client."
+  },
+  {
+    "asset": "/optimization/win-back-campaign.jpg",
+    "source": "https://www.pexels.com/photo/7682104/",
+    "license": "https://www.pexels.com/license/",
+    "alt": "Caller working at a laptop with a headset",
+    "sha256": "34ce1aabc10eb1edd01e2a48751dc3f31edda6292bb8efe0354b1eebfb4174f1",
+    "note": "Licensed stock photography illustrating the service; not company staff or a client."
+  },
+  {
+    "asset": "/optimization/renewal-reminders.jpg",
+    "source": "https://www.pexels.com/photo/8067775/",
+    "license": "https://www.pexels.com/license/",
+    "alt": "Office professional making a customer call",
+    "sha256": "2e6342e111fc0a7ea181fb9ef821236e7bfd8546f7e5c7ff110f3c7ee965174c",
+    "note": "Licensed stock photography illustrating the service; not company staff or a client."
+  },
+  {
+    "asset": "/optimization/reception-overflow.jpg",
+    "source": "https://www.pexels.com/photo/8204377/",
+    "license": "https://www.pexels.com/license/",
+    "alt": "Reception caller wearing a headset at work",
+    "sha256": "da218ebcce55de5adb0dbffbd7caa336d8540dad28bfd15a38e9cc06a53fe007",
+    "note": "Licensed stock photography illustrating the service; not company staff or a client."
+  },
+  {
+    "asset": "/optimization/caller-hero.jpg",
+    "source": "https://www.pexels.com/photo/7709197/",
+    "license": "https://www.pexels.com/license/",
+    "alt": "Calling team working together at their desks",
+    "sha256": "720432d800386bd536637ded647630cf70b9f5beb085cf1962ea212cc42f7207",
+    "note": "Licensed stock photography illustrating the service; not company staff or a client."
+  },
+  {
+    "asset": "/optimization/outbound-lead-qualification.jpg",
+    "source": "https://www.pexels.com/photo/7689641/",
+    "license": "https://www.pexels.com/license/",
+    "alt": "Smiling caller using a headset at a customer support desk",
+    "sha256": "34255692b05463b82c5c60907eb1f761093bad953b1e4bd3da6448daf8b8ea9d",
+    "note": "Licensed stock photograph illustrating the service; not company staff or a client."
   }
 ]

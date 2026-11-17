@@ -78,7 +78,7 @@ export default function Home() {
 
             <div className="caller-visual">
               <div className="photo-frame">
-                <img src="/optimization/hero.webp" alt="Office professional coordinating work with a headset and binder" />
+                <img src="/optimization/caller-hero.jpg" alt="Calling team working together at their desks" />
                 <div className="photo-caption">
                   <span>Caller brief</span>
                   <strong>Approved language. Clear handoff.</strong>
