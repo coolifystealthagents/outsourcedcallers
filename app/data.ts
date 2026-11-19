@@ -103,6 +103,7 @@ import { nov07BlogPosts, nov07BlogDetails } from './nov07-blog';
 import { nov08BlogPosts, nov08BlogDetails } from './nov08-blog';
 import { nov16BlogPosts, nov16BlogDetails } from './nov16-blog';
 import { nov17BlogPosts, nov17BlogDetails } from './nov17-blog';
+import { nov19BlogPosts, nov19BlogDetails } from './nov19-blog';
 import { nov18BlogPosts, nov18BlogDetails } from './nov18-blog';
 import { nov12BlogPosts, nov12BlogDetails } from './nov12-blog';
 import { nov11BlogPosts, nov11BlogDetails } from './nov11-blog';
@@ -116,6 +117,7 @@ import { nov07ResearchPosts } from './nov07-research';
 import { nov08ResearchPosts } from './nov08-research';
 import { nov16ResearchPosts } from './nov16-research';
 import { nov17ResearchPosts } from './nov17-research';
+import { nov19ResearchPosts } from './nov19-research';
 import { nov18ResearchPosts } from './nov18-research';
 import { nov12ResearchPosts } from './nov12-research';
 import { nov11ResearchPosts } from './nov11-research';
@@ -123,6 +125,7 @@ import { nov10ResearchPosts } from './nov10-research';
 import { nov09ResearchPosts } from './nov09-research';
 
 export const blogPosts = [
+  ...nov19BlogPosts,
   ...nov18BlogPosts,
   ...nov17BlogPosts,
   ...nov16BlogPosts,
@@ -307,6 +310,7 @@ blogPosts.push(...oct13BlogPosts);
 blogPosts.sort((a, b) => (('published' in b ? (b.published ?? '2026-07-28') : '2026-07-28').localeCompare('published' in a ? (a.published ?? '2026-07-28') : '2026-07-28')) || a.slug.localeCompare(b.slug));
 
 export const blogDetails = {
+  ...nov19BlogDetails,
   ...nov18BlogDetails,
   ...nov17BlogDetails,
   ...nov16BlogDetails,
@@ -1740,6 +1744,7 @@ function makeResearchPost([slug, title, excerpt]: readonly [string, string, stri
 }
 
 export const researchPosts: Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; updated?: string; image?: string; handoff?: { href: string; label: string; text: string } }> = [
+  ...(nov19ResearchPosts as unknown as Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; updated?: string; image?: string; handoff?: { href: string; label: string; text: string } }>),
   ...(nov18ResearchPosts as unknown as Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; updated?: string; image?: string; handoff?: { href: string; label: string; text: string } }>),
   ...(nov17ResearchPosts as unknown as Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; updated?: string; image?: string; handoff?: { href: string; label: string; text: string } }>),
   ...(nov16ResearchPosts as unknown as Array<{ slug: string; title: string; excerpt: string; body: string[]; published: string; updated?: string; image?: string; handoff?: { href: string; label: string; text: string } }>),

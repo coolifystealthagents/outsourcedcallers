@@ -9,6 +9,7 @@ type Candidate = ArticleImage & { topics: string[] };
 
 // Dimensions are the intrinsic dimensions read from the files in /public.
 const BLOG_IMAGES: Candidate[] = [
+  { src: '/daily19/outsourcedcallers/a-weekly-booking-discrepancy-review-for-outsourced-appointment-setters.jpg', width: 1200, height: 630, alt: 'A weekly booking discrepancy review for outsourced appointment setters', topics: ['discrepancy', 'booking', 'calendar', 'crm'] },
   { src: '/daily18/outsourcedcallers/a-do-not-book-list-for-outsourced-appointment-setters.jpg', width: 1200, height: 630, alt: 'A do-not-book list for outsourced appointment setters', topics: ['do-not-book', 'disqualifier', 'booking', 'setter'] },
   { src: '/daily17/outsourcedcallers/a-same-day-reschedule-protocol-for-outsourced-appointment-setters.jpg', width: 1200, height: 630, alt: 'A same-day reschedule protocol for outsourced appointment setters', topics: ['reschedule', 'booking', 'appointment', 'setter'] },
   { src: '/daily16/outsourcedcallers/the-booking-readback-standard-for-outsourced-appointment-setters.jpg', width: 1200, height: 630, alt: 'The booking readback standard for outsourced appointment setters', topics: ['readback', 'booking', 'appointment', 'setter'] },
@@ -27,6 +28,8 @@ const BLOG_IMAGES: Candidate[] = [
 ];
 
 const RESEARCH_IMAGES: Candidate[] = [
+  { src: '/daily19/outsourcedcallers/auditing-whether-appointment-setters-record-the-lead-source-before-booking.jpg', width: 1200, height: 630, alt: 'Auditing whether appointment setters record the lead source before booking', topics: ['lead-source', 'provenance', 'intake', 'appointment'] },
+  { src: '/daily19/outsourcedcallers/measuring-how-often-booked-appointments-include-a-confirmed-agenda.jpg', width: 1200, height: 630, alt: 'Measuring how often booked appointments include a confirmed agenda', topics: ['agenda', 'confirmation', 'booking', 'appointment'] },
   { src: '/daily18/outsourcedcallers/measuring-whether-appointment-setters-capture-the-buyers-decision-process.jpg', width: 1200, height: 630, alt: 'Measuring whether appointment setters capture the buyer’s decision process', topics: ['decision-process', 'authority', 'qualification', 'appointment'] },
   { src: '/daily18/outsourcedcallers/measuring-how-often-booked-appointments-end-with-a-written-next-step.jpg', width: 1200, height: 630, alt: 'Measuring how often booked appointments end with a written next step', topics: ['next-step', 'follow-up', 'appointment', 'documentation'] },
   { src: '/daily17/outsourcedcallers/auditing-whether-appointment-notes-reach-the-closer-before-the-call.jpg', width: 1200, height: 630, alt: 'Auditing whether appointment notes reach the closer before the call', topics: ['notes', 'handoff', 'closer', 'appointment'] },
