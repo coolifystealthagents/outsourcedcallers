@@ -9,6 +9,7 @@ type Candidate = ArticleImage & { topics: string[] };
 
 // Dimensions are the intrinsic dimensions read from the files in /public.
 const BLOG_IMAGES: Candidate[] = [
+  { src: '/daily21/outsourcedcallers/a-no-show-reason-code-set-for-outsourced-appointment-setters.jpg', width: 1200, height: 630, alt: 'A no-show reason code set for outsourced appointment setters', topics: ['no-show', 'reason-code', 'appointment', 'review'] },
   { src: '/daily20/outsourcedcallers/a-booking-capacity-buffer-for-outsourced-appointment-setters.jpg', width: 1200, height: 630, alt: 'A booking capacity buffer for outsourced appointment setters', topics: ['capacity', 'buffer', 'booking', 'appointment'] },
   { src: '/daily19/outsourcedcallers/a-weekly-booking-discrepancy-review-for-outsourced-appointment-setters.jpg', width: 1200, height: 630, alt: 'A weekly booking discrepancy review for outsourced appointment setters', topics: ['discrepancy', 'booking', 'calendar', 'crm'] },
   { src: '/daily18/outsourcedcallers/a-do-not-book-list-for-outsourced-appointment-setters.jpg', width: 1200, height: 630, alt: 'A do-not-book list for outsourced appointment setters', topics: ['do-not-book', 'disqualifier', 'booking', 'setter'] },
@@ -29,6 +30,8 @@ const BLOG_IMAGES: Candidate[] = [
 ];
 
 const RESEARCH_IMAGES: Candidate[] = [
+  { src: '/daily21/outsourcedcallers/auditing-whether-appointment-setters-quote-the-same-cancellation-window-the-closer-enforces.jpg', width: 1200, height: 630, alt: 'Auditing whether appointment setters quote the same cancellation window the closer enforces', topics: ['cancellation', 'policy', 'script', 'appointment'] },
+  { src: '/daily21/outsourcedcallers/measuring-how-often-rescheduled-meetings-keep-the-original-preparation-brief.jpg', width: 1200, height: 630, alt: 'Measuring how often rescheduled meetings keep the original preparation brief', topics: ['reschedule', 'brief', 'continuity', 'appointment'] },
   { src: '/daily20/outsourcedcallers/auditing-whether-appointment-setting-scripts-match-the-offer-the-closer-can-deliver.jpg', width: 1200, height: 630, alt: 'Auditing whether appointment-setting scripts match the offer the closer can deliver', topics: ['script', 'offer', 'closer', 'appointment'] },
   { src: '/daily20/outsourcedcallers/measuring-how-often-cancelled-appointments-are-rebooked-inside-the-original-week.jpg', width: 1200, height: 630, alt: 'Measuring how often cancelled appointments are rebooked inside the original week', topics: ['cancelled', 'rebooked', 'appointment', 'week'] },
   { src: '/daily19/outsourcedcallers/auditing-whether-appointment-setters-record-the-lead-source-before-booking.jpg', width: 1200, height: 630, alt: 'Auditing whether appointment setters record the lead source before booking', topics: ['lead-source', 'provenance', 'intake', 'appointment'] },
